@@ -37,4 +37,3 @@ See L{soma.qtgui} module for documentation.
 @license: U{CeCILL version 2<http://www.cecill.info/licences/Licence_CeCILL_V2-en.html>}
 '''
 __docformat__ = "epytext en"
-
