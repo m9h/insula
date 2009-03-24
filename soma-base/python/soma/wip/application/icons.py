@@ -60,15 +60,17 @@ def findIconFile( fileName ):
   Find an icon file in user, application and site "icons" directories.
   Return C{None} if the file has not been found.
   '''
-  app = Application("soma", "")
-  for dir in ( app.directories.user, app.directories.application,
-               app.directories.site, somaIconsDirectory ):
-    file = os.path.join( dir, 'icons', fileName )
-    if os.path.exists( file ):
-      #print '!icon!', repr( fileName ), '-->', file
-      return file
-  if os.path.exists( fileName ):
-    #print '!icon!', repr( fileName ), '-->', fileName
-    return fileName
-  #print '!icon!', repr( fileName ), '-->', None
+  if fileName is not None:
+    app = Application("soma", "")
+    for dir in ( app.directories.user, app.directories.application,
+                app.directories.site, somaIconsDirectory ):
+      if dir is not None:
+        file = os.path.join( dir, 'icons', fileName )
+        if os.path.exists( file ):
+          #print '!icon!', repr( fileName ), '-->', file
+          return file
+    if os.path.exists( fileName ):
+      #print '!icon!', repr( fileName ), '-->', fileName
+      return fileName
+    #print '!icon!', repr( fileName ), '-->', None
   return None
