@@ -1,0 +1,64 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax ClusterArg
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name hemisph_left
+
+*BEGIN TREE fold_name
+name 1
+color 0 0 255
+label 01
+
+*END
+
+*BEGIN TREE fold_name
+name 3
+color 0 255 0
+label 03
+
+*END
+
+*BEGIN TREE fold_name
+name 5
+color 255 0 0
+label 05
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name hemisph_right
+
+*BEGIN TREE fold_name
+name 2
+color 0 255 255
+label 02
+
+*END
+
+*BEGIN TREE fold_name
+name 4
+color 255 0 255
+label 04
+
+*END
+
+*BEGIN TREE fold_name
+name 6
+color 255 255 0
+label 06
+
+*END
+
+*END
+
+*END
+
+*END
+

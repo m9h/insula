@@ -1,0 +1,6 @@
+attributes = {
+  'model_type' : 'vertex', 
+  'inputs' : 27,
+  'submodel' : 'svm',
+  'descriptor' : 'fold_descriptor2',
+}

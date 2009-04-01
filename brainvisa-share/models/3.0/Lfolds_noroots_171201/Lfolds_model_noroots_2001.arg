@@ -1,0 +1,2079 @@
+# graph 1.0
+
+*BEGIN GRAPH model_graph
+filename_base *
+model_file   fakerel.mod
+model_finder fold_finder
+nbase_graphs 26
+
+*BEGIN NODE model_node 1
+occurence_count 26
+domain_file     domain/F.C.L.p._left.dom
+label           F.C.L.p._left
+model_file      adap/F.C.L.p._left.mod
+*END
+
+*BEGIN NODE model_node 2
+noinstance_count 1
+occurence_count  25
+domain_file      domain/F.C.L.r.ant._left.dom
+label            F.C.L.r.ant._left
+model_file       adap/F.C.L.r.ant._left.mod
+*END
+
+*BEGIN NODE model_node 3
+occurence_count 26
+domain_file     domain/F.Coll._left.dom
+label           F.Coll._left
+model_file      adap/F.Coll._left.mod
+*END
+
+*BEGIN NODE model_node 4
+occurence_count 26
+domain_file     domain/F.C.L.a._left.dom
+label           F.C.L.a._left
+model_file      adap/F.C.L.a._left.mod
+*END
+
+*BEGIN NODE model_node 5
+occurence_count 26
+domain_file     domain/F.C.L.r.asc._left.dom
+label           F.C.L.r.asc._left
+model_file      adap/F.C.L.r.asc._left.mod
+*END
+
+*BEGIN NODE model_node 6
+noinstance_count 7
+occurence_count  19
+domain_file      domain/F.C.L.r.diag._left.dom
+label            F.C.L.r.diag._left
+model_file       adap/F.C.L.r.diag._left.mod
+*END
+
+*BEGIN NODE model_node 7
+noinstance_count 3
+occurence_count  23
+domain_file      domain/F.C.L.r.retroC.tr._left.dom
+label            F.C.L.r.retroC.tr._left
+model_file       adap/F.C.L.r.retroC.tr._left.mod
+*END
+
+*BEGIN NODE model_node 8
+noinstance_count 7
+occurence_count  19
+domain_file      domain/F.C.L.r.sc.ant._left.dom
+label            F.C.L.r.sc.ant._left
+model_file       adap/F.C.L.r.sc.ant._left.mod
+*END
+
+*BEGIN NODE model_node 9
+occurence_count 26
+domain_file     domain/F.P.O._left.dom
+label           F.P.O._left
+model_file      adap/F.P.O._left.mod
+*END
+
+*BEGIN NODE model_node 10
+occurence_count 26
+domain_file     domain/INSULA_left.dom
+label           INSULA_left
+model_file      adap/INSULA_left.mod
+*END
+
+*BEGIN NODE model_node 11
+occurence_count 26
+domain_file     domain/OCCIPITAL_left.dom
+label           OCCIPITAL_left
+model_file      adap/OCCIPITAL_left.mod
+*END
+
+*BEGIN NODE model_node 12
+occurence_count 26
+domain_file     domain/S.C._left.dom
+label           S.C._left
+model_file      adap/S.C._left.mod
+*END
+
+*BEGIN NODE model_node 13
+occurence_count 26
+domain_file     domain/F.I.P._left.dom
+label           F.I.P._left
+model_file      adap/F.I.P._left.mod
+*END
+
+*BEGIN NODE model_node 14
+noinstance_count 11
+occurence_count  15
+domain_file      domain/S.C.LPC._left.dom
+label            S.C.LPC._left
+model_file       adap/S.C.LPC._left.mod
+*END
+
+*BEGIN NODE model_node 15
+occurence_count 26
+domain_file     domain/S.Call._left.dom
+label           S.Call._left
+model_file      adap/S.Call._left.mod
+*END
+
+*BEGIN NODE model_node 16
+occurence_count 26
+domain_file     domain/S.F.inf._left.dom
+label           S.F.inf._left
+model_file      adap/S.F.inf._left.mod
+*END
+
+*BEGIN NODE model_node 17
+occurence_count 26
+domain_file     domain/S.F.int._left.dom
+label           S.F.int._left
+model_file      adap/S.F.int._left.mod
+*END
+
+*BEGIN NODE model_node 18
+noinstance_count 1
+occurence_count  25
+domain_file      domain/F.C.M.post._left.dom
+label            F.C.M.post._left
+model_file       adap/F.C.M.post._left.mod
+*END
+
+*BEGIN NODE model_node 19
+noinstance_count 1
+occurence_count  25
+domain_file      domain/F.C.M.r.AMS.ant._left.dom
+label            F.C.M.r.AMS.ant._left
+model_file       adap/F.C.M.r.AMS.ant._left.mod
+*END
+
+*BEGIN NODE model_node 20
+occurence_count 26
+domain_file     domain/F.Cal.ant.-Sc.Cal._left.dom
+label           F.Cal.ant.-Sc.Cal._left
+model_file      adap/F.Cal.ant.-Sc.Cal._left.mod
+*END
+
+*BEGIN NODE model_node 21
+noinstance_count 6
+occurence_count  20
+domain_file      domain/F.C.L.r.sc.post._left.dom
+label            F.C.L.r.sc.post._left
+model_file       adap/F.C.L.r.sc.post._left.mod
+*END
+
+*BEGIN NODE model_node 22
+occurence_count 26
+domain_file     domain/F.C.M.ant._left.dom
+label           F.C.M.ant._left
+model_file      adap/F.C.M.ant._left.mod
+*END
+
+*BEGIN NODE model_node 23
+noinstance_count 2
+occurence_count  24
+domain_file      domain/F.I.P.Po.C.inf._left.dom
+label            F.I.P.Po.C.inf._left
+model_file       adap/F.I.P.Po.C.inf._left.mod
+*END
+
+*BEGIN NODE model_node 24
+noinstance_count 1
+occurence_count  25
+domain_file      domain/F.I.P.r.int.1_left.dom
+label            F.I.P.r.int.1_left
+model_file       adap/F.I.P.r.int.1_left.mod
+*END
+
+*BEGIN NODE model_node 25
+noinstance_count 1
+occurence_count  25
+domain_file      domain/F.I.P.r.int.2_left.dom
+label            F.I.P.r.int.2_left
+model_file       adap/F.I.P.r.int.2_left.mod
+*END
+
+*BEGIN NODE model_node 26
+occurence_count 26
+domain_file     domain/S.F.inter._left.dom
+label           S.F.inter._left
+model_file      adap/S.F.inter._left.mod
+*END
+
+*BEGIN NODE model_node 27
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.F.marginal._left.dom
+label            S.F.marginal._left
+model_file       adap/S.F.marginal._left.mod
+*END
+
+*BEGIN NODE model_node 28
+noinstance_count 7
+occurence_count  19
+domain_file      domain/S.F.median._left.dom
+label            S.F.median._left
+model_file       adap/S.F.median._left.mod
+*END
+
+*BEGIN NODE model_node 29
+occurence_count 26
+domain_file     domain/S.F.orbitaire._left.dom
+label           S.F.orbitaire._left
+model_file      adap/S.F.orbitaire._left.mod
+*END
+
+*BEGIN NODE model_node 30
+occurence_count 26
+domain_file     domain/S.F.polaire.tr._left.dom
+label           S.F.polaire.tr._left
+model_file      adap/S.F.polaire.tr._left.mod
+*END
+
+*BEGIN NODE model_node 31
+occurence_count 26
+domain_file     domain/S.F.sup._left.dom
+label           S.F.sup._left
+model_file      adap/S.F.sup._left.mod
+*END
+
+*BEGIN NODE model_node 32
+occurence_count 26
+domain_file     domain/S.Li._left.dom
+label           S.Li._left
+model_file      adap/S.Li._left.mod
+*END
+
+*BEGIN NODE model_node 33
+occurence_count 26
+domain_file     domain/S.O.T.lat.ant._left.dom
+label           S.O.T.lat.ant._left
+model_file      adap/S.O.T.lat.ant._left.mod
+*END
+
+*BEGIN NODE model_node 34
+occurence_count 26
+domain_file     domain/S.O.T.lat.post._left.dom
+label           S.O.T.lat.post._left
+model_file      adap/S.O.T.lat.post._left.mod
+*END
+
+*BEGIN NODE model_node 35
+noinstance_count 17
+occurence_count  9
+domain_file      domain/S.O.p._left.dom
+label            S.O.p._left
+model_file       adap/S.O.p._left.mod
+*END
+
+*BEGIN NODE model_node 36
+occurence_count 26
+domain_file     domain/S.Olf._left.dom
+label           S.Olf._left
+model_file      adap/S.Olf._left.mod
+*END
+
+*BEGIN NODE model_node 37
+occurence_count 26
+domain_file     domain/S.Or._left.dom
+label           S.Or._left
+model_file      adap/S.Or._left.mod
+*END
+
+*BEGIN NODE model_node 38
+noinstance_count 24
+occurence_count  2
+domain_file      domain/S.Or.l._left.dom
+label            S.Or.l._left
+model_file       adap/S.Or.l._left.mod
+*END
+
+*BEGIN NODE model_node 39
+noinstance_count 4
+occurence_count  22
+domain_file      domain/S.Pa.int._left.dom
+label            S.Pa.int._left
+model_file       adap/S.Pa.int._left.mod
+*END
+
+*BEGIN NODE model_node 40
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.Pa.sup._left.dom
+label            S.Pa.sup._left
+model_file       adap/S.Pa.sup._left.mod
+*END
+
+*BEGIN NODE model_node 41
+noinstance_count 3
+occurence_count  23
+domain_file      domain/S.Pa.t._left.dom
+label            S.Pa.t._left
+model_file       adap/S.Pa.t._left.mod
+*END
+
+*BEGIN NODE model_node 42
+occurence_count 26
+domain_file     domain/S.Pe.C.inf._left.dom
+label           S.Pe.C.inf._left
+model_file      adap/S.Pe.C.inf._left.mod
+*END
+
+*BEGIN NODE model_node 43
+occurence_count 26
+domain_file     domain/S.Pe.C.inter._left.dom
+label           S.Pe.C.inter._left
+model_file      adap/S.Pe.C.inter._left.mod
+*END
+
+*BEGIN NODE model_node 44
+noinstance_count 2
+occurence_count  24
+domain_file      domain/S.Pe.C.marginal._left.dom
+label            S.Pe.C.marginal._left
+model_file       adap/S.Pe.C.marginal._left.mod
+*END
+
+*BEGIN NODE model_node 45
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.Pe.C.median._left.dom
+label            S.Pe.C.median._left
+model_file       adap/S.Pe.C.median._left.mod
+*END
+
+*BEGIN NODE model_node 46
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.Pe.C.sup._left.dom
+label            S.Pe.C.sup._left
+model_file       adap/S.Pe.C.sup._left.mod
+*END
+
+*BEGIN NODE model_node 47
+occurence_count 26
+domain_file     domain/S.Po.C.sup._left.dom
+label           S.Po.C.sup._left
+model_file      adap/S.Po.C.sup._left.mod
+*END
+
+*BEGIN NODE model_node 48
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.R.inf._left.dom
+label            S.R.inf._left
+model_file       adap/S.R.inf._left.mod
+*END
+
+*BEGIN NODE model_node 49
+noinstance_count 20
+occurence_count  6
+domain_file      domain/S.R.sup._left.dom
+label            S.R.sup._left
+model_file       adap/S.R.sup._left.mod
+*END
+
+*BEGIN NODE model_node 50
+occurence_count 26
+domain_file     domain/S.Rh._left.dom
+label           S.Rh._left
+model_file      adap/S.Rh._left.mod
+*END
+
+*BEGIN NODE model_node 51
+occurence_count 26
+domain_file     domain/S.T.i.ant._left.dom
+label           S.T.i.ant._left
+model_file      adap/S.T.i.ant._left.mod
+*END
+
+*BEGIN NODE model_node 52
+occurence_count 26
+domain_file     domain/S.T.i.post._left.dom
+label           S.T.i.post._left
+model_file      adap/S.T.i.post._left.mod
+*END
+
+*BEGIN NODE model_node 53
+occurence_count 26
+domain_file     domain/S.T.pol._left.dom
+label           S.T.pol._left
+model_file      adap/S.T.pol._left.mod
+*END
+
+*BEGIN NODE model_node 54
+occurence_count 26
+domain_file     domain/S.T.s._left.dom
+label           S.T.s._left
+model_file      adap/S.T.s._left.mod
+*END
+
+*BEGIN NODE model_node 55
+noinstance_count 3
+occurence_count  23
+domain_file      domain/S.T.s.ter.asc.ant._left.dom
+label            S.T.s.ter.asc.ant._left
+model_file       adap/S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN NODE model_node 56
+noinstance_count 1
+occurence_count  25
+domain_file      domain/S.T.s.ter.asc.post._left.dom
+label            S.T.s.ter.asc.post._left
+model_file       adap/S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN NODE model_node 57
+noinstance_count 3
+occurence_count  23
+domain_file      domain/S.p.C._left.dom
+label            S.p.C._left
+model_file       adap/S.p.C._left.mod
+*END
+
+*BEGIN NODE model_node 58
+occurence_count 26
+domain_file     domain/S.s.P._left.dom
+label           S.s.P._left
+model_file      adap/S.s.P._left.mod
+*END
+
+*BEGIN NODE model_node 59
+occurence_count 26
+domain_file     domain/unknown.dom
+label           unknown
+model_file      adap/unknown.mod
+*END
+
+*BEGIN UEDGE model_edge 9 20
+occurence_count 212
+label1          F.P.O._left
+label2          F.Cal.ant.-Sc.Cal._left
+model_file      edges/edgF.P.O._left-F.Cal.ant.-Sc.Cal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 9 58
+noinstance_count 2
+occurence_count  47
+label1           F.P.O._left
+label2           S.s.P._left
+model_file       edges/edgF.P.O._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 9 39
+noinstance_count 13
+occurence_count  22
+label1           F.P.O._left
+label2           S.Pa.int._left
+model_file       edges/edgF.P.O._left-S.Pa.int._left.mod
+*END
+
+*BEGIN UEDGE model_edge 9 41
+noinstance_count 3
+occurence_count  161
+label1           F.P.O._left
+label2           S.Pa.t._left
+model_file       edges/edgF.P.O._left-S.Pa.t._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 1
+occurence_count 515
+label1          INSULA_left
+label2          F.C.L.p._left
+model_file      edges/edgINSULA_left-F.C.L.p._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 4
+occurence_count 321
+label1          INSULA_left
+label2          F.C.L.a._left
+model_file      edges/edgINSULA_left-F.C.L.a._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 5
+occurence_count 129
+label1          INSULA_left
+label2          F.C.L.r.asc._left
+model_file      edges/edgINSULA_left-F.C.L.r.asc._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 2
+noinstance_count 4
+occurence_count  86
+label1           INSULA_left
+label2           F.C.L.r.ant._left
+model_file       edges/edgINSULA_left-F.C.L.r.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 6
+noinstance_count 18
+occurence_count  18
+label1           INSULA_left
+label2           F.C.L.r.diag._left
+model_file       edges/edgINSULA_left-F.C.L.r.diag._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 13
+noinstance_count 1
+occurence_count  158
+label1           OCCIPITAL_left
+label2           F.I.P._left
+model_file       edges/edgOCCIPITAL_left-F.I.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 56
+noinstance_count 4
+occurence_count  70
+label1           OCCIPITAL_left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgOCCIPITAL_left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 35
+noinstance_count 18
+occurence_count  27
+label1           OCCIPITAL_left
+label2           S.O.p._left
+model_file       edges/edgOCCIPITAL_left-S.O.p._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 52
+noinstance_count 2
+occurence_count  134
+label1           OCCIPITAL_left
+label2           S.T.i.post._left
+model_file       edges/edgOCCIPITAL_left-S.T.i.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 34
+noinstance_count 11
+occurence_count  57
+label1           OCCIPITAL_left
+label2           S.O.T.lat.post._left
+model_file       edges/edgOCCIPITAL_left-S.O.T.lat.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 46
+noinstance_count 4
+occurence_count  54
+label1           S.C._left
+label2           S.Pe.C.sup._left
+model_file       edges/edgS.C._left-S.Pe.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 44
+noinstance_count 2
+occurence_count  51
+label1           S.C._left
+label2           S.Pe.C.marginal._left
+model_file       edges/edgS.C._left-S.Pe.C.marginal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 45
+noinstance_count 5
+occurence_count  38
+label1           S.C._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.C._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 57
+noinstance_count 12
+occurence_count  16
+label1           S.C._left
+label2           S.p.C._left
+model_file       edges/edgS.C._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 18
+noinstance_count 1
+occurence_count  35
+label1           S.C._left
+label2           F.C.M.post._left
+model_file       edges/edgS.C._left-F.C.M.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 47
+occurence_count 57
+label1          S.C._left
+label2          S.Po.C.sup._left
+model_file      edges/edgS.C._left-S.Po.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 1
+noinstance_count 2
+occurence_count  41
+label1           S.C._left
+label2           F.C.L.p._left
+model_file       edges/edgS.C._left-F.C.L.p._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 42
+noinstance_count 6
+occurence_count  30
+label1           S.C._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgS.C._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 43
+noinstance_count 1
+occurence_count  72
+label1           S.C._left
+label2           S.Pe.C.inter._left
+model_file       edges/edgS.C._left-S.Pe.C.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 23
+noinstance_count 6
+occurence_count  77
+label1           S.C._left
+label2           F.I.P.Po.C.inf._left
+model_file       edges/edgS.C._left-F.I.P.Po.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 41
+noinstance_count 5
+occurence_count  75
+label1           F.I.P._left
+label2           S.Pa.t._left
+model_file       edges/edgF.I.P._left-S.Pa.t._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 25
+noinstance_count 2
+occurence_count  91
+label1           F.I.P._left
+label2           F.I.P.r.int.2_left
+model_file       edges/edgF.I.P._left-F.I.P.r.int.2_left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 56
+noinstance_count 11
+occurence_count  28
+label1           F.I.P._left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgF.I.P._left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 47
+noinstance_count 1
+occurence_count  98
+label1           F.I.P._left
+label2           S.Po.C.sup._left
+model_file       edges/edgF.I.P._left-S.Po.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 40
+noinstance_count 2
+occurence_count  82
+label1           F.I.P._left
+label2           S.Pa.sup._left
+model_file       edges/edgF.I.P._left-S.Pa.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 39
+noinstance_count 20
+occurence_count  9
+label1           F.I.P._left
+label2           S.Pa.int._left
+model_file       edges/edgF.I.P._left-S.Pa.int._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 24
+noinstance_count 5
+occurence_count  55
+label1           F.I.P._left
+label2           F.I.P.r.int.1_left
+model_file       edges/edgF.I.P._left-F.I.P.r.int.1_left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 23
+noinstance_count 5
+occurence_count  131
+label1           F.I.P._left
+label2           F.I.P.Po.C.inf._left
+model_file       edges/edgF.I.P._left-F.I.P.Po.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 55
+noinstance_count 5
+occurence_count  57
+label1           F.I.P._left
+label2           S.T.s.ter.asc.ant._left
+model_file       edges/edgF.I.P._left-S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 15 22
+noinstance_count 6
+occurence_count  63
+label1           S.Call._left
+label2           F.C.M.ant._left
+model_file       edges/edgS.Call._left-F.C.M.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 15 18
+noinstance_count 3
+occurence_count  47
+label1           S.Call._left
+label2           F.C.M.post._left
+model_file       edges/edgS.Call._left-F.C.M.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 15 58
+noinstance_count 1
+occurence_count  75
+label1           S.Call._left
+label2           S.s.P._left
+model_file       edges/edgS.Call._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 15 20
+noinstance_count 4
+occurence_count  38
+label1           S.Call._left
+label2           F.Cal.ant.-Sc.Cal._left
+model_file       edges/edgS.Call._left-F.Cal.ant.-Sc.Cal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 26
+occurence_count 177
+label1          S.F.inf._left
+label2          S.F.inter._left
+model_file      edges/edgS.F.inf._left-S.F.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 29
+noinstance_count 1
+occurence_count  82
+label1           S.F.inf._left
+label2           S.F.orbitaire._left
+model_file       edges/edgS.F.inf._left-S.F.orbitaire._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 5
+occurence_count 83
+label1          S.F.inf._left
+label2          F.C.L.r.asc._left
+model_file      edges/edgS.F.inf._left-F.C.L.r.asc._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 43
+noinstance_count 10
+occurence_count  58
+label1           S.F.inf._left
+label2           S.Pe.C.inter._left
+model_file       edges/edgS.F.inf._left-S.Pe.C.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 2
+noinstance_count 8
+occurence_count  36
+label1           S.F.inf._left
+label2           F.C.L.r.ant._left
+model_file       edges/edgS.F.inf._left-F.C.L.r.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 42
+noinstance_count 4
+occurence_count  61
+label1           S.F.inf._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgS.F.inf._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 22
+occurence_count 248
+label1          S.F.int._left
+label2          F.C.M.ant._left
+model_file      edges/edgS.F.int._left-F.C.M.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 30
+noinstance_count 5
+occurence_count  54
+label1           S.F.int._left
+label2           S.F.polaire.tr._left
+model_file       edges/edgS.F.int._left-S.F.polaire.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 48
+noinstance_count 15
+occurence_count  19
+label1           S.F.int._left
+label2           S.R.inf._left
+model_file       edges/edgS.F.int._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 28
+noinstance_count 10
+occurence_count  42
+label1           S.F.int._left
+label2           S.F.median._left
+model_file       edges/edgS.F.int._left-S.F.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 19
+noinstance_count 12
+occurence_count  16
+label1           S.F.int._left
+label2           F.C.M.r.AMS.ant._left
+model_file       edges/edgS.F.int._left-F.C.M.r.AMS.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 31
+noinstance_count 4
+occurence_count  70
+label1           S.F.int._left
+label2           S.F.sup._left
+model_file       edges/edgS.F.int._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 47
+noinstance_count 2
+occurence_count  44
+label1           F.C.M.post._left
+label2           S.Po.C.sup._left
+model_file       edges/edgF.C.M.post._left-S.Po.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 40
+noinstance_count 7
+occurence_count  26
+label1           F.C.M.post._left
+label2           S.Pa.sup._left
+model_file       edges/edgF.C.M.post._left-S.Pa.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 57
+noinstance_count 4
+occurence_count  63
+label1           F.C.M.post._left
+label2           S.p.C._left
+model_file       edges/edgF.C.M.post._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 39
+noinstance_count 12
+occurence_count  17
+label1           F.C.M.post._left
+label2           S.Pa.int._left
+model_file       edges/edgF.C.M.post._left-S.Pa.int._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 22
+noinstance_count 12
+occurence_count  35
+label1           F.C.M.post._left
+label2           F.C.M.ant._left
+model_file       edges/edgF.C.M.post._left-F.C.M.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 19
+noinstance_count 7
+occurence_count  59
+label1           F.C.M.post._left
+label2           F.C.M.r.AMS.ant._left
+model_file       edges/edgF.C.M.post._left-F.C.M.r.AMS.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 19 31
+noinstance_count 14
+occurence_count  16
+label1           F.C.M.r.AMS.ant._left
+label2           S.F.sup._left
+model_file       edges/edgF.C.M.r.AMS.ant._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 19 45
+noinstance_count 16
+occurence_count  12
+label1           F.C.M.r.AMS.ant._left
+label2           S.Pe.C.median._left
+model_file       edges/edgF.C.M.r.AMS.ant._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 19 22
+noinstance_count 8
+occurence_count  26
+label1           F.C.M.r.AMS.ant._left
+label2           F.C.M.ant._left
+model_file       edges/edgF.C.M.r.AMS.ant._left-F.C.M.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 19 57
+noinstance_count 10
+occurence_count  17
+label1           F.C.M.r.AMS.ant._left
+label2           S.p.C._left
+model_file       edges/edgF.C.M.r.AMS.ant._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 20 35
+noinstance_count 22
+occurence_count  14
+label1           F.Cal.ant.-Sc.Cal._left
+label2           S.O.p._left
+model_file       edges/edgF.Cal.ant.-Sc.Cal._left-S.O.p._left.mod
+*END
+
+*BEGIN UEDGE model_edge 20 32
+occurence_count 88
+label1          F.Cal.ant.-Sc.Cal._left
+label2          S.Li._left
+model_file      edges/edgF.Cal.ant.-Sc.Cal._left-S.Li._left.mod
+*END
+
+*BEGIN UEDGE model_edge 20 58
+noinstance_count 7
+occurence_count  36
+label1           F.Cal.ant.-Sc.Cal._left
+label2           S.s.P._left
+model_file       edges/edgF.Cal.ant.-Sc.Cal._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 20 3
+noinstance_count 1
+occurence_count  99
+label1           F.Cal.ant.-Sc.Cal._left
+label2           F.Coll._left
+model_file       edges/edgF.Cal.ant.-Sc.Cal._left-F.Coll._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 33
+noinstance_count 2
+occurence_count  67
+label1           F.Coll._left
+label2           S.O.T.lat.ant._left
+model_file       edges/edgF.Coll._left-S.O.T.lat.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 50
+noinstance_count 2
+occurence_count  59
+label1           F.Coll._left
+label2           S.Rh._left
+model_file       edges/edgF.Coll._left-S.Rh._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 34
+noinstance_count 6
+occurence_count  76
+label1           F.Coll._left
+label2           S.O.T.lat.post._left
+model_file       edges/edgF.Coll._left-S.O.T.lat.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 53
+noinstance_count 20
+occurence_count  11
+label1           F.Coll._left
+label2           S.T.pol._left
+model_file       edges/edgF.Coll._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 51
+noinstance_count 20
+occurence_count  12
+label1           F.Coll._left
+label2           S.T.i.ant._left
+model_file       edges/edgF.Coll._left-S.T.i.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 32
+occurence_count 154
+label1          F.Coll._left
+label2          S.Li._left
+model_file      edges/edgF.Coll._left-S.Li._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 53
+occurence_count 73
+label1          F.C.L.a._left
+label2          S.T.pol._left
+model_file      edges/edgF.C.L.a._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 2
+noinstance_count 3
+occurence_count  76
+label1           F.C.L.a._left
+label2           F.C.L.r.ant._left
+model_file       edges/edgF.C.L.a._left-F.C.L.r.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 37
+occurence_count 131
+label1          F.C.L.a._left
+label2          S.Or._left
+model_file      edges/edgF.C.L.a._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 54
+noinstance_count 11
+occurence_count  25
+label1           F.C.L.a._left
+label2           S.T.s._left
+model_file       edges/edgF.C.L.a._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 1
+noinstance_count 1
+occurence_count  78
+label1           F.C.L.a._left
+label2           F.C.L.p._left
+model_file       edges/edgF.C.L.a._left-F.C.L.p._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 5
+noinstance_count 4
+occurence_count  52
+label1           F.C.L.a._left
+label2           F.C.L.r.asc._left
+model_file       edges/edgF.C.L.a._left-F.C.L.r.asc._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 50
+noinstance_count 11
+occurence_count  26
+label1           F.C.L.a._left
+label2           S.Rh._left
+model_file       edges/edgF.C.L.a._left-S.Rh._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 36
+noinstance_count 6
+occurence_count  59
+label1           F.C.L.a._left
+label2           S.Olf._left
+model_file       edges/edgF.C.L.a._left-S.Olf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 7
+noinstance_count 5
+occurence_count  91
+label1           F.C.L.p._left
+label2           F.C.L.r.retroC.tr._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.retroC.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 54
+occurence_count 139
+label1          F.C.L.p._left
+label2          S.T.s._left
+model_file      edges/edgF.C.L.p._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 2
+noinstance_count 18
+occurence_count  17
+label1           F.C.L.p._left
+label2           F.C.L.r.ant._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 5
+noinstance_count 2
+occurence_count  74
+label1           F.C.L.p._left
+label2           F.C.L.r.asc._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.asc._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 21
+noinstance_count 7
+occurence_count  76
+label1           F.C.L.p._left
+label2           F.C.L.r.sc.post._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.sc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 23
+noinstance_count 16
+occurence_count  16
+label1           F.C.L.p._left
+label2           F.I.P.Po.C.inf._left
+model_file       edges/edgF.C.L.p._left-F.I.P.Po.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 42
+noinstance_count 4
+occurence_count  52
+label1           F.C.L.p._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgF.C.L.p._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 6
+noinstance_count 11
+occurence_count  52
+label1           F.C.L.p._left
+label2           F.C.L.r.diag._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.diag._left.mod
+*END
+
+*BEGIN UEDGE model_edge 2 37
+noinstance_count 7
+occurence_count  24
+label1           F.C.L.r.ant._left
+label2           S.Or._left
+model_file       edges/edgF.C.L.r.ant._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 2 5
+noinstance_count 6
+occurence_count  47
+label1           F.C.L.r.ant._left
+label2           F.C.L.r.asc._left
+model_file       edges/edgF.C.L.r.ant._left-F.C.L.r.asc._left.mod
+*END
+
+*BEGIN UEDGE model_edge 5 6
+noinstance_count 9
+occurence_count  38
+label1           F.C.L.r.asc._left
+label2           F.C.L.r.diag._left
+model_file       edges/edgF.C.L.r.asc._left-F.C.L.r.diag._left.mod
+*END
+
+*BEGIN UEDGE model_edge 5 42
+noinstance_count 15
+occurence_count  16
+label1           F.C.L.r.asc._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgF.C.L.r.asc._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 6 42
+noinstance_count 7
+occurence_count  34
+label1           F.C.L.r.diag._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgF.C.L.r.diag._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 7 23
+noinstance_count 9
+occurence_count  30
+label1           F.C.L.r.retroC.tr._left
+label2           F.I.P.Po.C.inf._left
+model_file       edges/edgF.C.L.r.retroC.tr._left-F.I.P.Po.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 48
+noinstance_count 2
+occurence_count  62
+label1           F.C.M.ant._left
+label2           S.R.inf._left
+model_file       edges/edgF.C.M.ant._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 24 55
+noinstance_count 6
+occurence_count  47
+label1           F.I.P.r.int.1_left
+label2           S.T.s.ter.asc.ant._left
+model_file       edges/edgF.I.P.r.int.1_left-S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 24 54
+noinstance_count 18
+occurence_count  16
+label1           F.I.P.r.int.1_left
+label2           S.T.s._left
+model_file       edges/edgF.I.P.r.int.1_left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 25 56
+noinstance_count 6
+occurence_count  32
+label1           F.I.P.r.int.2_left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgF.I.P.r.int.2_left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 25 55
+noinstance_count 4
+occurence_count  43
+label1           F.I.P.r.int.2_left
+label2           S.T.s.ter.asc.ant._left
+model_file       edges/edgF.I.P.r.int.2_left-S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 26 27
+noinstance_count 5
+occurence_count  112
+label1           S.F.inter._left
+label2           S.F.marginal._left
+model_file       edges/edgS.F.inter._left-S.F.marginal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 26 30
+noinstance_count 1
+occurence_count  89
+label1           S.F.inter._left
+label2           S.F.polaire.tr._left
+model_file       edges/edgS.F.inter._left-S.F.polaire.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 26 29
+noinstance_count 9
+occurence_count  41
+label1           S.F.inter._left
+label2           S.F.orbitaire._left
+model_file       edges/edgS.F.inter._left-S.F.orbitaire._left.mod
+*END
+
+*BEGIN UEDGE model_edge 26 31
+occurence_count 197
+label1          S.F.inter._left
+label2          S.F.sup._left
+model_file      edges/edgS.F.inter._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 26 43
+noinstance_count 17
+occurence_count  18
+label1           S.F.inter._left
+label2           S.Pe.C.inter._left
+model_file       edges/edgS.F.inter._left-S.Pe.C.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 37
+noinstance_count 2
+occurence_count  71
+label1           S.F.marginal._left
+label2           S.Or._left
+model_file       edges/edgS.F.marginal._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 29
+noinstance_count 3
+occurence_count  50
+label1           S.F.marginal._left
+label2           S.F.orbitaire._left
+model_file       edges/edgS.F.marginal._left-S.F.orbitaire._left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 30
+noinstance_count 1
+occurence_count  67
+label1           S.F.marginal._left
+label2           S.F.polaire.tr._left
+model_file       edges/edgS.F.marginal._left-S.F.polaire.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 28 31
+noinstance_count 7
+occurence_count  80
+label1           S.F.median._left
+label2           S.F.sup._left
+model_file       edges/edgS.F.median._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 29 37
+noinstance_count 3
+occurence_count  55
+label1           S.F.orbitaire._left
+label2           S.Or._left
+model_file       edges/edgS.F.orbitaire._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 30 31
+noinstance_count 2
+occurence_count  73
+label1           S.F.polaire.tr._left
+label2           S.F.sup._left
+model_file       edges/edgS.F.polaire.tr._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 30 37
+noinstance_count 20
+occurence_count  7
+label1           S.F.polaire.tr._left
+label2           S.Or._left
+model_file       edges/edgS.F.polaire.tr._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 30 36
+noinstance_count 21
+occurence_count  7
+label1           S.F.polaire.tr._left
+label2           S.Olf._left
+model_file       edges/edgS.F.polaire.tr._left-S.Olf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 31 44
+noinstance_count 4
+occurence_count  56
+label1           S.F.sup._left
+label2           S.Pe.C.marginal._left
+model_file       edges/edgS.F.sup._left-S.Pe.C.marginal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 31 45
+noinstance_count 8
+occurence_count  38
+label1           S.F.sup._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.F.sup._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 31 46
+noinstance_count 2
+occurence_count  63
+label1           S.F.sup._left
+label2           S.Pe.C.sup._left
+model_file       edges/edgS.F.sup._left-S.Pe.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 33 51
+noinstance_count 2
+occurence_count  77
+label1           S.O.T.lat.ant._left
+label2           S.T.i.ant._left
+model_file       edges/edgS.O.T.lat.ant._left-S.T.i.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 34 52
+noinstance_count 2
+occurence_count  173
+label1           S.O.T.lat.post._left
+label2           S.T.i.post._left
+model_file       edges/edgS.O.T.lat.post._left-S.T.i.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 36 48
+noinstance_count 1
+occurence_count  59
+label1           S.Olf._left
+label2           S.R.inf._left
+model_file       edges/edgS.Olf._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 36 37
+occurence_count 115
+label1          S.Olf._left
+label2          S.Or._left
+model_file      edges/edgS.Olf._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 39 41
+noinstance_count 13
+occurence_count  27
+label1           S.Pa.int._left
+label2           S.Pa.t._left
+model_file       edges/edgS.Pa.int._left-S.Pa.t._left.mod
+*END
+
+*BEGIN UEDGE model_edge 39 58
+noinstance_count 4
+occurence_count  106
+label1           S.Pa.int._left
+label2           S.s.P._left
+model_file       edges/edgS.Pa.int._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 39 40
+noinstance_count 6
+occurence_count  38
+label1           S.Pa.int._left
+label2           S.Pa.sup._left
+model_file       edges/edgS.Pa.int._left-S.Pa.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 40 47
+noinstance_count 3
+occurence_count  48
+label1           S.Pa.sup._left
+label2           S.Po.C.sup._left
+model_file       edges/edgS.Pa.sup._left-S.Po.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 40 58
+noinstance_count 10
+occurence_count  28
+label1           S.Pa.sup._left
+label2           S.s.P._left
+model_file       edges/edgS.Pa.sup._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 42 43
+noinstance_count 4
+occurence_count  91
+label1           S.Pe.C.inf._left
+label2           S.Pe.C.inter._left
+model_file       edges/edgS.Pe.C.inf._left-S.Pe.C.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 43 46
+noinstance_count 1
+occurence_count  77
+label1           S.Pe.C.inter._left
+label2           S.Pe.C.sup._left
+model_file       edges/edgS.Pe.C.inter._left-S.Pe.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 44 45
+noinstance_count 3
+occurence_count  62
+label1           S.Pe.C.marginal._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.Pe.C.marginal._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 44 46
+noinstance_count 4
+occurence_count  56
+label1           S.Pe.C.marginal._left
+label2           S.Pe.C.sup._left
+model_file       edges/edgS.Pe.C.marginal._left-S.Pe.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 45 57
+noinstance_count 7
+occurence_count  19
+label1           S.Pe.C.median._left
+label2           S.p.C._left
+model_file       edges/edgS.Pe.C.median._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 50 53
+noinstance_count 3
+occurence_count  60
+label1           S.Rh._left
+label2           S.T.pol._left
+model_file       edges/edgS.Rh._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 51 52
+noinstance_count 1
+occurence_count  60
+label1           S.T.i.ant._left
+label2           S.T.i.post._left
+model_file       edges/edgS.T.i.ant._left-S.T.i.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 51 53
+noinstance_count 2
+occurence_count  73
+label1           S.T.i.ant._left
+label2           S.T.pol._left
+model_file       edges/edgS.T.i.ant._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 51 54
+occurence_count 124
+label1          S.T.i.ant._left
+label2          S.T.s._left
+model_file      edges/edgS.T.i.ant._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 52 54
+noinstance_count 1
+occurence_count  150
+label1           S.T.i.post._left
+label2           S.T.s._left
+model_file       edges/edgS.T.i.post._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 53 54
+occurence_count 63
+label1          S.T.pol._left
+label2          S.T.s._left
+model_file      edges/edgS.T.pol._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 54 56
+noinstance_count 5
+occurence_count  103
+label1           S.T.s._left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgS.T.s._left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 54 55
+noinstance_count 6
+occurence_count  110
+label1           S.T.s._left
+label2           S.T.s.ter.asc.ant._left
+model_file       edges/edgS.T.s._left-S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 55 56
+noinstance_count 10
+occurence_count  50
+label1           S.T.s.ter.asc.ant._left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgS.T.s.ter.asc.ant._left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 9 11
+noinstance_count 9
+occurence_count  28
+label1           F.P.O._left
+label2           OCCIPITAL_left
+model_file       edges/edgF.P.O._left-OCCIPITAL_left.mod
+*END
+
+*BEGIN UEDGE model_edge 9 13
+noinstance_count 4
+occurence_count  56
+label1           F.P.O._left
+label2           F.I.P._left
+model_file       edges/edgF.P.O._left-F.I.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 21
+noinstance_count 13
+occurence_count  37
+label1           INSULA_left
+label2           F.C.L.r.sc.post._left
+model_file       edges/edgINSULA_left-F.C.L.r.sc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 20
+noinstance_count 16
+occurence_count  18
+label1           OCCIPITAL_left
+label2           F.Cal.ant.-Sc.Cal._left
+model_file       edges/edgOCCIPITAL_left-F.Cal.ant.-Sc.Cal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 3
+noinstance_count 7
+occurence_count  74
+label1           OCCIPITAL_left
+label2           F.Coll._left
+model_file       edges/edgOCCIPITAL_left-F.Coll._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 14
+noinstance_count 12
+occurence_count  15
+label1           S.C._left
+label2           S.C.LPC._left
+model_file       edges/edgS.C._left-S.C.LPC._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 7
+noinstance_count 9
+occurence_count  29
+label1           S.C._left
+label2           F.C.L.r.retroC.tr._left
+model_file       edges/edgS.C._left-F.C.L.r.retroC.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 8
+noinstance_count 13
+occurence_count  24
+label1           S.C._left
+label2           F.C.L.r.sc.ant._left
+model_file       edges/edgS.C._left-F.C.L.r.sc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 14 45
+noinstance_count 17
+occurence_count  9
+label1           S.C.LPC._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.C.LPC._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 14 57
+noinstance_count 14
+occurence_count  15
+label1           S.C.LPC._left
+label2           S.p.C._left
+model_file       edges/edgS.C.LPC._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 14 18
+noinstance_count 11
+occurence_count  32
+label1           S.C.LPC._left
+label2           F.C.M.post._left
+model_file       edges/edgS.C.LPC._left-F.C.M.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 18 58
+noinstance_count 2
+occurence_count  85
+label1           F.C.M.post._left
+label2           S.s.P._left
+model_file       edges/edgF.C.M.post._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 53
+noinstance_count 19
+occurence_count  7
+label1           F.C.L.p._left
+label2           S.T.pol._left
+model_file       edges/edgF.C.L.p._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 8
+noinstance_count 9
+occurence_count  58
+label1           F.C.L.p._left
+label2           F.C.L.r.sc.ant._left
+model_file       edges/edgF.C.L.p._left-F.C.L.r.sc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 2 29
+noinstance_count 17
+occurence_count  11
+label1           F.C.L.r.ant._left
+label2           S.F.orbitaire._left
+model_file       edges/edgF.C.L.r.ant._left-S.F.orbitaire._left.mod
+*END
+
+*BEGIN UEDGE model_edge 8 42
+noinstance_count 13
+occurence_count  17
+label1           F.C.L.r.sc.ant._left
+label2           S.Pe.C.inf._left
+model_file       edges/edgF.C.L.r.sc.ant._left-S.Pe.C.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 36
+noinstance_count 12
+occurence_count  22
+label1           F.C.M.ant._left
+label2           S.Olf._left
+model_file       edges/edgF.C.M.ant._left-S.Olf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 31 57
+noinstance_count 21
+occurence_count  5
+label1           S.F.sup._left
+label2           S.p.C._left
+model_file       edges/edgS.F.sup._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 33 34
+noinstance_count 4
+occurence_count  73
+label1           S.O.T.lat.ant._left
+label2           S.O.T.lat.post._left
+model_file       edges/edgS.O.T.lat.ant._left-S.O.T.lat.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 33 53
+noinstance_count 11
+occurence_count  25
+label1           S.O.T.lat.ant._left
+label2           S.T.pol._left
+model_file       edges/edgS.O.T.lat.ant._left-S.T.pol._left.mod
+*END
+
+*BEGIN UEDGE model_edge 33 50
+noinstance_count 9
+occurence_count  33
+label1           S.O.T.lat.ant._left
+label2           S.Rh._left
+model_file       edges/edgS.O.T.lat.ant._left-S.Rh._left.mod
+*END
+
+*BEGIN UEDGE model_edge 40 41
+noinstance_count 13
+occurence_count  21
+label1           S.Pa.sup._left
+label2           S.Pa.t._left
+model_file       edges/edgS.Pa.sup._left-S.Pa.t._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 32
+noinstance_count 7
+occurence_count  52
+label1           OCCIPITAL_left
+label2           S.Li._left
+model_file       edges/edgOCCIPITAL_left-S.Li._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 21
+noinstance_count 21
+occurence_count  5
+label1           S.C._left
+label2           F.C.L.r.sc.post._left
+model_file       edges/edgS.C._left-F.C.L.r.sc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 12 13
+noinstance_count 7
+occurence_count  51
+label1           S.C._left
+label2           F.I.P._left
+model_file       edges/edgS.C._left-F.I.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 37
+noinstance_count 11
+occurence_count  23
+label1           S.F.inf._left
+label2           S.Or._left
+model_file       edges/edgS.F.inf._left-S.Or._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 27
+noinstance_count 19
+occurence_count  17
+label1           S.F.inf._left
+label2           S.F.marginal._left
+model_file       edges/edgS.F.inf._left-S.F.marginal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 6
+noinstance_count 11
+occurence_count  31
+label1           S.F.inf._left
+label2           F.C.L.r.diag._left
+model_file       edges/edgS.F.inf._left-F.C.L.r.diag._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 31
+noinstance_count 22
+occurence_count  5
+label1           S.F.inf._left
+label2           S.F.sup._left
+model_file       edges/edgS.F.inf._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 19 28
+noinstance_count 14
+occurence_count  16
+label1           F.C.M.r.AMS.ant._left
+label2           S.F.median._left
+model_file       edges/edgF.C.M.r.AMS.ant._left-S.F.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 3 52
+noinstance_count 20
+occurence_count  11
+label1           F.Coll._left
+label2           S.T.i.post._left
+model_file       edges/edgF.Coll._left-S.T.i.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 7 21
+noinstance_count 20
+occurence_count  9
+label1           F.C.L.r.retroC.tr._left
+label2           F.C.L.r.sc.post._left
+model_file       edges/edgF.C.L.r.retroC.tr._left-F.C.L.r.sc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 30
+noinstance_count 14
+occurence_count  17
+label1           F.C.M.ant._left
+label2           S.F.polaire.tr._left
+model_file       edges/edgF.C.M.ant._left-S.F.polaire.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 23 24
+noinstance_count 17
+occurence_count  15
+label1           F.I.P.Po.C.inf._left
+label2           F.I.P.r.int.1_left
+model_file       edges/edgF.I.P.Po.C.inf._left-F.I.P.r.int.1_left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 48
+noinstance_count 13
+occurence_count  16
+label1           S.F.marginal._left
+label2           S.R.inf._left
+model_file       edges/edgS.F.marginal._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 28 45
+noinstance_count 18
+occurence_count  10
+label1           S.F.median._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.F.median._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 28 57
+noinstance_count 17
+occurence_count  10
+label1           S.F.median._left
+label2           S.p.C._left
+model_file       edges/edgS.F.median._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 31 43
+noinstance_count 8
+occurence_count  33
+label1           S.F.sup._left
+label2           S.Pe.C.inter._left
+model_file       edges/edgS.F.sup._left-S.Pe.C.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 34 51
+noinstance_count 16
+occurence_count  26
+label1           S.O.T.lat.post._left
+label2           S.T.i.ant._left
+model_file       edges/edgS.O.T.lat.post._left-S.T.i.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 37 48
+noinstance_count 16
+occurence_count  12
+label1           S.Or._left
+label2           S.R.inf._left
+model_file       edges/edgS.Or._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 52 56
+noinstance_count 7
+occurence_count  63
+label1           S.T.i.post._left
+label2           S.T.s.ter.asc.post._left
+model_file       edges/edgS.T.i.post._left-S.T.s.ter.asc.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 26
+noinstance_count 22
+occurence_count  8
+label1           S.F.int._left
+label2           S.F.inter._left
+model_file       edges/edgS.F.int._left-S.F.inter._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 55
+noinstance_count 22
+occurence_count  10
+label1           F.C.L.p._left
+label2           S.T.s.ter.asc.ant._left
+model_file       edges/edgF.C.L.p._left-S.T.s.ter.asc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 34 54
+noinstance_count 22
+occurence_count  8
+label1           S.O.T.lat.post._left
+label2           S.T.s._left
+model_file       edges/edgS.O.T.lat.post._left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 41 58
+noinstance_count 18
+occurence_count  15
+label1           S.Pa.t._left
+label2           S.s.P._left
+model_file       edges/edgS.Pa.t._left-S.s.P._left.mod
+*END
+
+*BEGIN UEDGE model_edge 1 24
+noinstance_count 21
+occurence_count  14
+label1           F.C.L.p._left
+label2           F.I.P.r.int.1_left
+model_file       edges/edgF.C.L.p._left-F.I.P.r.int.1_left.mod
+*END
+
+*BEGIN UEDGE model_edge 5 29
+noinstance_count 21
+occurence_count  6
+label1           F.C.L.r.asc._left
+label2           S.F.orbitaire._left
+model_file       edges/edgF.C.L.r.asc._left-S.F.orbitaire._left.mod
+*END
+
+*BEGIN UEDGE model_edge 30 48
+noinstance_count 12
+occurence_count  27
+label1           S.F.polaire.tr._left
+label2           S.R.inf._left
+model_file       edges/edgS.F.polaire.tr._left-S.R.inf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 33 52
+noinstance_count 17
+occurence_count  16
+label1           S.O.T.lat.ant._left
+label2           S.T.i.post._left
+model_file       edges/edgS.O.T.lat.ant._left-S.T.i.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 28
+noinstance_count 15
+occurence_count  19
+label1           F.C.M.ant._left
+label2           S.F.median._left
+model_file       edges/edgF.C.M.ant._left-S.F.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 31
+noinstance_count 19
+occurence_count  15
+label1           F.C.M.ant._left
+label2           S.F.sup._left
+model_file       edges/edgF.C.M.ant._left-S.F.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 32 34
+noinstance_count 22
+occurence_count  10
+label1           S.Li._left
+label2           S.O.T.lat.post._left
+model_file       edges/edgS.Li._left-S.O.T.lat.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 39 47
+noinstance_count 22
+occurence_count  5
+label1           S.Pa.int._left
+label2           S.Po.C.sup._left
+model_file       edges/edgS.Pa.int._left-S.Po.C.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 50 51
+noinstance_count 20
+occurence_count  6
+label1           S.Rh._left
+label2           S.T.i.ant._left
+model_file       edges/edgS.Rh._left-S.T.i.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 45
+noinstance_count 21
+occurence_count  7
+label1           S.F.int._left
+label2           S.Pe.C.median._left
+model_file       edges/edgS.F.int._left-S.Pe.C.median._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 18
+noinstance_count 21
+occurence_count  7
+label1           S.F.int._left
+label2           F.C.M.post._left
+model_file       edges/edgS.F.int._left-F.C.M.post._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 49
+noinstance_count 21
+occurence_count  6
+label1           S.F.int._left
+label2           S.R.sup._left
+model_file       edges/edgS.F.int._left-S.R.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 22 49
+noinstance_count 20
+occurence_count  19
+label1           F.C.M.ant._left
+label2           S.R.sup._left
+model_file       edges/edgF.C.M.ant._left-S.R.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 28 44
+noinstance_count 22
+occurence_count  4
+label1           S.F.median._left
+label2           S.Pe.C.marginal._left
+model_file       edges/edgS.F.median._left-S.Pe.C.marginal._left.mod
+*END
+
+*BEGIN UEDGE model_edge 44 57
+noinstance_count 20
+occurence_count  9
+label1           S.Pe.C.marginal._left
+label2           S.p.C._left
+model_file       edges/edgS.Pe.C.marginal._left-S.p.C._left.mod
+*END
+
+*BEGIN UEDGE model_edge 13 7
+noinstance_count 21
+occurence_count  6
+label1           F.I.P._left
+label2           F.C.L.r.retroC.tr._left
+model_file       edges/edgF.I.P._left-F.C.L.r.retroC.tr._left.mod
+*END
+
+*BEGIN UEDGE model_edge 16 4
+noinstance_count 19
+occurence_count  8
+label1           S.F.inf._left
+label2           F.C.L.a._left
+model_file       edges/edgS.F.inf._left-F.C.L.a._left.mod
+*END
+
+*BEGIN UEDGE model_edge 25 54
+noinstance_count 22
+occurence_count  4
+label1           F.I.P.r.int.2_left
+label2           S.T.s._left
+model_file       edges/edgF.I.P.r.int.2_left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 49
+noinstance_count 22
+occurence_count  4
+label1           S.F.marginal._left
+label2           S.R.sup._left
+model_file       edges/edgS.F.marginal._left-S.R.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 48 49
+noinstance_count 21
+occurence_count  15
+label1           S.R.inf._left
+label2           S.R.sup._left
+model_file       edges/edgS.R.inf._left-S.R.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 10 8
+noinstance_count 19
+occurence_count  21
+label1           INSULA_left
+label2           F.C.L.r.sc.ant._left
+model_file       edges/edgINSULA_left-F.C.L.r.sc.ant._left.mod
+*END
+
+*BEGIN UEDGE model_edge 27 36
+noinstance_count 18
+occurence_count  9
+label1           S.F.marginal._left
+label2           S.Olf._left
+model_file       edges/edgS.F.marginal._left-S.Olf._left.mod
+*END
+
+*BEGIN UEDGE model_edge 30 49
+noinstance_count 22
+occurence_count  5
+label1           S.F.polaire.tr._left
+label2           S.R.sup._left
+model_file       edges/edgS.F.polaire.tr._left-S.R.sup._left.mod
+*END
+
+*BEGIN UEDGE model_edge 11 54
+noinstance_count 22
+occurence_count  9
+label1           OCCIPITAL_left
+label2           S.T.s._left
+model_file       edges/edgOCCIPITAL_left-S.T.s._left.mod
+*END
+
+*BEGIN UEDGE model_edge 4 6
+noinstance_count 22
+occurence_count  10
+label1           F.C.L.a._left
+label2           F.C.L.r.diag._left
+model_file       edges/edgF.C.L.a._left-F.C.L.r.diag._left.mod
+*END
+
+*BEGIN UEDGE model_edge 17 27
+noinstance_count 22
+occurence_count  5
+label1           S.F.int._left
+label2           S.F.marginal._left
+model_file       edges/edgS.F.int._left-S.F.marginal._left.mod
+*END
+
+*END

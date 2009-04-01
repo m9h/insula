@@ -1,0 +1,175 @@
+# Nomenclature for stereotaxy positioning 11-2005
+
+*BEGIN TREE hierarchy
+graph_syntax RoiArg
+
+  *BEGIN TREE fold_name
+  name brain
+
+    *BEGIN TREE fold_name
+    name REFERENCE
+    color 255 0 0
+
+      *BEGIN TREE fold_name
+      name reference_bar_L
+      *END
+
+      *BEGIN TREE fold_name
+      name reference_bar_R
+      *END
+
+      *BEGIN TREE fold_name
+      name reference_front
+      *END
+    *END
+
+    *BEGIN TREE fold_name
+    name TARGET_1
+    color 0 255 0
+
+      *BEGIN TREE fold_name
+      name target_1_L_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_1_R_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_1_L_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_1_R_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_1_L_IHP
+      *END
+
+      *BEGIN TREE fold_name
+      name target_1_R_IHP
+      *END
+    *END
+
+
+    *BEGIN TREE fold_name
+    name TARGET_2
+    color 0 255 0
+
+      *BEGIN TREE fold_name
+      name target_2_L_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_2_R_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_2_L_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_2_R_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_2_L_IHP
+      *END
+
+      *BEGIN TREE fold_name
+      name target_2_R_IHP
+      *END
+    *END
+
+    *BEGIN TREE fold_name
+    name TARGET_3
+    color 0 255 0
+
+      *BEGIN TREE fold_name
+      name target_3_L_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_3_R_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_3_L_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_3_R_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_3_L_IHP
+      *END
+
+      *BEGIN TREE fold_name
+      name target_3_R_IHP
+      *END
+    *END
+
+    *BEGIN TREE fold_name
+    name TARGET_4
+    color 0 255 0
+
+      *BEGIN TREE fold_name
+      name target_4_L_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_4_R_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_4_L_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_4_R_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_4_L_IHP
+      *END
+
+      *BEGIN TREE fold_name
+      name target_4_R_IHP
+      *END
+    *END
+
+    *BEGIN TREE fold_name
+    name TARGET_5
+    color 0 255 0
+
+      *BEGIN TREE fold_name
+      name target_5_L_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_5_R_TAR
+      *END
+
+      *BEGIN TREE fold_name
+      name target_5_L_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_5_R_CX
+      *END
+
+      *BEGIN TREE fold_name
+      name target_5_L_IHP
+      *END
+
+      *BEGIN TREE fold_name
+      name target_5_R_IHP
+      *END
+    *END
+  *END
+*END
+
+
+

@@ -1,0 +1,6 @@
+attributes = {
+  'model_type' : 'edge', 
+  'inputs' : 35,
+  'submodel' : 'mlp',
+  'descriptor' : 'fold_descriptor5',
+}

@@ -1,0 +1,10 @@
+*BEGIN GRAPH model_graph
+model_finder	gyrus_finder
+
+*BEGIN NODE model_node 1
+model_file	gyrusModel/model.mod
+domain_file	gyrusModel/null.dom
+label		any
+*END
+
+*END

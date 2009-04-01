@@ -1,0 +1,455 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax RoiArg
+
+*BEGIN TREE fold_name
+name brain
+
+  *BEGIN TREE fold_name
+  name SKIN_FAT
+  color 0 127 0
+  roi_label 1
+  *END
+
+
+  *BEGIN TREE fold_name
+  name BONE
+  color 0 127 0
+  roi_label 4
+  *END
+
+  *BEGIN TREE fold_name
+  name carotids
+  color 0 127 0
+  roi_label 25
+  *END
+
+
+  *BEGIN TREE fold_name
+  name BLOOD
+  color 0 127 0
+  roi_label 24
+  *END
+
+
+  *BEGIN TREE fold_name
+  name BRAINBRAIN
+
+    *BEGIN TREE fold_name
+    name cerebrocerebellar_fissure_(ccbf)
+    *END
+
+    *BEGIN TREE fold_name
+    name anterior_cerebellar_incisure_(acbi)
+    *END
+
+    *BEGIN TREE fold_name
+    name superior_pontine_sulcus_(sps)
+    *END
+
+    *BEGIN TREE fold_name
+    name choroidal_fissure_(chf)
+    *END
+
+    *BEGIN TREE fold_name
+    name interpeduncular_cistern_(icis)
+    *END
+
+    *BEGIN TREE fold_name
+    name superior_cistern_(scis)
+    *END
+    
+    *BEGIN TREE fold_name
+    name lcr
+    color 0 127 0
+    roi_label 8
+    *END
+
+    *BEGIN TREE fold_name
+    name FOREBRAIN_(FB)
+
+        *BEGIN TREE fold_name
+        name chiasmatic_cistern_(ccis)
+        *END
+
+	*BEGIN TREE fold_name
+        name TELENCEPHALON_(Tel)
+
+	    *BEGIN TREE fold_name
+            name SEPTUM_(Spt)		
+	    *END
+	    
+	    *BEGIN TREE fold_name
+            name FORNIX_(fx)		
+	    *END
+	   
+            *BEGIN TREE fold_name
+            name LEFT_TELENCEPHALON_(LTel)
+	    
+	    	*BEGIN TREE fold_name
+            	name Left_posterior_parolfactory_sulcus_(Lppos)
+            	*END
+
+            	*BEGIN TREE fold_name
+           	name LEFT_CEREBRAL_CORTEX_(LCx)
+            	color 0 127 0
+            	roi_label 22
+            	*END
+	     
+	    	*BEGIN TREE fold_name
+            	name LEFT_CEREBRAL_WHITE_MATTER_(Lcw)
+            	color 0 127 0
+            	roi_label 23
+            	*END
+	     
+            	*BEGIN TREE fold_name
+            	name LEFT_LATERAL_VENTRICLE_(LLV)
+            	*END
+	     
+            	*BEGIN TREE fold_name
+            	name LEFT_BASAL_GANGLIA_(LBG)
+
+                    *BEGIN TREE fold_name
+                    name LEFT_STRIATUM_(LStr)
+   
+                    	*BEGIN TREE fold_name
+                    	name Left_caudate-nucleus(LCd)
+		    	color 0 127 0
+		    	roi_label 145
+			
+                    		*BEGIN TREE fold_name
+				name Left_caudate-nucleus_head(LCdh)
+				*END
+				
+				*BEGIN TREE fold_name
+				name Left_caudate-nucleus_tail(LCdt)
+				*END
+					
+			*END
+			
+			                              
+                    	*BEGIN TREE fold_name
+                    	name Left_putamen-nucleus(LPu)
+		    	color 0 127 0
+	            	roi_label 175
+                    	*END
+			    
+		    	*BEGIN TREE fold_name
+		    	name Left_ventral-striatum(LVs)
+		    	color 0 127 0
+		    	roi_label 180
+		    	*END
+			    
+		    *END
+		                  
+
+                    *BEGIN TREE fold_name
+                    name LEFT_GLOBUS_PALLIDUS_(LGP) 
+
+                    	*BEGIN TREE fold_name
+                    	name Left_lateral_globus_pallidus_(LLGP)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                   	 name Left_medial_globus_pallidus_(LMGP)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                   	name Left_lateral_medullary_lamina_(Llml)
+                   	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Left_medial_medullary_lamina_(Lmml)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Left_accessory_medullary_lamina_(Laml)
+                    	*END
+
+                    *END
+
+                    *BEGIN TREE fold_name
+                    name Left_claustrum_(LCl)
+                    *END
+
+                    *BEGIN TREE fold_name
+                    name Left_external_capsule_(Lexc)
+                    *END
+
+                    *BEGIN TREE fold_name
+                    name Left_extreme_capsule_(Lemc)
+                    *END
+		
+		
+	        *END
+	    
+	    *END
+		
+
+	    *BEGIN TREE fold_name
+	    name RIGHT_TELENCEPHALON_(RTel)
+	           
+		*BEGIN TREE fold_name
+		name Right_posterior_parolfactory_sulcus_(Rppos)
+		*END
+
+		*BEGIN TREE fold_name
+		name Right_CEREBRAL_CORTEX_(RCx)
+		color 0 127 0
+		roi_label 22
+		*END
+	     
+		*BEGIN TREE fold_name
+		name RIGHT_CEREBRAL_WHITE_MATTER_(Rcw)
+		color 0 127 0
+		roi_label 23
+		*END
+	     
+		*BEGIN TREE fold_name
+		name RIGHT_LATERAL_VENTRICLE_(RLV)
+		*END
+	     
+		*BEGIN TREE fold_name
+		name RIGHT_BASAL_GANGLIA_(RBG)
+
+		    *BEGIN TREE fold_name
+		    name RIGHT_STRIATUM_(RStr)
+   
+			*BEGIN TREE fold_name
+			name Right_caudate-nucleus(RCd)
+			color 0 127 0
+			roi_label 145
+			
+				*BEGIN TREE fold_name
+				name Right_caudate-nucleus_head(RCdh)
+				*END
+				
+				*BEGIN TREE fold_name
+				name Right_caudate-nucleus_tail(RCdt)
+				*END
+				
+			*END
+			                              
+			*BEGIN TREE fold_name
+			name Right_putamen-nucleus(RPu)
+			color 0 127 0
+			roi_label 175
+			*END
+			    
+			*BEGIN TREE fold_name
+			name Right_ventral-striatum(RVs)
+			color 0 127 0
+			roi_label 181
+			*END
+			
+			    
+		    *END
+		                  
+
+		    *BEGIN TREE fold_name
+		    name RIGHT_GLOBUS_PALLIDUS_(RGP) 
+
+			*BEGIN TREE fold_name
+			name Right_lateral_globus_pallidus_(RLGP)
+			*END
+
+			*BEGIN TREE fold_name
+			name Right_medial_globus_pallidus_(RMGP)
+			*END
+
+			*BEGIN TREE fold_name
+			name Right_lateral_medullary_lamina_(Rlml)
+			*END
+
+			*BEGIN TREE fold_name
+			name Right_medial_medullary_lamina_(Rmml)
+			*END
+
+			*BEGIN TREE fold_name
+			name Right_accessory_medullary_lamina_(Raml)
+			*END
+
+		    *END
+
+		    *BEGIN TREE fold_name
+		    name Right_claustrum_(RCl)
+		    *END
+
+		    *BEGIN TREE fold_name
+		    name Right_external_capsule_(Rexc)
+		    *END
+
+		    *BEGIN TREE fold_name
+		    name Right_extreme_capsule_(Remc)
+		    *END
+		
+			
+		*END
+	    
+	    *END
+    
+	*END	  	                    
+  		  
+	*BEGIN TREE fold_name
+	name DIENCEPHALON_(DiE)
+	
+	    *BEGIN TREE fold_name
+	    name THIRDVENTRICULE_(3V)		
+	    *END
+	    
+	    *BEGIN TREE fold_name
+             name THALAMUS_(Th)
+	    
+	        *BEGIN TREE fold_name
+                name interthalamic_adhesion_(itha)	
+                *END
+		
+	    *END
+	   	
+	    *BEGIN TREE fold_name
+	    name LEFT_DIENCEPHALON_(LDiE)
+	        	     
+	    	*BEGIN TREE fold_name
+            	name LEFT_THALAMUS_(LTh)
+               
+                    *BEGIN TREE fold_name
+                    name LEFT_ANTERIOR_NUCLEAR_GROUPGROUP
+
+                    	*BEGIN TREE fold_name
+                    	name Left_anterodorsal_nucleus_(LAD)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Left_anteromedial_nucleus_(LAM)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Left_anteroventral_nucleus_(LAV)
+                    	*END
+		   
+		    *END
+               
+	    	*END
+	    
+	        *BEGIN TREE fold_name
+	    	name LEFT_HYPOTHALAMUS_(LHy)
+	    	*END
+	    
+	    *END
+		
+	    *BEGIN TREE fold_name
+	    name RIGHT_DIENCEPHALON_(RDiE)   
+		            	    
+	    	*BEGIN TREE fold_name
+            	name RIGHT_THALAMUS_(RTh)
+              
+                    *BEGIN TREE fold_name
+                    name RIGHT_ANTERIOR_NUCLEAR_GROUPGROUP
+
+                    	*BEGIN TREE fold_name
+                    	name Right_anterodorsal_nucleus_(RAD)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Right_anteromedial_nucleus_(RAM)
+                    	*END
+
+                    	*BEGIN TREE fold_name
+                    	name Right_anteroventral_nucleus_(RAV)
+                    	*END
+		   
+		    *END   
+            	*END
+	
+	    	*BEGIN TREE fold_name
+	    	name RIGHT_HYPOTHALAMUS_(RHy)
+	    	*END
+	    
+	    *END
+	    
+	*END
+      		
+	*BEGIN TREE fold_name
+	name MIDBRAIN
+
+	
+	    *BEGIN TREE fold_name
+	    name LEFT_SUBSTANTIA_NIGRA(LSN)
+	    
+	  	*BEGIN TREE fold_name
+		name Left_red_nucleus_(LRn)
+		
+	    	    *BEGIN TREE fold_name
+		    name Left_sub_thalamic_nucleus(Lstn)
+		    *END
+		    
+		*END
+		
+	    *END
+	    
+	    *BEGIN TREE fold_name
+	    name RIGHT_SUBSTANTIA_NIGRA(RSN)
+	    
+	  	*BEGIN TREE fold_name
+		name Right_red_nucleus_(RRn)
+		
+	    	    *BEGIN TREE fold_name
+		    name Right_sub_thalamic_nucleus(Rstn)
+		    *END
+		    
+		*END
+		
+	    *END
+	    
+	*END
+	    	  	
+        
+	
+	*BEGIN TREE fold_name
+	name HINDBRAIN
+	
+	    *BEGIN TREE fold_name
+	    name METENCEPHALON_(MET)
+	  
+            	*BEGIN TREE fold_name
+            	name PONS_(Pons)
+            	*END
+
+            	*BEGIN TREE fold_name
+            	name LEFT_CEREBELLUM_(LCb)
+	  
+                    *BEGIN TREE fold_name
+                    name Left_Cerebellar_Cortex_(LCC)
+                    *END
+		    		                                        
+                    *BEGIN TREE fold_name
+                    name Left_Cerebellar_White_Matter_(LCWh)
+                    *END
+		    
+		*END
+		
+		*BEGIN TREE fold_name
+            	name RIGHT_CEREBELLUM_(RCb)
+		
+		    *BEGIN TREE fold_name
+                    name Right_Cerebellar_Cortex_(RCC)
+                    *END
+		    
+		    *BEGIN TREE fold_name
+                    name Right_Cerebellar_White_Matter_(RCWh)
+                    *END
+		    
+		*END
+		    
+	    *END   
+	   
+	*END
+	  
+    *END 
+	
+  *END 
+  
+ *END
+ 
+*END

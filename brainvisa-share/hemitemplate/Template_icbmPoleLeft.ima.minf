@@ -1,0 +1,23 @@
+attributes = {
+    'data_type' : 'S16',
+    'file_type' : 'GIS',
+    'material' : {
+        'ambient' : [ 0.1, 0.1, 0.1, 1 ],
+        'diffuse' : [ 0.8, 0.8, 0.8, 1 ],
+        'emission' : [ 0, 0, 0, 1 ],
+        'shininess' : 20,
+        'specular' : [ 0.2, 0.2, 0.2, 1 ]
+      },
+    'object_type' : 'Volume',
+    'referential' : '2a3490d9-36f7-3f2f-2fc5-d3abf07a608d',
+    'texture_properties' : [ {
+            'filtering' : 'nearest',
+            'generation' : 'none',
+            'interpolation' : 'palette',
+            'mode' : 'decal',
+            'rate' : 1
+          } ],
+    'uuid' : '2ab0291f-e2fe-7d1c-7cbf-b3061b4721ef',
+    'volume_dimension' : [ 181, 217, 181, 1 ],
+    'voxel_size' : [ 1, 1, 1, 1 ]
+  }

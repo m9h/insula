@@ -1,0 +1,19 @@
+#-----------------------------------------------------------------------------
+class SharedComponent( GenericMakerComponent ):
+  _name = 'shared'
+
+
+  def build( self, instances ):
+    prefix = self.buildDir()
+    src = self._data[ 'sources' ]
+    dst = os.path.join( prefix, 'share', 'shfj-' + self.version() )
+    if not os.path.isdir( dst ):
+      os.makedirs( dst )
+    copyDirectory( src, dst, symlinks=True,
+                   copyAsSymlinks = self.getOption( 'symlinks', False ),
+                   copyCallback = self.createCopiedFilesList,
+                   exclude = FileNameFilter( '*~', '*%', '*.bak', '*.bcg' ) )
+
+  def _libraries( self ):
+    return []
+

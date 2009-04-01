@@ -1,0 +1,227 @@
+#	nouveaux graphes, nouvelle syntaxe (version 2.1)
+
+*BEGIN SYNTAX CorticalFoldArg
+CorticalFoldArg_VERSION	string
+Talairach_rotation	float_vector
+Talairach_translation	float_vector
+Talairach_scale		float_vector
+voxel_size		float_vector	!
+filename_base		string
+
+type.tri                string
+type.global.tri		string
+fold.tri                string
+type.bck                string
+type.global.bck		string
+fold.bck                string
+Tmtktri.tri		string
+Tmtktri.global.tri	string
+Tmtktri_filename	int_vector
+Tmtktri_label		int_vector
+ss.global.bck		string
+ss.bck			string
+ss_filename		int_vector
+ss_label		int_vector
+bottom.global.bck	string
+bottom.bck		string
+bottom_filename		int_vector
+bottom_label		int_vector
+junction.bck            string
+junction.global.bck	string
+plidepassage.bck	string
+plidepassage.global.bck	string
+hull_junction.bck       string
+hull_junction.global.bck	string
+cortical.bck            string
+cortical.global.bck	string
+other_filename		int_vector
+other_index		int_vector
+oldtri_filename		int_vector
+oldtri_label		int_vector
+plidepassage_filename	int_vector
+plidepassage_label	int_vector
+
+Tal_boundingbox_max	float_vector	!
+Tal_boundingbox_min	float_vector	!
+boundingbox_max		int_vector
+boundingbox_min		int_vector
+interhemi_point		int_vector
+anterior_commissure	int_vector
+posterior_commissure	int_vector
+flipped_hemispheres	int
+*END
+
+#	anciens graphes (version 2.0 / 1.0)
+
+*BEGIN SYNTAX graphe_sillon
+Talairach_rotation	float_vector	!
+Talairach_translation	float_vector	!
+Talairach_scale		float_vector	!
+voxel_size		float_vector	!
+filename_base		string		!
+
+type.tri                string
+fold.tri                string
+type.bck                string
+fold.bck                string
+junction.bck            string
+hull_junction.bck       string
+cortical.bck            string
+plidepassage.bck	string
+ss_filename		int_vector
+bottom_filename		int_vector
+other_filename		int_vector
+oldtri_filename		int_vector
+Tmtktri_filename	int_vector
+plidepassage_filename	int_vector
+
+Tal_boundingbox_max	float_vector	!
+Tal_boundingbox_min	float_vector	!
+boundingbox_max		int_vector
+boundingbox_min		int_vector
+interhemi_point		int_vector
+anterior_commissure	int_vector
+posterior_commissure	int_vector
+*END
+
+#Attributs syntaxiques des noeuds
+
+*BEGIN SYNTAX hull 
+point_number		int
+size			float
+refsize			float
+index			int
+
+name			string		!
+skeleton_label		int
+gravity_center		float_vector
+depth			float
+ss_point_number		int
+bottom_point_number	int
+ss_filename		string
+ss_index		int
+bottom_filename		string
+bottom_index		int
+label			string
+
+normal			float_vector
+oldtri_filename		string
+oldtri_index		int
+*END
+
+
+*BEGIN SYNTAX fold 
+point_number		int		!
+size			float		!
+refsize			float
+name			string		!
+label			string
+skeleton_label		int		!
+gravity_center		float_vector	!
+depth			float
+mindepth		float
+maxdepth		float
+mean_depth		float
+refmean_depth		float
+refmindepth		float
+refmaxdepth		float
+ss_point_number		int		!
+bottom_point_number	int		!
+ss_filename		string
+ss_label		int
+bottom_filename		string
+bottom_label		int
+other_filename		string
+other_label		int
+other_point_number	int
+Tmtktri_filename	string
+Tmtktri_label		int
+oldtri_filename		string
+oldtri_label		int
+
+Tal_boundingbox_max	float_vector	!
+Tal_boundingbox_min	float_vector	!
+boundingbox_max		int_vector
+boundingbox_min		int_vector
+index			int
+refgravity_center	float_vector	!
+refnormal		float_vector
+normal			float_vector
+rootsbassin		int
+surface_area		float
+refsurface_area		float
+talcovar                float_vector	!
+*END
+
+
+
+#Attributs syntaxiques des relations
+
+*BEGIN SYNTAX hull_junction
+point_number		int		!
+size			float		!
+refsize			float
+junction_filename	string
+junction_label		int
+direction		float_vector
+extremity1		int_vector
+extremity2		int_vector
+refdirection		float_vector
+refextremity1		float_vector	!
+refextremity2		float_vector	!
+junction_filename	string
+junction_label		int
+junction_mesh_filename	string
+junction_mesh_label	int
+length			float
+reflength		float
+*END
+
+*BEGIN SYNTAX junction
+point_number		int		!
+size			float		!
+refsize			float
+junction_filename	string
+junction_label		int
+direction		float_vector
+extremity1		int_vector
+extremity2		int_vector
+refdirection		float_vector
+refextremity1		float_vector	!
+refextremity2		float_vector	!
+maxdepth		float		!
+mindepth		float		!
+refmindepth		float
+refmaxdepth		float
+length			float
+reflength		float
+*END
+
+*BEGIN SYNTAX cortical
+point_number		int		!
+size			float		!
+refsize			float
+cortical_filename	string
+cortical_label		int
+SS1nearest		int_vector
+SS2nearest		int_vector
+refSS1nearest		float_vector	!
+refSS2nearest		float_vector	!
+dist			float		!
+refdist			float
+length			float
+reflength		float
+*END
+
+*BEGIN SYNTAX plidepassage
+point_number		int		!
+size			float		!
+refsize			float
+location		int_vector	!
+reflocation		float_vector
+depth			float		!
+refdepth		float
+plidepassage_filename	string
+plidepassage_label	int
+*END
+

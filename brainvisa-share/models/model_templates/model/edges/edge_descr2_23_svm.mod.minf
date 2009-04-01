@@ -1,0 +1,6 @@
+attributes = {
+  'model_type' : 'edge', 
+  'inputs' : 23,
+  'submodel' : 'svm',
+  'descriptor' : 'fold_descriptor2',
+}

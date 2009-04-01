@@ -1,0 +1,638 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax RoiArg
+
+*BEGIN TREE fold_name
+name brain_mask
+
+*BEGIN TREE fold_name
+name label_255
+color 100 255 255
+roi_label 255
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name voronoi
+
+*BEGIN TREE fold_name
+name label_1
+color 0 255 255
+roi_label 1
+*END
+
+*BEGIN TREE fold_name
+name label_2
+color 0 255 0
+roi_label 2
+*END
+
+*BEGIN TREE fold_name
+name label_3
+color 0 0 255
+roi_label 3
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name grey-white_classification
+
+*BEGIN TREE fold_name
+name label_100
+color 0 150 255
+roi_label 100
+*END
+
+*BEGIN TREE fold_name
+name label_200
+color 0 255 150
+roi_label 200
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name sulci
+
+*BEGIN TREE fold_name
+name label_4
+color 200 150 255
+roi_label 4
+*END
+
+*BEGIN TREE fold_name
+name label_5
+color 200 255 150
+roi_label 5
+*END
+
+*BEGIN TREE fold_name
+name label_6
+color 255 255 0
+roi_label 6
+*END
+
+*BEGIN TREE fold_name
+name label_7
+color 255 0 255
+roi_label 7
+*END
+
+*BEGIN TREE fold_name
+name label_8
+color 0 200 155
+roi_label 8
+*END
+
+*BEGIN TREE fold_name
+name label_9
+color 200 200 255
+roi_label 9
+*END
+
+*BEGIN TREE fold_name
+name label_10
+color 180 250 55
+roi_label 10
+*END
+
+*BEGIN TREE fold_name
+name label_11
+color 0 255 255
+roi_label 11
+*END
+
+*BEGIN TREE fold_name
+name label_12
+color 0 255 0
+roi_label 12
+*END
+
+*BEGIN TREE fold_name
+name label_13
+color 0 0 255
+roi_label 13
+*END
+
+*BEGIN TREE fold_name
+name label_14
+color 200 150 255
+roi_label 14
+*END
+
+*BEGIN TREE fold_name
+name label_15
+color 200 255 150
+roi_label 15
+*END
+
+*BEGIN TREE fold_name
+name label_16
+color 255 255 0
+roi_label 16
+*END
+
+*BEGIN TREE fold_name
+name label_17
+color 255 0 255
+roi_label 17
+*END
+
+*BEGIN TREE fold_name
+name label_18
+color 0 200 155
+roi_label 18
+*END
+
+*BEGIN TREE fold_name
+name label_19
+color 200 200 255
+roi_label 19
+*END
+
+*BEGIN TREE fold_name
+name label_20
+color 180 250 55
+roi_label 20
+*END
+
+*BEGIN TREE fold_name
+name label_21
+color 0 255 255
+roi_label 21
+*END
+
+*BEGIN TREE fold_name
+name label_22
+color 0 255 0
+roi_label 22
+*END
+
+*BEGIN TREE fold_name
+name label_23
+color 0 0 255
+roi_label 23
+*END
+
+*BEGIN TREE fold_name
+name label_24
+color 200 150 255
+roi_label 24
+*END
+
+*BEGIN TREE fold_name
+name label_25
+color 200 255 150
+roi_label 25
+*END
+
+*BEGIN TREE fold_name
+name label_26
+color 255 255 0
+roi_label 26
+*END
+
+*BEGIN TREE fold_name
+name label_27
+color 255 0 255
+roi_label 27
+*END
+
+*BEGIN TREE fold_name
+name label_28
+color 0 200 155
+roi_label 28
+*END
+
+*BEGIN TREE fold_name
+name label_29
+color 200 200 255
+roi_label 29
+*END
+
+*BEGIN TREE fold_name
+name label_30
+color 180 250 55
+roi_label 30
+*END
+
+*BEGIN TREE fold_name
+name label_31
+color 0 255 255
+roi_label 31
+*END
+
+*BEGIN TREE fold_name
+name label_32
+color 0 255 0
+roi_label 32
+*END
+
+*BEGIN TREE fold_name
+name label_33
+color 0 0 255
+roi_label 33
+*END
+
+*BEGIN TREE fold_name
+name label_34
+color 200 150 255
+roi_label 34
+*END
+
+*BEGIN TREE fold_name
+name label_35
+color 200 255 150
+roi_label 35
+*END
+
+*BEGIN TREE fold_name
+name label_36
+color 255 255 0
+roi_label 36
+*END
+
+*BEGIN TREE fold_name
+name label_37
+color 255 0 255
+roi_label 37
+*END
+
+*BEGIN TREE fold_name
+name label_38
+color 0 200 155
+roi_label 38
+*END
+
+*BEGIN TREE fold_name
+name label_39
+color 200 200 255
+roi_label 39
+*END
+
+*BEGIN TREE fold_name
+name label_40
+color 180 250 55
+roi_label 40
+*END
+
+*BEGIN TREE fold_name
+name label_41
+color 0 255 255
+roi_label 41
+*END
+
+*BEGIN TREE fold_name
+name label_42
+color 0 255 0
+roi_label 42
+*END
+
+*BEGIN TREE fold_name
+name label_43
+color 0 0 255
+roi_label 43
+*END
+
+*BEGIN TREE fold_name
+name label_44
+color 200 150 255
+roi_label 44
+*END
+
+*BEGIN TREE fold_name
+name label_45
+color 200 255 150
+roi_label 45
+*END
+
+*BEGIN TREE fold_name
+name label_46
+color 255 255 0
+roi_label 46
+*END
+
+*BEGIN TREE fold_name
+name label_47
+color 255 0 255
+roi_label 47
+*END
+
+*BEGIN TREE fold_name
+name label_48
+color 0 200 155
+roi_label 48
+*END
+
+*BEGIN TREE fold_name
+name label_49
+color 200 200 255
+roi_label 49
+*END
+
+*BEGIN TREE fold_name
+name label_50
+color 180 250 55
+roi_label 50
+*END
+
+*BEGIN TREE fold_name
+name label_51
+color 0 255 255
+roi_label 51
+*END
+
+*BEGIN TREE fold_name
+name label_52
+color 0 255 0
+roi_label 52
+*END
+
+*BEGIN TREE fold_name
+name label_53
+color 0 0 255
+roi_label 53
+*END
+
+*BEGIN TREE fold_name
+name label_54
+color 200 150 255
+roi_label 54
+*END
+
+*BEGIN TREE fold_name
+name label_55
+color 200 255 150
+roi_label 55
+*END
+
+*BEGIN TREE fold_name
+name label_56
+color 255 255 0
+roi_label 56
+*END
+
+*BEGIN TREE fold_name
+name label_57
+color 255 0 255
+roi_label 57
+*END
+
+*BEGIN TREE fold_name
+name label_58
+color 0 200 155
+roi_label 58
+*END
+
+*BEGIN TREE fold_name
+name label_59
+color 200 200 255
+roi_label 59
+*END
+
+*BEGIN TREE fold_name
+name label_60
+color 180 250 55
+roi_label 60
+*END
+
+*BEGIN TREE fold_name
+name label_61
+color 0 255 255
+roi_label 61
+*END
+
+*BEGIN TREE fold_name
+name label_62
+color 0 255 0
+roi_label 62
+*END
+
+*BEGIN TREE fold_name
+name label_63
+color 0 0 255
+roi_label 63
+*END
+
+*BEGIN TREE fold_name
+name label_64
+color 200 150 255
+roi_label 64
+*END
+
+*BEGIN TREE fold_name
+name label_65
+color 200 255 150
+roi_label 65
+*END
+
+*BEGIN TREE fold_name
+name label_66
+color 255 255 0
+roi_label 66
+*END
+
+*BEGIN TREE fold_name
+name label_67
+color 255 0 255
+roi_label 67
+*END
+
+*BEGIN TREE fold_name
+name label_68
+color 0 200 155
+roi_label 68
+*END
+
+*BEGIN TREE fold_name
+name label_69
+color 200 200 255
+roi_label 69
+*END
+
+*BEGIN TREE fold_name
+name label_70
+color 180 250 55
+roi_label 70
+*END
+
+*BEGIN TREE fold_name
+name label_71
+color 0 255 255
+roi_label 71
+*END
+
+*BEGIN TREE fold_name
+name label_72
+color 0 255 0
+roi_label 72
+*END
+
+*BEGIN TREE fold_name
+name label_73
+color 0 0 255
+roi_label 73
+*END
+
+*BEGIN TREE fold_name
+name label_74
+color 200 150 255
+roi_label 74
+*END
+
+*BEGIN TREE fold_name
+name label_75
+color 200 255 150
+roi_label 75
+*END
+
+*BEGIN TREE fold_name
+name label_76
+color 255 255 0
+roi_label 76
+*END
+
+*BEGIN TREE fold_name
+name label_77
+color 255 0 255
+roi_label 77
+*END
+
+*BEGIN TREE fold_name
+name label_78
+color 0 200 155
+roi_label 78
+*END
+
+*BEGIN TREE fold_name
+name label_79
+color 200 200 255
+roi_label 79
+*END
+
+*BEGIN TREE fold_name
+name label_80
+color 180 250 55
+roi_label 80
+*END
+
+*BEGIN TREE fold_name
+name label_81
+color 0 255 255
+roi_label 81
+*END
+
+*BEGIN TREE fold_name
+name label_82
+color 0 255 0
+roi_label 82
+*END
+
+*BEGIN TREE fold_name
+name label_83
+color 0 0 255
+roi_label 83
+*END
+
+*BEGIN TREE fold_name
+name label_84
+color 200 150 255
+roi_label 84
+*END
+
+*BEGIN TREE fold_name
+name label_85
+color 200 255 150
+roi_label 85
+*END
+
+*BEGIN TREE fold_name
+name label_86
+color 255 255 0
+roi_label 86
+*END
+
+*BEGIN TREE fold_name
+name label_87
+color 255 0 255
+roi_label 87
+*END
+
+*BEGIN TREE fold_name
+name label_88
+color 0 200 155
+roi_label 88
+*END
+
+*BEGIN TREE fold_name
+name label_89
+color 200 200 255
+roi_label 89
+*END
+
+*BEGIN TREE fold_name
+name label_90
+color 180 250 55
+roi_label 90
+*END
+
+*BEGIN TREE fold_name
+name label_91
+color 0 255 255
+roi_label 91
+*END
+
+*BEGIN TREE fold_name
+name label_92
+color 0 255 0
+roi_label 92
+*END
+
+*BEGIN TREE fold_name
+name label_93
+color 0 0 255
+roi_label 93
+*END
+
+*BEGIN TREE fold_name
+name label_94
+color 200 150 255
+roi_label 94
+*END
+
+*BEGIN TREE fold_name
+name label_95
+color 200 255 150
+roi_label 95
+*END
+
+*BEGIN TREE fold_name
+name label_96
+color 255 255 0
+roi_label 96
+*END
+
+*BEGIN TREE fold_name
+name label_97
+color 255 0 255
+roi_label 97
+*END
+
+*BEGIN TREE fold_name
+name label_98
+color 0 200 155
+roi_label 98
+*END
+
+*BEGIN TREE fold_name
+name label_99
+color 200 200 255
+roi_label 99
+*END
+
+*END
+
+*END 

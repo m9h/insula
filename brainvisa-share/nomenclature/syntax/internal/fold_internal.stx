@@ -1,0 +1,203 @@
+*BEGIN SYNTAX CorticalFoldArg
+#CorticalFoldArg_VERSION	string
+#Talairach_rotation	float_vector	!
+#Talairach_translation	float_vector	!
+#Talairach_scale		float_vector	!
+#voxel_size		float_vector	!
+#filename_base		string		!
+
+#type.tri                string
+#type.global.tri		string
+#fold.tri                string
+#type.bck                string
+#type.global.bck		string
+#fold.bck                string
+#Tmtktri.tri		string
+#Tmtktri.global.tri	string
+#Tmtktri_filename	int_vector
+#Tmtktri_label		int_vector
+#ss.global.bck		string
+#ss.bck			string
+#ss_filename		int_vector
+#ss_label		int_vector
+#bottom.global.bck	string
+#bottom.bck		string
+#bottom_filename		int_vector
+#bottom_label		int_vector
+#junction.bck            string
+#junction.global.bck	string
+#plidepassage.bck	string
+#plidepassage.global.bck	string
+#hull_junction.bck       string
+#hull_junction.global.bck	string
+#cortical.bck            string
+#cortical.global.bck	string
+#other_filename		int_vector
+#other_index		int_vector
+#oldtri_filename		int_vector
+#oldtri_label		int_vector
+#plidepassage_filename	int_vector
+#plidepassage_label	int_vector
+
+#Tal_boundingbox_max	float_vector
+#Tal_boundingbox_min	float_vector
+#boundingbox_max		int_vector
+#boundingbox_min		int_vector
+#interhemi_point		int_vector
+#anterior_commissure	int_vector
+#posterior_commissure	int_vector
+#flipped_hemispheres	int
+
+# internal FGraph attributes
+Talairach_m_rotation	float_matrix
+potential		float
+*END
+
+#Attributs syntaxiques des noeuds
+
+*BEGIN SYNTAX hull 
+#point_number		int
+#size			float
+#index			int
+
+#name			string		!
+#skeleton_label		int
+#gravity_center		float_vector
+#depth			float
+#ss_point_number		int
+#bottom_point_number	int
+#ss_filename		string
+#bottom_filename		string
+#label			string
+
+#normal			float_vector
+#oldtri_filename		string
+#oldtri_index		int
+
+# internal
+aims_ss			aims_bucket_void
+aims_bottom		aims_bucket_void
+possible_labels		string_vector_p
+label			string
+cliques			clique_p_set_p
+*END
+
+*BEGIN SYNTAX fold 
+#point_number		int		!
+#size			float		!
+#name			string		!
+#label			string
+#skeleton_label		int		!
+#gravity_center		float_vector	!
+#depth			float
+#mindepth		float
+#maxdepth		float
+#ss_point_number		int		!
+#bottom_point_number	int		!
+#ss_filename		string
+#ss_label		int
+#bottom_filename		string
+#bottom_label		int
+#other_filename		string
+#other_label		int
+#other_point_number	int
+#Tmtktri_filename	string
+#Tmtktri_label		int
+#oldtri_filename		string
+#oldtri_label		int
+
+#Tal_boundingbox_max	float_vector	!
+#Tal_boundingbox_min	float_vector	!
+#boundingbox_max		int_vector
+#boundingbox_min		int_vector
+#index			int
+#refgravity_center	float_vector	!
+#refnormal		float_vector
+#normal			float_vector
+#rootsbassin		int
+#talcovar                float_vector	!
+
+# internal
+ss_bucket		aims_bucket_void
+bottom_bucket		aims_bucket_void
+possible_labels		string_vector_p
+cliques			clique_p_set_p
+*END
+
+
+
+#Attributs syntaxiques des relations
+#*BEGIN SYNTAX hull_junction
+#point_number		int		!
+#size			float		!
+#junction_filename	string		!
+#junction_label		int
+#direction		float_vector
+#extremity1		int_vector
+#extremity2		int_vector
+#refdirection		float_vector
+#refextremity1		float_vector
+#refextremity2		float_vector
+#*END
+
+#*BEGIN SYNTAX junction
+#point_number		int		!
+#size			float		!
+#junction_filename	string		!
+#junction_label		int
+#direction		float_vector
+#extremity1		int_vector
+#extremity2		int_vector
+#refdirection		float_vector
+#refextremity1		float_vector
+#refextremity2		float_vector
+#maxdepth		float
+#mindepth		float
+#*END
+
+#*BEGIN SYNTAX cortical
+#point_number		int	!
+#size			float	!
+#cortical_filename	string	!
+#cortical_label		int
+#SS1nearest		int_vector
+#SS2nearest		int_vector
+#refSS1nearest		float_vector
+#refSS2nearest		float_vector
+#dist			float
+#*END
+
+#*BEGIN SYNTAX plidepassage
+#point_number		int		!
+#size			float		!
+#location		int_vector	!
+#depth			float		!
+#plidepassage_filename	string
+#plidepassage_label	int
+#*END
+
+
+# Attributs syntaxiques des cliques
+*BEGIN SYNTAX clique
+label			string
+label1			string
+label2			string
+graph			graph_p
+model_type		string
+potential		double
+potential_unweighted	double
+output_factor		double
+connectivity_number	int
+pot_vector		double_vector
+pot_vector_norm		double_vector
+*END
+
+
+*BEGIN SYNTAX fakeRel
+potential		double
+potential_unweighted	double
+model_type		string
+graph			graph_p
+output_factor		double
+*END
+

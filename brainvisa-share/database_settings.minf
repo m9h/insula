@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d>
+  <true name="automatic_update"/>
+  <s name="ontology">shared</s>
+  <false name="activate_history"/>
+</d>
+</minf>

@@ -1,0 +1,19 @@
+attributes = {
+    'syntax_substitutions' : { 'RoiArg' : 'NucleusArg',
+                               'roi' : 'nucleus' },
+    'label_substitutions' : { 145 : 'Lcaudate',
+                              155 : 'Laccumbens',
+                              175 : 'Lputamen',
+                              185 : 'Lpallidum',
+                              195 : 'Lthalamus',
+                              215 : 'Raccumbens',
+                              225 : 'Rcaudate',
+                              235 : 'Rputamen',
+                              245 : 'Rpallidum',
+                              250 : 'Rthalamus',
+                              115 : '3rd_vent',
+                              125 : '4th_vent',
+                              165 : 'Llat_vent',
+                              205 : 'Rlat_vent' }
+  }
+                              

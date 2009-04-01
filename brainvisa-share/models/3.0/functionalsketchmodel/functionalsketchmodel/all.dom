@@ -1,0 +1,8 @@
+*BEGIN TREE domain_box
+xmax  200
+xmin  -200
+ymax  200
+ymin  -200
+zmax  200
+zmin  -200
+*END

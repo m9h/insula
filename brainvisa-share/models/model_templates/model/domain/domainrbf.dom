@@ -1,0 +1,10 @@
+# tree 1.0
+
+*BEGIN TREE domain_rbf
+
+ndata		0
+sigma		10
+threshold	0.5
+learn_threshold	0.6
+
+*END

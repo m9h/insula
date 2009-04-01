@@ -1,0 +1,4 @@
+attributes = {
+  'data_generators' : { 'good' : 1, 'far_bad' : 5, 'bad' : 2, 'near_bad' : 2 }, 
+  'clone_mode' : 'cliqueMemorizer'
+}

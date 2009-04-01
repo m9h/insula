@@ -1,0 +1,8 @@
+*BEGIN TREE 1.0 const_learner
+
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+
+*END

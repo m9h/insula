@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d length="5">
+  <l length="3" name="axes_orientation">
+    <s>right-left</s>
+    <s>anterior-posterior</s>
+    <s>top-bottom</s>
+  </l>
+  <n name="direct_referential">0</n>
+  <n name="dimension_count">3</n>
+  <s name="name">Talairach-MNI template-aims oriented</s>
+  <s name="uuid">f3848046-b581-cae4-ecb9-d80ada0278d5</s>
+</d>
+</minf>

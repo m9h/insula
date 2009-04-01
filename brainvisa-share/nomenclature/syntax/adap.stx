@@ -1,0 +1,396 @@
+#Models
+
+*BEGIN SYNTAX ad_tree
+mix_method		string
+nb_learn_data		int
+*END
+
+*BEGIN SYNTAX ad_leaf
+work			string		!
+eval			string
+workmemo		string
+evalmemo		string
+nb_learn_data		int
+learn_state		int
+nb_learn_data_memo	int
+mean			float_vector
+std			float_vector
+*END
+
+*BEGIN SYNTAX top_adaptive
+void_label		string
+significant_labels	string
+nb_learn_data		int
+weight			float
+*END
+
+*BEGIN SYNTAX null_model
+*END
+
+*BEGIN SYNTAX const_model
+value			float !
+*END
+
+*BEGIN SYNTAX fake_relation
+*END
+
+*BEGIN SYNTAX sulcalsketch_similarity_model
+distance_threshold    float
+distance_slope		    float
+distance_weight       float
+scaledistance_slope		float
+scaledistance_weight  float
+*END
+
+*BEGIN SYNTAX sulcalsketch_datadriven_model
+weight                  float
+*END
+
+*BEGIN SYNTAX functionalsketch_lowerscalebest
+scale_weight float
+*END
+
+*BEGIN SYNTAX functionalsketch_similarity
+similarity_weight float
+*END
+
+*BEGIN SYNTAX functionalsketch_intraprimalsketch
+intraps_weight float
+*END
+
+*BEGIN SYNTAX functionalsketch_datadriven
+datadriven_weight float
+datadriven_value_h float
+datadriven_value_x1 float
+datadriven_value_x2 float
+*END
+
+*BEGIN SYNTAX surfacebasedfunctionalsketch_lowerscalebest
+scale_weight float
+*END
+
+*BEGIN SYNTAX surfacebasedfunctionalsketch_similarity
+similarity_weight float
+similarity_distance float
+*END
+
+*BEGIN SYNTAX surfacebasedfunctionalsketch_intraprimalsketch
+intraps_weight float
+*END
+
+*BEGIN SYNTAX surfacebasedfunctionalsketch_datadriven
+datadriven_weight float
+datadriven_value_h float
+datadriven_value_x1 float
+datadriven_value_x2 float
+*END
+
+*BEGIN SYNTAX arnaud_datadriven_model
+weight                  float
+*END
+
+*BEGIN SYNTAX arnaud_lowerscalebest
+scale_weight float
+*END
+
+*BEGIN SYNTAX arnaud_similarity
+similarity_weight float
+similarity_distance
+*END
+
+*BEGIN SYNTAX arnaud_intraprimalsketch
+intraps_weight float
+*END
+
+*BEGIN SYNTAX arnaud_datadriven
+datadriven_weight float
+datadriven_value_h float
+datadriven_value_x1 float
+datadriven_value_x2 float
+*END
+
+# SubAdaptives
+
+*BEGIN SYNTAX sub_ad_mlp
+name				string		!
+net				string		!
+nstats				int		!
+sigma				float_vector	!
+mean				float_vector	!
+eta				float		!
+min_out				float
+max_out				float
+error_rate			float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+gen_bad_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+global_gen_min_error		float
+misclass_good_rate              float
+misclass_bad_rate               float
+testPeriod			int
+real_class_mode			string
+reliance_weight_method          string
+*END
+
+*BEGIN SYNTAX sub_ad_gauss
+name				string		!
+nstats				int		!
+sigma				float_vector	!
+mean				float_vector	!
+error_rate			float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+gen_bad_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+global_gen_min_error		float
+misclass_good_rate              float
+misclass_bad_rate               float
+
+#ninputs			int		!
+#ngauss				int		!
+gauss_weights			float_vector	!
+gauss_sigma			float_vector	!
+gauss_centers			float_vector	!
+gauss_samesigma			int
+etaW				float		!
+etaC				float
+etaS				float
+default_value			float
+gauss_learn_func		string
+real_class_mode			string
+reliance_weight_method          string
+*END
+
+*BEGIN SYNTAX sub_ad_loggauss
+name				string		!
+nstats				int		!
+sigma				float_vector	!
+mean				float_vector	!
+error_rate			float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+gen_bad_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+global_gen_min_error		float
+misclass_good_rate              float
+misclass_bad_rate               float
+
+#ninputs			int		!
+#ngauss				int		!
+gauss_weights			float_vector	!
+gauss_sigma			float_vector	!
+gauss_centers			float_vector	!
+gauss_samesigma			int
+etaW				float		!
+etaC				float
+etaS				float
+default_value			float
+gauss_learn_func		string
+real_class_mode			string
+reliance_weight_method          string
+*END
+
+
+*BEGIN SYNTAX sub_ad_svm
+name				string		!
+net				string		!
+nstats				int		!
+sigma				float_vector	!
+mean				float_vector	!
+min_out				float
+max_out				float
+error_rate			float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+gen_bad_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+global_gen_min_error		float
+misclass_good_rate              float
+misclass_bad_rate               float
+svm_mode			string
+quality_slope			float
+quality_shifted_bad_output	int
+kernel_type			string
+degree				float
+gamma				float
+coef0				float
+C				float
+nu				float
+epsilon				float
+real_class_mode			string
+reliance_weight_method          string
+*END
+
+
+*BEGIN SYNTAX matrices_list
+__fallback__	float_vector
+*END
+
+*BEGIN SYNTAX sub_ad_mixgauss
+name				string		!
+nstats				int		!
+sigma				float_vector	!
+mean				float_vector	!
+min_out				float
+max_out				float
+error_rate			float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+gen_bad_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+global_gen_min_error		float
+misclass_good_rate              float
+misclass_bad_rate               float
+sqrtdets			float_vector
+*END
+
+
+
+
+# CliqueDescr
+
+*BEGIN SYNTAX fold_descriptor
+nstats_normal		int
+normal			float_vector
+limit_size		float
+*END
+
+*BEGIN SYNTAX fold_descriptor2
+nstats_normal		int
+normal			float_vector
+nstats_E1E2		int
+e1e2			float_vector
+nstats_dir		int
+direction		float_vector
+*END
+
+*BEGIN SYNTAX fold_descriptor3
+nstats_normal		int
+normal			float_vector
+nstats_E1E2		int
+e1e2			float_vector
+nstats_dir		int
+direction		float_vector
+*END
+
+*BEGIN SYNTAX fold_descriptor4
+nstats_normal		int
+normal			float_vector
+nstats_E1E2		int
+e1e2			float_vector
+nstats_dir		int
+direction		float_vector
+*END
+
+*BEGIN SYNTAX fold_descriptor5
+nstats_normal		int
+normal			float_vector
+nstats_E1E2		int
+e1e2			float_vector
+nstats_dir		int
+direction		float_vector
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor2
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor4
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor5
+*END
+
+*BEGIN SYNTAX brain_junction_descriptor
+*END
+
+*BEGIN SYNTAX gyrus_descriptor
+*END
+
+*BEGIN SYNTAX roi_descriptor
+*END
+
+
+
+# Mixers
+*BEGIN SYNTAX mean_mixer
+*END
+
+# Optimizer
+*BEGIN SYNTAX grid_optimizer_parameter
+ranges	int_vector	!
+scale	string		!
+*END
+
+*BEGIN SYNTAX grid_optimizer_parameters
+__fallback__	grid_optimizer_parameter
+*END
+
+*BEGIN SYNTAX grid_optimizer
+parameters	grid_optimizer_parameters	!
+strategy	string				!
+*END
+
+# Dimension reduction
+*BEGIN SYNTAX fake_dimreduction
+*END
+
+*BEGIN SYNTAX ranks_dimreduction
+ranks		int_vector	!
+select		int		!
+*END
+
+*BEGIN SYNTAX matrix_dimreduction
+matrix		float_vector	!
+shape		int_vector	!
+select		int		!
+*END
+

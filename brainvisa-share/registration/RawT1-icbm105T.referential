@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d length="5">
+  <l length="3" name="axes_orientation">
+    <s>right-left</s>
+    <s>anterior-posterior</s>
+    <s>top-bottom</s>
+  </l>
+  <n name="direct_referential">0</n>
+  <n name="dimension_count">3</n>
+  <s name="name">RawT1-icbm105T</s>
+  <s name="uuid">2a3490d9-36f7-3f2f-2fc5-d3abf07a608d</s>
+</d>
+</minf>

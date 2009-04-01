@@ -1,0 +1,413 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax FibersArg
+
+*BEGIN TREE fold_name
+color 256 180 180
+name  unknown
+
+*END
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name Association_fibers
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 1
+name  cingulum_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  cingulum_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 1
+name  cingulum_left_anterior
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  cingulum_right_anterior
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 1
+name  cingulum_left_middle
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  cingulum_right_middle
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 1
+name  cingulum_left_posterior
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  cingulum_right_posterior
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  fornix
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  fornix_left_precommissural
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  fornix_right_precommissural
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  fornix_left_postcommissural
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 2
+name  fornix_right_postcommissural
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 3
+name  superior_occipitofrontal_fasciculus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 4
+name  superior_occipitofrontal_fasciculus_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 5
+name  inferior_occipitofrontal_fasciculus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 6
+name  inferior_occipitofrontal_fasciculus_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 7
+name  uncinate_fasciculus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 8
+name  uncinate_fasciculus_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 9
+name  superior_longitudinal_fasciculus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 10
+name  superior_longitudinal_fasciculus_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 11
+name  inferior_longitudinal_fasciculus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 12
+name  inferior_longitudinal_fasciculus_right
+
+*END
+
+*END
+
+
+*BEGIN TREE fold_name
+name Projection_fibers
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_knob_left
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_posterior_limb_ic_left
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_cerebral_peduncle_left
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_pons_left
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_medulla_oblongata_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 14
+name  corticospinal_tract_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_knob_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_posterior_limb_ic_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_cerebral_peduncle_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_pons_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 13
+name  corticospinal_tract_medulla_oblongata_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 15
+name  corticobulbar_tract_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 16
+name  corticobulbar_tract_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 17
+name  corticopontine_tract_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 18
+name  corticopontine_tract_right
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 19
+name  geniculocalcarine_tract_left
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  geniculocalcarine_tract_right
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name Commissural_fibers
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  anterior_commissure
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  anterior_commissure_left
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  anterior_commissure_right
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum_genu
+
+*END
+
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum_trunk
+
+*END
+
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum_splenium
+
+*END
+
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum_left_tapetum
+
+*END
+
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 20
+name  corpus_callosum_right_tapetum
+
+*END
+
+
+*END
+
+*END
+
+*END

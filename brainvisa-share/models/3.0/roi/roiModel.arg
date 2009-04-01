@@ -1,0 +1,12 @@
+*BEGIN GRAPH model_graph
+model_finder	roi_finder
+default_nomenclature	neuronames.hie
+default_selector	all
+
+*BEGIN NODE model_node 1
+model_file	roiModel/model.mod
+domain_file	roiModel/null.dom
+label		any
+*END
+
+*END

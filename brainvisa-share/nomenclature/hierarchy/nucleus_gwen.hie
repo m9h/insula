@@ -1,0 +1,150 @@
+*BEGIN TREE hierarchy
+graph_syntax RoiArg
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name hemisph_left
+
+*BEGIN TREE fold_name
+color 0 255 0
+label 01
+name  Caude_gauche
+*END
+
+*BEGIN TREE fold_name
+color 255 0 0
+label 02
+name  Striatum_ventral_gauche
+*END
+
+*BEGIN TREE fold_name
+color 0 0 255
+label 03
+name  Putamen_gauche_ant
+*END
+
+*BEGIN TREE fold_name
+color 0 255 255
+label 04
+name  Corps_caude_gauche
+*END
+
+*BEGIN TREE fold_name
+color 255 255 0
+label 05
+name  Pallidum_gauche
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 06
+name  Putamen_gauche_post
+*END
+
+*BEGIN TREE fold_name
+color 0 128 0
+label 07
+name  Greffon_gauche_dorsal
+*END
+
+*BEGIN TREE fold_name
+color 0 0 128
+label 08
+name  Greffon_gauche_medial
+*END
+
+*BEGIN TREE fold_name
+color 128 0 0
+label 09
+name  Greffon_gauche_ventral
+*END
+
+*BEGIN TREE fold_name
+color 128 128 0
+label 10
+name  Thalamus_gauche
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name hemisph_right
+
+*BEGIN TREE fold_name
+color 0 255 0
+label 01
+name  Caude_droit
+*END
+
+*BEGIN TREE fold_name
+color 255 0 0
+label 02
+name  Striatum_ventral_droit
+*END
+
+*BEGIN TREE fold_name
+color 0 0 255
+label 03
+name  Putamen_droit_ant
+*END
+
+*BEGIN TREE fold_name
+color 0 255 255
+label 04
+name  Corps_caude_droit
+*END
+
+*BEGIN TREE fold_name
+color 255 255 0
+label 05
+name  Pallidum_droit
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 06
+name  Putamen_droit_post
+*END
+
+*BEGIN TREE fold_name
+color 0 128 0
+label 07
+name  Greffon_droit_dorsal
+*END
+
+*BEGIN TREE fold_name
+color 0 0 128
+label 08
+name  Greffon_droit_medial
+*END
+
+*BEGIN TREE fold_name
+color 128 0 0
+label 09
+name  Greffon_droit_ventral
+*END
+
+*BEGIN TREE fold_name
+color 128 128 0
+label 10
+name  Thalamus_droit
+*END
+
+*END
+
+
+*BEGIN TREE fold_name
+name central
+
+*BEGIN TREE fold_name
+name v1v2v3
+color 192 192 192
+*END
+
+*END
+
+*END
+
+*END

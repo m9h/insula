@@ -1,0 +1,39 @@
+#!/bin/sh -f
+#
+#	Script pour creer et apprendre le modele
+
+# tout effacer
+../scripts/clearmodel
+
+####### Structure du reseau
+
+# creer les noeuds du modele
+siMakeModel model.arg ~/devel/sigraph/dependencies/config/sillons_modele.def ../base_models/model/adap/vertex_27.mod ../base_models/inertialbox.dom - ../base_models/fakerel.mod
+
+# domaines, enlever les noeuds en trop
+siDomTrain siDom.cfg
+
+# creer les relations du modele
+siMkModelEdges siMkModelEdges.cfg
+
+# remplacer les relations 'hull_junction' par un modele plus approprie
+# (pas besoin maintenant, ces relations n'existent plus)
+# siChangeModels siChangeModels.cfg
+
+
+####### Apprentissage
+
+# apprendre les stats
+siLearn siStats.cfg
+
+# apprendre le modele complet (c'est hyper long)
+siLearn siLearn.cfg
+
+
+####### Reconnaissance
+
+# recuit
+siRelax siRelax.cfg
+
+# verif: comptage d'erreurs
+siError fold.arg ~/devel/sigraph/dependencies/config/sillons_modele.def

@@ -1,0 +1,7 @@
+attributes = {
+  'model_type' : 'vertex', 
+  'inputs' : 27,
+  'submodel' : 'mlp',
+  'descriptor' : 'fold_descriptor3',
+  'info' : 'replace volume (voxel unity) by surface'
+}
