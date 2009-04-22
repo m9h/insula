@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------------------
-class SharedComponent( GenericMakerComponent ):
-  _name = 'shared'
+class BrainvisaShareComponent( GenericMakerComponent ):
+  _name = 'brainvisa-share'
 
 
   def build( self, instances ):
@@ -16,4 +16,8 @@ class SharedComponent( GenericMakerComponent ):
 
   def _libraries( self ):
     return []
+
+  def shareDir( self ):
+    return os.path.join( 'share', 'shfj-' + self.version() )
+
 
