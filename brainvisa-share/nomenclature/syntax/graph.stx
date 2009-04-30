@@ -83,7 +83,7 @@ maximum_position    float_vector
 minimum_position    float_vector
 gravity_center      float_vector
 Talairach(mm)       float_vector
-num_val             float
+custom_num_val             float
 
 # gray level blobs
 blob_saddle_type    string
@@ -210,7 +210,7 @@ label_property                string
 *BEGIN SYNTAX roi
 point_number        int
 size           float
-num_val	       float
+custom_num_val	       float
 index               int
 name           string         !
 Tmtktri_filename        string
@@ -405,21 +405,25 @@ brain_hull_area                    float
 refbrain_hull_area                 float
 folds_area                         float
 reffolds_area                      float
-cortexHemi_filename		   int_vector
-cortexHemi_label		   int_vector
-cortexWhite_filename		   int_vector
-cortexWhite_label		   int_vector
-LCR_filename		   int_vector
-LCR_label			   int_vector
-GM_filename		   int_vector
-GM_label			   int_vector	
-WM_filename		   int_vector
-WM_label			   int_vector
+cortexHemi_filename                int_vector
+cortexHemi_label                   int_vector
+cortexWhite_filename               int_vector
+cortexWhite_label                  int_vector
+LCR_filename                       int_vector
+LCR_label                          int_vector
+GM_filename                        int_vector
+GM_label                           int_vector
+WM_filename                        int_vector
+WM_label                           int_vector
 GM_volume                          float
 LCR_volume                         float
+CSF_volume                         float
 thickness_mean                     float
 thickness_std                      float	
 label_property                     string
+total_sulci_length                 float
+reftotal_sulci_length              float
+custom_num_val                     float
 *END
 
 # graphes ancien format
@@ -516,6 +520,7 @@ GM_volume               float
 white_surface_area      float
 grey_surface_area       float
 LCR_volume              float
+CSF_volume              float
 thickness_mean	        float
 thickness_std           float
 mid_interface_voxels    int
@@ -538,6 +543,7 @@ hull_normal_weight      float
 depth_direction         float_vector
 refdepth_direction      float_vector
 depth_direction_weight  float
+custom_num_val             float
 *END
 
 #Attributs syntaxiques des relations
