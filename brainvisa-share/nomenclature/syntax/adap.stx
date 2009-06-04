@@ -308,6 +308,7 @@ nstats_E1E2		int
 e1e2			float_vector
 nstats_dir		int
 direction		float_vector
+normalized_output       int
 *END
 
 *BEGIN SYNTAX fold_descriptor3
@@ -317,6 +318,7 @@ nstats_E1E2		int
 e1e2			float_vector
 nstats_dir		int
 direction		float_vector
+normalized_output       int
 *END
 
 *BEGIN SYNTAX fold_descriptor4
@@ -326,6 +328,7 @@ nstats_E1E2		int
 e1e2			float_vector
 nstats_dir		int
 direction		float_vector
+normalized_output       int
 *END
 
 *BEGIN SYNTAX fold_descriptor5
@@ -335,6 +338,7 @@ nstats_E1E2		int
 e1e2			float_vector
 nstats_dir		int
 direction		float_vector
+normalized_output       int
 *END
 
 *BEGIN SYNTAX inter_fold_descriptor
