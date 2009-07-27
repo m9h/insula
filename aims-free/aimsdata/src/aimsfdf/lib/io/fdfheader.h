@@ -79,6 +79,10 @@ namespace aims
     virtual std::set<std::string> extensions() const;
 
     void read();
+    void readProcPar( std::string name );
+
+  protected:
+    virtual std::set<std::string> getFiles(std::string filename) const;
 
   private:
     std::string _type;
