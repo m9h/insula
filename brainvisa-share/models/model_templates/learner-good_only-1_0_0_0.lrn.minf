@@ -1,3 +1,1 @@
-attributes = {
-  'data_generators' : { 'good' : 1, 'far_bad' : 0, 'bad' : 0, 'near_bad' : 0 }, 
-}
+attributes = {'uuid': '5bcd1d3f-ba06-31ca-4812-72c937083b98', 'data_generators': {'far_bad': 0, 'bad': 0, 'good': 1, 'near_bad': 0}}

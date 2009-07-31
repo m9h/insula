@@ -1,6 +1,1 @@
-attributes = {
-  'model_type' : 'edge', 
-  'inputs' : 35,
-  'submodel' : 'svm',
-  'descriptor' : 'fold_descriptor5',
-}
+attributes = {'model_type': 'edge', 'inputs': 35, 'uuid': '18bdecb0-688c-0eea-c85a-a4d47cdc5206', 'submodel': 'svm', 'descriptor': 'fold_descriptor5'}

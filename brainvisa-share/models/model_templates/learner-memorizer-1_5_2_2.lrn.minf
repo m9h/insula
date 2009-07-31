@@ -1,4 +1,1 @@
-attributes = {
-  'data_generators' : { 'good' : 1, 'far_bad' : 5, 'bad' : 2, 'near_bad' : 2 }, 
-  'clone_mode' : 'cliqueMemorizer'
-}
+attributes = {'clone_mode': 'cliqueMemorizer', 'data_generators': {'far_bad': 5, 'bad': 2, 'good': 1, 'near_bad': 2}, 'uuid': '4e5837c9-af63-ec31-e5af-d4fdaf41f66e'}

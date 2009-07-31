@@ -1,3 +1,1 @@
-attributes = {
-  'domain_type' : 'inertial_box'
-}
+attributes = {'domain_type': 'inertial_box', 'uuid': '83789986-d82a-cf75-36e4-38dd44d4f246'}

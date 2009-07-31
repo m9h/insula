@@ -1,6 +1,1 @@
-attributes = {
-  'model_type' : 'vertex', 
-  'inputs' : 40,
-  'submodel' : 'mlp',
-  'descriptor' : 'fold_descriptor5',
-}
+attributes = {'model_type': 'vertex', 'inputs': 40, 'uuid': 'ed4e8adb-eb93-f141-b066-ad71e94c8b2b', 'submodel': 'mlp', 'descriptor': 'fold_descriptor5'}
