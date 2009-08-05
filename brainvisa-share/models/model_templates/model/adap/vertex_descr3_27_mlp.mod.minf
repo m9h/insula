@@ -1,7 +1,1 @@
-attributes = {
-  'model_type' : 'vertex', 
-  'inputs' : 27,
-  'submodel' : 'mlp',
-  'descriptor' : 'fold_descriptor3',
-  'info' : 'replace volume (voxel unity) by surface'
-}
+attributes = {'info': 'replace volume (voxel unity) by surface', 'inputs': 27, 'uuid': 'cf0d8f66-2e6c-8aaa-fd89-bc33047514ff', 'descriptor': 'fold_descriptor3', 'model_type': 'vertex', 'submodel': 'mlp'}
