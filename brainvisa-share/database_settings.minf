@@ -1,1 +1,8 @@
-attributes = {u'automatic_update': True, u'activate_history': False, u'ontology': u'shared', 'uuid': 'ccfcf697-3e0e-fa18-e305-5ae4e57218e9'}
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d>
+  <true name="automatic_update"/>
+  <s name="ontology">shared</s>
+  <false name="activate_history"/>
+</d>
+</minf>
