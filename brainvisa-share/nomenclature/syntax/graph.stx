@@ -683,5 +683,46 @@ label       string
 *END
 
 
+##################################
+##### GRAPHES DE BLOBS
 
+*BEGIN SYNTAX BlobsArg
+datagraph_VERSION             string
+datagraph_compatibility_model_VERSION   string
+sujet                         string
+type                          string
+filename_base                 string
+mesh                          string
+texture                       string
+voxel_size                    float_vector   !
+boundingbox_min                    int_vector     !
+boundingbox_max                    int_vector     !
+type.global.bck                    string
+type.bck                 string
+type.global.tri                    string
+type.tri                 string
+blob.global.tri             string
+blob.tri                    string
+blob_filename	         int_vector
+blob_label		 int_vector
+*END
+
+#Attributs syntaxiques des noeuds
+
+*BEGIN SYNTAX blob
+label                    string
+name                     string
+index                    int
+nodes_list		 int_vector
+blob_filename	         string
+blob_label		 int
+*END
+
+#Attributs syntaxiques des relations
+
+*BEGIN SYNTAX b2b
+type               string
+blob_up         int
+blob_down     int
+*END
 
