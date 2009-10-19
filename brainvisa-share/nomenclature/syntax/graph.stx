@@ -713,9 +713,24 @@ blob_label		 int_vector
 label                    string
 name                     string
 index                    int
+node                     int
 nodes_list		 int_vector
 blob_filename	         string
 blob_label		 int
+tmax                     float
+tmin                     float
+trep                     float
+lifeTime                 float
+t                   float
+t2		    float
+tValue              float
+rank                int
+node                int
+nodes_list          int_vector
+gravity_center      float_vector
+boundingbox_min     float_vector
+boundingbox_max     float_vector
+
 *END
 
 #Attributs syntaxiques des relations
