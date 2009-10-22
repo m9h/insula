@@ -259,6 +259,7 @@ label_property                string
 
 *BEGIN SYNTAX ssblob
 label                    string
+label_occur_number       int
 name                     string
 activation               int
 index                    int
