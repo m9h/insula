@@ -712,6 +712,7 @@ blob_label		 int_vector
 
 *BEGIN SYNTAX blob
 label                    string
+label_occur_number       int
 name                     string
 index                    int
 node                     int
