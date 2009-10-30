@@ -267,6 +267,9 @@ tmin                     float
 tmax                     float
 trep                     float
 lifeTime                 float
+significance             float
+t_rankperc             float
+sim_rankperc             float
 maxIntensity        float
 meanIntensity       float
 maxContrast         float
@@ -715,6 +718,7 @@ label                    string
 label_occur_number       int
 name                     string
 index                    int
+significance             float
 node                     int
 nodes_list		 int_vector
 blob_filename	         string
