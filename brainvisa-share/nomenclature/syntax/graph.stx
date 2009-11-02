@@ -743,7 +743,8 @@ boundingbox_max     float_vector
 
 *BEGIN SYNTAX b2b
 type               string
-blob_up         int
-blob_down     int
+blob_first         int
+blob_second        int
+similarity         float
 *END
 
