@@ -693,11 +693,13 @@ label       string
 *BEGIN SYNTAX BlobsArg
 datagraph_VERSION             string
 datagraph_compatibility_model_VERSION   string
-sujet                         string
+sujets                        string_vector
 type                          string
 filename_base                 string
-mesh                          string
-texture                       string
+meshes                        string_vector
+textures                      string_vector
+latitudes                     string_vector
+longitudes                    string_vector
 voxel_size                    float_vector   !
 boundingbox_min                    int_vector     !
 boundingbox_max                    int_vector     !
@@ -713,22 +715,19 @@ blob_label		 int_vector
 
 #Attributs syntaxiques des noeuds
 
-*BEGIN SYNTAX blob
+*BEGIN SYNTAX ssb
 label                    string
 label_occur_number       int
 name                     string
 index                    int
 significance             float
-node                     int
-nodes_list		 int_vector
-blob_filename	         string
-blob_label		 int
+ssb_filename	         string
+ssb_label		 int
 tmax                     float
 tmin                     float
 trep                     float
 lifeTime                 float
 t                   float
-t2		    float
 tValue              float
 rank                int
 node                int
@@ -739,6 +738,21 @@ boundingbox_max     float_vector
 
 *END
 
+*BEGIN SYNTAX glb
+index                    int
+scale                    float
+nodes_list		 int_vector
+glb_filename	         string
+glb_label		 int
+t                   float
+tValue              float
+boundingbox_min     float_vector
+boundingbox_max     float_vector
+
+*END
+
+
+
 #Attributs syntaxiques des relations
 
 *BEGIN SYNTAX b2b
@@ -747,4 +761,11 @@ blob_first         int
 blob_second        int
 similarity         float
 *END
+
+*BEGIN SYNTAX s2g
+type               string
+ssb_index          int
+glb_index          int
+*END
+
 
