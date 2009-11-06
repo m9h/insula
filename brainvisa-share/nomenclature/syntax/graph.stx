@@ -693,13 +693,23 @@ label       string
 *BEGIN SYNTAX BlobsArg
 datagraph_VERSION             string
 datagraph_compatibility_model_VERSION   string
-sujets                        string_vector
+
 type                          string
 filename_base                 string
+
+# IN CASE IT IS A GROUP GRAPH
+sujets                        string_vector
 meshes                        string_vector
 textures                      string_vector
 latitudes                     string_vector
 longitudes                    string_vector
+# IN CASE IT IS A SUBJECT GRAPH
+sujet                         string
+mesh                          string
+texture                       string
+latitude                      string
+longitude                     string
+
 voxel_size                    float_vector   !
 boundingbox_min                    int_vector     !
 boundingbox_max                    int_vector     !
@@ -720,6 +730,7 @@ label                    string
 label_occur_number       int
 name                     string
 index                    int
+subject                  string
 significance             float
 ssb_filename	         string
 ssb_label		 int
@@ -757,15 +768,11 @@ boundingbox_max     float_vector
 
 *BEGIN SYNTAX b2b
 type               string
-blob_first         int
-blob_second        int
 similarity         float
 *END
 
 *BEGIN SYNTAX s2g
 type               string
-ssb_index          int
-glb_index          int
 *END
 
 
