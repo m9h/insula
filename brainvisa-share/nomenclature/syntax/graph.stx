@@ -703,6 +703,7 @@ meshes                        string_vector
 textures                      string_vector
 latitudes                     string_vector
 longitudes                    string_vector
+indiv_graphs                  string_vector
 # IN CASE IT IS A SUBJECT GRAPH
 sujet                         string
 mesh                          string
