@@ -698,12 +698,12 @@ type                          string
 filename_base                 string
 
 # IN CASE IT IS A GROUP GRAPH
-sujets                        string_vector
-meshes                        string_vector
-textures                      string_vector
-latitudes                     string_vector
-longitudes                    string_vector
-indiv_graphs                  string_vector
+sujets                        list
+meshes                        list
+textures                      list
+latitudes                     list
+longitudes                    list
+indiv_graphs                  list
 # IN CASE IT IS A SUBJECT GRAPH
 sujet                         string
 mesh                          string
