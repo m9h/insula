@@ -743,7 +743,7 @@ t                   float
 tValue              float
 rank                int
 node                int
-nodes_list          int_vector
+nodes               int_vector
 gravity_center      float_vector
 boundingbox_min     float_vector
 boundingbox_max     float_vector
@@ -753,7 +753,7 @@ boundingbox_max     float_vector
 *BEGIN SYNTAX glb
 index                    int
 scale                    float
-nodes_list		 int_vector
+nodes    		 int_vector
 glb_filename	         string
 glb_label		 int
 t                   float
