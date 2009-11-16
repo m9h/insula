@@ -718,10 +718,10 @@ type.global.bck                    string
 type.bck                 string
 type.global.tri                    string
 type.tri                 string
-blob.global.tri             string
-blob.tri                    string
-blob_filename	         int_vector
-blob_label		 int_vector
+glb.global.tri             string
+glb.tri                    string
+glb_filename	         int_vector
+glb_label		 int_vector
 *END
 
 #Attributs syntaxiques des noeuds
