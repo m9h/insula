@@ -423,7 +423,7 @@ GM_volume                          float
 LCR_volume                         float
 CSF_volume                         float
 thickness_mean                     float
-thickness_std                      float	
+thickness_std                      float
 label_property                     string
 total_sulci_length                 float
 reftotal_sulci_length              float
@@ -704,12 +704,14 @@ textures                      list
 latitudes                     list
 longitudes                    list
 indiv_graphs                  list
+representation_meshes         list
 # IN CASE IT IS A SUBJECT GRAPH
 sujet                         string
 mesh                          string
 texture                       string
 latitude                      string
 longitude                     string
+representation_mesh           string
 
 voxel_size                    float_vector   !
 boundingbox_min                    int_vector     !
