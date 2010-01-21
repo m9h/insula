@@ -36,7 +36,7 @@ print ')'
 print
 for source, dest, relative in izip( sourceFiles, destinationFiles, relativeFiles ):
   print 'add_custom_command( OUTPUT "' + dest +'"'
-  print '                    COMMAND', cmake, '-E copy_if_different "' + source + '" "' + dest + '" )'
+  print '                    COMMAND "', cmake, '" -E copy_if_different "' + source + '" "' + dest + '" )'
   print 'BRAINVISA_INSTALL( PROGRAMS "' + dest +'"'
   print '                   DESTINATION "'+ os.path.join( destination, os.path.dirname( relative ) ) +'"'
   print '                   COMPONENT ${PROJECT_NAME} )'
