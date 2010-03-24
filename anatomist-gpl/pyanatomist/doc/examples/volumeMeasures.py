@@ -32,22 +32,23 @@
 # The fact that you are presently reading this means that you have had
 # knowledge of the CeCILL license version 2 and that you accept its terms.
 import sys, os, weakref, gc, operator
-import qt
+from PyQt4.QtCore import Qt, QPoint, SIGNAL
+from PyQt4.QtGui import QSplitter, QListWidget, QTextEdit, QApplication
 import anatomist.direct.api as anatomist
 from soma import aims
 
 import matplotlib, numpy
-matplotlib.use('QtAgg')
+matplotlib.use('Qt4Agg')
 import pylab
 
-from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 
 
-class MeasuresWindow( qt.QSplitter ):
-  def __init__( self, fileName, roiIterator=None, parent=None, name=None,
+class MeasuresWindow( QSplitter ):
+  def __init__( self, fileName, roiIterator=None, parent=None,
                 anatomistInstance=None ):
-    qt.QSplitter.__init__( self, qt.Qt.Horizontal, parent, name )
+    QSplitter.__init__( self, Qt.Horizontal, parent )
     if anatomistInstance is None:
       # initialize Anatomist
       self.anatomist = anatomist.Anatomist()
@@ -56,29 +57,26 @@ class MeasuresWindow( qt.QSplitter ):
 
     # open an axial window
     self.aWindow = self.anatomist.createWindow( 'Axial', no_decoration=True )
-    self.aWindow.reparent( self, 0, qt.QPoint(0,0), True )
+    self.aWindow.setParent( self )
 
     if roiIterator is not None:
-      self.roiList = qt.QListBox( self )
+      self.roiList = QListWidget( self )
       self.maskIterators = []
       # Iterate on each region
       while roiIterator.isValid():
-        self.roiList.insertItem( roiIterator.regionName() )
+        self.roiList.addItem( roiIterator.regionName() )
         maskIterator = roiIterator.maskIterator().get()
         maskIterator.bucket = None
         self.maskIterators.append( maskIterator )
         roiIterator.next()
       self.selectedBucket = None
-      self.connect( self.roiList, qt.SIGNAL( 'selected( int )' ), self.regionSelected )
+      self.connect( self.roiList, SIGNAL( 'currentRowChanged( int )' ), self.regionSelected )
     else:
       self.roiList = None
     
-    self.infoSplitter = qt.QSplitter( qt.Qt.Vertical, self )
-    self.info = qt.QTextEdit( self.infoSplitter )
+    self.infoSplitter = QSplitter( Qt.Vertical, self )
+    self.info = QTextEdit( self.infoSplitter )
     self.info.setReadOnly( True )
-    self.info.setSizePolicy( qt.QSizePolicy.Preferred,
-      qt.QSizePolicy.Preferred )
-
 
     self.matplotFigure = Figure()
     self.matplotAxes = self.matplotFigure.add_subplot(111)
@@ -86,8 +84,7 @@ class MeasuresWindow( qt.QSplitter ):
     self.matplotAxes.hold(False)
     
     self.matplotCanvas = FigureCanvas( self.matplotFigure )
-    self.matplotCanvas.reparent( self.infoSplitter, qt.QPoint( 0, 0 ) )
-    self.matplotCanvas.setSizePolicy( qt.QSizePolicy.Expanding, qt.QSizePolicy.Expanding )
+    self.matplotCanvas.setParent( self.infoSplitter )
     self.matplotCanvas.updateGeometry()
       
     self.anatomist.onCursorNotifier.add( self.clicked2 )
@@ -97,9 +94,9 @@ class MeasuresWindow( qt.QSplitter ):
     # Read the image
     dir, base = os.path.split( fileName )
     if dir:
-      self.setCaption( base + ' (' + dir + ')' )
+      self.setWindowTitle( base + ' (' + dir + ')' )
     else:
-      self.setCaption( base )
+      self.setWindowTitle( base )
     # load any volume as a aims.Volume_* object
     r = aims.Reader( {'Volume' : 'AimsData'} )
     self.volume = r.read( fileName )
@@ -112,8 +109,8 @@ class MeasuresWindow( qt.QSplitter ):
 
     self._ignoreClicked = False
     voxelSize = self.volume.header()[ 'voxel_size' ]
-    volumeSize = [int(i) \
-      for i in self.volume.header()[ 'volume_dimension' ]]
+    x = self.volume.header()[ 'volume_dimension' ]
+    volumeSize = [ int(i) for i in x ]
     volumeCenter = [v*s/2 for v,s in zip( volumeSize, voxelSize )]
     self.clicked( volumeCenter )
 
@@ -133,7 +130,8 @@ class MeasuresWindow( qt.QSplitter ):
     voxelSize = self.volume.header()[ 'voxel_size' ]
     posVoxel = [int(round(i/j)) for i,j in zip(posMM,voxelSize)]
     text += '<b>Coordinate voxels:</b> %d, %d, %d, %d' % tuple( posVoxel ) + '<br/>\n'
-    volumeSize = [int(i) for i in self.volume.header()[ 'volume_dimension' ]]
+    tmp = self.volume.header()[ 'volume_dimension' ]
+    volumeSize = [int(i) for i in tmp]
     if not [None for i in posVoxel if i < 0] and  \
        not [None for i,j in zip(posVoxel, volumeSize) if i >= j]:
       text += '<b>Voxel value</b>: ' + str( self.volume.value( *posVoxel ) ) + '<br/>\n' 
@@ -150,10 +148,10 @@ class MeasuresWindow( qt.QSplitter ):
 
 
   def regionSelected( self ):
-    index = self.roiList.currentItem()
+    index = self.roiList.currentRow()
     if index >= 0:
       text = '<html><body>\n'
-      text += '<h2>' + unicode( self.roiList.text( index ) ) + '</h2>\n'
+      text += '<h2>' + unicode( self.roiList.item( index ).text() ) + '</h2>\n'
 
       maskIterator = self.maskIterators[ index ]
       if maskIterator.bucket is None:
@@ -193,7 +191,7 @@ class MeasuresWindow( qt.QSplitter ):
         maskIterator.text = text
         # convert the BucketMap to Anatomist API
         maskIterator.bucket = self.anatomist.toAObject( bucket )
-        maskIterator.bucket.setName( str( self.roiList.text( index ) ) )
+        maskIterator.bucket.setName( str( self.roiList.item( index ).text() ) )
         maskIterator.bucket.setChanged()
         count = valid + invalid
         if count:
@@ -225,7 +223,7 @@ class MeasuresWindow( qt.QSplitter ):
         self.matplotCanvas.draw()
 
 if __name__ == '__main__':
-  qApp = qt.QApplication( sys.argv )
+  qApp = QApplication( sys.argv )
 
   if len( sys.argv ) == 3:
     roiIterator = aims.aims.getRoiIterator( sys.argv[ 2 ] ).get()
@@ -234,6 +232,5 @@ if __name__ == '__main__':
     w = MeasuresWindow( sys.argv[ 1 ] )
   w.show()
 
-  qApp.setMainWidget( w )
   anatomist.Anatomist().getControlWindow().hide()
-  qApp.exec_loop()
+  qApp.exec_()
