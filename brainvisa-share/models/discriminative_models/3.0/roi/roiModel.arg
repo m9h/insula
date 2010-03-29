@@ -4,8 +4,8 @@ default_nomenclature	neuronames.hie
 default_selector	all
 
 *BEGIN NODE model_node 1
-model_file	roiModel/model.mod
-domain_file	roiModel/null.dom
+model_file	roiModel.data/model.mod
+domain_file	roiModel.data/null.dom
 label		any
 *END
 
