@@ -1,0 +1,395 @@
+<xhtml>
+
+<head>
+<title>Recognition and morphometry Models 3.0 (2000-2001)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+
+<h1>Recognition and morphometry Models 3.0 (2000-2001)</h1>
+
+<h2>Short description of the descriptors for sulci:</h2>
+
+<p>
+You get some rather structural descriptors (number of non-connected parts and their relative organization), and also some descriptors which measure things (length, depth, orientation...).</p>
+<p>These versions of the models are the "older" ones but still officially those recommended for sulcal recognition. They are based on what we call "Fold Descriptors 3", which is the version of the descriptors calculation processors. Actually the sulcal recognition use a still older ("Fold Descriptors 2") descriptors system, which is slightly modified and replaced by the "Fold Descriptors 3" for morphometry.
+</p>
+<p><b><i>! :</i></b> None of the measures is currently associated with any thickness (<b>no</b> cortex thickness nor sulcus opening descriptor) because all figures are obtained from sulci segmentation by their skeletonization: segmented data have no thickness (they are systematically 1 voxel thick).</p>
+<p>Cortical thickness and more advanced features are now available in the "Fold Descriptor 4"-based models, which are suitable for morphometry, but not yet for recognition: see the <a href="../../3.1/Lfolds_noroots_fd4_2009/Lfolds-model-fd4.html">folds-models-fd4</a> models for this.
+</p>
+<p>Here is a short description of the features descriptors:
+</p>
+
+
+<h4>Sulci descriptors</h4>
+
+<p>
+Notations and names:
+<ul>
+<li>Extremities of the sulcus: <b><i>E1</i></b>, <b><i>E2</i></b></li>
+<li>"Pure cortical" relation: relation across a gyrus: sulci do not physically connect</li>
+<li>All coordinates are (in principle) in Talairach coordinates (proportional box)</li>
+</ul>
+</p>
+
+<p>
+Descriptors:
+
+<table>
+  <tr>
+    <td><b>index:</b></td>
+    <td><b>name:</b></td>
+    <td><b>description:</b></td>
+  </tr>
+
+
+  <tr>
+    <td>1.</td>
+    <td>valid</td>
+    <td>Global valid flag: 0 if the sulcus is not present, 1 if it is here</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>extremitiesValid</td>
+    <td>Validity of the sulcus extremities (more distant points) (0 or 1))<br/>
+      <b>If this is 0, descriptors 3 to 8 are not valid</b>
+    </td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>extremity1x</td>
+    <td>1st sulcus extremity (<b><i>E1</i></b>). X coordinate</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>extremity1y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>extremity1z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>extremity2x</td>
+    <td>2nd sulcus extremity (<b><i>E2</i></b>). X coord. - <i>E1</i> and <i>E2</i> are interchangeable I think... -&gt; it is not really possible to distinguish them a priori (to be verified!)
+    </td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>extremity2y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>extremity2z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>gravityCenter_x</td>
+    <td>Gravity center of the sulcus. X coord.</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>gravityCenter_y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>11.</td>
+    <td>gravityCenter_z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>12.</td>
+    <td>normalValid</td>
+    <td>Validity of the normal to the sulcus (0 or 1)<br/>
+      <b>If this is 0, descriptors 13 to 15 are not valid</b>
+    </td>
+  </tr>
+  <tr>
+    <td>13.</td>
+    <td>normal_x</td>
+    <td>Mean normal to the sulcus, X coord.</td>
+  </tr>
+  <tr>
+    <td>14.</td>
+    <td>normal_y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>15.</td>
+    <td>normal_z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>16.</td>
+    <td>direction_x</td>
+    <td>Mean direction of the sulcus, X coord.</td>
+  </tr>
+  <tr>
+    <td>17.</td>
+    <td>direction_y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>18.</td>
+    <td>direction_z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>19.</td>
+    <td>volume</td>
+    <td>"Size" of the sulcus (volume in mm3 of the skeleton) = <i># of voxels</i> * <i>voxel volume</i>
+    </td>
+  </tr>
+  <tr>
+    <td>20.</td>
+    <td>geodesicDepthMax</td>
+    <td>Max. geodesic depth of the sulcus from the external hull</td>
+  </tr>
+  <tr>
+    <td>21.</td>
+    <td>geodesicDepthMin</td>
+    <td>Min. geodesic depth of the sulcus -&gt; 0 for those touching the brain hull (most of them!), not null in the insula...<br/>
+      <b>*** The real depth of the sulcus is <i>Max. depth</i> - <i>min. depth</i> !! ***</b>
+    </td>
+  </tr>
+  <tr>
+    <td>22.</td>
+    <td>connectedComponentsAllRels</td>
+    <td>Number of connected components (of unconnected parts) in the sulcus, <b>*** <i>according to every kind of intra-sulcus relations !!</i> ***</b><br/>
+      <b>THIS PARAMETER IS CONFUSING....</b> there are relations across gyri
+    </td>
+  </tr>
+  <tr>
+    <td>23.</td>
+    <td>connectedComponents</td>
+    <td>Num. of connected components if intra-sulcus "pure cortical" relations (relations across gyri) are not taken into account<br/>
+      -&gt; <b>It is <i>THIS</i> parameter that corresponds to the "usual" idea of unconnected sulcus parts</b>
+    </td>
+  </tr>
+  <tr>
+    <td>24.</td>
+    <td>pureCortical</td>
+    <td>Num. of pure cortical relations linking different connected componentsof the sulcus
+    </td>
+  </tr>
+  <tr>
+    <td>25.</td>
+    <td>distanceBetweenComponentsMax</td>
+    <td>Max. distance between connected components of the sulcus</td>
+  </tr>
+  <tr>
+    <td>26.</td>
+    <td>plisDePassage</td>
+    <td>Num. of "plis de passage" inside the sulcus (notable variations of depth or curvature in the bottom of the sulcus), <b>not really reliable</b> because the detection of "plis de passage" is not perfect at all
+    </td>
+  </tr>
+  <tr>
+    <td>27.</td>
+    <td>hullJunctionsSize</td>
+    <td>Size of junctions between the sulcus and the brain hull<br/>
+      -&gt; roughly shows the length of the sulcus
+    </td>
+  </tr>
+  <tr>
+    <td>28.</td>
+    <td>surface</td>
+    <td>Sulcus surface area. This parameter completes the volume measurement and is not subject to voxel size differences.
+      However this parameter <b>is only available on "recent" sulci graphs</b>, because older ones do not have this parameter.
+      It is possible to add the missing parameter on an old graph using the <a href="GraphComplete.html">GraphComplete</a> process.
+    </td>
+  </tr>
+  <tr>
+    <td>29.</td>
+    <td>fold_descriptor3_output</td>
+    <td><b>[trained models only]</b> opinion of the expert of the region<br/>
+      <i>negative value</i> -&gt; good<br/>
+      <i>positive value</i> -&gt; bad<br/>
+      *** for untrained models, experts answer at random
+    </td>
+  </tr>
+
+</table>
+
+</p>
+
+
+<h4>Sulcal relations descriptors</h4>
+
+<p>
+<table>
+</table>
+</p>
+
+<p>
+Notations and names:
+<ul>
+<li><b><i>S1</i></b>: first of the two sulci linked by this relation</li>
+<li><b><i>S2</i></b>: other sulcus</li>
+<li>The sulci ordering is given by the relation name:<br/>
+"toto-tutu" -&gt; <b><i>S1</i></b> = toto, <b><i>S2</i></b> = tutu</li>
+</ul>
+</p>
+
+<p>
+Descriptors:
+
+<table>
+  <tr>
+    <td><b>index:</b></td>
+    <td><b>name:</b></td>
+    <td><b>description:</b></td>
+  </tr>
+
+  <tr>
+    <td>1.</td>
+    <td>valid</td>
+    <td>Global valid flag (0 or 1) - 0 if one of the two sulci is not present but 1 if both sulci exist and are not linked by any relation<br/>
+      <i>-- Descriptors 2 to 7 briefly describe again each of the 2 sulci, you should better look at their individual descriptors, althrough descriptors 4 and 7 actually give some new and possibly interesting information --</i>
+    </td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>volumeS1</td>
+    <td>Size of <b><i>S1</i></b></td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>connectedComponentsS1</td>
+    <td>Num. of connected components of <b><i>S1</i></b> by non-cortical relations
+    </td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>connectedComponentsS1Rel</td>
+    <td>Num. of connected components of <b><i>S1</i></b> participating to the relation with <b><i>S2</i></b>
+    </td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>volumeS2</td>
+    <td>Size of <b><i>S2</i></b></td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>connectedComponentsS2</td>
+    <td>Num. of connected components of <b><i>S2</i></b> by non-cortical relations
+    </td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>connectedComponentsS2Rel</td>
+    <td>Num. of connected components of <b><i>S2</i></b> participating to the relation with <b><i>S1</i></b>
+    </td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>corticalSize</td>
+    <td>Size of cortical relations: length of the border line separating the two sulci (in a Voronoi diagram)<br/>
+      -&gt; there is currently no direct information on the gyrus surface...
+    </td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>distanceMin</td>
+    <td>Minimal distance between the sulci (0 if they are touching)</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>direction_x</td>
+    <td>"Global" direction of the relation, X coord.<br/>
+      <b>*** be careful, it is sometimes meaningless ! ***</b>
+    </td>
+  </tr>
+  <tr>
+    <td>11.</td>
+    <td>direction_y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>12.</td>
+    <td>direction_z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>13.</td>
+    <td>distanceToExtremity1</td>
+    <td>Distance between the contact point on <b><i>S1</i></b> of the relation (point of <b><i>S1</i></b> closest to <b><i>S2</i></b>) and the extremity of <b><i>S1</i></b> closest to this point.<br/>
+      -&gt; 0 if it is an extremity of <b><i>S1</i></b> that touches <b><i>S2</i></b>  or is closest to <b><i>S2</i></b>
+    </td>
+  </tr>
+  <tr>
+    <td>14.</td>
+    <td>distanceToExtremity2</td>
+    <td>Distance between the contact point on <b><i>S2</i></b> of the relation (point of <b><i>S2</i></b> closest to <b><i>S1</i></b>) and the extremity of <b><i>S2</i></b> closest to this point
+    </td>
+  </tr>
+  <tr>
+    <td>15.</td>
+    <td>gravityCenter_x</td>
+    <td>Gravity center of the relation, X coord. (rough positioning)</td>
+  </tr>
+  <tr>
+    <td>16.</td>
+    <td>gravityCenter_y</td>
+    <td>Y coord.</td>
+  </tr>
+  <tr>
+    <td>17.</td>
+    <td>gravityCenter_z</td>
+    <td>Z coord.</td>
+  </tr>
+  <tr>
+    <td>18.</td>
+    <td>corticalDotProduct</td>
+    <td>cosinus of the angle between the global directions of <b><i>S1</i></b> and <b><i>S2</i></b>
+      (scalar product of the directions)
+    </td>
+  </tr>
+  <tr>
+    <td>19.</td>
+    <td>junctions</td>
+    <td>Num. of junctions between the two sulci<br/>
+      <b>*** this does not necessarily show the number of places they are touching ***</b>
+    </td>
+  </tr>
+  <tr>
+    <td>20.</td>
+    <td>junctionDepthMin</td>
+    <td>Minimal depth of the junctions: non-null only if the sulci only touch on a deep "pli de passage"
+    </td>
+  </tr>
+  <tr>
+    <td>21.</td>
+    <td>junctionsSize</td>
+    <td>Size (length) of the junctions between the two sulci</td>
+  </tr>
+  <tr>
+    <td>22.</td>
+    <td>plisDePassage</td>
+    <td>Num. of "plis de passage" joining the two sulci</td>
+  </tr>
+  <tr>
+    <td>23.</td>
+    <td>plisDePassageDepthMax</td>
+    <td>Max. depth of "plis de passage"</td>
+  </tr>
+  <tr>
+    <td>24.</td>
+    <td>inter_fold_descriptor2_output</td>
+    <td><b>[trained models only]</b> output of this relation expert, as for sulci, negative values are good, positive are bad</td>
+  </tr>
+
+</table>
+</p>
+
+<p>
+For more detailed information, see the <a href="ftp://ftp.cea.fr/pub/dsv/anatomist/papers/riviere-thesis00.pdf">PhD thesis of D. Rivière</a> (in french)
+</p>
+
+</body>
+</xhtml>
