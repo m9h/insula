@@ -4,29 +4,29 @@ label_list 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 
 *BEGIN NODE model_node 1
 model_type  functionalsketch_lowerscalebest
-model_file  functionalsketchmodel/lower_scale_best.mod
-domain_file functionalsketchmodel/all.dom
+model_file  functionalsketchmodel.data/lower_scale_best.mod
+domain_file functionalsketchmodel.data/all.dom
 label all_blobs
 *END
 
 *BEGIN NODE model_node 2
 model_type   functionalsketch_similarity
-model_file   functionalsketchmodel/similarity.mod
-domain_file  functionalsketchmodel/all.dom
+model_file   functionalsketchmodel.data/similarity.mod
+domain_file  functionalsketchmodel.data/all.dom
 label all_blobs
 *END
 
 *BEGIN NODE model_node 3
 model_type   functionalsketch_intraprimalsketch
-model_file   functionalsketchmodel/intra_primal_sketch.mod
-domain_file  functionalsketchmodel/all.dom
+model_file   functionalsketchmodel.data/intra_primal_sketch.mod
+domain_file  functionalsketchmodel.data/all.dom
 label all_blobs
 *END
 
 *BEGIN NODE model_node 4
 model_type   functionalsketch_datadriven
-model_file   functionalsketchmodel/datadriven.mod
-domain_file  functionalsketchmodel/all.dom
+model_file   functionalsketchmodel.data/datadriven.mod
+domain_file  functionalsketchmodel.data/all.dom
 label all_blobs
 *END
 
