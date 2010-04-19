@@ -1,0 +1,18 @@
+# tree 1.0
+
+*BEGIN TREE inertial_domain_box
+inertia           3.73403e+07 4.70651e+07 1.46968e+07 4.70651e+07 6.56231e+07 1.89282e+07 1.46968e+07 1.89282e+07 6.6557e+06
+ndata             149
+point_number      31837
+refgravity_center 47.9363 63.1558 19.3965
+xmax              26.8118
+xmin              -37.1944
+ymax              29.0145
+ymin              -24.7249
+zmax              35.9224
+zmin              -41.4909
+eigenvalues       0 0 2.48547e+06
+rotation          0.581144 -0.367263 0.726216 0.779552 -0.00493131 -0.626319 0.233605 0.930104 0.283435
+tolerence_margin  5
+
+*END

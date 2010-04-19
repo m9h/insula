@@ -1,0 +1,195 @@
+<xhtml>
+
+<h1>Lfolds-model-fd4 and Rfolds-model-fd4</h1>
+
+<p>These models are for 3.1 graphs which include cortical thickness information. They may be used for morphometry, but <b>not for sulcal recognition yet</b> because they have not been trained on a suitable database.
+</p>
+
+<p>These models provide descriptive figures <b>in Talairach space</b> when possible, which was not always what the older models (2000-2001, FD2) used to do. They are based on the "Fold Descriptors 4" generation, which complete and improve the models based on <a href="../../3.0/Lfolds_noroots_171201/Lfolds_model_noroots_2001.html">"Fold Descriptors 2/3"</a>. Descriptors which are not documented here are documented on those older models documentation.
+</p>
+
+<p>We may provide in the future a vartiant of these models which act in native space rather than in Talairach space, which may be useful in some morphometry studies.
+</p>
+
+<h4>Sulci descriptors</h4>
+
+<p>
+<table>
+  <tr>
+    <td><b>index:</b></td>
+    <td><b>name:</b></td>
+    <td><b>description:</b></td>
+  </tr>
+
+
+  <tr>
+    <td>1.</td>
+    <td>valid</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>extremitiesValid</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>extremity1x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>extremity1y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>extremity1z</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>extremity2x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>extremity2y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>extremity2z</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>gravityCenter_x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>gravityCenter_y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11.</td>
+    <td>gravityCenter_z</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>12.</td>
+    <td>normalValid</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13.</td>
+    <td>normal_x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>14.</td>
+    <td>normal_y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15.</td>
+    <td>normal_z</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>16.</td>
+    <td>direction_x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17.</td>
+    <td>direction_y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>18.</td>
+    <td>direction_z</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>19.</td>
+    <td>surface</td>
+    <td>Be careful that the surface now replaces the volume from older models.</td>
+  </tr>
+  <tr>
+    <td>20.</td>
+    <td>geodesicDepthMax</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>21.</td>
+    <td>geodesicDepthMin</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>22.</td>
+    <td>geodesicDepthMean</td>
+    <td>Mean geodesic depth of the sulcus. This feature did not exist in older models</td>
+  </tr>
+  <tr>
+    <td>23.</td>
+    <td>connectedComponentsAllRels</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>24.</td>
+    <td>connectedComponents</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>25.</td>
+    <td>pureCortical</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>26.</td>
+    <td>distanceBetweenComponentsMax</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>27.</td>
+    <td>plisDePassage</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>28.</td>
+    <td>hullJunctionsLength</td>
+    <td>This is now the "real" geodesic length of the sulcus. It replaces the size (of voxels, in mm3) from older models.
+    </td>
+  </tr>
+  <tr>
+    <td>29.</td>
+    <td>GM_thickness</td>
+    <td>Mean grey matter thickness in the sulcal zone (voronoi zones of nodes forming the sulcus).
+    </td>
+  </tr>
+  <tr>
+    <td>30.</td>
+    <td>fold_opening</td>
+    <td>Fold opening index. It is calculated as the CSF volume in the fold divided by the surface of the sulcus (of the skeleton), so it indicates a mean thickness of the CSF in the fold.
+    </td>
+  </tr>
+  <tr>
+    <td>31.</td>
+    <td>fold_descriptor4_output</td>
+    <td>Just random. Don't use it in current models !
+    </td>
+  </tr>
+
+</table>
+</p>
+
+<h4>Sulcal relations descriptors</h4>
+
+<p>
+Currently, the relations are the same as the older models.
+</p>
+
+</xhtml>
+
