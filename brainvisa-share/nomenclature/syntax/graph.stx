@@ -691,6 +691,7 @@ label       string
 ##### GRAPHES DE BLOBS
 
 *BEGIN SYNTAX BlobsArg
+
 datagraph_VERSION             string
 datagraph_compatibility_model_VERSION   string
 
@@ -705,6 +706,7 @@ latitudes                     list
 longitudes                    list
 indiv_graphs                  list
 representation_meshes         list
+
 # IN CASE IT IS A SUBJECT GRAPH
 sujet                         string
 mesh                          string
@@ -716,14 +718,26 @@ representation_mesh           string
 voxel_size                    float_vector   !
 boundingbox_min                    int_vector     !
 boundingbox_max                    int_vector     !
+
 type.global.bck                    string
 type.bck                 string
 type.global.tri                    string
 type.tri                 string
+
 glb.global.tri             string
 glb.tri                    string
 glb_filename	         int_vector
 glb_label		 int_vector
+
+g2g.global.tri             string
+g2g.tri                    string
+g2g_filename	         int_vector
+g2g_label		 int_vector
+
+bifurcation.global.tri             string
+bifurcation.tri                    string
+bifurcation_filename	         int_vector
+bifurcation_label		 int_vector
 *END
 
 #Attributs syntaxiques des noeuds
@@ -772,10 +786,28 @@ boundingbox_max     float_vector
 *BEGIN SYNTAX b2b
 type               string
 similarity         float
+b2b_filename	         string
+b2b_label		 int
 *END
 
 *BEGIN SYNTAX s2g
 type               string
+s2g_filename	         string
+s2g_label		 int
+*END
+
+*BEGIN SYNTAX g2g
+type               string
+g2g_filename	         string
+g2g_label		 int
+*END
+
+*BEGIN SYNTAX bifurcation
+type               string
+blob_up            int
+blob_down          int
+bifurcation_filename	         string
+bifurcation_label		 int
 *END
 
 
