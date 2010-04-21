@@ -294,14 +294,6 @@ ssblobbucket_label                     int
 ssblob_label                int
 *END
 
-#Attributs syntaxiques des relations
-
-*BEGIN SYNTAX bifurcation
-type               string
-blob_up         int
-blob_down     int
-*END
-
 
 ###########################
 ##### GRAPHES DE SILLONS
