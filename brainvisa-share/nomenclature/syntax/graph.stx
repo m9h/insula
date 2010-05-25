@@ -50,6 +50,11 @@ spm_normalized                int
 spm_spm2_normalization        int
 spm_radio_convention          int
 label_property                string
+roi_junction.global.tri       string
+roi_junction.tri              string
+roi_mesh_junction.global.tri            string
+roi_mesh_junction_filename    int_vector
+roi_mesh_junction_label       int_vector
 *END
 
 *BEGIN SYNTAX cluster
