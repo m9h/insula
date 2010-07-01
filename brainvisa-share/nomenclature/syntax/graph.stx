@@ -767,7 +767,8 @@ boundingbox_max     float_vector
 index                    int
 scale                    float
 nodes    		 int_vector
-x_along_axis             float_vector
+latitudes             float_vector
+longitudes            float_vector
 glb_filename	         string
 glb_label		 int
 t                   float
