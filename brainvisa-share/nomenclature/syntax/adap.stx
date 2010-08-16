@@ -339,6 +339,7 @@ e1e2			float_vector
 nstats_dir		int
 direction		float_vector
 normalized_output       int
+output_inertia          int
 *END
 
 *BEGIN SYNTAX inter_fold_descriptor
