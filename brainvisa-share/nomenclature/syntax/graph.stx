@@ -726,6 +726,11 @@ glb.tri                    string
 glb_filename	         int_vector
 glb_label		 int_vector
 
+ssb.global.tri             string
+ssb.tri                    string
+ssb_filename	         int_vector
+ssb_label		 int_vector
+
 g2g.global.tri             string
 g2g.tri                    string
 g2g_filename	         int_vector
@@ -765,6 +770,7 @@ boundingbox_max     float_vector
 
 *BEGIN SYNTAX glb
 index                    int
+label                    string
 scale                    float
 nodes    		 int_vector
 latitudes             float_vector
