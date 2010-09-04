@@ -7,7 +7,7 @@ find_package( PythonInterp REQUIRED )
 configure_file( "${CMAKE_CURRENT_SOURCE_DIR}/config/config.h.in" "${CMAKE_BINARY_DIR}/include/brainvisa-share/config.h" @ONLY )
 BRAINVISA_INSTALL( FILES "${CMAKE_BINARY_DIR}/include/brainvisa-share/config.h"
                    DESTINATION "include/brainvisa-share"
-                   COMPONENT ${PROJECT_NAME}-devel )
+                   COMPONENT ${PROJECT_NAME}-dev )
 set( BRAINVISA-SHARE_DEFINITIONS "-DUSE_SHARE_CONFIG" )
 
 # The following function is too slow for directories with many files
