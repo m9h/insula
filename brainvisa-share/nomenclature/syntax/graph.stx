@@ -696,7 +696,7 @@ type                          string
 filename_base                 string
 
 # IN CASE IT IS A GROUP GRAPH
-sujets                        list
+subjects                        list
 meshes                        list
 textures                      list
 latitudes                     list
@@ -705,7 +705,7 @@ indiv_graphs                  list
 representation_meshes         list
 
 # IN CASE IT IS A SUBJECT GRAPH
-sujet                         string
+subject                         string
 mesh                          string
 texture                       string
 latitude                      string
@@ -735,6 +735,11 @@ g2g.global.tri             string
 g2g.tri                    string
 g2g_filename	         int_vector
 g2g_label		 int_vector
+
+b2b.global.tri             string
+b2b.tri                    string
+b2b_filename	         int_vector
+b2b_label		 int_vector
 
 bifurcation.global.tri             string
 bifurcation.tri                    string
