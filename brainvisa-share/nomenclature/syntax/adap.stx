@@ -352,6 +352,7 @@ output_inertia          int
 *END
 
 *BEGIN SYNTAX inter_fold_descriptor5
+output_inertia          int
 *END
 
 *BEGIN SYNTAX brain_junction_descriptor
