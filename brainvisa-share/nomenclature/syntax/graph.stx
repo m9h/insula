@@ -776,6 +776,8 @@ boundingbox_max     float_vector
 *BEGIN SYNTAX glb
 index                    int
 label                    string
+name                     string
+subject                  string
 scale                    float
 nodes    		 int_vector
 latitudes             float_vector
