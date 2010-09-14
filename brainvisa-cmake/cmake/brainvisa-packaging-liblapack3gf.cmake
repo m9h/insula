@@ -14,6 +14,7 @@ function( BRAINVISA_PACKAGING_COMPONENT_INFO component package_name package_main
       break()
     endif()
   endforeach()
+  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libgfortran2 RUN )
 endfunction()
 
 
