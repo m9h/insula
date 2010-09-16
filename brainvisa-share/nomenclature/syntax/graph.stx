@@ -242,7 +242,7 @@ roi_mesh_junction_label       int
 *BEGIN SYNTAX PrimalSketchArg
 datagraph_VERSION             string
 datagraph_compatibility_model_VERSION   string
-sujet                         string
+subject                         string
 type                     string
 filename_base                 string
 voxel_size                    float_vector   !
@@ -284,8 +284,6 @@ t2		    float
 tValue              float
 area                float
 rank                int
-node                int
-nodes_list          int_vector
 gravity_center      float_vector
 refgravity_center   float_vector
 boundingbox_min     float_vector
@@ -721,11 +719,15 @@ type.bck                 string
 type.global.tri                    string
 type.tri                 string
 
+glb.global.bck                    string
+glb.bck                 string
 glb.global.tri             string
 glb.tri                    string
 glb_filename	         int_vector
 glb_label		 int_vector
 
+ssb.global.bck                    string
+ssb.bck                 string
 ssb.global.tri             string
 ssb.tri                    string
 ssb_filename	         int_vector
@@ -780,8 +782,8 @@ name                     string
 subject                  string
 scale                    float
 nodes    		 int_vector
-latitudes             float_vector
-longitudes            float_vector
+x                        float_vector
+y                        float_vector
 glb_filename	         string
 glb_label		 int
 t                   float
