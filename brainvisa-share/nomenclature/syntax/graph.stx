@@ -786,10 +786,10 @@ x                        float_vector
 y                        float_vector
 glb_filename	         string
 glb_label		 int
-t                   float
-tValue              float
-boundingbox_min     float_vector
-boundingbox_max     float_vector
+t                        float
+tValue                   float
+boundingbox_min          float_vector
+boundingbox_max          float_vector
 
 *END
 
