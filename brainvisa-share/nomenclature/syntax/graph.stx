@@ -701,6 +701,7 @@ latitudes                     list
 longitudes                    list
 indiv_graphs                  list
 representation_meshes         list
+global_energy                 float
 
 # IN CASE IT IS A SUBJECT GRAPH
 subject                         string
@@ -800,6 +801,7 @@ boundingbox_max          float_vector
 *BEGIN SYNTAX b2b
 type               string
 similarity         float
+distance           float
 b2b_filename	         string
 b2b_label		 int
 *END
