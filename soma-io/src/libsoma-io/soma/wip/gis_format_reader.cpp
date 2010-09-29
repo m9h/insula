@@ -37,7 +37,7 @@
 #ifndef SOMA_GIS_FORMAT
 #define SOMA_GIS_FORMAT
 
-#include <soma/wip/image_reader.hpp>
+
 #include <soma/wip/gis_format_reader.hpp>
 
 
