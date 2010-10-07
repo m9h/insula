@@ -761,6 +761,7 @@ subject                  string
 significance             float
 ssb_filename	         string
 ssb_label		 int
+scales                   float_vector
 tmax                     float
 tmin                     float
 trep                     float
