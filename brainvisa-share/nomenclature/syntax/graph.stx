@@ -759,21 +759,23 @@ name                     string
 index                    int
 subject                  string
 significance             float
+t_rankperc               float
+sim_rankperc             float
 ssb_filename	         string
-ssb_label		 int
+ssb_label		         int
 scales                   float_vector
 tmax                     float
 tmin                     float
 trep                     float
 lifeTime                 float
-t                   float
-tValue              float
-rank                int
-node                int
-nodes               int_vector
-gravity_center      float_vector
-boundingbox_min     float_vector
-boundingbox_max     float_vector
+t                        float
+tValue                   float
+rank                     int
+node                     int
+nodes                    int_vector
+gravity_center           float_vector
+boundingbox_min          float_vector
+boundingbox_max          float_vector
 
 *END
 
@@ -783,11 +785,11 @@ label                    string
 name                     string
 subject                  string
 scale                    float
-nodes    		 int_vector
+nodes    		         int_vector
 x                        float_vector
 y                        float_vector
 glb_filename	         string
-glb_label		 int
+glb_label		         int
 t                        float
 tValue                   float
 boundingbox_min          float_vector
