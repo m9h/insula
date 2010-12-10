@@ -753,6 +753,7 @@ bifurcation_label		 int_vector
 #Attributs syntaxiques des noeuds
 
 *BEGIN SYNTAX ssb
+int                      int
 label                    string
 label_occur_number       int
 name                     string
