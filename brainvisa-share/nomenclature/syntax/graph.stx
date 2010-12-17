@@ -777,6 +777,7 @@ nodes                    int_vector
 gravity_center           float_vector
 boundingbox_min          float_vector
 boundingbox_max          float_vector
+filtered_out              int
 
 *END
 
@@ -795,6 +796,7 @@ t                        float
 tValue                   float
 boundingbox_min          float_vector
 boundingbox_max          float_vector
+filtered_out             int
 
 *END
 
