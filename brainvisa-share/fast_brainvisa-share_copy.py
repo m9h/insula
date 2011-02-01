@@ -44,8 +44,14 @@ for source, dest, relative in izip( sourceFiles, destinationFiles, relativeFiles
   destinationPath = os.path.join( destination, os.path.dirname( relative ) )
   if os.path.sep != '/' :
     destinationPath = destinationPath.replace( os.path.sep, '/' )
-  print 'add_custom_command( OUTPUT "' + dest +'"'
-  print '                    COMMAND "' + cmake + '" -E copy_if_different "' + source + '" "' + dest + '" )'
+  print 'if ( UNIX OR APPLE )'
+  print '  add_custom_command( OUTPUT "' + dest +'"'
+  print '                      COMMAND "' + cmake + '" -E make_directory "' + os.path.dirname( dest ) + '"'
+  print '                      COMMAND "' + cmake + '" -E create_symlink "' + source + '" "' + dest + '" )'
+  print 'else()'
+  print '  add_custom_command( OUTPUT "' + dest +'"'
+  print '                      COMMAND "' + cmake + '" -E copy_if_different "' + source + '" "' + dest + '" )'
+  print 'endif()'
   print 'BRAINVISA_INSTALL( PROGRAMS "' + dest +'"'
   print '                   DESTINATION "'+ destinationPath +'"'
   print '                   COMPONENT ${PROJECT_NAME} )'
