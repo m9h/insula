@@ -52,6 +52,6 @@ for source, dest, relative in izip( sourceFiles, destinationFiles, relativeFiles
   print '  add_custom_command( OUTPUT "' + dest +'"'
   print '                      COMMAND "' + cmake + '" -E copy_if_different "' + source + '" "' + dest + '" )'
   print 'endif()'
-  print 'BRAINVISA_INSTALL( PROGRAMS "' + dest +'"'
+  print 'BRAINVISA_INSTALL( PROGRAMS "' + source +'"'
   print '                   DESTINATION "'+ destinationPath +'"'
   print '                   COMPONENT ${PROJECT_NAME} )'
