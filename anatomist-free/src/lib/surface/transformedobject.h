@@ -39,8 +39,6 @@
 #include <anatomist/mobject/objectVector.h>
 #include <anatomist/surface/glcomponent.h>
 
-/* TODO: Experimental code - not even compiled yet
- */
 
 namespace anatomist
 {
