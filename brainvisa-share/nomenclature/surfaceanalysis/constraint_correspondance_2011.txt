@@ -1,0 +1,25 @@
+lon S.Pe.C.inf. 16
+lon S.Pe.C.median. 16
+lon S.Pe.C.sup. 16
+lon F.C.L.r.asc. 40
+lon S.F.orbitaire. 61
+lon S.F.marginal. 61
+lon F.Cal.ant.-Sc.Cal. 281
+lon F.P.O. 297
+lon F.I.P.Po.C.inf. 339
+lon S.Po.C.sup. 339
+lon S.C. 360
+
+lat S.Call. 1            
+lat F.C.M.ant. 55
+lat F.Coll. 56
+lat S.F.sup. 81
+lat S.O.T.lat.post. 81
+lat S.Olf. 81
+lat S.F.inter. 92
+lat S.T.i.ant. 92
+lat S.T.i.post. 92
+lat S.T.s.ter.asc.post. 92
+lat S.T.s. 106
+lat S.T.s.ter.asc.ant. 106
+lat S.F.inf. 106
