@@ -34,5 +34,11 @@
 
 #include <aims/signalfilter/medianfilter.h>
 
+template class MedianSmoothing<uint8_t>;
+template class MedianSmoothing<int8_t>;
+template class MedianSmoothing<uint16_t>;
 template class MedianSmoothing<int16_t>;
+template class MedianSmoothing<uint32_t>;
+template class MedianSmoothing<int32_t>;
 template class MedianSmoothing<float>;
+template class MedianSmoothing<double>;
