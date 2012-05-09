@@ -543,6 +543,8 @@ depth_direction         float_vector
 refdepth_direction      float_vector
 depth_direction_weight  float
 custom_num_val             float
+# graphs v 3.3
+splitnode_index         int
 *END
 
 #Attributs syntaxiques des relations
