@@ -76,8 +76,6 @@ protected slots:
   void shininessChanged( int value );
   void chooseObject();
   void objectsChosen( const std::set<anatomist::AObject *> & );
-  void renderModeChanged( int );
-  void renderPropertyChanged( int );
 
 protected:
   virtual void unregisterObservable( anatomist::Observable* );
