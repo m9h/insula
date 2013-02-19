@@ -36,7 +36,7 @@
 #define ANATOMIST_ERPIO_ERPR_H
 
 
-#include <cartobase/object/object.h>
+#include <anatomist/object/oReader.h>
 
 
 namespace anatomist
@@ -53,7 +53,8 @@ namespace anatomist
     ErpReader( const std::string & filename );
     ~ErpReader() {}
 
-    static AObject* readErp( const std::string & filename, 
+    static AObject* readErp( const std::string & filename,
+                             ObjectReader::PostRegisterList &,
                              carto::Object options );
 
     ErpReader & operator >> ( ATexture & tex );
