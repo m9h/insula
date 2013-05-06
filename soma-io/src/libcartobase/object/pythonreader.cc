@@ -31,6 +31,7 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
+//--- cartobase ----------------------------------------------------------------
 #include <cartobase/object/object_d.h>
 #include <cartobase/object/pythonreader_d.h>
 #include <cartobase/object/syntobject.h>
@@ -42,9 +43,11 @@
 #include <cartobase/io/itemreader.h>
 #include <cartobase/datasource/filedatasource.h>
 #include <cartobase/datasource/streamdatasource.h>
+//---- system ------------------------------------------------------------------
 #include <stdio.h>
 #include <vector>
 #include <iostream>
+//------------------------------------------------------------------------------
 
 using namespace std;
 using namespace carto;

@@ -50,22 +50,24 @@ using namespace std;
 int main( int argc, const char** argv )
 {
   try {
-    string  fname;
+    string  fname, hname;
     int     test = 1;
     CartoApplication  app( argc, argv, "Test for GIS format checking" );
     app.addOption( fname, "-i", "input filename to be read\n" );
+    app.addOption( hname, "-j", "input filename to be read (if 2 passes)\n", true );
     app.addOption( test, "-t", "test to perform. 1) normal reading. "
                               "2) two pass reading with complete dsi. "
                               "3) two pass reading with juste header\n", true );
     app.alias( "-v", "--verbose" );
     app.initialize();
     
-    DataSourceInfo dsi;
+    if( hname.empty() )
+      hname = fname;
+    
+    rc_ptr<DataSource> ds ( new FileDataSource( fname ) );
+    DataSourceInfo dsi( ds );
     GisFormatChecker gfc;
     DataSourceInfoLoader dsil;
-    dsi.list().addDataSource( "default", 
-                              rc_ptr<DataSource>( new FileDataSource( fname ) ) 
-                            );
     dsi = gfc.check( dsi, dsil );
     
     if( test == 2) {
@@ -73,9 +75,10 @@ int main( int argc, const char** argv )
     } else if( test == 3 ) {
       dsi.list().reset();
       dsi.list().addDataSource( "default", 
-                                rc_ptr<DataSource>( new FileDataSource( fname ) ) 
+                                rc_ptr<DataSource>( new FileDataSource( hname ) ) 
                               );
       dsi.capabilities().reset();
+      //dsi.header()->setProperty( "format" , "JPEG" );
       dsi = gfc.check( dsi, dsil );
     }
     
@@ -130,6 +133,7 @@ int main( int argc, const char** argv )
       }
     }
   } catch( user_interruption & ) {
+    return EXIT_SUCCESS;
   } catch( exception & e ) {
     cerr << e.what() << endl;
     return EXIT_FAILURE;

@@ -42,15 +42,14 @@
 #include <cartobase/object/syntobject.h>
 #include <cartobase/object/pythonreader.h>
 //#include <cartobase/io/minfXML2.h> // not ready yet
-#include <cartobase/io/asciidatasourcetraits.h>
-#include <cartobase/datasource/streamdatasource.h>
 #include <cartobase/stream/attachable_cuifstream.h>
+#include <cartobase/datasource/streamdatasource.h>
+#include <cartobase/io/asciidatasourcetraits.h>
 #include <vector>
 #include <assert.h>
 
 using namespace std;
 using namespace carto;
-
 
 //=============================================================================
 //	F U N C T I O N S
