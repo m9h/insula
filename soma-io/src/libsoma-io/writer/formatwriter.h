@@ -43,16 +43,16 @@ namespace carto {
 
 namespace soma
 {
-  class DataSource;
+  class DataSourceInfo;
 
-  /** Low-level object IO writer specialized for a specific format
-  */
+  /// Low-level object IO writer specialized for a specific format
   template<typename T>
   class FormatWriter
   {
   public:
     virtual ~FormatWriter() {}
-    virtual bool write( carto::rc_ptr<DataSource> ds, const T & obj, 
+    virtual bool write( const T & obj, 
+                        carto::rc_ptr<DataSourceInfo> dsi,
                         carto::Object options ) = 0;
   };
 

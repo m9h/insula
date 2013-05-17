@@ -65,11 +65,32 @@ namespace soma {
       _byteswap = false;
     }
     
-    _sizes = std::vector< std::vector<int> >( 1, std::vector<int>(4) );
-    dsi.header()->getProperty( "sizeX", _sizes[ 0 ][ 0 ] );
-    dsi.header()->getProperty( "sizeY", _sizes[ 0 ][ 1 ] );
-    dsi.header()->getProperty( "sizeZ", _sizes[ 0 ][ 2 ] );
-    dsi.header()->getProperty( "sizeT", _sizes[ 0 ][ 3 ] );
+    int rescount = 1;
+    if( dsi.header()->hasProperty( "resolutions_dimension" ) ) {
+      rescount = dsi.header()->getProperty( "resolutions_dimension" )->size();
+      _sizes = std::vector< std::vector<int> >( rescount, std::vector<int>(4) );
+      int i;
+      for( int i=0; i<rescount; ++i ) {
+        _sizes[i][0] = dsi.header()->getProperty( "resolutions_dimension" )
+                                   ->getArrayItem(i)->getArrayItem(0)
+                                   ->getScalar();
+        _sizes[i][1] = dsi.header()->getProperty( "resolutions_dimension" )
+                                   ->getArrayItem(i)->getArrayItem(1)
+                                   ->getScalar();
+        _sizes[i][2] = dsi.header()->getProperty( "resolutions_dimension" )
+                                   ->getArrayItem(i)->getArrayItem(2)
+                                   ->getScalar();
+        _sizes[i][3] = dsi.header()->getProperty( "resolutions_dimension" )
+                                   ->getArrayItem(i)->getArrayItem(3)
+                                   ->getScalar();
+      }
+    } else {
+      _sizes = std::vector< std::vector<int> >( rescount, std::vector<int>(4) );
+      dsi.header()->getProperty( "sizeX", _sizes[ 0 ][ 0 ] );
+      dsi.header()->getProperty( "sizeY", _sizes[ 0 ][ 1 ] );
+      dsi.header()->getProperty( "sizeZ", _sizes[ 0 ][ 2 ] );
+      dsi.header()->getProperty( "sizeT", _sizes[ 0 ][ 3 ] );
+    }
   }
   
   template <typename T>
