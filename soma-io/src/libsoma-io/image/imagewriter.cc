@@ -34,6 +34,9 @@
 //--- soma-io ------------------------------------------------------------------
 #include <soma-io/config/soma_config.h>
 #include <soma-io/image/imagewriter_d.h>
+#include <soma-io/image/voxelrgb_d.h>
+#include <soma-io/image/voxelrgba_d.h>
+#include <soma-io/image/voxelhsv.h>
 //------------------------------------------------------------------------------
 
 using namespace soma;
@@ -46,3 +49,6 @@ template class ImageWriter<uint16_t>;
 template class ImageWriter<uint32_t>;
 template class ImageWriter<float>;
 template class ImageWriter<double>;
+template class ImageWriter<VoxelRGB>;
+template class ImageWriter<VoxelRGBA>;
+template class ImageWriter<VoxelHSV>;

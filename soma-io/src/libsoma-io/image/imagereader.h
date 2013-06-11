@@ -76,7 +76,6 @@ namespace soma
                          std::vector<int> & pos,  /* taille 4 : x,y,z,t */
                          std::vector<int> & size, /* taille 4 : x,y,z,t */
                          std::vector<int> stride = std::vector<int>(),
-                         int level = 0, 
                          carto::Object options = carto::none() );
       
       /// Sets _sizes, _binary and _byteswap values from DataSourceInfo

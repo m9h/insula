@@ -68,7 +68,6 @@ namespace soma
       virtual void write( T * source, DataSourceInfo & dsi,
                           std::vector<int> & pos,  /* taille 4 : x,y,z,t */
                           std::vector<int> & size, /* taille 4 : x,y,z,t */
-                          int level = 0, 
                           carto::Object options = carto::none() );
       
       /// Builds the DataSourceList
