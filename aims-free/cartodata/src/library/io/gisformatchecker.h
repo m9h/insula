@@ -31,7 +31,7 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 #ifdef USE_SOMA_IO
-  #include <aims/io/gisformatchecker.h>
+  //#include <aims/io/gisformatchecker.h>
 #else
 
 #ifndef CARTODATA_IO_GISFORMATCHECKER_H
