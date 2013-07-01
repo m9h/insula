@@ -35,6 +35,7 @@
 #define AIMS_AIMSDATA_CONFIG_H
 
 #include <cartobase/config/cartobase_config.h>
+#include <aims/config/config.h>
 
 #if defined( _WIN32 ) && !defined( __GNUC__ )
 #ifdef AIMSDATA_EXPORTS
