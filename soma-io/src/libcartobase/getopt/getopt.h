@@ -31,6 +31,10 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
+#ifdef USE_SOMA_IO
+  #include <soma-io/getopt/getopt.h>
+#else
+
 #ifndef CARTOBASE_GETOPT_GETOPT_H
 #define CARTOBASE_GETOPT_GETOPT_H
 
@@ -618,4 +622,6 @@ public:
 
 
 #endif // ifndef CARTO_GETOPT_GETOPT_H
+
+#endif
 

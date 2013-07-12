@@ -31,6 +31,10 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
+#ifdef USE_SOMA_IO
+  #include <soma-io/plugin/plugin.h>
+#else
+
 #include <stdexcept>
 #include <cartobase/getopt/getopt.h>
 #include <cartobase/config/info.h>
@@ -453,4 +457,5 @@ void CartoApplication::initialize()
   check();
 }
 
+#endif
 

@@ -31,6 +31,10 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
+#ifdef USE_SOMA_IO
+  #include <soma-io/plugin/plugin.h>
+#else
+
 #include <cartobase/config/info.h>
 #include <cartobase/plugin/plugin.h>
 #include <cartobase/io/formatdictionary.h>
@@ -199,4 +203,5 @@ void CartoBaseInfo::printVersion( ostream & out )
   out << "CartoBase version : " << cartobaseVersionString() << endl;
 }
 
+#endif
 
