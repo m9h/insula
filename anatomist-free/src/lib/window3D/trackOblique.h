@@ -40,6 +40,7 @@
 
 namespace anatomist
 {
+  class BoxViewSlice;
 
   class TrackOblique : public Trackball
   {
@@ -54,11 +55,13 @@ namespace anatomist
 
     virtual void beginTrackball( int x, int y, int globalX, int globalY );
     virtual void moveTrackball( int x, int y, int globalX, int globalY );
+    virtual void endTrackball( int x, int y, int globalX, int globalY );
     aims::Quaternion rotation( int x, int y );
     aims::Quaternion beginQuaternion() const;
 
   protected:
     aims::Quaternion	_beginslice;
+    BoxViewSlice        *_boxviewslice;
   };
 
 }
