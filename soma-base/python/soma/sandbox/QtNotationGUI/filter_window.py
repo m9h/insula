@@ -5,9 +5,9 @@ import re
 import glob
 import os
 
-class MyFilter(QtGui.QDialog):
+class Filter(QtGui.QDialog):
     def __init__(self,dirname):
-        super(MyFilter, self).__init__()
+        super(Filter, self).__init__()
         self.dirname_bdd='/neurospin/cati/Memento/MEMENTO_fevrier2013/geoCorrected'
         self.dirname_snap=dirname
         self.list_subject=''
@@ -115,6 +115,8 @@ class MyFilter(QtGui.QDialog):
         if m is not None:
             subject=m.group(0)
             subject=subject[0:7]+'_'+subject[7:11]
+            print 'study',self.choice_studies.currentText()
+            print 'subject',subject
             image_t1=self.bdd.T1_images(self.choice_studies.currentText(),subject)
             if not image_t1:
                 print 'NO IMAGE T1 FIND'
