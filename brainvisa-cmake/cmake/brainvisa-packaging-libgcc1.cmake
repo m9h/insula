@@ -6,7 +6,13 @@ function( BRAINVISA_PACKAGING_COMPONENT_INFO component package_name package_main
   # Find version
   set( ${package_version} "0.0.0" PARENT_SCOPE )
   get_filename_component( real "${LIBGCC_LIBRARIES}" REALPATH )
-  string( REGEX MATCH "^.*libgcc_s[-](.*)${CMAKE_SHARED_LIBRARY_SUFFIX}.*$" match "${real}" )
+  string( REGEX MATCH "^.*libgcc_s(_[a-zA-Z]+)?[-](.*)${CMAKE_SHARED_LIBRARY_SUFFIX}.*$" match "${real}" )
+  
+  if( WIN32 )
+    # Add dependency to the threading library
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libwinpthread RUN )
+  endif()
+  
   if( match )
     set( ${package_version} "${CMAKE_MATCH_1}" PARENT_SCOPE )
   endif()
