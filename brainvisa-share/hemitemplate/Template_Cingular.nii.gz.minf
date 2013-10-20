@@ -1,15 +1,17 @@
 attributes = {
     'data_type' : 'S16',
-    'file_type' : 'GIS',
+    'file_type' : 'NIFTI1',
     'material' : {
         'ambient' : [ 0.1, 0.1, 0.1, 1 ],
         'diffuse' : [ 0.8, 0.8, 0.8, 1 ],
         'emission' : [ 0, 0, 0, 1 ],
         'shininess' : 20,
-        'specular' : [ 0.2, 0.2, 0.2, 1 ]
+        'specular' : [ 0.2, 0.2, 0.2, 1 ],
+        'unlit_color' : [ 0, 0, 0, 1 ]
       },
     'object_type' : 'Volume',
-    'referential' : '2a3490d9-36f7-3f2f-2fc5-d3abf07a608d',
+    'referentials' : [ 'Scanner-based anatomical coordinates' ],
+    'storage_to_memory' : [ -1, 0, 0, 255, 0, -1, 0, 255, 0, 0, -1, 123, 0, 0, 0, 1 ],
     'texture_properties' : [ {
             'filtering' : 'nearest',
             'generation' : 'none',
@@ -17,7 +19,7 @@ attributes = {
             'mode' : 'decal',
             'rate' : 1
           } ],
-    'uuid' : '2ab0291f-e2fe-7d1c-7cbf-b3061b4721ef',
-    'volume_dimension' : [ 181, 217, 181, 1 ],
-    'voxel_size' : [ 1, 1, 1, 1 ]
+    'transformations' : [ [ -1, 0, 0, 120, 0, -1, 0, 119.063, 0, 0, -1, 73.1994, 0, 0, 0, 1 ] ],
+    'volume_dimension' : [ 256, 256, 124, 1 ],
+    'voxel_size' : [ 0.9375, 0.9375, 1.2, 1 ]
   }
