@@ -38,6 +38,8 @@
 // of the most useful Reader templates
 
 #include <aims/config/aimsdata_config.h>
+#include <soma-io/io/reader_d.h>
+#include <soma-io/io/formatdictionary_d.h>
 #include <aims/io/reader_d.h>
 #include <aims/data/data.h>
 #include <aims/rgb/rgb.h>
@@ -46,49 +48,6 @@
 using namespace aims;
 using namespace carto;
 using namespace std;
-
-AIMS_INSTANTIATE_READER( Volume<int8_t> );
-AIMS_INSTANTIATE_READER( Volume<uint8_t> );
-AIMS_INSTANTIATE_READER( Volume<int16_t> );
-AIMS_INSTANTIATE_READER( Volume<uint16_t> );
-AIMS_INSTANTIATE_READER( Volume<int32_t> );
-AIMS_INSTANTIATE_READER( Volume<uint32_t> );
-AIMS_INSTANTIATE_READER( Volume<float> );
-AIMS_INSTANTIATE_READER( Volume<double> );
-AIMS_INSTANTIATE_READER( Volume<cfloat> );
-AIMS_INSTANTIATE_READER( Volume<cdouble> );
-AIMS_INSTANTIATE_READER( Volume<AimsRGB> );
-AIMS_INSTANTIATE_READER( Volume<AimsRGBA> );
-AIMS_INSTANTIATE_READER( Volume<AimsHSV> );
-// ### remove after everything has been moved to intN_t/uintN_t
-#if !defined(__sun__) || !defined(_CHAR_IS_SIGNED)
-AIMS_INSTANTIATE_READER( Volume<char> );
-#endif
-AIMS_INSTANTIATE_READER( Volume<long> );
-AIMS_INSTANTIATE_READER( Volume<unsigned long> );
-
-AIMS_INSTANTIATE_READER( VolumeRef<int8_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<uint8_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<int16_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<uint16_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<int32_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<uint32_t> );
-AIMS_INSTANTIATE_READER( VolumeRef<float> );
-AIMS_INSTANTIATE_READER( VolumeRef<double> );
-AIMS_INSTANTIATE_READER( VolumeRef<cfloat> );
-AIMS_INSTANTIATE_READER( VolumeRef<cdouble> );
-AIMS_INSTANTIATE_READER( VolumeRef<AimsRGB> );
-AIMS_INSTANTIATE_READER( VolumeRef<AimsRGBA> );
-AIMS_INSTANTIATE_READER( VolumeRef<AimsHSV> );
-// ### remove after everything has been moved to intN_t/uintN_t
-#if !defined(__sun__) || !defined(_CHAR_IS_SIGNED)
-AIMS_INSTANTIATE_READER( VolumeRef<char> );
-#endif
-AIMS_INSTANTIATE_READER( VolumeRef<long> );
-AIMS_INSTANTIATE_READER( VolumeRef<unsigned long> );
-
-#include <soma-io/io/reader_d.h>
-#include <soma-io/io/formatdictionary_d.h>
 
 #define COMMA ,
 
