@@ -40,15 +40,15 @@
 
 class QAction;
 
-/**	Anatomist Window using Qt and controler system, providing a toolbar 
-	for controls */
+/** Anatomist Window using Qt and controler system, providing a toolbar 
+    for controls */
 class ControlledWindow : public QAWindow
 {
   Q_OBJECT
 
 public:
   ControlledWindow( QWidget* parent = 0, const char* name = 0, 
-		    carto::Object options = carto::none(), 
+                    carto::Object options = carto::none(), 
                     Qt::WFlags f = 0 );
   virtual ~ControlledWindow();
 
