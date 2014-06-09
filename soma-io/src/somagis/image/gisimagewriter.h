@@ -68,7 +68,7 @@ namespace soma
                          std::vector<int> & size, /* taille 4 : x,y,z,t */
                          carto::Object options = carto::none() );
 
-      virtual DataSourceInfo writeHeader( DataSourceInfo dsi, 
+      virtual DataSourceInfo writeHeader( DataSourceInfo & dsi, 
                                           carto::Object options
                                             = carto::none() );
 
