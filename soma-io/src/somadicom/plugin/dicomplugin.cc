@@ -59,7 +59,10 @@ namespace soma {
 
 DicomPlugin::DicomPlugin() : Plugin()
 {
-    vector<string> exts;
+    vector<string> exts( 3 );
+    exts[0]=".dcm";
+    exts[1]=".dic";
+    exts[2]="";
     
     ////////////////////////////////////////////////////////////////////////////
     ////                          C H E C K E R                             ////
