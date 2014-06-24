@@ -31,7 +31,7 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
-#include <soma-io/plugingis/gisformatchecker.h>
+#include <soma-io/checker/gisformatchecker.h>
 #include <soma-io/datasourceinfo/datasourceinfo.h>
 #include <soma-io/datasource/filedatasource.h>
 #include <soma-io/datasourceinfo/datasourceinfoloader.h>
@@ -61,17 +61,20 @@ int main( int argc, const char** argv )
     app.alias( "-v", "--verbose" );
     app.initialize();
     
+    // Get gis FormatChecker
+    FormatChecker * fc = DataSourceInfoLoader::formatInfo( "GIS" );
+    ASSERT(fc);
+    
     if( hname.empty() )
       hname = fname;
     
     rc_ptr<DataSource> ds ( new FileDataSource( fname ) );
     DataSourceInfo dsi( ds );
-    GisFormatChecker gfc;
     DataSourceInfoLoader dsil;
-    dsi = gfc.check( dsi, dsil );
+    dsi = fc->check( dsi, dsil );
     
     if( test == 2) {
-      dsi = gfc.check( dsi, dsil );
+      dsi = fc->check( dsi, dsil );
     } else if( test == 3 ) {
       dsi.list().reset();
       dsi.list().addDataSource( "default", 
@@ -79,7 +82,7 @@ int main( int argc, const char** argv )
                               );
       dsi.capabilities().reset();
       //dsi.header()->setProperty( "format" , "JPEG" );
-      dsi = gfc.check( dsi, dsil );
+      dsi = fc->check( dsi, dsil );
     }
     
     //--- Write Header -----------------------------------------------------------
