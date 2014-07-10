@@ -53,13 +53,13 @@ namespace {
     {
     public:
       InternalConverter( uint8_t c, int b, int frm, OUTP & d )
-	: Process(), channel(c), border( b ), frame( frm ), data( d ) {}
+        : Process(), channel(c), border( b ), frame( frm ), data( d ) {}
       virtual ~InternalConverter() {}
 
       uint8_t           channel;
-      int		border;
-      int		frame;
-      OUTP	        & data;
+      int               border;
+      int               frame;
+      OUTP            & data;
     };
 
 }
@@ -71,7 +71,7 @@ namespace aims
   static bool internalconvert( aims::Process & p, const std::string & fname,
                                aims::Finder & f );
 
-  ///	Reads a AimsData, with conversion if needed
+  /// Reads a AimsData, with conversion if needed
   template<class OUTP>
   class ChannelReader
   {
@@ -82,13 +82,13 @@ namespace aims
     virtual void read( OUTP & data, 
                        uint8_t channel = 4,
                        int border = 0, 
-		       const std::string* format = 0, 
+                       const std::string* format = 0, 
                        int frame = -1 );
     void setAllowedInputDataTypes(
-      const std::map<std::string, std::set<std::string> > & );
+                       const std::map<std::string, std::set<std::string> > & );
 
   private:
-    std::string	_filename;
+    std::string _filename;
     std::map<std::string, std::set<std::string> > _allowedTypes;
   };
 
