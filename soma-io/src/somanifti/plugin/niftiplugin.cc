@@ -75,6 +75,8 @@ NiftiPlugin::NiftiPlugin() : Plugin()
 
     DataSourceInfoLoader::registerFormat( "NIFTI-1",
                                           new Nifti1FormatChecker, exts );
+    DataSourceInfoLoader::registerFormat( "NIFTI-2",
+                                          new Nifti2FormatChecker, exts );
 }
 
 
