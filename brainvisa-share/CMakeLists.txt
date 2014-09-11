@@ -31,7 +31,7 @@ execute_process(
 if( result EQUAL 0 )
   include( "${CMAKE_BINARY_DIR}/fast_brainvisa-share_copy.cmake" )
 else()
-  message( SEND_ERROR "Error while executing the following command: python ${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py ${CMAKE_COMMAND} ${_destination} CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake database_settings.minf VERSION" )
+  message( SEND_ERROR "Error while executing the following command: python \"${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py\" \"${CMAKE_COMMAND}\" \"${_destination}\" CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake database_settings.minf VERSION" )
 endif()
 
 BRAINVISA_GENERATE_TARGET_NAME( target )
