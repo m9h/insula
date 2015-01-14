@@ -32,17 +32,49 @@
  */
 
 
-#ifndef AIMS_SIGNALFILTER_MAXSMOOTH_H
-#define AIMS_SIGNALFILTER_MAXSMOOTH_H
+#ifndef AIMS_SIGNALFILTER_MAXFILTER_H
+#define AIMS_SIGNALFILTER_MAXFILTER_H
 
-#include <aims/signalfilter/filter_nonlinear.h>
+#include <aims/signalfilter/filteringimagealgorithm.h>
+#include <aims/signalfilter/filteringfunction_element.h>
 #include <aims/connectivity/structuring_element.h>
-#include <aims/data/data_g.h>
-#include <vector>
+
+namespace aims {
+
+  template <typename T>
+  class MaxFilter: public ElementFilteringImageAlgorithm<T>
+  {
+  public:
+    typedef typename carto::DataTypeTraits<T>::ChannelType ChannelType;
+    MaxFilter( const StructuringElement & se = strel::Cube(1.0),
+                    const carto::Object & options = carto::none() ):
+      ElementFilteringImageAlgorithm<T>( MaxFilterFunc<ChannelType>( options ),
+                                         se )
+    {}
+    MaxFilter( const carto::Object & options ):
+      ElementFilteringImageAlgorithm<T>( MaxFilterFunc<ChannelType>( options ),
+                                         strel::Cube(1.0) )
+    {}
+    MaxFilter( const MaxFilter<T> & other ):
+      ElementFilteringImageAlgorithm<T>( other )
+    {}
+    ~MaxFilter() {}
+    MaxFilter<T> & operator=( const MaxFilter<T> & other )
+    {
+      ElementFilteringImageAlgorithm<T>::operator=( (ElementFilteringImageAlgorithm<T>&)other );
+      return *this;
+    }
+    MaxFilter<T> *clone() { return new MaxFilter<T>(*this); }
+  };
+
+} // namespace aims
 
 //============================================================================
 //   Backward compatibility bindings
 //============================================================================
+
+#include <aims/data/data_g.h>
+#include <vector>
 
 template <typename T>
 class MaxSmoothing
@@ -82,7 +114,6 @@ MaxSmoothing<T> & MaxSmoothing<T>::operator= (
   return (*this);
 }
 
-#include <iostream>
 template <typename T>
 AimsData<T> MaxSmoothing<T>::doit( const AimsData<T>& in )
 {

@@ -36,48 +36,43 @@
 
 
 #define AIMS_LIN_FILTERFUNC_MULTICHANNEL_SPECIALIZE( NAME, VOXELTYPE )       \
-  NAME< VOXELTYPE > ::NAME( carto::Object options ): _m(options) {}          \
+  NAME< VOXELTYPE >::NAME( carto::Object options ): _m(options) {}          \
+  NAME< VOXELTYPE >::NAME( const NAME< VOXELTYPE > & other ):                \
+    _m(other._m) {}                                                          \
   NAME< VOXELTYPE >::~NAME() {}                                              \
-  void NAME< VOXELTYPE >::setOptions( carto::Object options )                \
+  NAME< VOXELTYPE > & NAME< VOXELTYPE >::operator=( const NAME< VOXELTYPE > & other )  \
+  {                                                                          \
+    _m = other._m;                                                           \
+  }                                                                          \
+  void NAME< VOXELTYPE >::setOptions( const carto::Object & options )        \
   {                                                                          \
     _m.setOptions( options );                                                \
   }                                                                          \
+  void NAME< VOXELTYPE >::updateOptions( const carto::Object & options )     \
+  {                                                                          \
+    _m.updateOptions( options );                                             \
+  }                                                                          \
+  const std::vector<int> & NAME< VOXELTYPE >::getAmplitude() const           \
+  {                                                                          \
+    return _m.getAmplitude();                                                \
+  }                                                                          \
   VOXELTYPE NAME< VOXELTYPE >::execute(                                      \
     const carto::VolumeRef< VOXELTYPE > & volume                             \
-  )                                                                          \
+  ) const                                                                    \
   {                                                                          \
     return multichannelfiltervalues_lin< VOXELTYPE >( _m, volume );          \
   }                                                                          \
-  VOXELTYPE NAME< VOXELTYPE >::execute(                                      \
-    const carto::VolumeRef< VOXELTYPE > & volume,                            \
-    const StructuringElementRef & se                                         \
-  )                                                                          \
-  {                                                                          \
-    return multichannelfiltervalues_lin< VOXELTYPE >( _m, volume, se );      \
-  }                                                                          \
-  StructuringElementRef NAME< VOXELTYPE >::getStructuringElement(            \
-    const std::vector<float> & voxel_size                                    \
-  )                                                                          \
-  {                                                                          \
-    return _m.getStructuringElement( voxel_size );                           \
-  }                                                                          \
-  void NAME< VOXELTYPE >::setKernel(                                         \
-    const std::vector<float> & voxel_size                                    \
-  )                                                                          \
-  {                                                                          \
-    return _m.setKernel( voxel_size );                                       \
-  }                                                                          \
   NAME< VOXELTYPE > * NAME< VOXELTYPE >::clone() const                       \
   {                                                                          \
-    return new NAME< VOXELTYPE > ();                                         \
+    return new NAME< VOXELTYPE > (*this);                                    \
   }
 
 namespace aims {
 
-  template class LinFilterFunc<AimsRGB>;
-  template class LinFilterFunc<AimsRGBA>;
-  template class LinFilterFuncFactory<AimsRGB>;
-  template class LinFilterFuncFactory<AimsRGBA>;
+  template class LinearFilteringFunction<AimsRGB>;
+  template class LinearFilteringFunction<AimsRGBA>;
+  template class LinearFilteringFunctionFactory<AimsRGB>;
+  template class LinearFilteringFunctionFactory<AimsRGBA>;
 
   AIMS_LIN_FILTERFUNC_MULTICHANNEL_SPECIALIZE(GaborFilterFunc, AimsRGB)
   AIMS_LIN_FILTERFUNC_MULTICHANNEL_SPECIALIZE(GaborFilterFunc, AimsRGBA)

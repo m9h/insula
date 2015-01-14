@@ -46,7 +46,7 @@
   template class NAME<double>
 
 namespace aims {
-  AIMS_TEMPLATE_LIN_FILTERFUNC(LinFilterFunc);
-  AIMS_TEMPLATE_LIN_FILTERFUNC(LinFilterFuncFactory);
+  AIMS_TEMPLATE_LIN_FILTERFUNC(LinearFilteringFunction);
+  AIMS_TEMPLATE_LIN_FILTERFUNC(LinearFilteringFunctionFactory);
   AIMS_TEMPLATE_LIN_FILTERFUNC(GaborFilterFunc);
 }

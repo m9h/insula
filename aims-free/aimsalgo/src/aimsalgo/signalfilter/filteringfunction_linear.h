@@ -60,36 +60,54 @@ namespace aims {
 namespace aims {
 
   //==========================================================================
-  // LINEAR FILTERING FUNCTIONS: INTERFACE
+  // LINEAR FILTERING FUNCTON
   //==========================================================================
-  /// Pure virtual class: interface for non linear filtering functions.
+  /// \brief Base class for linear filtering functions.
+  /// They are executed on a window (unallocated carto::Volume with an
+  /// allocated parent volume) of size 1 voxel with enough border so that
+  /// the linear kernel may be applied.
   template <typename T>
-  class LinFilterFunc: public FilteringFunction<T>
+  class LinearFilteringFunction: public FilteringFunctionInterface<T>
   {
     public:
-      virtual ~LinFilterFunc() {};
-      virtual bool isLinear() const { return true; }
-      virtual StructuringElementRef getStructuringElement(
-        const std::vector<float> & voxel_size = std::vector<float>(4,1.)
-      ) = 0;
-      virtual LinFilterFunc<T> * clone() const = 0;
+      virtual ~LinearFilteringFunction() {};
+      //----------------------------------------------------------------------
+      // interface
+      //----------------------------------------------------------------------
+      /// \param in  window volume with the same size as the kernel.
+      /// Use \c getAmplitude to know the needed dimensions
+      virtual T execute( const carto::VolumeRef<T> & in ) const = 0;
+      /// Return a vector fo size 6 describing the border needed in each
+      /// direction (x-, x+, y-, y+, z-, z+). The kernel size is then of
+      /// dimension: \c ( v[0] + v[1] + 1, v[2] + v[3] + 1, v[4] + v[5] + 1 )
+      virtual const std::vector<int> & getAmplitude() const = 0;
+      /// clone
+      virtual LinearFilteringFunction<T> *clone() const = 0;
+
+    protected:
+      //----------------------------------------------------------------------
+      //   magic 3
+      //----------------------------------------------------------------------
+      LinearFilteringFunction() {}
+      LinearFilteringFunction( const LinearFilteringFunction<T> & );
+      LinearFilteringFunction<T> & operator= ( const LinearFilteringFunction<T> & );
   };
 
   //==========================================================================
   // LINEAR FILTERING FUNCTIONS: FACTORY
   //==========================================================================
   template <typename T>
-  class LinFilterFuncFactory
+  class LinearFilteringFunctionFactory
   {
     public:
-      static LinFilterFunc<T> * create( const std::string & name,
+      static LinearFilteringFunction<T> * create( const std::string & name,
                                      carto::Object options = carto::none() );
       static void registerFunction( const std::string & name,
-                                    const LinFilterFunc<T> & func );
+                                    const LinearFilteringFunction<T> & func );
       static std::set<std::string> names();
     protected:
       static void init();
-      static std::map<std::string,carto::rc_ptr<LinFilterFunc<T> > > & _map();
+      static std::map<std::string,carto::rc_ptr<LinearFilteringFunction<T> > > & _map();
   };
 
 } // namespace aims
@@ -100,38 +118,36 @@ namespace aims {
 //============================================================================
 #define AIMS_DECLARE_LINFILTERUNC_CUSTOMIZED( NAME )                         \
   template <typename T>                                                      \
-  class NAME: public LinFilterFunc<T>                                        \
+  class NAME: public LinearFilteringFunction<T>                              \
   {                                                                          \
     public:                                                                  \
       NAME( carto::Object options = carto::none() )                          \
         { setOptions( options ); }                                           \
-      virtual ~NAME() {};                                                    \
-      virtual void setOptions( carto::Object );                              \
-      virtual T execute( const carto::VolumeRef<T> & volume ) ;              \
-      virtual T execute( const carto::VolumeRef<T> & volume,                 \
-                         const StructuringElementRef & se );                 \
-      virtual StructuringElementRef getStructuringElement(                   \
-        const std::vector<float> & voxel_size = std::vector<float>(4,1.)     \
-      );                                                                     \
-      virtual void setKernel(                                                \
-        const std::vector<float> & voxel_size = std::vector<float>(4,1.)     \
-      );                                                                     \
-      virtual NAME<T> * clone() const { return new NAME<T>(); }
+      NAME( const NAME<T> & other );                                         \
+      NAME<T> & operator=( const NAME<T> & );                                \
+      virtual ~NAME();                                                       \
+      virtual NAME<T> *clone() const { return new NAME<T>(*this); }          \
+      virtual void setOptions( const carto::Object & options );              \
+      virtual void updateOptions( const carto::Object & options );           \
+      const std::vector<int> & getAmplitude() const;                         \
+      virtual T execute( const carto::VolumeRef<T> & in ) const;
 
 #define AIMS_DECLARE_LINFILTERFUNC_BASIC( NAME )                             \
   AIMS_DECLARE_LINFILTERUNC_CUSTOMIZED(NAME)                                 \
   };                                                                         \
   template <typename T>                                                      \
-  void NAME<T>::setOptions( carto::Object ) {}                               \
+  NAME<T>::NAME( const NAME<T> & other ) {}                                  \
   template <typename T>                                                      \
-  void NAME<T>::setKernel( const std::vector<float> & ) {}                   \
-  (void)0
+  NAME<T>::~NAME() {}                                                        \
+  template <typename T>                                                      \
+  NAME<T> & NAME<T>::operator=( const NAME<T> & other ) {}
 
 
 namespace aims
 {
   AIMS_DECLARE_LINFILTERUNC_CUSTOMIZED(GaborFilterFunc)
     protected:
+      void setKernel();
       double _sigma;
       double _theta;
       double _lambda;
@@ -140,10 +156,10 @@ namespace aims
       bool   _real;
       int    _nstd;
       bool   _init;
-      std::vector<double>       _amplitude;
+      std::vector<int>          _amplitude;
       std::vector<float>        _voxelsize;
       carto::VolumeRef<double>  _kernel;
   };
-}
+} // namespace aims
 
 #endif
