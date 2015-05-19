@@ -36,6 +36,7 @@
 
 #include <cartodata/volume/volumeoperators.h>
 #include <aims/vector/vector.h>
+#include <aims/math/dtitensor.h>
 
 namespace carto
 {
@@ -53,6 +54,16 @@ namespace carto
 
   DECLARE_GENERIC_OBJECT_TYPE( VolumeRef< Point3df > )
   DECLARE_GENERIC_OBJECT_TYPE( rc_ptr<Volume< Point3df > > )
+  DECLARE_GENERIC_OBJECT_TYPE( VolumeRef< Point3d > )
+  DECLARE_GENERIC_OBJECT_TYPE( rc_ptr<Volume< Point3d > > )
+  DECLARE_GENERIC_OBJECT_TYPE( VolumeRef< Point2d > )
+  DECLARE_GENERIC_OBJECT_TYPE( rc_ptr<Volume< Point2d > > )
+#define vectorf6 AimsVector<float, 6>
+  DECLARE_GENERIC_OBJECT_TYPE( VolumeRef< vectorf6 > )
+  DECLARE_GENERIC_OBJECT_TYPE( rc_ptr<Volume< vectorf6 > > )
+#undef vectorf6
+  DECLARE_GENERIC_OBJECT_TYPE( VolumeRef< DtiTensor* > )
+  DECLARE_GENERIC_OBJECT_TYPE( rc_ptr<Volume< DtiTensor* > > )
 
 }
 
