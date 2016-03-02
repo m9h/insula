@@ -68,11 +68,6 @@
                 "F.C.M.post._left"
             ]
         },
-        "F.C.M.r.AMS.ant._left" : {
-            "F.C.M.r.AMS.ant._left" : [
-                "F.C.M.r.AMS.ant._left"
-            ]
-        },
         "F.Cal.ant.-Sc.Cal._left" : {
             "F.Cal.ant.-Sc.Cal._left" : [
                 "F.Cal.ant.-Sc.Cal._left"
@@ -82,9 +77,6 @@
             ],
             "Sc.Cal._left" : [
                 "Sc.Cal._left"
-            ],
-            "brain" : [
-                "brain"
             ]
         },
         "F.Coll._left" : {
@@ -487,11 +479,6 @@
                 "S.Or._left"
             ]
         },
-        "S.Or.l._left" : {
-            "S.Or.l._left" : [
-                "S.Or.l._left"
-            ]
-        },
         "S.Pa.int._left" : {
             "S.Pa.int._left" : [
                 "S.Pa.int._left"
@@ -555,11 +542,6 @@
         "S.R.inf._left" : {
             "S.R.inf._left" : [
                 "S.R.inf._left"
-            ]
-        },
-        "S.R.sup._left" : {
-            "S.R.sup._left" : [
-                "S.R.sup._left"
             ]
         },
         "S.Rh._left" : {
@@ -723,11 +705,6 @@
                 "F.C.M.post._right"
             ]
         },
-        "F.C.M.r.AMS.ant._right" : {
-            "F.C.M.r.AMS.ant._right" : [
-                "F.C.M.r.AMS.ant._right"
-            ]
-        },
         "F.Cal.ant.-Sc.Cal._right" : {
             "F.Cal.ant.-Sc.Cal._right" : [
                 "F.Cal.ant.-Sc.Cal._right"
@@ -737,9 +714,6 @@
             ],
             "Sc.Cal._right" : [
                 "Sc.Cal._right"
-            ],
-            "brain" : [
-                "brain"
             ]
         },
         "F.Coll._right" : {
@@ -1137,11 +1111,6 @@
                 "S.Or._right"
             ]
         },
-        "S.Or.l._right" : {
-            "S.Or.l._right" : [
-                "S.Or.l._right"
-            ]
-        },
         "S.Pa.int._right" : {
             "S.Pa.int._right" : [
                 "S.Pa.int._right"
@@ -1205,11 +1174,6 @@
         "S.R.inf._right" : {
             "S.R.inf._right" : [
                 "S.R.inf._right"
-            ]
-        },
-        "S.R.sup._right" : {
-            "S.R.sup._right" : [
-                "S.R.sup._right"
             ]
         },
         "S.Rh._right" : {
