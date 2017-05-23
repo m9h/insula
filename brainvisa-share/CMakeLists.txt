@@ -24,14 +24,14 @@ BRAINVISA_COPY_PYTHON_DIRECTORY( "${CMAKE_CURRENT_SOURCE_DIR}/python"
 
 # Directory copying is done using a Python generated CMake script. The configuration time drop from 1 minute 10 to 10 seconds.
 execute_process(
-  COMMAND "${PYTHON_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py" "${CMAKE_COMMAND}" "${CMAKE_BINARY_DIR}" "share/${PROJECT_NAME}-${BRAINVISA_PACKAGE_VERSION_MAJOR}.${BRAINVISA_PACKAGE_VERSION_MINOR}" CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake VERSION config python fast_brainvisa-share_copy.py
+  COMMAND "${PYTHON_HOST_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py" "${CMAKE_COMMAND}" "${CMAKE_BINARY_DIR}" "share/${PROJECT_NAME}-${BRAINVISA_PACKAGE_VERSION_MAJOR}.${BRAINVISA_PACKAGE_VERSION_MINOR}" CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake VERSION config python fast_brainvisa-share_copy.py
   WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}"
   RESULT_VARIABLE result
   OUTPUT_FILE "${CMAKE_BINARY_DIR}/fast_brainvisa-share_copy.cmake" )
 if( result EQUAL 0 )
   include( "${CMAKE_BINARY_DIR}/fast_brainvisa-share_copy.cmake" )
 else()
-  message( SEND_ERROR "Error while executing the following command: \"${PYTHON_EXECUTABLE}\" \"${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py\" \"${CMAKE_COMMAND}\" \"${_destination}\" CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake database_settings.minf VERSION" )
+  message( SEND_ERROR "Error while executing the following command: \"${PYTHON_HOST_EXECUTABLE}\" \"${CMAKE_CURRENT_SOURCE_DIR}/fast_brainvisa-share_copy.py\" \"${CMAKE_COMMAND}\" \"${_destination}\" CMakeLists.txt .svn brainvisa-share.bcg project_info.cmake database_settings.minf VERSION" )
 endif()
 
 BRAINVISA_GENERATE_TARGET_NAME( target )
