@@ -5,15 +5,24 @@ function( BRAINVISA_PACKAGING_COMPONENT_INFO component package_name package_main
   set( ${package_maintainer} "IFR 49" PARENT_SCOPE )
   set( ${package_version} "${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}" PARENT_SCOPE )
 
-  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5quick RUN )
-  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5webchannel RUN )
-  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5positioning RUN )
-  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5sensors RUN )
+  BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5network RUN )
   BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libsqlite3-0 RUN )
   BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libxslt RUN )
   BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libxml2 RUN )
+  # this dependency is only present on ubuntu >= 18.04
+  if( LSB_DISTRIB STREQUAL "ubuntu"
+      AND LSB_DISTRIB_RELEASE VERSION_GREATER "18.0" )
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5quick RUN )
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5webchannel RUN )
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5positioning RUN )
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5sensors RUN )
+  endif()
+  if( LSB_DISTRIB STREQUAL "ubuntu"
+      AND LSB_DISTRIB_RELEASE VERSION_EQUAL "16.04" )
+    BRAINVISA_THIRDPARTY_DEPENDENCY( "${component}" RUN DEPENDS libqt5opengl RUN )
+  endif()
   # TODO
-  # libwoff2dec.so.1.0.2 libwebp.so.6 libhyphen.so.0
+  # ub18: libwoff2dec.so.1.0.2 libwebp.so.6 libhyphen.so.0
 endfunction()
 
 function( BRAINVISA_PACKAGING_COMPONENT_RUN component )
