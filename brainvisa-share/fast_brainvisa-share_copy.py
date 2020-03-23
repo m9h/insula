@@ -1,9 +1,12 @@
-from __future__ import print_function
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from __future__ import absolute_import, print_function
+
 import sys, os, platform
-if sys.version_info[0] >= 3:
-    izip = zip
-else:
-    from itertools import izip
+
+from six.moves import zip
+
 
 relativeFiles= []
 sourceFiles= []
@@ -44,7 +47,7 @@ print('set( destinationFiles')
 print(' ', '\n  '.join( ( '"' + i + '"' for i in destinationFiles ) ))
 print(')')
 print()
-for source, dest, relative in izip( sourceFiles, destinationFiles, relativeFiles ):
+for source, dest, relative in zip( sourceFiles, destinationFiles, relativeFiles ):
   destinationPath = os.path.join( destination, os.path.dirname( relative ) )
   if os.path.sep != '/' :
     destinationPath = destinationPath.replace( os.path.sep, '/' )
