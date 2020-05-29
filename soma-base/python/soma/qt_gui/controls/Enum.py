@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 # Soma import
 from soma.qt_gui.qt_backend import QtGui, QtCore
 from soma.utils.functiontools import SomaPartial
-from soma.qt_gui.controller_widget import weak_proxy
+from soma.utils.weak_proxy import weak_proxy
 import traits.api as traits
 
 
@@ -193,6 +193,11 @@ class EnumControlWidget(object):
             synchronize with the controller
         """
         # Get the controller trait value
+        try:
+            was_connected = control_instance.connected
+        except ReferenceError:
+            # widget deleted in the meantime
+            return
         new_controller_value = getattr(
             controller_widget.controller, control_name, None)
 
