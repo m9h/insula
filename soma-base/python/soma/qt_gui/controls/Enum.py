@@ -193,6 +193,11 @@ class EnumControlWidget(object):
             synchronize with the controller
         """
         # Get the controller trait value
+        try:
+            was_connected = control_instance.connected
+        except ReferenceError:
+            # widget deleted in the meantime
+            return
         new_controller_value = getattr(
             controller_widget.controller, control_name, None)
 
