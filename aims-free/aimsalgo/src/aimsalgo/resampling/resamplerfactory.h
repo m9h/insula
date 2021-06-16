@@ -54,7 +54,9 @@ namespace aims
       Quartic = 4,
       Quintic = 5,
       SixthOrder = 6,
-      SeventhOrder = 7
+      SeventhOrder = 7,
+      MajorityLabel = 101,
+      Median = 201,
     };
 
     /** Instantiate a Resampler of the given order
