@@ -19,6 +19,9 @@ destination = sys.argv[ 3 ]
 exclude = [ '.', '..' ] + sys.argv[ 4: ]
 stack = [ '' ]
 
+print('# baseDir:', baseDir)
+print('# destination:', os.path.join(destinationBase, destination))
+
 while stack:
   relativePath = stack.pop( 0 )
   if relativePath in exclude: continue
@@ -35,18 +38,18 @@ while stack:
     sourceFiles.append( fullPath )
     destinationFiles.append( destinationPath )
 
-print('set( relativeFiles')
-print(' ', '\n  '.join( ( '"' + i + '"' for i in relativeFiles ) ))
-print(')')
-print()
-print('set( sourceFiles')
-print(' ', '\n  '.join( ( '"' + i + '"' for i in sourceFiles ) ))
-print(')')
-print()
-print('set( destinationFiles')
-print(' ', '\n  '.join( ( '"' + i + '"' for i in destinationFiles ) ))
-print(')')
-print()
+#print('set( relativeFiles')
+#print(' ', '\n  '.join( ( '"' + i + '"' for i in relativeFiles ) ))
+#print(')')
+#print()
+#print('set( sourceFiles')
+#print(' ', '\n  '.join( ( '"' + i + '"' for i in sourceFiles ) ))
+#print(')')
+#print()
+#print('set( destinationFiles')
+#print(' ', '\n  '.join( ( '"' + i + '"' for i in destinationFiles ) ))
+#print(')')
+#print()
 for source, dest, relative in zip( sourceFiles, destinationFiles, relativeFiles ):
   destinationPath = os.path.join( destination, os.path.dirname( relative ) )
   if os.path.sep != '/' :
@@ -54,7 +57,7 @@ for source, dest, relative in zip( sourceFiles, destinationFiles, relativeFiles 
   print('if ( UNIX OR APPLE )')
   print('  add_custom_command( OUTPUT "' + dest +'"')
   print('                      COMMAND "' + cmake + '" -E make_directory "' + os.path.dirname( dest ) + '"')
-  print('                      COMMAND "' + cmake + '" -E create_symlink "' + source + '" "' + dest + '" )')
+  print('                      COMMAND "' + cmake + '" -E create_symlink "' + os.path.relpath(source, os.path.dirname(dest)) + '" "' + dest + '" )')
   print('else()')
   print('  add_custom_command( OUTPUT "' + dest +'"')
   print('                      COMMAND "' + cmake + '" -E copy_if_different "' + source + '" "' + dest + '" )')
