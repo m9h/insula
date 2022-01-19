@@ -46,10 +46,11 @@ while stack:
 #print(' ', '\n  '.join( ( '"' + i + '"' for i in sourceFiles ) ))
 #print(')')
 #print()
-#print('set( destinationFiles')
-#print(' ', '\n  '.join( ( '"' + i + '"' for i in destinationFiles ) ))
-#print(')')
-#print()
+# destinationFiles is used as target dependency in CMakeLists.txt
+print('set( destinationFiles')
+print(' ', '\n  '.join( ( '"' + i + '"' for i in destinationFiles ) ))
+print(')')
+print()
 for source, dest, relative in zip( sourceFiles, destinationFiles, relativeFiles ):
   destinationPath = os.path.join( destination, os.path.dirname( relative ) )
   if os.path.sep != '/' :

@@ -35,6 +35,7 @@ else()
 endif()
 
 BRAINVISA_GENERATE_TARGET_NAME( target )
+# destinationFiles is defined in fast_brainvisa-share_copy.cmake
 add_custom_target( ${target} ALL
                   DEPENDS ${destinationFiles} )
 
