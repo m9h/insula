@@ -549,6 +549,12 @@ label 00
 
 *END
 
+*BEGIN TREE fold_name
+name  S.paraCing._left
+color 33 135 98
+
+*END
+
 *END
 
 *BEGIN TREE fold_name
@@ -1826,6 +1832,12 @@ label 00
 name  S.F.int.AMS_right
 color 200 0 200
 label 00
+
+*END
+
+*BEGIN TREE fold_name
+name  S.paraCing._right
+color 33 133 98
 
 *END
 
