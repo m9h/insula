@@ -45,8 +45,11 @@
 
 #include <aims/io/fileFormat_d.h>
 #include <aims/io/baseFormats_motion.h>
+#include <aims/io_soma/trm_header_formatchecker.h>
+#include <soma-io/datasourceinfo/datasourceinfoloader.h>
 
 using namespace aims;
+using namespace soma;
 using namespace std;
 
 namespace aims
@@ -75,6 +78,13 @@ template class FileFormat<Motion>;
 static bool _motiondic()
 {
   FileFormatDictionary<Motion>::init();
+
+  // register soma-io checker for the TRMHEADER format
+  vector<string>  exts(1);
+  exts[0] = "trmhdr";
+  DataSourceInfoLoader::registerFormat( "TRMHEADER",
+                                        new TrmHeaderFormatChecker, exts );
+
   return true;
 }
 
