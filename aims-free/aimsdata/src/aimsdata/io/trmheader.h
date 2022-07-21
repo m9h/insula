@@ -46,8 +46,8 @@
 namespace aims
 {
 
-/** Descriptor class for the .trm Motion file format header.
-*/
+  /** Descriptor class for the .trm Motion file format header.
+  */
   class TrmHeader : public PythonHeader
   {
   public:
