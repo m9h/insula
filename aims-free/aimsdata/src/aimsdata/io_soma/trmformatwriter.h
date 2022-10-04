@@ -45,6 +45,9 @@ namespace aims
 namespace soma
 {
 
+  class Transformation3d;
+
+
   class TrmFormatWriter : public FormatWriter<aims::AffineTransformation3d>
   {
   public:
@@ -52,6 +55,18 @@ namespace soma
                                   carto::Object options = carto::none());
 
     virtual bool write( const aims::AffineTransformation3d & obj,
+                        carto::rc_ptr<DataSourceInfo> dsi,
+                        carto::Object options );
+  };
+
+
+  class Trm3DFormatWriter : public FormatWriter<Transformation3d>
+  {
+  public:
+    virtual bool filterProperties(carto::Object properties,
+                                  carto::Object options = carto::none());
+
+    virtual bool write( const Transformation3d & obj,
                         carto::rc_ptr<DataSourceInfo> dsi,
                         carto::Object options );
   };

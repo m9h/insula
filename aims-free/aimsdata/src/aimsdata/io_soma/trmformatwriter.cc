@@ -34,6 +34,7 @@
 #include <aims/io_soma/trmformatwriter.h>
 #include <aims/transformation/affinetransformation3d.h>
 #include <aims/io/motionW.h>
+#include <aims/io/writer.h>
 #include <soma-io/io/formatdictionary.h>
 //--- debug ------------------------------------------------------------------
 #include <cartobase/config/verbose.h>
@@ -68,6 +69,29 @@ bool TrmFormatWriter::write( const AffineTransformation3d & obj,
 }
 
 
+bool Trm3DFormatWriter::filterProperties( Object /* properties */,
+                                          Object /* options */ )
+{
+  // Nothing to filter here
+  return true;
+}
+
+bool Trm3DFormatWriter::write( const Transformation3d & obj,
+                               rc_ptr<DataSourceInfo> dsi,
+                               Object options )
+{
+  const AffineTransformation3d *affobj
+    = dynamic_cast<const AffineTransformation3d *>( &obj );
+  if( !affobj )
+    throw wrong_format_error( "Not an affine transformation" );
+
+  Writer<AffineTransformation3d> writer( dsi->url() );
+  writer.setOptions( options );
+  return writer.write( *affobj );
+}
+
+
+
 namespace
 {
 
@@ -77,6 +101,11 @@ namespace
     vector<string>	exts;
     exts.push_back( "trm" );
     FormatDictionary<AffineTransformation3d>::registerFormat( "TRM", r, exts );
+
+    Trm3DFormatWriter *r2 = new Trm3DFormatWriter;
+    FormatDictionary<Transformation3d>::registerFormat( "AFFINETRANS", r2,
+                                                        exts );
+
     return true;
   }
 
