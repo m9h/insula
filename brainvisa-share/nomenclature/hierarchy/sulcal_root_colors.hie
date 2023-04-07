@@ -448,6 +448,7 @@ name S.F.inf.post.r.desc._left
 
 *BEGIN TREE fold_name
 name  S.F.inf.r.tr._left
+color 180 23 82 255
 label 4
 
 *END
@@ -1734,6 +1735,7 @@ name S.F.inf.post.r.desc._right
 
 *BEGIN TREE fold_name
 name  S.F.inf.r.tr._right
+color 255 23 82 255
 label 4
 
 *END
