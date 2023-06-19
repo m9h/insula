@@ -5,7 +5,7 @@ BRAINVISA_PROJECT()
 find_package( PythonInterp 2 REQUIRED )
 
 configure_file( "${CMAKE_CURRENT_SOURCE_DIR}/config/config.py.in" "${CMAKE_BINARY_DIR}/${PYTHON_INSTALL_DIRECTORY}/brainvisa_share/config.py" @ONLY )
-BRAINVISA_INSTALL( FILES "${CMAKE_BINARY_DIR}/python/brainvisa_share/config.py" 
+BRAINVISA_INSTALL( FILES "${CMAKE_BINARY_DIR}/${PYTHON_INSTALL_DIRECTORY}/brainvisa_share/config.py" 
                    DESTINATION "${PYTHON_INSTALL_DIRECTORY}/brainvisa_share" 
                    COMPONENT ${PROJECT_NAME} )
 configure_file( "${CMAKE_CURRENT_SOURCE_DIR}/config/config.h.in" "${CMAKE_BINARY_DIR}/include/brainvisa-share/config.h" @ONLY )
