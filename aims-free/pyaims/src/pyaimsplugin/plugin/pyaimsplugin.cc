@@ -100,8 +100,6 @@ PyaimsPlugin::PyaimsPlugin() : Plugin()
   else
     Py_Initialize();
 
-  PyRun_SimpleString( "import sip" );
-  PyRun_SimpleString( "for name in ['QString', 'QVariant', 'QDate', 'QDateTime', 'QTextStream', 'QTime', 'QUrl']: sip.setapi(name, 2)" );
   PyRun_SimpleString( "import soma.aims" );
 }
 
