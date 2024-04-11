@@ -51,7 +51,7 @@ using namespace std;
 bool TrmFormatWriter::filterProperties( Object /* properties */,
                                         Object /* options */ )
 {
-  // Noobj to filter here
+  // Nothing to filter here
   return true;
 }
 

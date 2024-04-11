@@ -31,8 +31,8 @@
  * knowledge of the CeCILL-B license and that you accept its terms.
  */
 
-#ifndef AIMS_IO_SOMA_TRM_HEADER_FORMATWRITER_H
-#define AIMS_IO_SOMA_TRM_HEADER_FORMATWRITER_H
+#ifndef AIMS_IO_SOMA_TRMFORMATWRITER_H
+#define AIMS_IO_SOMA_TRMFORMATWRITER_H
 
 #include <soma-io/writer/formatwriter.h>
 
