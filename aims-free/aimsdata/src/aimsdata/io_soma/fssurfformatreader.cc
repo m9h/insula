@@ -36,7 +36,7 @@
 #include <soma-io/io/formatdictionary.h>
 //--- debug ------------------------------------------------------------------
 #include <cartobase/config/verbose.h>
-#define localMsg( message ) cartoCondMsg( 4, message, "XFMFORMATREADER" )
+#define localMsg( message ) cartoCondMsg( 4, message, "FSSURFFORMATREADER" )
 // localMsg must be undef at end of file
 //----------------------------------------------------------------------------
 
