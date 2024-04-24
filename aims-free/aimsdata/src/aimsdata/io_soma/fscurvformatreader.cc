@@ -62,8 +62,8 @@ namespace
       FsCurvFormatReader<float>  *r = new FsCurvFormatReader<float>;
       vector<string>  exts;
       exts.push_back( "curv" );
-      FormatDictionary<TimeTexture<float> >::registerFormat( "FSSURF", r,
-                                                                   exts );
+      FormatDictionary<TimeTexture<float> >::registerFormat( "FSCURV", r,
+                                                             exts );
     }
 
     return true;
