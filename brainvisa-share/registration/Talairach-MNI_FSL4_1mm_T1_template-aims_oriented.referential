@@ -1,1 +1,1 @@
-attributes = {u'axes_orientation': [u'right-left', u'anterior-posterior', u'top-bottom'], u'direct_referential': 0, 'uuid': '49e6b349-b115-211a-c8b9-20d0ece9846d', u'name': u'Talairach-MNI FSL4 1mm T1 template-aims oriented', u'dimension_count': 3}
+attributes = {u'axes_orientation': u'LPI', u'direct_referential': 0, 'uuid': '49e6b349-b115-211a-c8b9-20d0ece9846d', u'name': u'Talairach-MNI FSL4 1mm T1 template-aims oriented', u'dimension_count': 3}

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <minf expander="minf_2.0">
 <d length="5">
-  <l length="3" name="axes_orientation">
-    <s>left-right</s>
-    <s>posterior-anterior</s>
-    <s>bottom-top</s>
-  </l>
+  <s name="axes_orientation">RAS</s>
   <n name="direct_referential">1</n>
   <n name="dimension_count">3</n>
   <s name="name">Talairach-MNI template-SPM</s>

@@ -1,1 +1,1 @@
-attributes = {u'axes_orientation': [u'right-left', u'anterior-posterior', u'top-bottom'], u'direct_referential': 0, 'uuid': '5f83f18d-e211-6705-99a0-720c4707901b', u'name': u'Globally registred SPAM', u'dimension_count': 3}
+attributes = {u'axes_orientation': u'LPI', u'direct_referential': 0, 'uuid': '5f83f18d-e211-6705-99a0-720c4707901b', u'name': u'Globally registred SPAM', u'dimension_count': 3}
