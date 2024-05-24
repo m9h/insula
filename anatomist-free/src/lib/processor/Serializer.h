@@ -38,6 +38,7 @@
 
 //--- header files ------------------------------------------------------------
 
+#include <cartobase/thread/mutex.h>
 #include <map>
 
 
@@ -54,19 +55,8 @@ namespace anatomist
   class Serializer
   {
   public:
-    /**@name	Constructors and Destructor*/
-    //@{
-
-    /// does nothing
     Serializer();
-
-    /// does nothing
     virtual ~Serializer();
-
-    //@}
-
-    /**@name	Serialization*/
-    //@{
 
     /**
      *	Generate a unique ID to serialize a pointer
@@ -75,19 +65,12 @@ namespace anatomist
      */
     int serialize( void* ptr );
 
-    //@}
-
   private:
-    /**@name        Disable copy*/
-    //@{
-
-    ///	Copy constructor
+    ///	Disabled Copy constructor
     Serializer(const Serializer&);
 
     ///	Assignment operator
     Serializer& operator=(const Serializer&);
-
-    //@}
 
   protected:
     ///	Pointer to ID lookup table
@@ -95,13 +78,14 @@ namespace anatomist
 
     ///	Current ID: begin from 0 and increment with every new pointer
     int _id;
+    carto::Mutex _mutex;
   };
 
 
   //--- inline methods --------------------------------------------------------
 
   inline
-  Serializer::Serializer() : _id(0)
+  Serializer::Serializer() : _id(0), _mutex( carto::Mutex::Recursive )
   {
   }
 
