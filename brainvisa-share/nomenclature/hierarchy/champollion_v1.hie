@@ -1,0 +1,441 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax CorticalFoldArg
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name hemisph_left
+
+*BEGIN TREE fold_name
+name  S.T.i.-S.O.T.lat._left
+color 199 0 93
+label 30
+
+*END
+
+*BEGIN TREE fold_name
+name  CINGULATE._left
+color 39 106 144
+label 31
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.M.post.-S.p.C._left
+color 255 222 0
+label 32
+
+*END
+
+*BEGIN TREE fold_name
+name  Lobule_parietal_sup._left
+color 190 115 159
+label 33
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-sylv._left
+color 255 0 0
+label 34
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Or._left
+color 100 255 100
+label 35
+
+*END
+
+*BEGIN TREE fold_name
+name  S.s.P.-S.Pa.int._left
+color 62 255 117
+label 36
+
+*END
+
+*BEGIN TREE fold_name
+name  F.Coll.-S.Rh._left
+color 122 206 255
+label 37
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Or.-S.Olf._left
+color 225 255 108
+label 38
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.marginal-S.F.inf.ant._left
+color 231 173 255
+label 39
+
+*END
+
+*BEGIN TREE fold_name
+name  F.I.P._left
+color 98 200 90
+label 40
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s.-S.GSM._left
+color 255 161 96
+label 41
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.inf.-BROCA-S.Pe.C.inf._left
+color 225 82 255
+label 42
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.L.p.-S.GSM._left
+color 6 164 255
+label 43
+
+*END
+
+*BEGIN TREE fold_name
+name  fronto-parietal_medial_face._left
+color 151 182 93
+label 44
+
+*END
+
+*BEGIN TREE fold_name
+name  Sc.Cal.-S.Li._left
+color 225 150 100
+label 45
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Pe.C._left
+color 255 164 0
+label 46
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.i.-S.T.s.-S.T.pol._left
+color 255 0 87
+label 47
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-S.Po.C._left
+color 255 231 39
+label 48
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.int.-S.R._left
+color 255 128 0
+label 49
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.median-S.F.pol.tr.-S.F.sup._left
+color 255 158 72
+label 50
+
+*END
+
+*BEGIN TREE fold_name
+name  OCCIPITAL_left
+color 0 0 100
+label 51
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.inter.-S.F.sup._left
+color 0 255 162
+label 52
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.L.p.-subsc.-F.C.L.a.-INSULA._left
+color 42 103 222
+label 53
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.int.-F.C.M.ant._left
+color 0 255 99
+label 54
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s.br._left
+color 0 255 204
+label 55
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-S.Pe.C._left
+color 255 100 0
+label 56
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s._left
+color 255 100 100
+label 57
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Po.C._left
+color 184 255 0
+label 58
+
+*END
+
+*BEGIN TREE fold_name
+name  F.P.O.-S.Cu.-Sc.Cal._left
+color 225 61 84
+label 59
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name hemisph_right
+
+*BEGIN TREE fold_name
+name  S.F.median-S.F.pol.tr.-S.F.sup._right
+color 255 158 72
+label 00
+
+*END
+
+*BEGIN TREE fold_name
+name  CINGULATE._right
+color 39 106 144
+label 01
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.inter.-S.F.sup._right
+color 0 255 162
+label 02
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.marginal-S.F.inf.ant._right
+color 231 173 255
+label 03
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-sylv._right
+color 255 0 0
+label 04
+
+*END
+
+*BEGIN TREE fold_name
+name  OCCIPITAL_right
+color 0 0 100
+label 05
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-S.Po.C._right
+color 255 231 39
+label 06
+
+*END
+
+*BEGIN TREE fold_name
+name  S.C.-S.Pe.C._right
+color 255 100 0
+label 07
+
+*END
+
+*BEGIN TREE fold_name
+name  F.P.O.-S.Cu.-Sc.Cal._right
+color 225 61 84
+label 08
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.L.p.-subsc.-F.C.L.a.-INSULA._right
+color 42 103 222
+label 09
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.i.-S.T.s.-S.T.pol._right
+color 255 0 87
+label 10
+
+*END
+
+*BEGIN TREE fold_name
+name  fronto-parietal_medial_face._right
+color 151 182 93
+label 11
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Pe.C._right
+color 255 164 0
+label 12
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Or._right
+color 100 255 100
+label 13
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.L.p.-S.GSM._right
+color 6 164 255
+label 14
+
+*END
+
+*BEGIN TREE fold_name
+name  F.C.M.post.-S.p.C._right
+color 255 222 0
+label 15
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s.-S.GSM._right
+color 255 161 96
+label 16
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s.br._right
+color 0 255 204
+label 17
+
+*END
+
+*BEGIN TREE fold_name
+name  Lobule_parietal_sup._right
+color 190 115 159
+label 18
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.int.-S.R._right
+color 255 128 0
+label 19
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.inf.-BROCA-S.Pe.C.inf._right
+color 225 82 255
+label 20
+
+*END
+
+*BEGIN TREE fold_name
+name  Sc.Cal.-S.Li._right
+color 225 150 100
+label 21
+
+*END
+
+*BEGIN TREE fold_name
+name  S.F.int.-F.C.M.ant._right
+color 0 255 99
+label 22
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Or.-S.Olf._right
+color 225 255 108
+label 23
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Po.C._right
+color 184 255 0
+label 24
+
+*END
+
+*BEGIN TREE fold_name
+name  F.Coll.-S.Rh._right
+color 122 206 255
+label 25
+
+*END
+
+*BEGIN TREE fold_name
+name  S.s.P.-S.Pa.int._right
+color 62 255 117
+label 26
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.i.-S.O.T.lat._right
+color 199 0 93
+label 27
+
+*END
+
+*BEGIN TREE fold_name
+name  S.T.s._right
+color 255 100 100
+label 28
+
+*END
+
+*BEGIN TREE fold_name
+name  F.I.P._right
+color 98 200 90
+label 29
+
+*END
+
+*END
+
+*END
+
+*END
