@@ -432,6 +432,11 @@
                 "S.F.sup.post.r.desc._left"
             ]
         },
+        "S.intraCing._left": {
+            "S.intraCing._left": [
+                "S.intraCing._left"
+            ]
+        },
         "S.Li._left": {
             "S.Li.ant._left": [
                 "S.Li.ant._left"
@@ -515,6 +520,11 @@
         "S.R.inf._left": {
             "S.R.inf._left": [
                 "S.R.inf._left"
+            ]
+        },
+        "S.R.sup._left": {
+            "S.R.sup._left": [
+                "S.R.sup._left"
             ]
         },
         "S.Rh._left": {
@@ -1027,6 +1037,11 @@
                 "S.F.sup.post.r.desc._right"
             ]
         },
+        "S.intraCing._right": {
+            "S.intraCing._right": [
+                "S.intraCing._right"
+            ]
+        },
         "S.Li._right": {
             "S.Li.ant._right": [
                 "S.Li.ant._right"
@@ -1112,6 +1127,11 @@
                 "S.R.inf._right"
             ]
         },
+        "S.R.sup._right": {
+            "S.R.sup._right": [
+                "S.R.sup._right"
+            ]
+        },
         "S.Rh._right": {
             "S.Rh._right": [
                 "S.Rh._right"
@@ -1188,26 +1208,6 @@
         "S.s.P._right": {
             "S.s.P._right": [
                 "S.s.P._right"
-            ]
-        },
-        "S.R.sup._left": {
-            "S.R.sup._left": [
-                "S.R.sup._left"
-            ]
-        },
-        "S.R.sup._right": {
-            "S.R.sup._right": [
-                "S.R.sup._right"
-            ]
-        },
-        "S.intraCing._left": {
-            "S.intraCing._left": [
-                "S.intraCing._left"
-            ]
-        },
-        "S.intraCing._right": {
-            "S.intraCing._right": [
-                "S.intraCing._right"
             ]
         }
     }
