@@ -974,12 +974,14 @@ name  F.Cal.ant.-Sc.Cal._left
 color 200 150 100
 
 *BEGIN TREE fold_name
-name F.Cal.ant._left
+name  F.Cal.ant._left
+color 184 91 41
 
 *END
 
 *BEGIN TREE fold_name
-name Sc.Cal._left
+name  Sc.Cal._left
+color 60 141 135
 
 *END
 
@@ -2261,12 +2263,14 @@ name  F.Cal.ant.-Sc.Cal._right
 color 200 150 100
 
 *BEGIN TREE fold_name
-name F.Cal.ant._right
+name  F.Cal.ant._right
+color 184 91 41
 
 *END
 
 *BEGIN TREE fold_name
-name Sc.Cal._right
+name  Sc.Cal._right
+color 60 141 135
 
 *END
 
