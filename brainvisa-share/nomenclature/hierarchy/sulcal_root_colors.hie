@@ -985,6 +985,12 @@ color 60 141 135
 
 *END
 
+*BEGIN TREE fold_name
+name  Sc.Cal.mid._left
+color 150 120 40
+
+*END
+
 *END
 
 *BEGIN TREE fold_name
@@ -2271,6 +2277,12 @@ color 184 91 41
 *BEGIN TREE fold_name
 name  Sc.Cal._right
 color 60 141 135
+
+*END
+
+*BEGIN TREE fold_name
+name  Sc.Cal.mid._right
+color 150 120 40
 
 *END
 
