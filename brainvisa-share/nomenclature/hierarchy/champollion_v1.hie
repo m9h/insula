@@ -12,210 +12,224 @@ name hemisph_left
 *BEGIN TREE fold_name
 name  S.T.i.-S.O.T.lat._left
 color 199 0 93
-label 30
+label 32
 
 *END
 
 *BEGIN TREE fold_name
 name  CINGULATE._left
 color 39 106 144
-label 31
+label 33
 
 *END
 
 *BEGIN TREE fold_name
 name  F.C.M.post.-S.p.C._left
 color 255 222 0
-label 32
+label 34
 
 *END
 
 *BEGIN TREE fold_name
 name  Lobule_parietal_sup._left
 color 190 115 159
-label 33
+label 35
 
 *END
 
 *BEGIN TREE fold_name
 name  S.C.-sylv._left
 color 255 0 0
-label 34
+label 36
 
 *END
 
 *BEGIN TREE fold_name
 name  S.Or._left
 color 100 255 100
-label 35
+label 37
 
 *END
 
 *BEGIN TREE fold_name
 name  S.s.P.-S.Pa.int._left
 color 62 255 117
-label 36
+label 38
 
 *END
 
 *BEGIN TREE fold_name
 name  F.Coll.-S.Rh._left
 color 122 206 255
-label 37
+label 39
 
 *END
 
 *BEGIN TREE fold_name
 name  S.Or.-S.Olf._left
 color 225 255 108
-label 38
+label 40
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.marginal-S.F.inf.ant._left
 color 231 173 255
-label 39
+label 41
 
 *END
 
 *BEGIN TREE fold_name
-name  F.I.P._left
+name  F.I.P.-F.I.P.Po.C.inf._left
 color 98 200 90
-label 40
+label 42
 
 *END
 
 *BEGIN TREE fold_name
 name  S.T.s.-S.GSM._left
 color 255 161 96
-label 41
+label 43
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.inf.-BROCA-S.Pe.C.inf._left
 color 225 82 255
-label 42
+label 44
 
 *END
 
 *BEGIN TREE fold_name
 name  F.C.L.p.-S.GSM._left
 color 6 164 255
-label 43
+label 45
 
 *END
 
 *BEGIN TREE fold_name
 name  fronto-parietal_medial_face._left
 color 151 182 93
-label 44
+label 46
 
 *END
 
 *BEGIN TREE fold_name
 name  Sc.Cal.-S.Li._left
 color 225 150 100
-label 45
+label 47
 
 *END
 
 *BEGIN TREE fold_name
 name  S.Pe.C._left
 color 255 164 0
-label 46
+label 48
 
 *END
 
 *BEGIN TREE fold_name
 name  S.T.i.-S.T.s.-S.T.pol._left
 color 255 0 87
-label 47
+label 49
 
 *END
 
 *BEGIN TREE fold_name
 name  S.C.-S.Po.C._left
 color 255 231 39
-label 48
+label 50
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.int.-S.R._left
 color 255 128 0
-label 49
+label 51
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.median-S.F.pol.tr.-S.F.sup._left
 color 255 158 72
-label 50
+label 52
 
 *END
 
 *BEGIN TREE fold_name
 name  OCCIPITAL_left
 color 0 0 100
-label 51
+label 53
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.inter.-S.F.sup._left
 color 0 255 162
-label 52
+label 54
 
 *END
 
 *BEGIN TREE fold_name
 name  F.C.L.p.-subsc.-F.C.L.a.-INSULA._left
 color 42 103 222
-label 53
+label 55
 
 *END
 
 *BEGIN TREE fold_name
 name  S.F.int.-F.C.M.ant._left
 color 0 255 99
-label 54
+label 56
 
 *END
 
 *BEGIN TREE fold_name
 name  S.T.s.br._left
 color 0 255 204
-label 55
+label 57
 
 *END
 
 *BEGIN TREE fold_name
 name  S.C.-S.Pe.C._left
 color 255 100 0
-label 56
+label 58
 
 *END
 
 *BEGIN TREE fold_name
 name  S.T.s._left
 color 255 100 100
-label 57
+label 59
 
 *END
 
 *BEGIN TREE fold_name
 name  S.Po.C._left
 color 184 255 0
-label 58
+label 60
 
 *END
 
 *BEGIN TREE fold_name
 name  F.P.O.-S.Cu.-Sc.Cal._left
 color 225 61 84
-label 59
+label 61
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Call._left
+color 100 100 255
+label 62
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Call.-S.s.P.-S.intraCing._left
+color 24 203 159
+label 63
 
 *END
 
@@ -428,9 +442,23 @@ label 28
 *END
 
 *BEGIN TREE fold_name
-name  F.I.P._right
+name  F.I.P.-F.I.P.Po.C.inf._right
 color 98 200 90
 label 29
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Call._right
+color 100 100 255
+label 30
+
+*END
+
+*BEGIN TREE fold_name
+name  S.Call.-S.s.P.-S.intraCing._right
+color 24 203 159
+label 31
 
 *END
 
