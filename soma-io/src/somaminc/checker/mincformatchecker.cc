@@ -378,6 +378,7 @@ int MincFormatChecker::readMincHistory( Object hdr, const string & fname,
 // WARNING: dependency over niftilib for znzlib, the lib is in the nifti
 // plugin code
 #include <soma-io/nifticlib/znzlib/znzlib.h>
+#include <unistd.h>  // rmdir, unlink
 #ifdef _WIN32
 #  define WIN32_LEAN_AND_MEAN
 #  include <Winsock2.h>
