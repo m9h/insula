@@ -44,6 +44,11 @@
 #ifndef PY_ARRAY_UNIQUE_SYMBOL
 #define PY_ARRAY_UNIQUE_SYMBOL PyAims_NumpyAPI
 #endif
+/* NumPy 2 gives the C-API table hidden visibility unless told otherwise; it
+   is defined in libpyaims and used by the aims SIP modules, so export it. */
+#if !defined(NPY_API_SYMBOL_ATTRIBUTE) && defined(__GNUC__)
+#define NPY_API_SYMBOL_ATTRIBUTE __attribute__((visibility("default")))
+#endif
 #ifndef NO_IMPORT_ARRAY
 #define NO_IMPORT_ARRAY
 #endif
