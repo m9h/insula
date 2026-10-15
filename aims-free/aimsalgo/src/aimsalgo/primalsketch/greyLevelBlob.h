@@ -302,7 +302,7 @@ namespace aims {
      inline
      SaddlePoint<T>& SaddlePoint<T>::operator = (const SaddlePoint<T> & other)
      {
-          _node=other.node;
+          _node=other._node;
           return *this;
      }
 
@@ -312,7 +312,7 @@ namespace aims {
      inline
      MaximumPoint<T>& MaximumPoint<T>::operator = (const MaximumPoint<T> & other)
      {
-          _node=other.node;
+          _node=other._node;
           blob=other.blob;
           return *this;
      }
