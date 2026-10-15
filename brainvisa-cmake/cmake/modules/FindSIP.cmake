@@ -126,7 +126,7 @@ else( SIP_VERSION )
           DOC "Path to bv_sip4make script" )
         if( NOT SIP4MAKE_EXECUTABLE )
           # not found: use the regular sip executable
-          set( SIP4MAKE_EXECUTABLE "$SIP_EXECUTABLE" CACHE FILEPATH "Path to bv_sip4make script (or sip itself as fallback)" )
+          set( SIP4MAKE_EXECUTABLE "${SIP_EXECUTABLE}" CACHE FILEPATH "Path to bv_sip4make script (or sip itself as fallback)" )
         endif()
       endif()
     endif()
