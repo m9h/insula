@@ -82,7 +82,7 @@ fostreambuf<Inserter>::overflow(int c)
 		result = sync();
 	else if (_sink != 0)
 	{
-		assert(this->ch >= 0 && c <= UCHAR_MAX) ;
+		assert(c >= 0 && c <= UCHAR_MAX) ;
 		result = _inserter(_sink , c);
 	}
 	return result;
