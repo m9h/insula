@@ -157,7 +157,7 @@ namespace soma
     std::vector<Point3df> & vert = obj.vertex();
     vert.resize( nv );
 
-    long n = itemr->read( *ds, (float *) &vert[0], nv * 3 );
+    long n = itemr->read( *ds, (float *) vert.data(), nv * 3 );
     if( n != nv * 3 )
       return false;
 
@@ -180,7 +180,7 @@ namespace soma
     std::vector<AimsVector<uint32_t, D> > & poly = obj.polygon();
     poly.resize( np );
 
-    long n = itemr->read( *ds, (uint32_t *) &poly[0], np * D );
+    long n = itemr->read( *ds, (uint32_t *) poly.data(), np * D );
     if( n != np * D )
       return false;
 

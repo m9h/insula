@@ -176,25 +176,25 @@ namespace aims
         sr->write( os, nvertex );
         os << sep;
         
-        pr->write( os, &vert[0], nvertex );
+        pr->write( os, vert.data(), nvertex );
         os << sep;
         
         // normals
         sr->write( os, nnormal );
         os << sep;
-        pr->write( os, &norm[0], nnormal );
+        pr->write( os, norm.data(), nnormal );
         os << sep;
         
         // textures
         sr->write( os, ntexture );
         os << sep;
-        ir->write( os, &tex[0], ntexture );
+        ir->write( os, tex.data(), ntexture );
         os << sep;
         
         // polygons
         sr->write( os, npolygon );
         os << sep;
-        plr->write( os, &poly[0], npolygon );
+        plr->write( os, poly.data(), npolygon );
       }
   }
 

@@ -169,25 +169,25 @@ namespace aims
 
 	std::vector<Point3df>	& vert = surf.vertex();
 	vert.insert( vert.end(), nvertex, Point3df() );
-	pr->read( is, &vert[0], nvertex );
+	pr->read( is, vert.data(), nvertex );
 
 	// normals
 	sr->read( is, nnormal );
 	std::vector<Point3df>	& norm = surf.normal();
 	norm.insert( norm.end(), nnormal, Point3df() );
-	pr->read( is, &norm[0], nnormal );
+	pr->read( is, norm.data(), nnormal );
 
 	// textures
 	sr->read( is, ntexture );
 	std::vector<T>	& tex = surf.texture();
 	tex.insert( tex.end(), ntexture, T() );
-	ir->read( is, &tex[0], ntexture );
+	ir->read( is, tex.data(), ntexture );
 
 	// polygons
 	sr->read( is, npolygon );
 	std::vector<AimsVector<uint,D> >  & poly = surf.polygon();
 	poly.insert( poly.end(), npolygon, AimsVector<uint,D>() );
-	plr->read( is, &poly[0], npolygon );
+	plr->read( is, poly.data(), npolygon );
 
         // verify polygons are all in the vertices range
         for ( ip=poly.begin(); ip!=poly.end(); ++ip )

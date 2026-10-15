@@ -150,7 +150,7 @@ namespace soma
     std::vector<T> & tex = obj[0].data();
     tex.resize( nv );
 
-    long n = itemr->read( *ds, &tex[0], nv );
+    long n = itemr->read( *ds, tex.data(), nv );
     if( n != nv )
       return false;
 
