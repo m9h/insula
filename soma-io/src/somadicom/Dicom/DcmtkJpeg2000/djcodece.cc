@@ -465,6 +465,15 @@ OFBool DJ2KEncoderBase::canChangeCoding(
 }
 
 
+#if OFFIS_DCMTK_VERSION_NUMBER >= 370
+Uint16 DJ2KEncoderBase::decodedBitsAllocated(
+    Uint16 /* bitsAllocated */, Uint16 /* bitsStored */ ) const
+{
+  // an encoder does not decompress (as DCMTK's JPEG and JPEG-LS encoders)
+  return 0;
+}
+#endif
+
 OFCondition DJ2KEncoderBase::determineDecompressedColorModel(
                               const DcmRepresentationParameter* /* fromParam */,
                               DcmPixelSequence* /* fromPixSeq */,

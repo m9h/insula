@@ -85,6 +85,12 @@ class  DJ2KEncoderBase : public DcmCodec
     virtual OFBool canChangeCoding( const E_TransferSyntax oldRepType,
                                     const E_TransferSyntax newRepType ) const;
 
+#if PACKAGE_VERSION_NUMBER >= 370
+    /** BitsAllocated after decompression (DcmCodec, DCMTK 3.7) */
+    virtual Uint16 decodedBitsAllocated( Uint16 bitsAllocated,
+                                         Uint16 bitsStored ) const;
+#endif
+
     virtual OFCondition determineDecompressedColorModel(
                                     const DcmRepresentationParameter* fromParam,
                                     DcmPixelSequence* fromPixSeq,

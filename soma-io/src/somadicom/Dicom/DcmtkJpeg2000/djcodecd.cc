@@ -689,6 +689,19 @@ OFBool DJ2KDecoderBase::canChangeCoding(
 }
 
 
+#if OFFIS_DCMTK_VERSION_NUMBER >= 370
+Uint16 DJ2KDecoderBase::decodedBitsAllocated(
+    Uint16 /* bitsAllocated */, Uint16 bitsStored ) const
+{
+  // as DCMTK's JPEG and JPEG-LS decoders: 8 bits for 2..8 bits per
+  // sample, 16 for 9..16, otherwise no decompression possible
+  if ( bitsStored < 2 ) return 0;
+  if ( bitsStored <= 8 ) return 8;
+  if ( bitsStored <= 16 ) return 16;
+  return 0;
+}
+#endif
+
 OFCondition DJ2KDecoderBase::determineDecompressedColorModel(
                               const DcmRepresentationParameter* /* fromParam */,
                               DcmPixelSequence* /* fromPixSeq */,
