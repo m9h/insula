@@ -364,14 +364,15 @@ namespace soma
 
     std::vector<U> src( ((size_t)vx) * vy * vz * len );
     T *target = 0;
-    void *buf = &src[0];
+    void *buf = src.data();
     size_t ntot = ((size_t)vx) * vy * vz * sizeof(U);
     long ii;
     size_t yoff = idims[0];
     size_t zoff = yoff * idims[1];
     size_t toff = 0;
     long minc;
-    U* psrc, *pmax = &src[src.size()], *pmin = &src[0];
+    // one past the end: data() + size(), not &src[src.size()] (out of range)
+    U* psrc, *pmax = src.data() + src.size(), *pmin = src.data();
     bool fail = false;
     // strides in dest data
     if( stride.size() < ndim )
