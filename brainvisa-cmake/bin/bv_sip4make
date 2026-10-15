@@ -8,7 +8,11 @@ import shutil
 import tempfile
 import re
 import subprocess
-import toml
+try:
+    import tomllib  # Python >= 3.11, read-only, all that is needed here
+except ImportError:
+    tomllib = None
+    import toml
 
 def most_recent_modif(directories):
     result = None
@@ -94,7 +98,11 @@ if sip6:
     else:
         # Do not do anything if no build file
         # is older than any sip file
-        sip_project = toml.load('pyproject.toml')
+        if tomllib is not None:
+            with open('pyproject.toml', 'rb') as f:
+                sip_project = tomllib.load(f)
+        else:
+            sip_project = toml.load('pyproject.toml')
         sip_dirs = sip_project['tool']['sip']['project']['sip-include-dirs']
         in_date = most_recent_modif(sip_dirs)
         out_date = most_recent_modif([outdir])
