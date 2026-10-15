@@ -40,6 +40,26 @@ namespace
 {
 
   // transpose if xyzorder is false
+  // The object a weak reference points to, as a new reference, or NULL if
+  // it is gone. PyWeakref_GetObject (a borrowed reference, Py_None when
+  // dead) is deprecated since Python 3.13 and removed in 3.15.
+  static PyObject* weakrefTarget( PyObject* wr )
+  {
+#if PY_VERSION_HEX >= 0x030d0000
+    PyObject *o = 0;
+    if( PyWeakref_GetRef( wr, &o ) < 0 )
+      PyErr_Clear();
+    return o;
+#else
+    PyObject *o = PyWeakref_GetObject( wr );
+    if( !o || o == Py_None )
+      return 0;
+    Py_INCREF( o );
+    return o;
+#endif
+  }
+
+
   PyObject* transposeNumpyArray( PyObject* a, bool xyzorder )
   {
     PyArrayObject *arr = (PyArrayObject *) a;
@@ -82,10 +102,9 @@ namespace aims
       PyObject *wr = PyObject_GetAttrString( sipSelf, "_arrayref" );
       if( wr )
       {
-        PyObject *arr = PyWeakref_GetObject( wr );
+        PyObject *arr = weakrefTarget( wr );
         if( arr )
         {
-          Py_INCREF( arr );
           sipRes = transposeNumpyArray( arr, xyzorder );
         }
         else
@@ -173,9 +192,15 @@ namespace aims
     PyObject *wr = PyObject_GetAttrString( sipSelf, "_arrayref" );
     if( !wr )
       return;
-    PyObject *o = PyWeakref_GetObject( wr );
-    if( !PyArray_Check( o ) )
+    PyObject *o = weakrefTarget( wr );
+    Py_DECREF( wr );
+    if( !o )
       return;
+    if( !PyArray_Check( o ) )
+    {
+      Py_DECREF( o );
+      return;
+    }
     PyArrayObject *arr = (PyArrayObject *) o;
     // PyArray_NDIM( arr ) = ndim;
 #if (defined(NPY_NO_DEPRECATED_API) && (NPY_1_7_API_VERSION <= NPY_NO_DEPRECATED_API))
@@ -221,6 +246,7 @@ namespace aims
           PyArray_STRIDES( arr )[i] = PyArray_STRIDES( arr )[i+1] * dims[i+1];
       }
     }
+    Py_DECREF( o );
   }
 
 
