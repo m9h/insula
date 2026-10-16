@@ -9,7 +9,9 @@
 if( LIBKDTREE_INCLUDE_DIR )
     SET( LIBKDTREE_FOUND "YES" )
 else()
-    FIND_PATH( LIBKDTREE_INCLUDE_DIR kdtree.hpp
+    # The headers are included as <kdtree++/kdtree.hpp>, which is also how
+    # distributions install them (/usr/include/kdtree++/kdtree.hpp).
+    FIND_PATH( LIBKDTREE_INCLUDE_DIR kdtree++/kdtree.hpp
         ${LIBKDTREE_DIR}/include
         /usr/include
     )
