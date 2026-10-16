@@ -2340,7 +2340,31 @@ macro( BRAINVISA_ADD_MOC_FILES _sources )
       elseif( DESIRED_QT_VERSION EQUAL 5 )
         qt5_generate_moc( "${_tmp_FILE}" "${_moc}" )
       elseif( DESIRED_QT_VERSION EQUAL 6 )
-        qt6_generate_moc( "${_tmp_FILE}" "${_moc}" )
+        # Give moc the compiler's predefined macros, as AUTOMOC does
+        # (moc_predefs.h). Without them moc does not know __x86_64__ etc.;
+        # where /usr/include is on the include path, glibc's bits/wordsize.h
+        # then sets __WORDSIZE to 32, Fedora's multilib qconfig.h includes a
+        # missing qconfig-32.h, QT_VERSION_MAJOR stays undefined and every
+        # "#if QT_VERSION < 0x060000" in a header is taken by moc (but not
+        # by the compiler).
+        if( NOT DEFINED BRAINVISA_MOC_PREDEFS
+            AND CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang" )
+          execute_process( COMMAND ${CMAKE_CXX_COMPILER} -dM -E -x c++ /dev/null
+            OUTPUT_FILE "${CMAKE_BINARY_DIR}/brainvisa_moc_predefs.h"
+            RESULT_VARIABLE _predefs_result )
+          if( _predefs_result EQUAL 0 )
+            set( BRAINVISA_MOC_PREDEFS "${CMAKE_BINARY_DIR}/brainvisa_moc_predefs.h" )
+          else()
+            set( BRAINVISA_MOC_PREDEFS "" )
+          endif()
+        endif()
+        if( BRAINVISA_MOC_PREDEFS )
+          qt6_wrap_cpp( _moc_out "${_tmp_FILE}"
+                        OPTIONS --include "${BRAINVISA_MOC_PREDEFS}" )
+          set( _moc ${_moc_out} )
+        else()
+          qt6_generate_moc( "${_tmp_FILE}" "${_moc}" )
+        endif()
       endif()
       set(${_sources} ${${_sources}} "${_moc}" )
     endif()
