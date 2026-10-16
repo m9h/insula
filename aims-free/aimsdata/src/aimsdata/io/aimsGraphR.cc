@@ -699,3 +699,14 @@ void AimsGraphReader::loadAllMissingElements( Graph & g )
   }
 }
 
+
+// Explicit instantiations for the types registered above, so that
+// libaimsdata exports their members (see aimsGraphW.cc).
+template struct AimsGraphReader::ObjectWrapper<BucketMap<Void> >;
+template struct AimsGraphReader::ObjectWrapper<AimsSurfaceTriangle>;
+template struct AimsGraphReader::ObjectWrapper<AimsTimeSurface<2, Void> >;
+template struct AimsGraphReader::ObjectWrapper<Texture1d>;
+template struct AimsGraphReader::ObjectWrapper<TimeTexture<short> >;
+template struct AimsGraphReader::ObjectWrapper<Texture2d>;
+template struct AimsGraphReader::ObjectWrapper<Volume<short> >;
+template struct AimsGraphReader::ObjectWrapper<Volume<int32_t> >;

@@ -740,9 +740,17 @@ void AimsGraphWriter::writeElements( Graph & g, SavingMode newmode,
 }
 
 
-#ifdef __APPLE__
+// Explicit instantiations, so that libaimsdata exports these members on
+// every platform. They used to be macOS-only and elsewhere existed only as
+// implicit instantiations, which an LTO build (GCC -flto) inlines or drops;
+// libanatomist then failed to link (undefined ObjectWrapper<...>::write,
+// dataType, objectType).
 template struct AimsGraphWriter::ObjectWrapper<AimsSurfaceTriangle>;
 template struct AimsGraphWriter::ObjectWrapper<BucketMap<Void> >;
 template struct AimsGraphWriter::ObjectWrapper<AimsTimeSurface<2, Void> >;
-#endif
+template struct AimsGraphWriter::ObjectWrapper<Texture1d>;
+template struct AimsGraphWriter::ObjectWrapper<TimeTexture<short> >;
+template struct AimsGraphWriter::ObjectWrapper<Texture2d>;
+template struct AimsGraphWriter::ObjectWrapper<Volume<short> >;
+template struct AimsGraphWriter::ObjectWrapper<Volume<int32_t> >;
 
