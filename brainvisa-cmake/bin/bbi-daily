@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+try:
+    from brainvisa_cmake import bbi_daily
+except ImportError:
+    import sys
+    import os.path as osp
+
+    base_p = osp.dirname(osp.dirname(osp.realpath(__file__)))
+    print('base:', base_p)
+    p = osp.join(base_p, 'python', 'brainvisa_cmake')
+    if not osp.isdir(p):
+        print(p, 'does not exist')
+        pver = '.'.join([str(x) for x in sys.version_info[:2]])
+        p = osp.join(base_p, 'lib', f'python{pver}', 'site-packages',
+                     'brainvisa_cmake')
+    sys.path.insert(0, osp.dirname(p))
+    from brainvisa_cmake import bbi_daily
+
+bbi_daily.main()
