@@ -1,0 +1,144 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import os
+import os.path as osp
+import pathlib
+import sys
+import argparse
+import math
+
+
+def get_rattler_cache_dir():
+    cdir = os.environ.get('XDG_CACHE_HOME')
+    if cdir is None:
+        home = pathlib.Path.home()
+        cdir = str(home / '.cache')
+    return f'{cdir}/rattler/cache'
+
+
+def nlinks(dirname):
+    todo = [dirname]
+    nlinks = 0
+    while todo:
+        dirname = todo.pop(0)
+        for f in os.listdir(dirname):
+            fname = osp.join(dirname, f)
+            if osp.isdir(fname):
+                todo.append(fname)
+            else:
+                if not osp.islink(fname):
+                    n = os.stat(fname, follow_symlinks=False).st_nlink
+                    if nlinks == 0:
+                        nlinks = n
+                    else:
+                        nlinks = max((nlinks, n))
+                    if nlinks >= 2:
+                        return nlinks
+    return nlinks
+
+
+def get_cache_pkgs(cache_dir=None):
+    if cache_dir is None:
+        cache_dir = get_rattler_cache_dir()
+    pkg_dir = osp.join(cache_dir, 'pkgs')
+    pkgs = {}
+    files = []
+    for p in os.listdir(pkg_dir):
+        if p.endswith('.lock'):
+            if not osp.exists(osp.join(pkg_dir, p[:-5])):
+                # orphan .lock
+                print('rm', osp.join(pkg_dir, p))
+                os.unlink(osp.join(pkg_dir, p))
+                continue
+            key = p[:-5].rsplit('-', 2)[0]
+            pkgs[key] = []
+        else:
+            files.append(p)
+    sep = '-_.'
+    for p in files:
+        n = len(p)
+        for s in range(n, -1, -1):
+            if s == n or p[s] in sep:
+                name = p[:s]
+                if name in pkgs:
+                    fullp = osp.join(pkg_dir, p)
+                    # print(fullp, ':', nlinks(fullp))
+                    pkgs[name].append((fullp, nlinks(fullp)))
+                    break
+    return pkgs
+
+
+def rmtree(filename, dry_run=False):
+    size = 0
+    todo = [filename]
+    while todo:
+        filename = todo.pop(0)
+        if osp.isdir(filename) and not osp.islink(filename):
+            content = [osp.join(filename, f) for f in os.listdir(filename)]
+            if len(content) != 0:
+                if dry_run:
+                    todo = content + todo
+                    size += os.lstat(filename).st_size
+                else:
+                    todo = content + [filename] + todo
+            else:
+                size += os.stat(filename).st_size
+                if not dry_run:
+                    os.rmdir(filename)
+        else:
+            size += os.lstat(filename).st_size
+            if not dry_run:
+                os.unlink(filename)
+    return size
+
+
+def pretty_size(size):
+    if size == 0:
+        return '0 B'
+    units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB']
+    nz = int(math.floor(math.log(size) / math.log(10) + 0.0001) / 3)
+    if nz >= len(units):
+        nz = len(units) - 1
+    rsz = size / math.exp(nz * 3 * math.log(10))
+    ssz = f'{rsz:.1f}'
+    if ssz.endswith('.0'):
+        ssz = ssz[:-2]
+    return f'{ssz} {units[nz]}'
+
+
+def clean_pkgs_cache(cache_dir=None, dry_run=False):
+    pkgs = get_cache_pkgs(cache_dir)
+    size = 0
+    for pkg in sorted(pkgs.keys()):
+        files = pkgs[pkg]
+        for f in files:
+            if f[1] == 1:  # 1 ref hard link
+                print('rm', f[0], end='')
+                psize = rmtree(f[0], dry_run=dry_run)
+                lockf = f'{f[0]}.lock'
+                if osp.exists(lockf):
+                    psize += os.lstat(lockf).st_size
+                    if not dry_run:
+                        os.unlink(lockf)
+                size += psize
+                print(f'\t{pretty_size(psize)}')
+    print('removed:', pretty_size(size))
+
+
+def main():
+
+    parser = argparse.ArgumentParser(
+        description='Clean pixi/rattler-build cache, by keeping only the latest version of each package. Experimental. Some packages are actually used in several versions in several pixi environments, thus using this script may remove files which could be still useful, and result in additional download and files duplication, so use it carefully, at your own risk. We advise using the --dry-run option.')
+    parser.add_argument(
+        '--dry-run', action='store_true',
+        help='Do not actually remove any file: just print what would be done.')
+
+    args = parser.parse_args(sys.argv[1:])
+
+    clean_pkgs_cache(dry_run=args.dry_run)
+
+
+if __name__ == '__main__':
+
+    main()

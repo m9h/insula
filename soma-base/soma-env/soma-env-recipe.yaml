@@ -1,0 +1,39 @@
+package:
+  name: soma-base
+
+soma-env:
+  publication: neuro-forge
+  components:
+    - soma-base
+
+  internal-dependencies:
+    - populse-db
+
+  type: interpreted
+
+requirements:
+  run:
+    - python >=3.9
+    - pyqt
+    - pyqtwebengine
+    - numpy
+    - ipykernel <7
+    - qtconsole
+    - notebook
+    - six
+    - pycryptodome
+    - pandas
+    - libgl
+    - libopengl
+    - traits<7
+    - fontconfig <2.18  # fontconfig 2.18 and qt-webengine 5.15.15 cause a core dump in QWebEngineView widget
+
+tests:
+  - script: "python -m soma.tests"
+    requirements:
+      run:
+        - pytest
+  - script: "python -m soma_workflow.test"
+    requirements:
+      run:
+        - pytest
