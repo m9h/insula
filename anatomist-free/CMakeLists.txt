@@ -35,10 +35,10 @@ elseif( DESIRED_QT_VERSION EQUAL 5 )
 elseif( DESIRED_QT_VERSION EQUAL 6 )
   find_package( Qt6 REQUIRED COMPONENTS Widgets OpenGL OpenGLWidgets Network
                 Multimedia WebEngineWidgets )
-  add_definitions( ${Qt6Core_DEFINITIONS} ${Qt6Widgets_DEFINITIONS}
-                   ${Qt6OpenGL_DEFINITIONS} ${Qt6OpenGLWidgets_DEFINITIONS}
-                   ${Qt6Network_DEFINITIONS} ${Qt6Multimedia_DEFINITIONS}
-                   ${Qt6WebEngineWidgets_DEFINITIONS})
+  # No add_definitions( ${Qt6*_DEFINITIONS} ): Qt 6 puts generator
+  # expressions there ($<...:QT_QML_DEBUG>), which add_definitions passes to
+  # the compiler verbatim, breaking every compile command. Linking the Qt6::
+  # targets below brings their definitions as usage requirements.
   include_directories( ${Qt6Core_INCLUDE_DIRS} ${Qt6Widgets_INCLUDE_DIRS}
                        ${Qt6OpenGL_INCLUDE_DIRS}
                        ${Qt6OpenGLWidgets_INCLUDE_DIRS}
