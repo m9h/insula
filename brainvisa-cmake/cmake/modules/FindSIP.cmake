@@ -105,6 +105,10 @@ else( SIP_VERSION )
           if( SIP_ABI )
             set( SIP_ABI ${SIP_ABI} CACHE STRING "SIP ABI version" )
             set( _added_flags "--abi-version" "${SIP_ABI}" )
+          # sip-module fails (traceback, no sip.h) if the directory does
+          # not exist yet, which is the case when FindSIP runs before any
+          # header has been copied (a project configured on its own).
+          file( MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/include" )
           execute_process( COMMAND "${SIP_MODULE_EXECUTABLE}" "--sip-h" "--target-dir" "${CMAKE_BINARY_DIR}/include" ${_added_flags} "${SIP_MODULE}" )
           endif()
         endif()
