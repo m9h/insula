@@ -1,0 +1,9 @@
+
+BRAINVISA_ADD_EXECUTABLE(cartoIO_test
+iotest.cc
+HELP_GENERATE FALSE
+)
+
+TARGET_LINK_LIBRARIES(cartoIO_test
+cartodata
+)

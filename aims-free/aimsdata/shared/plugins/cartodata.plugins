@@ -1,0 +1,11 @@
+attributes = {
+  'release_plugins' : [
+    'libcartoopenslide.so',
+    'libcartogis.so',
+    'libcartonifti.so',
+    'libcartodicom.so',
+    'libcartominc.so',
+    'libcartotiff.so',
+    'libcartomif.so'
+  ],
+}

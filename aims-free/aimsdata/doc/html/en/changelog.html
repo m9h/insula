@@ -1,0 +1,820 @@
+<!DOCTYPE public "-//w3c//dtd html 4.01 transitional//en"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>AIMS changelog</title>
+  <link href="bvstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b"
+ alink="#ff0000">
+
+<center>
+<h2>AIMSdata versions 5 and earlier</h2>
+ </center>
+
+<hr width="100%"> <br>
+
+ <b><a href="#version-5.1.2">Version 5.1.2</a></b><br>
+ <b><a href="#version-5.1.1">Version 5.1.1</a></b><br>
+ <b><a href="#version-5.1.0">Version 5.1.0</a></b><br>
+ <b><a href="#version-5.0.4">Version 5.0.4</a></b><br>
+ <b><a href="#version-5.0.3">Version 5.0.3</a></b><br>
+ <b><a href="#version-5.0.2">Version 5.0.2</a></b><br>
+ <b><a href="#version-5.0.1">Version 5.0.1</a></b><br>
+ <b><a href="#version-5.0.0">Version 5.0.0</a></b><br>
+ <b><a href="#version-4.6.1">Version 4.6.1</a></b><br>
+ <b><a href="#version-4.6.0">Version 4.6.0</a></b><br>
+ <b><a href="#version-4.5.0">Version 4.5.0</a></b><br>
+ <b><a href="#version-4.4.0">Version 4.4.0</a></b><br>
+ <b><a href="#version-4.3.1">Version 4.3.1</a></b><br>
+ <b><a href="#version-4.3.0">Version 4.3.0</a></b><br>
+ <b><a href="#version-4.2.1">Version 4.2.1</a></b><br>
+ <b><a href="#version-4.2.0">Version 4.2.0</a></b><br>
+ <b><a href="#version-4.1.1">Version 4.1.1</a></b><br>
+ <b><a href="#version-4.1.0">Version 4.1.0</a></b><br>
+ <b><a href="#version-4.0.2">Version 4.0.2</a></b><br>
+ <b><a href="#version-4.0">Version 4.0</a></b><br>
+ <b><a href="#version-3.2.1">Version 3.2.1</a></b><br>
+ <b><a href="#version-3.2">Version 3.2</a></b><br>
+ <b><a href="#version-3.1.6">Version 3.1.6</a></b><br>
+ <b><a href="#version-3.1.5">Version 3.1.5</a></b><br>
+ <b><a href="#version-3.1.4">Version 3.1.4</a></b><br>
+ <b><a href="#version-3.1.3">Version 3.1.3</a></b><br>
+ <b><a href="#version-3.1.2">Version 3.1.2</a></b><br>
+ <b><a href="#version-3.1.1">Version 3.1.1</a></b><br>
+ <b><a href="#version-3.1">Version 3.1</a></b><br>
+ <b><a href="#version-3.0.2">Version 3.0.2</a></b><br>
+ <b><a href="#version-3.0.1">Version 3.0.1</a></b><br>
+ <b><a href="#version-3.0">Version 3.0</a></b><br>
+ <b><a href="#version-2.13c">Version 2.13</a></b><br>
+ <b><a href="#version-2.12">Version 2.12</a></b><br>
+ <b><a href="#version-2.11">Version 2.11</a></b><br>
+ <b><a href="#version-2.10">Version 2.10</a></b><br>
+
+
+<!-- -->
+<h4> <a name="version-5.1.2"></a>Jun. 28, 2024, Version 5.1.2</h4>
+
+<ul>
+  <li>New command AimsClassifyTransformation.py</li>
+  <li>New command AimsRigidifyTransformation.py</li>
+  <li>Fixes AimsGraphConvert which might not save all objects if he thought they were not modified. Now force-write everything.
+  </li>
+  <li>Fixes and improvements in GLTF IO</li>
+  <li>Memory leak fix in C++/Python bindings</li>
+  <li>RawConverter_Bucker_Volume.printToVolume() clips the bucket to the size of the volume, allowing to use it on unmatching sized buckets
+  </li>
+  <li>Various bugs fixed (sparse matrix reading, FFD field reading from nifti file...)
+  </li>
+</ul>
+
+
+<!-- -->
+<h4> <a name="version-5.1.1"></a>Mar. 21, 2023, Version 5.1.1</h4>
+
+<ul>
+  <li>Partial support for GLTF mesh scenes format. Needs additional libraries for full support, which are not included in casa-distro images yet.</li>
+  <li>Python bindings and docs complements in image orientation manipulations for image orientations (support "LPI" and similar syntax).</li>
+  <li>Fixes in voxels orientations in python bindings and numpy arrays conversions.</li>
+  <li>Fix in sparse matrix reading.</li>
+  <li>Deprecated pyaims Volume.arraydata().</li>
+  <li>Crash in sulci split and deep CNN recognition fixed.</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.1.0"></a>Jan. 20, 2023, Version 5.1.0</h4>
+
+<ul>
+  <li>Support Volume classes with strides on X axis. Strides were present in the volume structure but most functions assumed that voxels were contiguous on the first (X) axis. This forbid for instance bindings to numpy arrays which had a "C" ordering convention. This limitation is now gone in main Volume methods and operator. However many algorithms are still assuming that the first axis is contiguous (and use pointers with ++ incrementation), so these volumes should be reserved for specific and tested uses.</li>
+  <li>Volume IO have been updated to support strides.</li>
+  <li>PyAims bindings to readers taking existing data as input/output. This allows partial reading views in allocated volumes.</li>
+  <li>Huge cleanup in Aimsdata library: the obsolete classes AimsData have been actually marked as obsolete, and their use in the libraries and commands have been drastically reduced (almost removed). A set of classes and functions originally working with AimsData have been moved to Volume API, thus many APIs have changed, normally in a way that is "as compatible as possible", but still require a few changes in client uses.
+  </li>
+  <li>Pyaims: AimsData classes have completely be wiped out. They are not needed any longer.
+  </li>
+  <li>Improved affine transformations readers: Aims can now read a transformation inside another object format header, using the fake extension ".trmhdr" and possibly options "index" or "target". The "inv" option may be used to invert the transformation (for all readers). Ex: "tutu.nii.trmhdr?index=1&amp;inv=1"
+  </li>
+  <li>Improved affine transformations readers: Aims can now read a series of affine transformations and compose them on-the-fly to be read as a single transformation. It uses the fake extension ".trmc", and the "*" composition operator (as in matrix math order). Ex: "toto.trm*tutu.nii.trmhdr.trmc".
+  </li>
+  <li>Transformations graph: TransformGraph3d class and IO, allows to load a complete referentials/transformatons graph with automatic composition and path search. Also allows to get a given transformation from a graph via transformations readers.
+  </li>
+  <li>General Transformation3d IO (supporting both affine and non-linear transformations).</li>
+  <li>New doc explaining coordinates systems.</li>
+  <li>Colormaps and labels tables tools improvements for GIFTI textures.</li>
+  <li>Fibers / bundles support weighted fibers (MRTrix).</li>
+  <li>New command: <tt>AimsGraph2Volume.py</tt>: convert a graph to a volume according to a nomenclature, with colormap.
+  </li>
+  <li>Pyhthon IO plugin in Aims (loaded from C++) allowing python extensions in C++ programs.
+  </li>
+  <li>Pyaims functions for label texture cleaning + command <tt>AimsTextureCleaning.py</tt>.</li>
+  <li>Prepare for Qt6 and PyQt6 (not finished in this released).</tt>
+  <li>Pyaims <tt>texturetools.parcels_surface_features()</tt>, record area and bouldary length features for surface parcels. New command <tt>AimsParcelsSurfaceFeatures.py</tt>.
+  </li>
+  <li>Added option to pass a transformation in <tt>AimsVol2Tex</tt> command.
+  </li>
+  <li>New command <tt>AimsDiff.py</tt> which compares several types of neuroimaging files for equality.
+  </li>
+  <li>Fixes (significant rework) of sulci split algorithm, which could fail and produce vertices with disconnected voxels when the cut line was very scattered. The new algorithm ensures connected parts. A sulci vertices merge function was also added.
+  </li>
+  <li>AimsGraphConvert: when converting a volume to graph, can use a labels table (GIFTI-like) in the volume header, and can also write a custom hierarchy with colors for it.
+  </li>
+
+  <li>Multipe other bug fixes...</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.4"></a>Dec. 22, 2021, Version 5.0.4</h4>
+
+<ul>
+  <li>various small fixes (Volume __pow__ functions in pyaims for instance)
+  </li>
+  <li>Mesher copies the header of the source volume to keep transformations etc</li>
+  <li>Fixed wrong type selected for RGBA jpeg images</li>
+  <li>Read transformations in Freesurfer .mgh/.mgz files</li>
+  <li>Small build fixes for ubuntu 20/22</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.3"></a>Oct. 13, 2021, Version 5.0.3</h4>
+
+<ul>
+  <li>various fixes (in Mesher, AimsRegisterFFDEstimate, AimsTex2Vol, ...)
+  </li>
+  <li>added doc about bundles format</li>
+  <li>fixes and small improvements in pyaims docs</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.2"></a>Apr. 14, 2021, Version 5.0.2</h4>
+
+<ul>
+  <li>added a convenience shortcut to access numpy array of objects with bindings with nuppy: something.np (property)</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.1"></a>Mar., 2021, Version 5.0.1</h4>
+
+<ul>
+  <li>Improved IO of FFD (free form deformations, vector fields) and python bindings. FFDs can now be read/written as 5D (or more) NIFTI or any other volume format where the last dimension size is 3 (3D vector).
+  </li>
+  <li>Improved bundles formats (.bundles, .trk, .tck) introspection in Finder and BundleReader</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.0"></a>Jan. 20, 2021, Version 5.0.0</h4>
+
+<ul>
+  <li>Removed a bunch of obsolete commands:
+    <ul>
+      <li>AimsClosing</li>
+      <li>AimsData2Jpeg</li>
+      <li>AimsDilation</li>
+      <li>AimsDtiBk2Vol</li>
+      <li>AimsErosion</li>
+      <li>AimsLinearComb</li>
+      <li>AimsManualBiasCorrection</li>
+      <li>AimsMaskPhantom</li>
+      <li>AimsNormDiff</li>
+      <li>AimsOpening</li>
+      <li>AimsPowerComb</li>
+      <li>AimsSlice2Bucket</li>
+      <li>AimsSpaghettiModel</li>
+      <li>AimsHJEvolution2D</li>
+      <li>AimsHJEvolution3D</li>
+      <li>AimsKMeans</li>
+      <li>AimsKMeansImageSegmentation</li>
+      <li>AimsTensor2Bucket</li>
+    </ul>
+    and classes:
+    <ul>
+      <li>AimsLinearCombination classes</li>
+      <li>Finally get rid of old getopt (obsolete for almost 20 years...)</li>
+    </ul>
+  </li>
+  <li>PyAims bindings to numpy arrays are now allowed when items types are not scalar numbers: vectors of Point3Df or of RGB are mapped to array structures.
+  </li>
+  <li>pyaims: added operators **, **=, //, //= to volumes</li>
+  <li>cartoLinearComb.py can now convert numpy expressions back to volumes before writing output</li>
+  <li>Added support for MRTrix .tck tracks format</li>
+  <li>Extended the URL query-string-like syntax to all AIMS IO (not only Soma-IO) to pass reading/writing options</li>
+  <li>Reading option to fiber tracks formats: "<tt>max_filtered_memory</tt>" to filter out some tracks and limit memory usage (mainly for visualization in Anatomist)</li>
+  <li>SurgaceGenerator new model type: parallelepiped (triangulated)</li>
+  <li>new command: <tt>AimsApplyTransform</tt> which will replace <tt>AimsResample</tt>, <tt>AimsFFDApply</tt> and other transform commands. Supports many kinds of objects (volumes, meshes, graphs, buckets), linear and non-linear transforms, and transform chains.</li>
+  <li>pyaims: lazy readers for better memory management, used in <tt>cartoLinearComb.py</tt> for instance
+  </li>
+  <li>Python plugin in aims: implements some IO in python language: numpy matrix readoing</li>
+  <li>Many more small fixes</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.6.1"></a>Aug. 31, 2018, Version 4.6.1</h4>
+
+<ul>
+  <li>pyaims: finally provide the method get(key, default=None) in dictionary-like GenericObject. Not to be confused with rc_ptr::get(), so for an Object we have to use: something.get().get('key', 'default')
+  </li>
+  <li>Fixes in Volume and AllocatedVector copies which caused (in rare cases) copies not to own their data
+  </li>
+  <li>Minc plugin has improved, allows to support more than .mnc files when additional formats are supported by libminc (.mgh/.mgz for instance)
+  </li>
+  <li>pyaims: more fixes for python3</li>
+  <li>Wavefront mesh reader fixed and improved</li>
+  <li>Many more small fixes</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.6.0"></a>Oct. 03, 2017, Version 4.6.0</h4>
+
+<ul>
+<li>Support for Volumes of more than 4 dimensions (currently setup for 8, can be changed by a constant (DIM_MAX) in sources - needs rebuilding). However not all IO formats support them.
+</li>
+<li>Volume APIs taking dimensions have been extended to take a vector of dimensions.
+</li>
+<li>Basic support for CIFTI files handling API: CiftiTools class.</li>
+<li>pyaims: improved python bindings, especially allow aims.vector_* and aims.list_* to convert from other types transparently, like aims.vector_PIINT3DF(numpy.array([[1.,2.,3], [4.,5.,6]))
+</li>
+<li>Porting to Python3. PyAims and the underlying libraries (Soma-Base) have finally been ported to Python 3. They are thus source compatible with with Python 2 series (2.6 and later) and Python 3 (3.4 and later).
+</li>
+<li>Improvements and fixes in IO and options.</li>
+<li>Lazy partial IO for SparseOrDenseMatrix</li>
+<li>A few more fibers manipulation functions have moved from the former connectomist project (now dead) to AIMS.
+</li>
+<li>FFD classes (vector field deformations) have been much improved and extended. Any kind of object can be deformed: volumes, meshes, buckets, bundles, graphs, points, and linear interpolation modes have been added. Python bindings have been done in PyAims.
+</li>
+<li>Points distribution function: electostatic forces models</li>
+<li>Build works with LLVM, C++11, and Win64 (via cross-compilation from Linux)
+</li>
+<li>Hundreds of fixes and other various improvements</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.5.0"></a>Feb. 17, 2016, Version 4.5.0</h4>
+
+<ul>
+<li>Major changes in IO system: Soma-IO is being used instead of AIMS IO for major image formats:
+  <ul>
+    <li>The Soma-IO system has been slightly modified and improved, with a few API changes
+    </li>
+    <li>The older AimsData volume classes now get their IO in AIMS via the Volume classes ones, and thus may make use of Soma-IO, which was not the case in AIMS 4.4.</li>
+    <li>GIS and NIFTI-1 formats are now primarily handled by Soma-IO. NIFTI has been completely removed from AIMS, whereas GIS is still present at the moment for custom, rare, volume types (volumes of vectors...).
+    </li>
+    <li>Formats using Soma-IO now benefit from partial IO, which may be specified in the files URL.
+    </li>
+  </ul>
+</li>
+<li>Basic support for NIFTI-2 images (in soma-IO).</li>
+<li>Experimental support for bvec / bval files coming with NIFTI files converted by dicom2nii (at least). May need coordinates system adjustments.
+</li>
+<li>Basic support for Wavefront .obj mesh format (in aims)</li>
+<li>Enabled support for IO on textured meshes (used in anatomist, especially to export complex objects to wavefront format).</li>
+<li>Volume classes have been added a few convenience methods to make things easier to handle, and operator functions. The volume source code has been completely reorganized (into several files) for readability.
+</li>
+<li>Some fibers/bundles utility classes and IO (BundleProducer, BundleListener, BundleReader and bundle/graph conversion) have moved from the old connectomist project to aimsdata. Fibers IO are thus now builtin in aims/anatomist and do not depend on other libs and plugins.</li>
+<li>Support for Trackvis fibers format (for reading).</li>
+<li>More python bindings in pyaims</li>
+<li>Important change in PyAIMS: the surface mesh classes (AimsTimeSurface_&lt;D&gt;) have been extended to textured meshes, thus getting an additional texture type parameter. This has always be so in the C++ classes but python bindings were omitting this second template. The mesh classes are now named <tt>AimsTimeSurface_&lt;D&gt;_&lt;DTYPE&gt;</tt>. <tt>D</tt> is the number of vertices per polygon, as it used to be (2, 3 or 4), and <tt>DTYPE</tt> is the texture type: <tt>VOID</tt>, <tt>FLOT</tt>, <tt>POINT2DF</tt> for now. To maintain compatibility, the untextured meshes classes can still be found and used under their older names: <tt>AimsTimeSurface_&lt;D&gt;</tt> is then an alias to <tt>AimsTimeSurface_&lt;D&gt;_&lt;DTYPE&gt;</tt>.<br/>
+Still for compatibility, in the bugfix branch of aims 4.4, the inverse alias has been introduced, so that <tt>AimsTimeSurface_&lt;D&gt;_&lt;DTYPE&gt;</tt> will be recognized by this updated branch.
+</li>
+<li>Support for textured meshes in pyaims</li>
+<li>Function to sort a mesh polygons along a given direction in SurfaceManip: useful to handle transparency in Anatomist.
+</li>
+<li>Improved python bindings for generic objects / dictionaries.</li>
+<li>JSON format support for generic objects (mainly a variant of minf format).</li>
+<li>aims-qtgui has been cleared from the Qt3Support dependency, and compatibility headers/sources (in aims/qt3compat/...) have been removed.
+</li>
+<li>And many many other fixes...</li>
+</ul>
+
+
+<!-- -->
+<h4> <a name="version-4.4.0"></a>Oct 9th, 2013, Version 4.4.0</h4>
+
+<ul>
+<li><b>Libraries organization changes:</b> A new library, <b>soma-io</b> has been created as a new IO system for AIMS and possibly other libraries. Libs dependencies are now as follows:<br/>
+  <ul>
+    <li><tt>cartobase</tt> is now part of the soma-io subproject. It is still the lowest-level of our libraries. Thus, it has moved from the aims-free subproject to the soma-io subproject.
+    </li>
+    <li><tt>soma-io</tt> depends on <tt>cartobase</tt>.</li>
+    <li><tt>cartodata</tt> depends on <tt>soma-io</tt>, and is still in the aims-free subproject.</li>
+    <li><tt>aimsdata</tt> depends on <tt>cartodata</tt>.</li>
+    <li><tt>aimsalgo</tt> depends on <tt>aimsdata</tt>.</li>
+  </ul>
+  This new organization is meant to allow other libraries (PTK for instance) to use <tt>cartobase</tt> and <tt>soma-io</tt> without depending on <tt>cartodata</tt> and/or <tt>aimsdata</tt>, which define specific data structures, whereas <tt>soma-io</tt> does not.
+</li>
+<li>Changes in the IO system: a new IO system (based on the former cartobase one) has been separated in the (new) soma-io library. This lib is meant to be independent from Aims, cartodata and their data structures, to allow stream/array access to IO data in a way which can be independent from actual data structures. Moreover when opossible this infrastructures allows random access for partial IO. Such indepedent implementations will be coded in soma-io, while structure-dependent ones will use them in higher-level layers (cartodata). GIS and OpenSlide formats have been implemented in this new framework. Other formats ares till in the older Aims one for now.
+</li>
+<li>AimsRGB and AimsRGBA classes have been moved to the soma-io library, with new names: carto::VoxelRGB and carto::VoxelRGBA. Old classes are still available as typedefs.
+</li>
+<li>The AimsElevationMap command has been moved from the private bioprocessing project to the open-source aims project.</li>
+<li>added a wireframe section in SurfaceGenerator to produce segments meshes. Implemented a parallelepiped.</li>
+<li>Fix in AimsMerge: it was reading the mask as the merged volume.</li>
+<li>new SparseMatrix and SparseOrDenseMatrix classes, with IO, based on boost sparse matrices. Python bindings for such classes.</li>
+<li>Support for Minc2 volumes in the Minc IO plugin.</li>
+<li>Mesher smoothing can use a panel of different algorithms, and the default one is much more accurate than the former.</li>
+<li>IO in Aims have been made "almost" thread-safe. Unfortunately some race conditions still exist and programs sometimes crash when used intensively. It doesn't happen very often, but it happens...</li>
+<li>Some volume IO have been significantly optimized to decrease read/write time. Especially GIS and NIFTI formats are much faster than in aims 4.3.
+</li>
+<li>Volume with borders handling has changed: it is now using the views system (subvolume in a larger volume) instead of a trick using a _borderWidth attribute in the header.</li>
+<li>pyaims : added possibility do use unallocated volumes.</li>
+<li>pyaims: added access to IO types and formats in Python.</li>
+<li>new command: AimsVolumeToTexture.py, performs the same as anatomist Fusion3D, in the most basic mode (for now).</li>
+<li>And many other fixes...</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.3.1"></a>Oct 8th, 2012, Version 4.3.1</h4>
+
+<p>Bugfix release</p>
+
+<ul>
+<li>aimsalgo: Fixed a sulcal measurements bug in length calculation, when a folds graph node has several disconnected components. Happens rerely, but we have seen it, so it may happen.
+</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.3.0"></a>Sept 6th, 2012, Version 4.3.0</h4>
+
+<p>This version brings a number of bug fixes, and improvements:</p>
+
+<ul>
+<li>AimsVoiStat command is now deprecated, <b>AimsRoiFeatures</b> command should be used instead</li>
+<li>It is now possible to use volumes whose size is larger than 32 bits.</li>
+<li>Fix in AimsFoldArgAtt command</li>
+<li>Fix in fold split</li>
+<li>Fix operators on volumes in PyAims</li>
+</ul>
+<!-- -->
+<h4> <a name="version-4.2.1"></a>February 16th, 2012, Version 4.2.1</h4>
+
+<ul>
+<li>Improved buckets bindings</li>
+<li>Improved bindings to numpy arrays</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.2.0"></a>Feb 3rd, 2012, Version 4.2.0</h4>
+
+<p>This version brings a number of bug fixes, and improvements:</p>
+
+<ul>
+<li>Implemented native support for volume * T and volume / T with T numeric types, typically long int, calculating in native types rather than casting to double as it used to. This avoids rounding errors when back-casting to int types. Python bindings were adapted too.
+</li>
+<li>Geodesicpath library update</li>
+<li>Fix in AimsMassCenter averaging.</li>
+<li>DICOM reader fixes for a few header fields, and support for SPECT data.</li>
+<li>FiniteElementSmoothing: removed spurious debug texture writing during smoothing, which caused a hard-coded file /tmp/curv_ss.tex to be written, and participated to a memory leak which could lead (in pathologic cases) to memory overrun.
+</li>
+<li>Fixed rescaling in volume converters (AimsFileConvert + libs)</li>
+<li>Fixed a bug in SplineResampler: the spline coefficients could be wrong at the boundaries of the volume.
+</li>
+
+<li>PyAims</li>
+  <ul>
+    <li>Fixed a SIP ownership problem which caused some memory leaks (especially when automatically converting a Volume to a AimsData)
+    </li>
+    <li>Fixed a reference-counting problem in volume headers (the header could be deleted with the volume even if a header object in python was still existing).</li>
+  </ul>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.1.1"></a>Sept 14th, 2011, Version 4.1.1</h4>
+
+<ul>
+<li>Fixed an IMPORTANT BUG in Quaternion: the rotationMatrix() had a matrix elements index bug that caused the translation part not to be initialized. By chance it was most of the time 0 on most systems, but not all/always...
+</li>
+<li>Mesher debug output cleaning</li>
+<li>NIFTI IO: update to nifticlib 2.0.0</li>
+
+<li>PyAims</li>
+  <ul>
+    <li>try to setup BRAINVISA_SHARE envar if it is not set, from the path of the python module.</li>
+  </ul>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.1.0"></a>May 17th, 2011, Version 4.1.0</h4>
+
+<p>In this version, an important change for the developers should be noted : the build tool used to compile from the source code has changed. We gave up our home-made tool <i>build-config</i> and replace it with the standard tool <a href="http://www.cmake.org/">CMake</a>, a cross-platform, open-source build system.
+</p>
+
+<p>This version also brings a number of bug fixes, and improvements:</p>
+
+<ul>
+<li>Add support for RGB/RGBA background in AimsResample</li>
+<li>PyAims</li>
+  <ul>
+    <li>Bug fix in aims.write when the specified path doesn't exist.</li>
+    <li>Helper functions to create the main Aims data types</li>
+    <li>Allow additional constructors arguments for volumes and textures (build from another volume, or a numpy array...)</li>
+    <li>Big fix in TimeSurface erase function</li>
+  </ul>
+</ul>
+
+ <!-- -->
+<h4> <a name="version-4.0.2"></a>November 19th, 2010, Version 4.0.2</h4>
+
+<li>Fix reading GIFTI files extracted from SPM 8</li>
+<li>Fix reading GIFTI mesh+texture files</li>
+<li>Fix reading and writing transformations in MINC format</li>
+<li>New option in AimsFileConvert: --orient, to specify output disk orientation or flip it</li>
+<li>support for MNI .obj mesh format</li>
+<li>AimsFoldGraphThickness can now use a pre-built sulci voronoi map (to speed things up)</li>
+<li>Forbids to write NIFTI format when volume dimensions do not fit in short ints: NIFTI stores dimensions as short.</li>
+<li>AimsLabelSelector can now work in batch mode (-b) without graphical interface.</li>
+
+<h4> <a name="version-4.0"></a>May 28, 2010, Version 4.0</h4>
+
+<h5>User-level changes:</h5>
+
+<li>Improvements and fixes in various IO modules: Dicom, Nifti, Gifti, FDF
+</li>
+<li>Beginning of a SQL database format for graphs (QSlite files for now). This will allow partial reading and queries in large graphs databases. But the module is still experimental and the SQL database schema will probably change, so it should not be used yet to store important graphs. Conversion from and to the .arg format are still possible.
+</li>
+
+<h5>Programmer-level changes:</h5>
+
+<li>Noticeable API change: the Motion class (for affine spatial transformations) has been renamed AffineTransformation3d in aims namespace, inherits the new Tansformation and Transformation3d classes, and undergoes some methods changes. Motion is still provided as a typedef to avoid breaking existing code, but some changes may be required anyway. See the AffineTransformation3d class documentation for details.
+</li>
+<li>python API: more automatic conversions between reference-counted objects (rc_ptr and Object classes) and their contents when calling wrapped C++ functions
+</li>
+<li>python API: the get() method of rc_ptr and Object classes is replaced by _get() so as not to shadow potential get() methods in the objects under the reference counter. In 4.0 the get() method is still present for backward compatibility and behaves as it did before, but this will be changed in a next release, so programmers are advised to use _get() instead (which is now rarely needed).
+</li>
+
+ <!-- -->
+
+<h4> <a name="version-3.2.1"></a>January 8, 2010, Version 3.2.1</h4>
+
+<li>New global option to Aims commandlines: <tt>--debugLevel</tt>. It is used instead of the <tt>--verbose</tt> option to print debug messages, when loading plugins for instance.
+</li>
+<li>Nifti IO: When loading large 4D volumes which need a reorientation in memory, don't duplicate the whole 4D volume when reorienting. This saves temporary memory allocation.
+</li>
+<li>Nifti IO: when no qform/sform/transformations are already in a volume written in nifti, set the origin at the center of the volume, otherwise SPM is lost (normalizaton fails)
+</li>
+
+<!-- -->
+
+<h4> <a name="version-3.2"></a>September 4, 2009, Version 3.2</h4>
+
+<li>Re-organization of sources of aims: aims now regroups aimsdata, aimsalgo, graph, cartobase, cartodata, IO libs (ecat, ecat+, vidaIO), and aims-gpl which is the gui part.
+</li>
+<li>added <tt>default_writers</tt> option in <tt>aimsrc</tt>: see <a href="config.html">the doc</a> for details
+</li>
+<li>the default output volumes format when no extension is specified is now NIFTI1.
+</li>
+<li>GIFTI IO support for meshes and textures</li>
+<li>The <tt>$SHFJ_SHARED_PATH</tt> environment variable is deprecated. It is replaced with the <tt>$BRAINVISA_SHARE</tt> variable. For now it contains a single directory, but will evolve in a PATH-like behaviour in future versions. <tt>$SHFJ_SHARED_PATH</tt> still exists as a fallback for backwards compatibility.
+</li>
+<li>If no environment variable is set at all, the share directory is guessed from the <tt>$PATH</tt> variable.
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.6"></a>May 10, 2009, Version 3.1.6</h4>
+
+<li>IO: Fix in NIFTI-1 writer when the storage_to_memory matrix is not what it should be
+</li>
+<li>IO: Fix in reading pure 3D NIFTI-1 images (no 4th dimension)</li>
+<li>Transformation information is set and maintained in sub-volumes and resampled volumes
+</li>
+<li>A fix in the Quaternion class (apply() function)
+</li>
+<li>IO: support TIFF format on U32 data type</li>
+<li>Fix in meshExtract when no index array is needed</li>
+<li>AimsFileInfo: correctly display min/max values for U8 and S8 types </li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.6"></a>November 14, 2009, Version 3.1.5</h4>
+
+<li>Correctly save alpha channel of RGBA volumes in Qt formats IO</li>
+<li>Correctly use the "output_4d_volumes" option in NIFTI-1 writer</li>
+<li>A few more minor fixes</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.4"></a>October 24, 2008, Version 3.1.4</h4>
+
+<li>New global commandlines option: "output_4d_volumes" (used for NIFTI and SPM), replacing the recent "spm_output_4d_volumes".
+</li>
+<li>Fixes in graph sub-objects IO system.</li>
+<li>Fix: file descriptor leak in Tiff reader.</li>
+<li>various other minor things</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.3"></a>September 24, 2008, Version 3.1.3</h4>
+
+<li>various minor things</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.2"></a>August 18, 2008, Version 3.1.2</h4>
+
+<li>various minor things</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.1"></a>August 8, 2008, Version 3.1.1</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>A serious bug fix in NIFTI writer: Nifti transformations were sometimes wong in the .nii file, event when they were OK in the .minf file.
+</li>
+<li>fixed a recent bug in the volume type converters when using rescaling which could show side effects in various commands
+</li>
+<li>Fixes and improvements in graphs reading when containing data stored as labels volumes. Changed the way anatomist handles them to a much cleaner behaviour.
+</li>
+<li>many other less important fixes</li>
+
+<h5>Minor improvements:</h5>
+
+<li>some minor (not user-visible) improvements and additions to the libraries
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1"></a>January 4, 2008, Version 3.1</h4>
+
+<li>
+  <font color="#c00000">SPM images IO: <b><font color="#ff0000">***CAUTION***</font>,
+    behaviour change</b></font>: Read <a href="spmformat.html">this document</a>
+    for details. The default settings for AIMS is now to behave like SPM2, not like SPM99 anymore.
+</li>
+<li>NIFTI-1 volume format support, by Guillaume Flandin, using niftilib
+</li>
+<li>PLY mesh format support, using the Rply library</li>
+<li>Improvements in the Qt4 compatibility</li>
+<li>complete reimplementation of the mesh cutting algorithm (used in anatomist). It doesn't crash anymore, but leaves holes or incorrect things on meshes with overlapping triangles
+</li>
+<li>complements and improvements in the IO system and its suppport for various object types
+</li>
+<li>headers were added to data objects which did not have one (Motion, buckets, Hierarchy, Object, ...)
+</li>
+<li>The Quaternion class has been moved from anatomist to aimsdata. Bridges between Quaternions and Motions.
+</li>
+<li>python bindings for a large part of aimsdata API (all data types and IO): see the pyaims project
+</li>
+<li>... far too many changes to possibly list them...</li>
+<li>and many many bugfixes</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.0.2"></a>April 27, 2006, Version 3.0.2</h4>
+
+<h5>Bug fixes:</h5>
+<li>Image formats handled via the Qt plugin (png, bmp...) had several bugs that
+  caused image corruption when saving/reading them. It has been fixed, and support
+  for int types wider than 8bit has been unregistered (it can't work actually).
+</li>
+<li>Some 3D MINC images got an incorrect value (NaN or infinity) for 4th dimension in Aims
+</li>
+<li>A huge memory leak has been fixed in AimsSubVolume in multiple output files
+  mode, and some optimizations were done in this case.
+</li>
+<li>The sourcecode now compiles with gcc 4.1</li>
+<li>Many other minor bugs were fixed</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.0.1"></a>September 22, 2005 - Version 3.0.1</h4>
+
+<h4>Bug fixes:</h4>
+  <li><b>important bugfix</b> in interpolation code which may affect, especially, all
+    diffusion tracking algorithms
+  </li>
+  <li>a few compilation warnings and configuration fixes / cleanups</li>
+  <li>AimsSubVolume supports a wider range of data types</li>
+  <li>The gui part is now compatible with Qt 4 - more compatibility headers</li>
+  <li>Fixed IO type Texture of Point2df which did not appear amongst supported IO types</li>
+  <li>Fixes in management of Aims objects contained in graphs</li>
+  <li>Fixed SPM writin of float/double images which were sometimes written
+    in (short + scale factor) mode when they should not
+  </li>
+
+
+<h4> <a name="version-3.0"></a>May 18, 2005 - Version 3.0</h4>
+
+<h4>User-level changes:</h4>
+  <li>Volumes IO: better support for large files. Memory mapping has been automatically
+    enabled on GIS and SPM volumes when image sizes become large compared to the free
+	memory size (linux only right now) or to absolute amounts. This is especially useful
+	when loading large data in Anatomist or for data conversions. Note that not all
+	volume formats can benefit the same optimization: depending on the disk and memory
+	format of low-level data, the whole file must be copied to a temporary file in
+	some situations (always needed for SPM volumes). Prefer GIS format when possible...
+  </li>
+  <li>SPM volumes of FLOAT data can now be saved as short int + scale factor when it
+    appears to be possible without precision loss. The drawback right now is that
+	detecting the possibility of doing it takes some time and it's slower.
+  </li>
+  <li>Minc format IO support: thanks to Olivier Coliot who wrote the reader/writer classes, there is
+    now a Minc plugin in Aims. At the moment only 3D files are supported (not 4D) and the datatype
+    detection may be improved in the future, but the base is here now. The plugin needs the Minc
+    library.
+  </li>
+  <li>The Ecat format IO has been ported to Windows</li>
+  <li>Graphs incompletely loaded (without buckets or meshes, like in the recognition program) and
+    saved back to disk now load their sub-objects before they are saved, so nothing is lost anymore.
+    The drawback is that saving them is much longer and consumes far more RAM.
+  </li>
+  <li>Porting to 64 bit systems: done by Dimitri</li>
+  <li>Version numbering: all our projects will have the same version number: 3.0 for
+    this release
+  </li>
+
+<h4>Programmer-level changes:</h4>
+  <li>Allocators have changed a bit, and their choice has been facilitated by a
+    helper / factory class.
+  </li>
+  <li>Porting to 64 bit systems. This port implies some modifications on some programming rules: we
+    sould avoid using the <tt>long</tt> type anymore, but always fixed size types:
+    <tt>int32_t</tt>, <tt>int8_t</tt> etc, so <tt>AimsData&lt;long&gt;</tt> should be replaced
+    with <tt>AimsData&lt;int32_t&gt;</tt> in all Aims code.
+  </li>
+  <li>In cartobase, the generic object API has been rewritten in a cleaner way <tt>GenObject</tt>
+    becomes <tt>GenericObject</tt>. A compatibility interface is provided so code will not break,
+    but we plan to remove it once we have cleaned all code (maybe in the next version).
+  </li>
+  <li>Preparations for deep changes in Aims API: some main classes will be re-written in a new
+    library: cartodata. The first is the 4D volume class (<tt>aims::AimsData</tt>) which will
+    become <tt>carto::Volume</tt>, a newer, cleaner and more powerful implementation.
+    In this release, <tt>AimsData</tt> is only a wrapper for <tt>Volume</tt>.
+    Compatibility will be preserved. Moreover the wrapping can be disabled by a #define (the
+    older implementation is still present in the source code).
+  </li>
+  <li>A Python interface project for Aims has been started: pyaims, at the moment it allows
+    manipulating volumes (including IO), either under <tt>AimsData</tt> or <tt>Volume</tt> shape.
+    Meshes will be added soon.
+  </li>
+  <li>Porting to gcc 4.0 compiler</li>
+
+
+<br>
+
+
+
+<h4><a name="version-2.13c"></a>17/11/2004 - Bugfix update 2.13(c)</h4>
+
+  <li>fixes in SPM IO</li>
+  <li>little doc on coordinates systems of AIMS and SPM:
+    <a href="referentials.html">here</a>
+  </li>
+  <li>fixes on the Windows port, especially the graph writer which could write the .data directory
+    in the wrong location (in the current directory). This bug affected saving ROI sessions from
+    Anatomist, for instance.
+  </li>
+  <li>various other minor fixes</li>
+
+
+<br>
+
+
+<h4><a name="version-2.13b"></a>06/07/2004 - Bugfix update 2.13(b)</h4>
+
+
+  <li>bucket writer wrote wrong voxel sizes</li>
+  <li>fix in list repesentations of attributed objects browser, this showed up in Anatomist</li>
+  <li>vida reader crashed on large files (with more than ~250 slices)</li>
+
+
+<br>
+
+
+<h4> <a name="version-2.13"></a>18/02/2004 - Version 2.13</h4>
+
+<h4>User-level changes:</h4>
+  <li>Porting to Windows: the sources can now be compiled on Windows platforms
+    using either cygwin or MinGW gcc compilers and environments. I guess there will
+    still be some little glitches but lots of commands now work well on Windows.
+    <b>Note:</b> Vida and Ecat IO modules don't compile under MinGW because they
+	use a missing rpc/hdr library.
+  </li>
+
+
+  <li><font color="#c00000">SPM images IO: <b><font color="#ff0000">***CAUTION***</font>,
+    behaviour change</b></font>: Read <a href="spmformat.html">this document</a>
+    for details. There have been a number of fixes, improvements and changes.
+  </li>
+
+  <li>Fixes in Dicom reader allowing to still read images with partially incoherent
+    headers
+  </li>
+
+  <li>Beginning of a TIFF format reader (by Vincent Frouin), but it is not finished
+    yet and apparently only partially working.
+  </li>
+
+  <li>Rework of environment variables handling: to access data, several environment
+    variables were needed: <tt>SHFJ_SHARED_PATH</tt>, <tt>AIMS_PATH</tt>,
+    <tt>ANATOMIST_PATH</tt>, <tt>SIGRAPH_PATH</tt> etc.
+    Now a more standard shared data structure can be adopted and only one environment
+    variable is needed (<tt>SHFJ_SHARED_PATH</tt>). The older way (with several variables)
+    is still supported. Shared data can be organized in <tt>$SHFJ_SHARED_PATH/shfj</tt>,
+    <tt>$SHFJ_SHARED_PATH/aims</tt>, <tt>$SHFJ_SHARED_PATH/anatomist</tt>,
+    <tt>$SHFJ_SHARED_PATH/sigraph</tt> etc. If <tt>SHFJ_SHARED_PATH</tt> is set to
+    <tt>/usr/local/share</tt> or <tt>/usr/share</tt>, you just get a completely
+    standard organization.
+  </li>
+
+  <li>Settings files for AIMS, currently used to specify SPM IO conventions. There is
+    one site-wide settings files (in the shared directory of Aims) and one personal
+    <tt>$HOME/.aimsrc</tt> file. See <a href="config.html">this page</a> for further
+    explanations.
+  </li>
+
+  <li>Many other things... I can't remember</li>
+
+<h4>Programmer-level changes:</h4>
+  <li>Utility classes & functions for portably handling files, directories and
+    filenames (made for windows porting...) [in cartobase library]
+  </li>
+
+  <li>Threads: the threading package has moved from aimsalgo library (closed-source)
+    to cartobase library (GPL). It implements a portable C++ interface to threads, and
+    will be used in Anatomist now.
+  </li>
+
+  <li>Many other things... I can't remember</li>
+
+<br>
+
+<h4> <a name="version-2.12"></a>27/03/2003 - Version 2.12</h4>
+
+<h4>User-level changes:</h4>
+   <li>More explanatory IO error messages</li>
+   <li>AimsFileConvert can handle RGB/RGBA images</li>
+   <li>Many many other things I don't remember...</li>
+
+<h4>Programmer-level changes:</h4>
+   <li><tt>libshfj</tt> has been renamed <tt>libcartobase</tt> (beginning of
+   <b>Cartograph</b> project)</li>
+
+   <li>Some classes have moved from aims and graph libraries to cartobase,
+   especially low-level general utility classes. More of them should move in
+   the future. For now: <tt>stream</tt> classes, exceptions, <tt>GenObject</tt>
+   and associated classes (formerly named <tt>DataExchanger</tt>),
+   <tt>AttributedObject</tt> and IO (including syntax), Python-like IO for
+   <tt>Object</tt>, string conversion templates, <tt>DataTypeCode</tt>
+   template, basic <tt>typedef</tt>s...</li>
+
+   <li>Some classes still in aims have moved to the new namespace
+   <tt>carto</tt>, like <tt>OptionParser</tt> and related classes</li>
+
+   <li>Classes renamings (in cartobase):
+     <ul>
+     <li><tt>DataExchanger</tt> renamed <tt>GenObject</tt></li>
+     <li><tt>RcExchanger</tt> renamed <tt>Object</tt></li>
+     <li><tt>DataExchangerValue</tt> renamed <tt>TypedObject</tt></li>
+     <li><tt>SyntaxedExchanger</tt> renamed <tt>SyntaxedObject</tt></li>
+     <li>...</li>
+     </ul>
+   </li>
+
+   <li>Externalization (as plugins) of IO formats that use external libraries
+   (I mean external to aims, even for libraries made in SHFJ): Vida, Ecat,
+   Jpeg, Dicom</li>
+
+   <li>Many many other things I don't remember...</li>
+
+<br>
+
+<h4> <a name="version-2.11"></a>31/10/2002 - Version 2.11</h4>
+
+<h4>User-level changes:</h4>
+   <li>Nothing has been recorded...</li>
+
+<h4>Programmer-level changes:</h4>
+   <li>nothing has been recorded...</li>
+<br>
+
+<h4><a name="version-2.10"></a>09/07/2002 - Version 2.10</h4>
+
+<h4>User-level changes:</h4>
+     <li>beginning of ChangeLog: nothing yet</li>
+
+<h4>Programmer-level changes:</h4>
+     <li>nothing yet</li>
+<br>
+&nbsp;
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

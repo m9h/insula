@@ -1,0 +1,6 @@
+add_subdirectory( src )
+
+# NOT NEEDED ANYMORE
+# BRAINVISA_COPY_FILES(${PROJECT_NAME}-devdoc changelog.html 
+#   SOURCE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} 
+#   DESTINATION share/doc/cartodata-${${PROJECT_NAME}_VERSION_MAJOR}.${${PROJECT_NAME}_VERSION_MINOR}/doxygen )

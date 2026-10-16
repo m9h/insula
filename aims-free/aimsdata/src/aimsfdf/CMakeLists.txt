@@ -1,0 +1,3 @@
+
+add_subdirectory(lib)
+set(AIMSFDF_HEADERS ${AIMSFDF_HEADERS} PARENT_SCOPE)

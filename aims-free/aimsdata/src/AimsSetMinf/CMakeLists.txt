@@ -1,0 +1,10 @@
+
+BRAINVISA_ADD_EXECUTABLE(AimsSetMinf
+setMinf.cc
+)
+
+TARGET_LINK_LIBRARIES(AimsSetMinf
+aimsdata
+)
+
+INSTALL(TARGETS AimsSetMinf DESTINATION bin/)
