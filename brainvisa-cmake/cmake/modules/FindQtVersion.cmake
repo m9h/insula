@@ -35,15 +35,33 @@ if( NOT DEFINED QT_VERSION )
     if( Qt6_FOUND )
 #       set( QT_VERSION_MAJOR 6 )
       find_program( QT_QMAKE_EXECUTABLE NAMES qmake6 qmake )
+      # Ask Qt's own CMake targets where its tools are. Deriving the Qt
+      # prefix from qmake fails where qmake6 is a hard link in /usr/bin
+      # (Fedora: moc is in /usr/lib64/qt6/libexec, lrelease is
+      # /usr/bin/lrelease-qt6).
+      find_package( Qt6 QUIET COMPONENTS LinguistTools )
+      foreach( _tool moc lupdate lrelease )
+        string( TOUPPER ${_tool} _TOOL )
+        if( NOT QT_${_TOOL}_EXECUTABLE AND TARGET Qt6::${_tool} )
+          get_target_property( _loc Qt6::${_tool} IMPORTED_LOCATION )
+          if( NOT _loc )
+            get_target_property( _loc Qt6::${_tool} IMPORTED_LOCATION_RELEASE )
+          endif()
+          if( _loc )
+            set( QT_${_TOOL}_EXECUTABLE "${_loc}" CACHE FILEPATH
+                 "${_tool} executable path" FORCE )
+          endif()
+        endif()
+      endforeach()
       file( REAL_PATH ${QT_QMAKE_EXECUTABLE} qmake_real )
       get_filename_component( qmake_dir ${qmake_real} DIRECTORY )
       get_filename_component( qt_dir ${qmake_dir} DIRECTORY )
       # message("qt_dir: ${qt_dir}")
-      find_program( QT_MOC_EXECUTABLE NAMES moc
+      find_program( QT_MOC_EXECUTABLE NAMES moc moc-qt6
                     HINTS ${qt_dir}/libexec ${qt_dir} ${qmake_dir} )
       # message("QT_MOC_EXECUTABLE: ${QT_MOC_EXECUTABLE}")
-      find_program( QT_LUPDATE_EXECUTABLE NAMES lupdate HINTS ${qmake_dir} )
-      find_program( QT_LRELEASE_EXECUTABLE NAMES lrelease HINTS ${qmake_dir} )
+      find_program( QT_LUPDATE_EXECUTABLE NAMES lupdate lupdate-qt6 HINTS ${qmake_dir} )
+      find_program( QT_LRELEASE_EXECUTABLE NAMES lrelease lrelease-qt6 HINTS ${qmake_dir} )
     endif()
   endif()
 
