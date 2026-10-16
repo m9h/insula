@@ -21,8 +21,16 @@ if( SIP_ABI )
        "SIP_ABI_MAJOR_VERSION=${SIP_ABI_MAJOR_VERSION}")
 endif()
 
-exec_program( "${PYTHON_HOST_EXECUTABLE}"
-  ARGS "${AIMS-FREE_SIP_DIRECTORY}/maketemplates.py"
+if( QT_MOC_EXECUTABLE )
+  set( MT_MOC_OPTS "-m" "${QT_MOC_EXECUTABLE}" )
+endif()
+
+# execute_process, as pyaims does: exec_program runs a shell, which splits
+# the "-D;SIP_MODULE=..." list at the semicolons, so maketemplates.py
+# stopped on a bare -D and the shell still returned 0 (no sip files, no
+# error); an empty QT_MOC_EXECUTABLE also left "-m" without its value.
+execute_process( COMMAND "${PYTHON_HOST_EXECUTABLE}"
+        "${AIMS-FREE_SIP_DIRECTORY}/maketemplates.py"
         -s "${AIMS-FREE_SIP_DIRECTORY}"
         -i "${CMAKE_CURRENT_SOURCE_DIR}/generatedtypes.py"
         -p "${CMAKE_CURRENT_SOURCE_DIR}"
@@ -30,11 +38,12 @@ exec_program( "${PYTHON_HOST_EXECUTABLE}"
         -t "${AIMS-FREE_SIP_DIRECTORY}/typessub.py"
         -t "${CMAKE_CURRENT_SOURCE_DIR}/anatypessub.py"
         -l
-        -m "${QT_MOC_EXECUTABLE}"
-        -P "'${CMAKE_C_PREPROCESSOR}'"
+        ${MT_MOC_OPTS}
+        -P "${CMAKE_C_PREPROCESSOR}"
         ${extra_defs}
-  OUTPUT_VARIABLE _generatedSipFileList 
-  RETURN_VALUE _returnValue )
+  OUTPUT_VARIABLE _generatedSipFileList
+  RESULT_VARIABLE _returnValue )
+string( STRIP "${_generatedSipFileList}" _generatedSipFileList )
 
 if( NOT _returnValue EQUAL 0 )
   message( SEND_ERROR "The sip generation from ${PROJECT_NAME} templates with \"${AIMS-FREE_SIP_DIRECTORY}/maketemplates.py\" returned an error:\n${_generatedSipFileList}\n========================")
