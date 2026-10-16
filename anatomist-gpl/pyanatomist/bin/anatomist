@@ -1,0 +1,34 @@
+#!/usr/bin/env python
+
+# This is a launcher script for Anatomist. It replaces the C++ command
+# "anatomist".
+# An IPython kernel is started, so that connections from a qtconsole will
+# always be possible. In the C++ anatomist command, the python engine is
+# started from a module, and the ipython kernel is run on demand when we open a
+# python qtconsole shell.
+# Unfortunately in recent ipython/jupyter/tornado or other modules, this does
+# not work any longer, the IP kernel loop does not return to the running
+# python, so the IP kernel is blocked.
+# To overcome that, we run the IP kernel, and the Qt event loop inside it (like
+# in a regular ipython).
+# Drawbacks:
+# - it always run an IP kernel, with its server engine
+# - it does it from the start, thus slows down the startup of Anatomist
+# But it works, and will continue to in the future since it is the way it is
+# designed for (our way was a hack).
+
+import sys
+from soma.qt_gui import ipkernel_tools
+import anatomist.api as ana
+
+
+ipkernel_tools.before_start_ipkernel()
+
+a = ana.Anatomist(*sys.argv[1:])
+# exits abruptly when closing the control window. Works around the callback
+# problem: when the event loop runs through ipython kernel,
+# QApplication.aboutToQuit signals are never executed, thus cannot actually
+# quit.
+a.setExitOnQuit(True)
+
+ipkernel_tools.start_ipkernel_qt_engine()
