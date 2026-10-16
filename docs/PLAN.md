@@ -205,7 +205,7 @@ libraries, and similar. I have not checked each one. They go with `BRAINVISA_INS
 - **Non-free code.** ECAT is removed. Any future import must repeat the
   search for its copyright text. `brainvisa-share` (8,540 files) has not been
   audited file by file.
-- **SIP.** SIP 6 and Python 3.14/3.15 keep breaking things (four of the 20 Fedora fix commits are SIP-related).
+- **SIP.** SIP 6 and Python 3.14/3.15 keep breaking things (five of the 20 Fedora fix commits are SIP-related).
   Moving to `sip-build` removes the wrapper but not SIP itself.
 - **Deleting Qt 3/4/5 code.** Mechanical, but some of it is entangled with
   the SIP files; every deletion needs the bindings to rebuild.
