@@ -53,7 +53,11 @@ elseif( DESIRED_QT_VERSION EQUAL 6 )
 endif()
 link_directories(${OPENGL_FIX_LIBRARY_DIRECTORIES})
 set(QT_LIBRARIES ${QT_LIBRARIES} ${OPENGL_FIX_LIBRARIES})
-# find_package( QtVersion REQUIRED )
+# moc, lupdate and lrelease (QT_MOC_EXECUTABLE, QT_LRELEASE_EXECUTABLE...).
+# In a combined bv_maker build aims-free has already run this; built on its
+# own against an installed AIMS, Anatomist must, or the translation rules
+# run the .ts file as a command and pyanatomist's template step gets no moc.
+find_package( QtVersion REQUIRED )
 
 BRAINVISA_DEPENDENCY( RUN DEPENDS aims-free RUN "= ${aims-free_VERSION}" )
 BRAINVISA_DEPENDENCY( DEV DEPENDS aims-free DEV "= ${aims-free_VERSION}" )
