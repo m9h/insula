@@ -1,0 +1,28 @@
+package:
+  name: anatomist
+
+soma-env:
+  publication: neuro-forge
+  components:
+    - anatomist-free
+    - anatomist-gpl
+
+  internal-dependencies:
+    - soma
+  
+  type: compiled
+
+requirements:
+  run:
+    - qwt
+    - matplotlib
+    - virtualgl
+    - qtconsole
+    - ipycanvas
+    - ipywidgets
+    - ipyevents
+    - ipykernel <7
+    - notebook
+    - libglu
+    - xvfb
+    - mesalib_software

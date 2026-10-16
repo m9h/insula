@@ -1,0 +1,106 @@
+
+@import url("default.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+    background-color: #103020;
+    color: #000;
+}
+
+div.document {
+    background-color: #205030;
+}
+
+div.related {
+    background-color: #104030;
+}
+
+div.sphinxsidebar input {
+    border: #98ccdb;
+}
+
+/* -- hyperlink styles ------------------------------------------------------ */
+
+a {
+    color: #357c5f;
+}
+
+a:visited {
+    color: #357c5f;
+}
+
+/* -- body styles ----------------------------------------------------------- */
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    background-color: #f2f6f0;
+    color: #205c43;
+}
+
+
+dl.class dt {
+    background-color: #e0ffec;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+dl.method dt {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-top: none;
+}
+
+dl.docutils dt {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-top: none;
+}
+
+dl.staticmethod dt {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-top: none;
+}
+
+dl.data dt {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-top: none;
+}
+
+dl.attribute dt {
+    background-color: #ffffff;
+    border-bottom: none;
+    border-top: none;
+}
+
+dl.class dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.method dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.docutils dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.staticmethod dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.data dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.attribute dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+

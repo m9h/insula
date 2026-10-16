@@ -1,0 +1,1843 @@
+<!DOCTYPE public "-//w3c//dtd html 4.01 transitional//en"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Anatomist 5 and earlier</title>
+  <link rel="stylesheet" href="../anatomist.css" type="text/css" />
+  <style type="text/css">
+    BODY {
+	  text-align: justify;
+	  margin: 0.5cm;
+	}
+  </style>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b" alink="#ff0000">
+
+<div class="document">
+<div class="body">
+
+<h1>
+  <img
+ src="../images/anaLogo.png" nosave="" height="96" width="96"
+ align="middle">
+  Anatomist 5 and earlier
+</h1>
+
+<p>
+<b><a href="#version-5.1.2">Version 5.1.2</a></b><br/>
+<b><a href="#version-5.1.1">Version 5.1.1</a></b><br/>
+<b><a href="#version-5.1.0">Version 5.1.0</a></b><br/>
+<b><a href="#version-5.0.4">Version 5.0.4</a></b><br/>
+<b><a href="#version-5.0.3">Version 5.0.3</a></b><br/>
+<b><a href="#version-5.0.2">Version 5.0.2</a></b><br/>
+<b><a href="#version-5.0.1">Version 5.0.1</a></b><br/>
+<b><a href="#version-5.0.0">Version 5.0.0</a></b><br/>
+<b><a href="#version-4.6.1">Version 4.6.1</a></b><br/>
+<b><a href="#version-4.6.0">Version 4.6.0</a></b><br/>
+<b><a href="#version-4.5.1">Version 4.5.1</a></b><br/>
+<b><a href="#version-4.5.0">Version 4.5.0</a></b><br/>
+<b><a href="#version-4.4.0">Version 4.4.0</a></b><br/>
+<b><a href="#version-4.3.1">Version 4.3.1</a></b><br/>
+<b><a href="#version-4.3.0">Version 4.3.0</a></b><br/>
+<b><a href="#version-4.2.1">Version 4.2.1</a></b><br/>
+<b><a href="#version-4.2.0">Version 4.2.0</a></b><br/>
+<b><a href="#version-4.1.1">Version 4.1.1</a></b><br/>
+<b><a href="#version-4.1.0">Version 4.1.0</a></b><br/>
+<b><a href="#version-4.0.2">Version 4.0.2</a></b><br/>
+<b><a href="#version-4.0.1">Version 4.0.1</a></b><br/>
+<b><a href="#version-4.0.0">Version 4.0.0</a></b><br/>
+<b><a href="#version-3.2.1">Version 3.2.1</a></b><br/>
+<b><a href="#version-3.2">Version 3.2</a></b><br/>
+<b><a href="#version-3.1.6">Version 3.1.6</a></b><br/>
+<b><a href="#version-3.1.5">Version 3.1.5</a></b><br/>
+<b><a href="#version-3.1.4">Version 3.1.4</a></b><br/>
+<b><a href="#version-3.1.3">Version 3.1.3</a></b><br/>
+<b><a href="#version-3.1.2">Version 3.1.2</a></b><br/>
+<b><a href="#version-3.1.1">Version 3.1.1</a></b><br/>
+<b><a href="#version-3.1.0">Version 3.1.0</a></b><br/>
+<b><a href="#version-3.0.3">Version 3.0.3</a></b><br/>
+<b><a href="#version-3.0.2">Version 3.0.2</a></b><br/>
+<b><a href="#version-3.0.1">Version 3.0.1</a></b><br/>
+<b><a href="#version-3.0.0">Version 3.0.0</a></b><br/>
+<b><a href="#version-1.30">Version 1.30</a></b> <br/>
+<b><a href="#version-1.29">Version 1.29</a></b> <br/>
+<b><a href="#version-1.28">Version 1.28</a></b> <br/>
+<b><a href="#version-1.27">Version 1.27</a></b> <br/>
+<b><a href="#version-1.26">Version 1.26</a></b> <br/>
+<b><a href="#version-1.25">Version 1.25</a></b> <br/>
+<b><a href="#version-1.24">Version 1.24</a></b> <br/>
+<b><a href="#version-1.23">Version 1.23</a></b> <br/>
+<b><a href="#version-1.22">Version 1.22</a></b> <br/>
+<b><a href="#version-1.21">Version 1.21</a></b> <br/>
+<b><a href="#version-1.20">Version 1.20</a></b> <br/>
+<b><a href="#version-1.19">Version 1.19</a></b> <br/>
+<b><a href="#version-1.18">Version 1.18</a></b> <br/>
+<b><a href="#version-1.17">Version 1.17</a></b> <br/>
+<b><a href="#version-1.16">Version 1.16</a></b> <br/>
+</p>
+
+
+<!-- -->
+<h4> <a name="version-5.1.2"></a>2024/03/03 - Version 5.1.2</h4>
+<ul>
+  <li>GLTF 3D scene format support</li>
+  <li>GLTF scene export / import menu in 3D views. Allows to save in a single .gltf or .glb file the whole scene and exchange it with someone else in a very simple and convenient way.
+  </li>
+  <li>GLTF format supported for loading objects, also</li>
+  <li>New colormaps</li>
+  <li>All manual graph manipulations mark them as user-modified</li>
+  <li>Fixed the interpoler fusion object, which was probably broken for a long time</li>
+  <li>Fixed window update issue in "slider triggers linked cursor" mode</li>
+  <li>Fixed Anatomist creating directories with corrupted names in HOME</li>
+  <li>Fixed icons when dragging windows</li>
+  <li>Several other bug fixes</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.1.1"></a>2023/03/21 - Version 5.1.1</h4>
+<ul>
+  <li>Fixed a colormap scaling in labels tables.</li>
+  <li>Fix in RGB interpolation activation criterion.</li>
+  <li>Fix in referential of temporary split line in fold split tool.</li>
+  <li>Slight improvements and additions in python bindings.</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.1.0"></a>2023/01/09 - Version 5.1.0</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+  <li>New Jupyter notebook interface, which embeds interactive Anatomist views (3D or 2D) in notebook outputs.
+  </li>
+  <li>Info about cursor position (texture values etc) is displayed in 3D windows tooltips.
+  </li>
+  <li>When a textured object (texture, volume) contains a "labels" attribute in its header, it is used to translate int labels to strings in info and tooltips. GIFTI labels maps are also supported.
+  </li>
+  <li>Transformations graphs files can be read and used in Anatomist: in the referentials window, use "load transformations graph" in the right-click popup menu on the background.
+  </li>
+  <li>The old perfusion plugin has been removed. It has been obsolete and unmaintained for many years, and nobody is still using it has methods have certainly evolved since then.
+  </li>
+  <li>cleanups in app and modules destruction, avoiding crashes at exit</li>
+  <li>Deleting several objects with child/parent relationships is finally handled properly and do not required several user actions to delete all.
+  </li>
+  <li>Support more texture types in IO.</li>
+  <li>Fixes in the SurfPaint module, especially using textures not starting at value 0.
+  </li>
+  <li>SurfPaint: implemented closing curve in "magic brush" mode (was only working in "sulcus" mode).</li>
+  <li>fix in voxel size in volume rendering when downsampling is used.</li>
+  <li>fix in scaling of profile windows which were growing when clicking multiple times on the linked cursor.
+  </li>
+  <li>Several other bug fixes...</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+<ul>
+  <li>Handle volumes with "strides" even on the 1st axis, allowing to map numpy arrays from external world.
+  </li>
+  <li>Python3 is the only supported version.</li>
+  <li>Signals are emitted to notify slider and orientation changes in 3D views.
+  </li>
+  <li>Added a user modification flag in AObject that can be used to know when data saving is needed. Used in graphs labeling.</li>
+  <li>Fixes in the selection label picker GUI and toolbars.</li>
+  <li>Totally wiped out the use of obsolete structures AimsData</li>
+  <li>Porting to Qt6: Anatomist source code is now compatible with Qt6. A future branch will also allow python bindings (Sip6, PyQt6) but as it is not completely debugged and tested for side effects, this will be merged after release 5.1.0.
+  </li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.4"></a>2021/12/22 - Version 5.0.4</h4>
+<ul>
+  <li>Pyanatomist: prevent modification of sys.argv</li>
+  <li>pyanatomist: fixes in thread safe implementation</li>
+  <li>fixes variable potentially used before definintion in anasimpleviewer</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.3"></a>2021/10/13 - Version 5.0.3</h4>
+<ul>
+  <li>Fixed crash in Fusion3D using more than 2 volumes</li>
+  <li>Added a detailed doc about palettes and texturing</li>
+  <li>Fix in folds split</li>
+  <li>Fix in referential of internal CutMesh sub-object</li>
+  <li>Fixed objects icons being sometimes not loaded</li>
+  <li>Made the palette name optional palette specifications in objects .minf</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.2"></a>2021/06/17 - Version 5.0.2</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+  <li>fixes in auto-fusion (when several sliceable objects are put in the same view), avoiding possible crashes.
+  </li>
+  <li>User docs have been imoroved and complemented, for referentials and coordinates systems, and coloring, especially.
+  </li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.1"></a>2021/03/05 - Version 5.0.1</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+  <li>Fixed meshes rendering property "front face", the display in the user interface was showing the contrary of what it was (clockwise/counterclockwise)
+  </li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-5.0.0"></a>2021/01/20 - Version 5.0.0</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+  <li>A new default control allows to perform most actions with a single (left) mouse button. This also allows to control Anatomist in touch devices. Specific touch gestures have also been implemented.
+  </li>
+  <li>Allow to save resampled volumes from anatomist</li>
+  <li>Limit used memory when loading large fiber tracks files</li>
+  <li>Support reduced connectivity matrices in connectivity matrix fusion (brain mesh + matrix + regions texture)
+  </li>
+  <li>Other fixes and improvements in Python bindings</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.6.1"></a>2018/09/24 - Version 4.6.1</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+  <li>When several volumes (or "sliceable" objects) are put in the same window, a Fusion2D is automatically created to display all slices properly merged together.
+  </li>
+  <li>New little image "math" module: allows to build a new volume from others using a python expression formula (similar to cartoLinearComb.py)
+  </li>
+  <li>Fixes in time sliders for objects with time steps (or voxel size) different from 1. on time and higher axes.
+  </li>
+  <li>Display connectivity matrices also as images</li>
+  <li>Many other fixes</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.6.0"></a>2017/11/30 - Version 4.6.0</h4>
+<h5>Visible changes (users):</h5>
+<ul>
+<li>Handle objects of any dimensionality. Up to v 4.5 Anatomist was only handling 4D (3D + time) objects. This version can now use and visualize volumes with more dimensions, and use them in various types of fusions. A few objects might be "forgotten" and still be limited to 4D, but normally most of them can use extra dimensions in their texturing.
+</li>
+<li>CIFTI connectivity matrices display. The connectivity matrix object may use a CIFTI file using on-the-fly reading, and use its information to map to one or several meshes. Additional ROI textures may be used as patches.
+</li>
+<li>The referentials / transformations window has been entirely rewritten. It is now using a 3D display.</li>
+<li>New fusion type: VectorField. Fusion 1 to 3 volumes to form a vector field, displayed as lines in a slice.
+</li>
+<li>Palette mode "value 0 at center of palette" is now part of palette properties, is used in palette controls, and can be set by programming.
+</li>
+<li>Windows snapshots and movie recording can now be done at given arbitrary resolution, and need no longer to fit the window / screen size. Off-screen rendering is working too, using hidden windows. They still need a X connection on Linux: Qt needs it and OpenGL contexts need it also.
+</li>
+<li>Save / reload fusion objects and multiple objects. The new <tt>.aobj</tt> format can describe Anatomist objects, fusions, and properties. One or several objects may be saved in this format, and laded later.
+</li>
+<li>Fixes in Fusion3D objects: the texture bounds were not correctly updated when recalculated, and the line modes now use one sample per voxel along the line, thus doe not miss any.
+</li>
+<li>The transformation control has been improved and allows to select manually the transformation we want to operate on (by selecting source/destination referentials)
+</li>
+<li>New fusion type: NormalsFusionMethod: fusion one (or several) mesh(es) to display its (their) normals.
+</li>
+<li>Possibility to set perspective view parameters. The <tt>WidowConfig</tt> command has new parameters for this. The GUI has not been changed yet.
+</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+
+<ul>
+<li>Objects and windows APIs have been changed to handle N-dimensional objects and coordinates: typically AObject methods boundingBox, boundingBox2D, voxelSize (replacing the older VoxelSize), LinkedCursor actions, ViewState objects and GLComponent viewStateID method, etc.
+</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.5.1"></a>2017/05/17 - Version 4.5.1 - never released...</h4>
+<h5>Visible changes (users):</h5>
+
+<ul>
+<li>Fixes in texture duplication function, which avoids losing scaling and palette in some texture displays
+</li>
+<li>allow drag objects to windows group(s)</li>
+<li>allow drag windows from / to groups</li>
+<li>In selection or ROI modes in a window, "V" key displays information about the selected region in the status bar</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+
+<ul>
+<li>Porting to Python3. PyAnatomist and the underlying libraries (PyAims, Soma-Base) have finally been ported to Python 3. They are thus source compatible with with Python 2 series (2.6 and later) and Python 3 (3.4 and later).
+</li>
+<li>Porting to Qt5. Anatomist and PyAnatomist (and the underlying aimsgui) have been made source-compatible with both Qt4 and Qt5. The build system of BrainVisa will select the appropriate configuration according to the DESIRED_QT_VERSION variable in cmake, and building should work transparently.
+</li>
+<li>New options in AddObject command: temporary and position
+</li>
+<li>Pyanatomist: HeadlessAnatomist class to run Anatomist in batch, using Xvfb and possibly VirtualGL (X11 implementation only).</li>
+<li>PyAnatomist: AItem in threaded implementation now ensure to be deleted in the main thread</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.5.0"></a>2016/02/17 - Version 4.5.0</h4>
+<h5>Visible changes (users):</h5>
+
+<ul>
+
+<li>Material rendering properties have been completed in the GUI (color/rendering) to include line width, unlit color, and new selection conditions properties.
+</li>
+
+<li>Material rendering properties have been improved for selection conditions: now a mesh can choose to be selectable when it is transparent, semi-transparent, always...
+</li>
+<li>Fixed broken GUI panel for selection action.</li>
+<li>Palette views in windows support a larger set of objects.</li>
+<li>Fixed wrong scaling of palette views.</li>
+<li>Connectivity matrix view has now a colormap correctly scaled.</li>
+<li>Various fixes in connectivity matrix view.</li>
+<li>Fixed windows display being blank when involving an empty mesh with a transformation (mesh bounding box problem).</li>
+<li>Modifications in shader renderers, addition of a few material properties to control shader activation and options.</li>
+<li>Fibers/bundles reading does not depend on old connectomist (private) plugin and is now builtin and open-source (in aimsdata).</li>
+<li>Trackvis (.trk) format support for fibers for reading.</li>
+<li>Fibers are now built with color rendering, using shaders in anatomist.</li>
+<li>The SurfPaint module has been significantly improved, especially there are now undo / redo functionalities.</li>
+<li>New config option: <tt>windowBackground</tt>.</li>
+<li>The file dialog when loading objects allows to see objects header information, and to select loading options, as well as choosing between several possible data types.</li>
+<li>Possibility to save a number of objects types as textured meshes (textured surfaces, fusions 3D, planar fusions 3D...)</li>
+<li>Partial support for Wavefront .obj mesh format, allowing to export (or partially import) complete objects / scenes to blender or other software</li>
+<li>Docs have been converted to sphinx format, and integrated in a cleaner, simpler, and more structured shape: the old "help pages", the user manual, and the tutorial are now part of one user documentation set. The developer docs show C++ and python docs. As a consequence, all these docs are now available from the "Help" menu.
+</li>
+<li>Fixed snapshot recording in 3D windows, which were more or less broken (did not shoot at the right time) since introduction of graphics views.
+</li>
+<li>Fixed Anatomist crash when a volume contains Not-a-Number or infinite values.
+</li>
+<li>Several fixes in SurfPaint module, which could cause crashes, incorrect displays, or unpractical manipulation.
+</li>
+<li>The number of displayed polygons per object can be limited in the configuration (maxPolygonsPerObject option) to avoid problems with very large meshes (typically, fiber tracts) with some 3D hardware. GUI available in preferences/OpenGL.
+</li>
+<li>Meshes transparency rendering improvements: it is now possible to sort meshes polygons by depth in a window. This notably improves the rendering of transparent objects with many overlaps (like cortical meshes). It is triggered by the "D" key in many controls.
+  <ul>
+    <li><tt>WindowConfig</tt> command has a new option: <tt>polygons_depth_sorting</tt> to set it.
+  </ul>
+</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+
+<ul>
+<li>Slight API changes in methods names of AWindow (start with lowercase).
+</li>
+<li>Fixes in texture header properties when extracting a texture from an Anatomist object.</li>
+<li>Complements in python bindings.</li>
+<li>Source code has been adapted to avoid using Qt3Support compatibility library. (this will ease future porting to Qt5)</li>
+</ul>
+
+
+<!-- -->
+<h4> <a name="version-4.4.0"></a>2013/04/07 - Version 4.4.0</h4>
+
+<h5>Visible changes (users):</h5>
+
+<ul>
+<li>Possibility to display orientation markers ("L", "R" etc) in 2D views, still a bit experimental...</li>
+<li>Fusion2D: geometric blend mode has been modified, and a new mode has been added for the former behavior</li>
+<li>New Fusion2D blend mode: geometric lightening, "geometric_lighten"</li>
+<li>New object type: <b>Fusion2DMesh</b>. It displays the intersection between a mesh and a slice plane, a bit like in CutMesh, but the slice follows the window slice orientation, thus can be displayed with a volume in a 2D view. To activate it, use the fusion button with one or several meshes selected.</li>
+<li>Fixed handling of very large images ( &gt; 32767 voxels in a dimension)</li>
+<li>Visual feedback for interactive palette bounds settings in windows (ctrl+right mouse button + mouse move). As this feedback relies on an important change in 3D windows widgets, and which seems not to work correctly on Mac, this feature is disabled by default on Mac: see in the internal changes.</li>
+<li>Clearer visual feedback when using the oblique slice control: 3D bounds and plane intersection is displayed during the interactions, and slice plane information is also displayed on the window (using the graphics view system).</li>
+<li>Clearer visual feedback when using the transformation control: when manually playing with transformations, 3D information is displayed (bounding boxes of objects moving, instant rotation axis and angle, relative scaling... Information about the transformation matrix, axis, center, angle, and scaling are also displayed when the graphics view is enabled, and can be edited. The way all this looks may change in the future because I'm not sure is is really comprehensive...</li>
+<li>A few user interface changes, mainly due to the replacement of the Qt3 compatibility lib by pure Qt4 code. Objects/windows lists behave a bit differently, and browser windows too.</li>
+<li>In the palettes settings window, the palettes list has changed to a table, showing an image for each palette, and some properties associated to palettes, allowing to sort the table accordingly.</li>
+<li>New Fusion3D fusion mode: median.</li>
+<li>Minor reworking of a few icons</li>
+<li>Some optimizations in volmume loading time and memory management</li>
+<li>fixed bug in offset calculation in 4D images (time) in sagittal display</li>
+<li>Many other fixes...</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+
+<ul>
+<li>Volumes in Anatomist are now stored as carto::Volume rather than in AimsData classes</li>
+<li>New object types: sparse matrix, and connectivity matrix mapping on a cortex mesh. Well for now only a in-house toolbox which is still under construction may make use of it, so it is still completely hidden for most users.
+</li>
+<li>The palette settings window now allows some extensions, and allows to open the gradient editor as an example</li>
+<li>A few improvements in Python/C++ bindings</li>
+<li>Fixed some memory leaks</li>
+<li>Most of the uses of the Qt3 compatibility lib have been removed, except for one or two classes of the main Anatomist lib. (it will also prepare things for Qt5 compatibility in the future)</li>
+<li>Use of Qt QGraphicsView in 3D windows: this change allow to display all kinds of overlays (text/graphics information, widgets...) on top of the 3D rendering. In this mode, the Qt OpenGL widget is the background of the graphics view, which implies some behaviour changes in the 3D interactions. We tried to minimize changes for users, but there might still be a few gitches. This graphics view system can be disabled in the settings. Moreover it seems not to work properly on Mac, so it is disabled by default on Mac. This new feature allows to display various information as feedback for controls, like in palette bounds settings, or slice orientation, or manual transformation control.</li>
+</ul>
+
+
+<!-- -->
+<h4> <a name="version-4.3.1"></a>2013/04/07 - Version 4.3.1</h4>
+
+<p>Bugfix release:</p>
+
+<ul>
+<li>Minor display improvement for meshes and textures: display polygon/vertex/texture info in status bar</li>
+<li>Improvements and optimization bug fix in matplotlib-based histogram</li>
+<li>Bug fixed in Fusion3D objects with time volumes, the update was somewhat broken</li>
+<li>More robustness to broken mesh / texture specified association in meshes headers</li>
+<li>Fixed material properties "line_width" and "unlit_color" which were not correctly honored</li>
+<li>Optimization improvements in IO: loading volumes is notably faster</li>
+</ul>
+
+
+<!-- -->
+<h4> <a name="version-4.3.0"></a>2012/09/06 - Version 4.3.0</h4>
+
+<p>This version also brings a number of bug fixes, and improvements</p>
+
+<ul>
+<li>New <b>2D fusion</b> modes</li>
+<li>Fix visibility of icons in menus</li>
+<li>Fix closing mode in ROI toolbox</li>
+<li>Fix to enable displaying huge images</li>
+<li>The <i>Clear everything</i> menu can really close all windows now</li>
+<li>The matplotlib-histogram window has been improved, and now replaces the old one as the default histogram window (in windows buttons). Similarly, a new plugin brings a matlotlib-based profine window, which correctly handles coordinates transformations.</li>
+<li>The manual sulci splitting plugin has been significantly improved, both on the algorithmic part (possibility to manually mark several points where the cut should go through) and the user interface (the cut line is visible before actually splitting, possibility to abort, etc).
+</li>
+<li>Graph labels display as text in 3D, included in the selection control, and activated by hitting &lt;A&gt;, implemented in a fast way (compiled C++).
+</li>
+<li>Anatomist windows highlighting: shows which window corresponds to the one under the mouse cursor in the list of the main window, or when using drag and drop</li>
+<li>Optimizations in huge nomenclature / graphs coloring, which were terribly slow.</li>
+<li>Use the Qt4 file dialog (which is more modern, but in some styles may lack some features, unfortunately...)
+</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.2.1"></a>2012/02/16 - Version 4.2.1</h4>
+
+<p>Bug fix update and minor improvements:</p>
+
+<ul>
+<li>Fix translations.</li>
+<li>Fix a bug in iPython shell deletion</li>
+<li>Disable saving texture for generated textures.</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.2.0"></a>2012/02/03 - Version 4.2.0</h4>
+
+<h5>Visible changes (users):</h5>
+
+<ul>
+</li>
+<li>Add possibility to open browser window items when registering objects:
+  <ul>
+  <li>In practical use, when adding one object in a browser, the item is open; if several objects are added, it is not.
+  </li>
+  <li>When adding several objects in windows, parent objects (graphs...) are added before their children. It avoids randomly having nodes together with their parent graph in browsers open via the "view/select objects" option of 3D windows.
+  </li>
+  </ul>
+</li>
+<li>Fusion 2D parameters window: fixed a crash in Qt when "dragging" an item in the list.
+</li>
+<li>Added a box selection highligting feature to the improved selection control
+</li>
+<li>Slightly modified outline selection using a more conventional "cel-shading" technique. It is maybe a bit less ugly, and has fewer side effects.
+</li>
+<li>Disabled tooltips when to ROI drawing tool is active</li>
+<li>Made a few referentials / transformations menus clearer (about header info)
+<li>Use the IPython Qt console in Anatomist if ipython >= 0.11 is present.
+</li>
+<li>Surfpaint module update.</li>
+<li>Behaviour change in Anatomist:
+  <ul>
+  <li>Add graph nodes with graphs in windows by default.</li>
+  <li>Remove graph nodes with the graph from views also. Children removal is governed by a new shouldRemoveChildrenWithMe() method in MObject.
+  </li>
+  <li>Menu option to add a graph without its children, to allow the older behaviour when needed.
+  </li>
+  </ul>
+</li>
+<li>Windows blocks improvements:
+  <ul>
+  <li>Possibility to arrange block windows in rows or columns, or rearrange as a rectangle.
+  </li>
+  <li>Flexibility on dynamic rows / columns layout arrangement of blocks: number of rows/cols can be specified.</li>
+  <li>Fix in adding a window into a block: empty spaces (for closed windows) will be used properly now.
+  </li>
+  <li>Windows blocks now default to fixed number of rows (since screens are generally wider than high)
+  </li>
+  </ul>
+</li>
+<li>Re-focus view after referential change</li>
+<li>New config option: <tt>commonScannerBasedReferential</tt>. When enabled, all such referentials found in image headers are assumed to be the same.
+</li>
+<li>New menu option in referentials window: split referential to dissociate transformations.
+</li>
+<li>Colorbar saving option in "view palette" feature (thanks Thomas)</li>
+<li>New palettes: "Graph-Label", "pastel-256", "French"</li>
+<li>Planar mesh in CutMesh objects: Inverted planar mesh normals to avoid in/out notion inversion.
+</li>
+<li>Docs updates, especially about the surface paint tool.</li>
+<li>avoid crash in ROI menu "session/clean" when the current graph cannot be retreived. (I Don't know what this is supposed to do anyway...)
+</li>
+<li>Fixed referential inheritance on slice object</li>
+<li>Fixes in lighting settings update in Anatomist windows</li>
+<li>Take referentials / transformations into account when syncing views</li>
+<li>Roi module: fixed GUI update of BrushUnit</li>
+<li>Ensure windows are destroyed when closed even if they are not top-level windows (in blocks for instance).
+</li>
+<li>Fix in PyAnatomist (socket implementation) asynchronous processing mess-up after destruction of objects.
+</li>
+<li><b>Fixed multi-texturing bug on Windows OS</b>. Actually it was the way to use OpenGL extension functions which did not work (or not always). Limiting the number of textures units should not be needed any longer.
+</li>
+</ul>
+
+<h5>Internal changes (programmers):</h5>
+
+<ul>
+<li>New command: <tt>PaintParam</tt></li>
+<li>Modified parameters of <tt>AddObject</tt> and <tt>RemoveObject</tt> commands, and cooresponding docs.
+</li>
+<li>New command: <tt>WindowBlock</tt></li>
+<li>A few more Python bindings on the C++ library API, improvements and fixes</li>
+<li>Changed applyBuiltinReferential functions to loadReferentialFromHeader() in python API.
+</li>
+<li>Implement Anatomist.sync() in anatomist.direct.api: it just did nothing before. Now it calls qApp.processEvents().
+</li>
+<li>added a Anatomist.paintParams() method in python API</li>
+<li>Fixed memory leaks in AObjectConverter::anatomist() functions.</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.1.1"></a>2011/09/14 - Version 4.1.1</h4>
+
+<p>Bug fix update and minor improvements:</p>
+
+<ul>
+<li>New rotation mode where we don't need to keep the middle mouse button down: it is now possible to rotate an object by performing a double click with the middle button and moving the mouse. Another click ends this special rotating mode.</li>
+<li>New Text objects to display text information in Anatomist windows.</li>
+<li>More python bindings in the Python API.</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.1.0"></a>2011/05/17 - Version 4.1.0</h4>
+
+<p>In this version, an important change for the developers should be noted : the build tool used to compile from the source code has changed. We gave up our home-made tool <i>build-config</i> and replace it with the standard tool <a href="http://www.cmake.org/">CMake</a>, a cross-platform, open-source build system.
+</p>
+
+<p>This version also brings a number of bug fixes, and improvements:</p>
+
+<ul>
+<li>New <b>surfacic ROI drawing toolbox</b>: it is now possible to paint on a mesh (into a texture), and use curve drawing tools which include curvature constraints. This toolbox is developed in Marseille by O. Coulon's team, mainly by A. Le Troter.
+</li>
+<li>Update and additions to pyanatomist documentation.</li>
+<li>Bug fix in FusionRGBAVolumeMethod fusion method</li>
+<li>Bug fix in palette update in a MultiTexture fusion</li>
+</ul>
+
+<!-- -->
+<h4> <a name="version-4.0.2"></a>2010/11/05 - Version 4.0.2</h4>
+
+<p>Bug fix update and minor improvements:</p>
+
+<li>new option in Anatomist config and preferences panel: <tt>clipBrowserValues</tt>. This option allows to limit the size of strings displayed in browsers attributes, and avoid crashes due (probably) to too large pixmaps in X servers in some specific cases.
+</li>
+<li>Gradient palette available for RGB images.</li>
+<li>Improvement of tooltips on graphs in "display property" mode</li>
+<li>Fix rendering problems using ATI cards and drivers on S16 volumes.</li>
+<li>Fix ROI cursor display</li>
+
+<!-- -->
+<h4> <a name="version-4.0.1"></a>2010/07/29 - Version 4.0.1</h4>
+
+<p>Bug fix update and minor improvements:
+</p>
+<li>Graph labels picking/copy/paste from one window to another is now possible.</li>
+
+<h4> <a name="version-4.0.0"></a>2010/05/28 - Version 4.0.0</h4>
+
+<p>This version of Anatomist is now built and distributed using Qt4 by default. It may bring some minor graphical interface differences, but everything should work as before in any case.
+</p>
+<p>The sources are still compatible with Qt3 also, both versions will be maintained for about 6 months until every developper switches to Qt4.
+</p>
+
+<h5>Improvements:</h5>
+
+<li>OpenGL-based selection infrastructure. Selection functions for meshes and polygons have been included in Anatomist. In "debugger" mode (userLevel &gt;= 3) this mode replaces the older graph/bucket selection mechanism. When correctly tested, it will fully replace it.<br/>
+A little texture drawing code example is now part of the examples.<br/>
+The new infrastructure is not optimized at all yet, so, drawing is slow, but we will improve it in time to avoid unnecessary OpenGL renderings.
+</li>
+<li>Python bindings and the python API have been slightly improved.</li>
+<li>New command: ApplyBuiltinReferential</li>
+<li>The file browser for loading objects now shows all file extensions used by supported objects files. Extensions list is built dynamically from the loaded readers.
+</li>
+<li>Clearer tooltips in the referentials window.</li>
+
+
+<h5>Bug fixes:</h5>
+
+<li>Many problems have been fixed when Anatomist is built using Qt4. Some modules had not been ported or tested, and Mac and Windows ports had not been tried. Now things are mostly tested.
+</li>
+
+<!-- -->
+
+<h4> <a name="version-3.2.1"></a>2010/01/18 - Version 3.2.1</h4>
+
+<h5>Improvements:</h5>
+
+<li>A new custom application for a simple viewer more suitable for inexperienced users: <b><tt>anasimpleviewer.py</tt></b>, written in python (so, based on the python bindings API). It offers a classical, simple one-window, four-views viewer. It may be used as a code example, and can be useful for end users too.
+</li>
+<li>A new histogram plugin using Matplotlib (written in python) is available and may replace the existing one (using Qwt): it is much more flexible (interactive zoom, possibility to save the plot...) and prettier.
+</li>
+<li>Graphs now have the classical "apply builtin referential" option, and uses Talairach transformation info contained in the graph.
+</li>
+<li>Volume rendering is now using by default a palette derived from the underlying object palette, with transparency added.
+</li>
+<li>New plugin: menu option to set a distinct palette on a set of volumes, allowing to quickly display 2D fusions without opening the palette window on each volume and selecting one manually.
+</li>
+<li>New command: FusionInfo</li>
+<li>New option in <tt>WindowConfig</tt> command: <tt>light</tt>.
+</li>
+<li>New option in <tt>RemoveObject</tt> command: <tt>remove_children</tt>.
+</li>
+
+
+<h5>Bug fixes:</h5>
+
+</li>Many minor fixes...
+</li>
+<li>The ROI cursor was buggy on Mac and was disabled in 3.2.0. It is now fixed and enabled again. Actually the bug came from int/float conversion at the anatomist Bucket object level.
+</li>
+<li>Some objects opacity was not correctly taken into account (textured surfaces, 3D fusions...); this has been fixed.
+</li>
+<li>Fixed menu options for various multi-objects (graph objects). This also fixes the fact that right-clicking on a graph node in a browser window didn't provide the "object-specific" menu.
+</li>
+<li>Fixed the ROI cursor being drawn at the wrong position when using referentials and transformations
+</li>
+<li>Added new windows types in control window menu</li>
+<li>PaletteViewer doesn't show any palette on objects which don't have one. This prevents a crash, and avoids unneeded work
+</li>
+<li>added colormap variants, more suitable to linear fusions (which is the default today)
+</li>
+<li>Fixed some (the last?) side effects when the VTK plugin is loaded</li>
+<li>Fixed referentials problems on clipped objects</li>
+
+<!-- -->
+
+<h4> <a name="version-3.2"></a>2009/09/02 - Version 3.2</h4>
+
+<h5>Improvements:</h5>
+
+<li>VTK plugin by Pierre Fillard, which allows to render VTK objects, and especially enables a mix between Anatomist and <a href="http://www-sop.inria.fr/asclepios/software/MedINRIA/">MedInria</a> objects.
+</li>
+<li>GIFTI format IO support for meshes and textures</li>
+
+
+<h5>Bug fixes:</h5>
+
+</li>Volume rendering has been fixed, it did not work on some OpenGL implementations (like on our Mac and our Windows machines).
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.6"></a>2009/03/26 - Version 3.1.6</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>Fixed coronal and sagittal views orientation in direct referentials</li>
+<li>Fixes in some objects update functions (when depending on other objects changes)
+</li>
+<li>reimplemented the "clear unused referentials" feature in a way that does what it should, this time.
+</li>
+<li>When saving a graph, correctly set its .data filename</li>
+<li>Fixed default referential on Fusion3D objects</li>
+<li>when reloading an object, keep its former referential if the reloaded object has the default one
+</li>
+<li>fixed crash when changing the fusion object in Fusion2D parameters window
+</li>
+
+
+<h5>Minor improvements:</h5>
+
+<li>New ClippedObject, allowing to cut any object by a clipping plane with its own orientation
+</li>
+<li>avoid creating spurious unneeded referentials in AssignReferential</li>
+<li>anatomist python plugin: allow to load a .py script via the
+open button or LoadObject command (this is a security problem, of course, and should be disabled in some cases, but it's convenient)
+</li>
+
+
+<h5>Internals:</h5>
+
+<li>Fixes for the Qt4 variant</li>
+<li>little fixes and additions to python bindings</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.5"></a>2009/01/30 - Version 3.1.5</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>Fixes in volume rendering: allow to correctly use it on volumes of float and double values.
+</li>
+<li>Fixed a texture values rounding problem.</li>
+<li>Fixed crashes in histogram window.</li>
+<li>Fixed an update problem in multi-textures.</li>
+
+<h5>Minor improvements:</h5>
+
+<li>New semi-transparent palette for positive/negative activation maps suitable for volume rendering, with gradient information.
+</li>
+<li>In palette window, new mode to keep value 0 in the center of the colormap (useful for signed values activation maps).
+</li>
+<li>In 3D fusion parameters window, users can now type values for depth and step, with the required precision.</li>
+<li>ROI module: filter objects that can be used to draw ROIs on: remove graph elements to keep a small and readable list
+</li>
+<li>ROI drawing: The 3D brush shape is now displayed in real-time and follows the mouse, so that the user sees which voxels will actually be drawn.
+</li>
+<li>ROI drawing: Better feedback when drawinf and erasing: the current pencil strike is correctly displayed over multiple regions (in replace mode), including when erasing (a white transparent region is displayed and shows voxels which will be suppressed). Erase mode is much faster when erasing large regions, because the region itself does not need to updated in real-time any longer.
+</li>
+<li>New parameter value in SetMaterial command: <tt>polygon_mode = ext_outlined</tt>.
+</li>
+<li>New selection visualization mode: it is possible to see selected objects with a colored thick outlined border rather than displayed with a different color. This option can be changed in the graph parameters window, and saved in the settings in the 'selectionRenderingMode' property.
+</li>
+<li>New options in <a href="programming/commands/addobject.html"><tt>AddObject</tt></a> command: <tt>add_children</tt>, <tt>add_graph_nodes</tt> and <tt>add_graph_relations</tt>.
+</li>
+
+<!-- -->
+
+<h4> <a name="version-3.1.4"></a>2008/11/14 - Version 3.1.4</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>Fixed in the objects the Cut control was acting on.</li>
+<li>Crash fix when using shift+S, shift+C in Cut control.</li>
+<li>Cut meshes take theit initial mesh material.</li>
+<li>Fixed ObjectInfo output when several objects share the same filename.</li>
+<li>Experimental Folds Split control. Not useful for standard users, put in high userLevel...
+</li>
+<li>Fixes in handling of graph relations in borwsers.</li>
+<li>Fixes in graph recolor and color edition functions.</li>
+<li>Fixes in Material (color) application on segments meshes.</li>
+<li>Fixed texture reload bug.</li>
+<li>Fixed texture values scaling bugs.</li>
+<li>Keep track of initial data type of textures (internally converted to float), use it when saving a texture back to disk.
+</li>
+<li>Fixed palette values error when closing the palette window when several objects are selected.
+</li>
+<li>Fixed visually selected palette in palettes edition window</li>
+<li>Fixed referentials problems in the ROI toolbox</li>
+
+<h5>Minor improvements:</h5>
+
+<li>An opacity channel has been added to the background light properties. It has no effect in OpenGL renderings but is used when saving RGBA snapshots.
+</li>
+<li>When saving a snapshot, the image file format is taken from the filename rather than from the filter combobox of the file dialog. A general filter for all images formats has been added.
+</li>
+<li>New "absoluteMode" parameter in SetObjectPalette command to set absolute object texture values.
+</li>
+<li>New "line_width" and "unlit_color" properties in Materials (SetMaterial command). "unlit_color" is only used in outline rendering mode, and only when
+set to outline mode individually (from its material, not from the
+window global option), for technical reasons.<br>
+No GUI allows to set them by now, but the SetMaterial command can.
+</li>
+<li>New "filename" parameter in CreateGraph command.</li>
+<li>Improved a little bit activation of windows controls for specific object types when no object is selected.
+</li>
+<li>The ROI button has been placed on the top 3D windows toolbar (internally, it's not a fake control any longer): it does not deactivate the current control anymore when clicked.
+</li>
+<li>SetMaterial command: allow polygon_mode='outline' as in the doc
+(in addition to 'outlined' as in the code...)
+</li>
+<li>CutControl: allow zoom with the mouse wheel.</li>
+<li>New option in rerefentials window menu: clear unused referentials.</li>
+
+<!-- -->
+
+<h4> <a name="version-3.1.3"></a>2008/09/24 - Version 3.1.3</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>Some instabilities in the new gradient palette editor were fixed.</li>
+<li>Crash fix when saving a custom nomenclature from the ROI module</li>
+<li>several other tiny things...</li>
+
+<!-- -->
+
+<h4> <a name="version-3.1.2"></a>2008/09/03 - Version 3.1.2</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>Fix in the dimension of RGBA volume extraction (fusion) which most of the times resulted in incorrect/corrupted data or crashes.
+</li>
+<li>Fixes in transformation handling in RGBA volume extraction and volume rendering of 2D fusions
+</li>
+<li>Crash fixes in the graph labels edition tools</li>
+
+<h5>Minor improvements:</h5>
+
+<li>New anatomist module for palette edition as user-defined gradients. This modules uses a nice widget taken from the <a href="http://fraqtive.mimec.org/">Fraqtive</a> project.
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.1"></a>2008/08/08 - Version 3.1.1</h4>
+
+<h5>Bug fixes:</h5>
+
+<li>The new volume rendering module had been forgotten in the binary distribution, it is back now. However it has been tested only on Linux.
+</li>
+<li>Some cleanups and memory leaks fixes
+</li>
+
+<h5>Minor imporvements:</h5>
+
+<li>changed the way objects in graphs are loaded and stored, which both fixes incorrect loading of some labels volumes in graphs, and allows a cleaner programming manipulation in AIMS and Anatomist
+</li>
+<li>more python bindings</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.1.0"></a>2008/01/05 - Version 3.1.0</h4>
+
+<h5>"Visible" changes (users):</h5>
+
+<li><b>Volume rendering module</b>: volumes can be viewed using volume rendering techniques. To access it, just fusion a volume alone and select a volume rendering object. Rendering is done via OpenGL, so can be mixed with standard surface rendering. It may put a heavy load on 3D graphics cards, so expect it to be slow on older or cheap 3D cards - it is possible to lower the precision in volume rendering objects settings. It also needs support for 3D textures in OpenGL, and not all 3D cards can do it, so it may just not display anything at all. The module is an integration of an engine written by Fabrice Poupon. Lots of improvements should be done later, especially on palettes settings which determine material transparency and are very very important.
+</li>
+<li><b>Major changes in the referentials and transformations system</b>:
+  <ul>
+  <li>referentials can have an associated file (<tt>.referential</tt>, MINF format), bringing some information, especially an unique identifier (UUID) and possibly a name.
+  </li>
+  <li>transformations may have a .minf file specifying UUIDs for source and destination referentials. If referentials are known to Anatomist, they are used automatically, so they can be loaded without specifying source/destination from a user interaction.
+  </li>
+  <li>For this reason user interactions in the referentials window have changed a bit, and tooltips display full information on referentials and transformations. It is possible to draw an Identity transformation between two referentials using &lt;Ctrl&gt;+mouse drag from source to dest refs.
+  </li>
+  <li>The old direct/indirect referential problem has been mainly solved. Anatomist defaults referentials are indirect, but transformations going to a direct referential (like the MNI referential used in SPM) are now OK. Displays and 3D renderings now take this into account. When a direct referential is used on a window for viewing, a distinctive icon is drawn on the referential bar of windows.
+  </li>
+  <li>Anatomist now knows two standard referentials: our AC/PC-Talairach (red) referentlal, and the MNI template referential, allowing to use the MNI/SPM coordinates system on SPM normalized images.
+  </li>
+  <li>As a consequence, SPM images referentials (origin translation, normalized images) may behave a bit differently as before.
+  </li>
+  </ul>
+</li>
+<li>The former <tt>useSpmOrigin</tt> user configuration option in <tt>$HOME/.anatomist/config/settings.cfg</tt> is replaced by the more general <tt>setAutomaticReferential</tt>. The old option is still supported for compatibility reasons but is obsolete.
+</li>
+<li>mesh files <tt>.minf</tt> header can now contain texture information:
+  <tt>texture_filenames</tt> is a list of textures to load and apply. Then
+  fusions are automatically created
+</li>
+<li>Mesh cutting: the algorithm has been entirely re-written. It is way faster and should never crash anymore, so it doesn't need to enable unstable features to be used. However it suffers the same limitations as before: meshes with overlapping triangles will cause incorrect re-meshing and visual problems, but not more (there is hope to completely fix it in the future but I could not get time to work on it, and this part of the algorithm is especially boring). Moreover it is now posisble to perform several cuts on a mesh: re-cutting a cut mesh will work as expected.
+</li>
+<li>Graphs can now be colored according to a numeric property (attribute) of their nodes, a palette is applied to the values.
+</li>
+<li>Fusion2D defaults to Linear mode, not Geometric as before</li>
+<li>Tooltips in 3D views on structured objects (graph elements) are clearer and display much more information
+</li>
+<li>Some new little things to improve user interactions: better support for drag and drop (for instance between a file browser and anatomist), easy display options for some objects, and possibility to draw object palette in windows (python modules by Matthieu Perrot), etc.
+</li>
+<li>A histogram display window (module by Fabrice Poupon)
+</li>
+<li>3D windows can show position and object values in a status bar. It is hidden by default (because it takes a bit of screen surface) but can be enabled in the window menu.
+</li>
+<li>Better handling of graph children objects, especially relations. Children objects can be loaded or not via an option or in user settings. Relations can be displayed in 3D views. Browsers display and behaviour has been imporved when handling relations (in the hidden right panel)
+</li>
+<li>Improvements in browser windows for graphs: nodes labels are displayed using nomenclature colors (as for 3D views), editing multiple properties and/or properties on multiple objects is now allowed provided all edited properties have the same time. In short: you can now change the label of several nodes at once.
+</li>
+<li>An important optimization bug has been fixed when putting lots of objects (multiple graphs...) in a 3D window: it's not slow anymore
+</li>
+<li>... and many many bug fixes...</li>
+
+
+<h5>Internal changes (programmers):</h5>
+
+<li>Porting to Qt 4. Anatomist 3.1 can compile and run with either Qt 3 or Qt 4 (provided both Qt are not mixed). The Qt4 version has not been really used yet but should be OK.
+</li>
+<li>Python bindings have been greatly improved and cleaned. A unified python API now allows to control anatomist either via bindings (direct access to the anatomist library) or via a socket connection. Moreover it is possible to write Anatomist modules in python. See the pyanatomist project.
+</li>
+<li>New commands : <a href="programming/commands/graphdisplayproperties.html"><tt>GraphDisplayProperties</tt></a>, <tt>LoadGraphSubObjects</tt>, <tt>ExternalReference</tt>
+</li>
+<li>Some new parameters have been added to some existing commands</li>
+<li>Most Anatomist objects allow much more flexible links to their underlying Aims objects (via reference counters) so it is possible to replace lower-level objects on the fly. It is especially useful in python bindings.
+</li>
+<li>Objects and windows are now reference-counted in Anatomist. Deletion may be forced in some cases but not all according to the types of external references to them. This change was needed for proper python bindings and reference counting from python.
+</li>
+<li>Change in objects rendering API: old methods <tt>AObject::update2D()</tt> and <tt>AObject::update3D()</tt> have been replaced by a single generic <tt>render()</tt> method.
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.0.3"></a>2006/06/20 - Version 3.0.3</h4>
+
+<h5>Bug fixes:</h5>
+<li>Changes in internal routines dealing with commands streams: they were quite unstable, especially on Windows. Well, I think some instability remain on windows, but for other reasons (I suspect the C++ standard libraries of MinGW and Cygwin are not thread-safe at all on Windows).
+</li>
+
+<h5>Minor imporvements:</h5>
+<li>added (optional) parameters <tt>request_id</tt> in commands that ask Anatomist an answer:
+  <a href="../fr/programmation/commands.html#GetInfo"><tt>GetInfo</tt></a>,
+  <a href="programming/commands/newid.html"><tt>NewId</tt></a> et
+  <a href="../fr/programmation/commands.html#ObjectInfo"><tt>ObjectInfo</tt></a>
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.0.2"></a>2006/04/27 - Version 3.0.2</h4>
+
+<h5>Bug fixes:</h5>
+<li>There were still some problems in referentials handling, especially when
+  playing with manual transformations controls. A new referential update
+  system has been written.
+</li>
+<li>Fix: the Fusion2D objects ordering specified by the user upon creation was not taken
+  into account
+</li>
+<li>Fix: <tt>linkedcursor_on_slider_change</tt> parameter of <tt>WindowConfig</tt>
+  was not working
+</li>
+<li>Fixes in some multithreading race conditions that -curiously- caused crashes only on
+  multi-CPU windows platforms, but might be harmful as well on other systems. Well, there
+  must be some other bugs somewhere because it still happen to crash, but rarely now...
+</li>
+<li>Fusion3D texture extrema were incorrect and wrong when textures were exported</li>
+<li>Fix: slices (Volumes...) texture resolution degradation could go into an infinite loop
+  when no texture could be drawn at all (on failing OpenGL/3D cards)
+</li>
+<li>Fix in volume interpolation which was incorrect and discontinuous on some slices</li>
+<li>A number of other minor fixes</li>
+
+<h5>Minor imporvements:</h5>
+
+<li><tt>SliceEvent</tt> output have been a little bit enriched</li>
+<li>New command: <tt>NewId</tt> to generate free IDs for objects. This command is used especially by BrainVisa to avoid reassigning IDs which could be allocated on Anatomist side.
+</li>
+<li>A first version of a french manual has been released. When it's stable enough it will be translated to english.
+</li>
+
+
+<!-- -->
+
+<h4> <a name="version-3.0.1"></a>2005/10/11 - Version 3.0.1</h4>
+
+<h5>Bug fixes:</h5>
+<li>Graphs saving: nodes were not always stamped as modified when changes took
+  place in the ROI module. This could cause voxels lists not to be saved
+</li>
+<li>Graphs: objects contained in graph relations are no longer loaded (since they
+  were never used), this saves memory and time, but they are loaded when a graph
+  needs to be saved, so that everything is saved
+</li>
+<li>Fixes in the "levelsets" (which are not levelsets actualy) of the ROI module,
+  the 2D mode works again now.
+</li>
+<li>Fixes / changes in the behaviour of graphs when nodes colors (material) were
+  changed
+</li>
+<li>Crash fix when texture generation properties dialogs were opened while objects
+  were not in generated texture mode
+</li>
+<li>Palettes are read before user config because they can be used at that step
+</li>
+<li>All Anatomist now compiles using Qt 4. However porting is far from over and many
+  widgets don't display propertly yet with Qt 4. It's a first step...
+</li>
+<li>Improvements in config and compilation directives</li>
+<li>Fix in transformation inversion, which didn't produce incorrect results but was
+  not clean, and was possibly the cause of random crashes of Anatomist when changing
+  referentials/transformations
+</li>
+<li>Solved a palette scaling/precision problem on textures with a very short range within
+  the [0-1] interval
+</li>
+<li>Fixed snapshots: ghost objects (not written in Z buffer) were not visible
+on saved images, and in some cases the back OpenGL buffer was saved instead of
+the fron buffer
+</li>
+<li>ROI: label naming crash fixed</li>
+<li>Important bugfix in an internal and central system (observers), it could lead to
+  random crashed, especially when manipulating referentials (but not only). As a
+  counterpart, loading and creating complex objects (graphs) might be even a bit
+  slower...
+</li>
+<li>Optimization in the destruction of multiple objects (graphs), the GUI is only
+  refreshed at the end. This seemed to be a bottleneck, at least on some systems (my
+  old Mac...)
+</li>
+<li>Fixed a problem which, on Windows, caused the window manager to saturate and made
+  Anatomist crash with strange displays everywhere on the screen when 2 sulcal graphs
+  were loaded. The problem came from a duplication of referential icons (their creation
+  should be faster now in addition)
+</li>
+<li>Optimizations in display lists handling (creation/destruction): especially, rendering
+  many small objects that change (sulcal graphs in 2D mode) was really very very slow.
+  Well, it's still slow compared to what it was in anatomist 1.30, but we already improve
+  by a factor 5-10 compared to 3.0.0. Still more to do...
+</li>
+
+
+<h5>Minor imporvements:</h5>
+<li>Palette, material and texturing properties are now saved in .minf headers of
+  objects written by Anatomist (meshes, volumes, textures)
+</li>
+<li>Texturing properties specified in .minf are read and used on objects read
+  by Anatomist
+</li>
+<li>"Slice" events can be output when the slace plane changes in a view</li>
+<li>a new <a href="programming/commands/sliceparams.html">SliceParams</a> command allows to set
+  the slice plane on self-sliceable objects
+</li>
+<li>The "cut mesh" fusion mode is now available in normal mode (it was only accessible in
+  instable mode), but without the plane part because the instable part is there. In instable
+  mode, everything is accessible, like before.
+</li>
+<li>Slight improvements in default settings of segments meshes (no lighting, no face culling)</li>
+
+
+<h4> <a name="version-3.0.0"></a>2005/06/21 - Version 3.0.0</h4>
+
+Why a version 3 whereas there has never been a version 2 ? Well, simply to
+align the version number of all our software. AIMS was already in version 2.x, so the
+next "big number" was 3.
+
+<h5>"Visible" changes (users):</h5>
+<li>Slice objects: you can now extract a slice from a volume (or any 2D object like
+a Fusion 2D) by fusioning it alone, and display several slices with different
+orientations in the same window. Slices orientations can be changed using a specific
+control.</li>
+<li>Textures and transparency rendering has changed a little bit. Now transparent
+textures are taken into account and can make the object on which they are mapped
+transparent. This also works for volumes (RGBA images with transparency, or images
+with transparent palettes).</li>
+<li>New texture mapping modes and options</li>
+<li>Multi-texturing is now possible (by fusionning several textures)</li>
+<li>Views blocks: it is now possible to tie several Anatomist views in the same
+window. All views are still as independent as they were before. The
+<a href="programming/commands/createwindow.html"><tt>CreateWindow</tt></a>
+external command has a new parameter to make this functionality
+available.</li>
+<li>Improvements in the user interface</li>
+<li>The 3D cursor is now a regular Anatomist object and can thus have any shape
+  (selectable and extensible)
+</li>
+<li>ROI drawing can now be done using meshes or other 3D objects as a click support
+</li>
+<li>Several object parameters windows (material, palette, 2D and 3D fusion parameters)
+  are not hardly bound anymore to the set of objects they were opened on, but now
+  allow to dynamically change objects they apply to. This means users won't be forced
+  anymore to have 25 palette windows simultaneously open when they manipulate multiple
+  objects.
+</li>
+<li>2D Fusions involving more than 2 volumes have been fixed and improved: all
+  needed parameters can now be set.
+</li>
+<li>Anatomist can now read and display meshes of segments (filar meshes) and of quads
+</li>
+<li>New texture rendering mode, with color interpolation in RGB space (rather than
+  in palette space). It may be more suitable for "label textures" rendering.
+</li>
+<li>New configuration option: <tt>widowSizeFactor</tt></li>
+<li>Color material and palette properties can now be saved in objects <tt>.minf</tt> header file and
+  automatically applied at load time. This is easy and convenient. Palette properties can be stored
+  in the <tt>palette</tt> attribute of the header as a dictionary (same parameters as the
+  <a href="../fr/programmation/commands.html#SetObjectPalette"><tt>SetObjectPalette</tt></a> processor
+  command) and material properties can be stored in the <tt>material</tt> attribute (same options as
+  the <a href="../fr/programmation/commands.html#SetMaterial"><tt>SetMaterial</tt></a> command).
+</li>
+<li>New commandline option: <tt>-u &lt;userprofile&gt;</tt> allowing to use different
+  configurations in the situation when several users share the same account
+</li>
+<li>It is now possible to specify a default referential to objects and/or windows
+  created (or loaded) from the user interface (see in the preferences)
+</li>
+<li>A user manual has been started by Isabelle Denghien (in french.......)
+</li>
+<li>The "transformation control" has now two additional interactioin modes: rescaling and
+  rotating inside the current slice, which is useful when manually registering fusionned
+  volumes
+</li>
+<li>Opening a ROI session can now be performed on a volume (16 bit integer): it will be converted
+  into a ROI graph at load time.
+</li>
+<li>The slice movie control has more modes (continuous movie etc), and the speed can be
+  controled.
+</li>
+<li>The trackball has a "weightlessness" mode: objects go on rotating when the user releases
+  the mouse.
+</li>
+<li>New 2D/3D sliders (slice/time) mode: the linked cursor can follow sliders actions and
+  propagate to other views
+</li>
+<li>Various keyboard shortcuts in windows and contols</li>
+<li>Fullscreen mode in anatomist windows</li>
+<li>It is now possible to manually enter a position for the linked cursor from a
+  3D window (to report coordinated from external software, like SPM, for instance)
+</li>
+<li>Rendering properties can now been set on an object-by-object basis (in the material
+  properties).
+</li>
+
+<h5>Internal changes (programmers):</h5>
+
+<li>The rendering engine (OpenGL layer) has been entirely rewritten and
+should be more flexible, easier to use and more powerful, in short: better.</li>
+<li>Objects API has changed too: all OpenGL rendering functions are now in
+  separate API classes.
+</li>
+<li>New command:
+  <a href="../fr/programmation/commands.html#TexturingParams"><tt>TexturingParams</tt></a>
+</li>
+<li>New command:
+  <a href="programming/commands/extracttexture.html"><tt>ExtractTexture</tt></a>
+</li>
+<li>New command:
+  <a href="../fr/programation/commands.html#GenerateTexture"><tt>GenerateTexture</tt></a>
+</li>
+<li>New option in command
+  <a href="programming/commands/loadobject.html"><tt>LoadObject</tt></a>:
+  <tt>as_cursor</tt>, <tt>options</tt>
+</li>
+<li>3D Windows with no decorations (menus/buttons) can now be created (via the commands system)
+  to fit into specialized applications
+</li>
+<li>New options in command
+  <a href="programming/commands/createwindow.html"><tt>CreateWindow</tt></a>: <tt>block</tt>,
+  <tt>options</tt>
+</li>
+<li>New options in command
+  <a href="../fr/programmation/commands.html#WindowConfig"><tt>WindowConfig</tt></a>:
+  <tt>snapshot</tt>, <tt>linkedcursor_on_slider_change</tt>
+</li>
+<li>New command:
+  <a href="programming/commands.html#ObjectSlice"><tt>ObjectSlice</tt></a>
+</li>
+<li>New options in command
+  <a href="../fr/programmation/commands.html#GetInfo"><tt>GetInfo</tt></a>:
+  <tt>name_referentials</tt>, <tt>name_transformations</tt>
+</li>
+<li>The <tt>ObjectInfo</tt> command provides more information on some objects (referentials)
+</li>
+<li>New options in command
+  <a href="programming/commands/setmaterial.html"><tt>SetMaterial</tt></a>:
+  <tt>lighting</tt>, <tt>smooth_shading</tt>, <tt>polygon_filtering</tt>, <tt>depth_buffer</tt>,
+  <tt>face_culling</tt>, <tt>polygon_mode</tt>
+</li>
+
+<p>
+In fact there has been lots of changes (internal and visible) in this version...
+</p>
+
+<!-- -->
+
+<h4> <a name="version-1.30"></a>2004/11/30 - Version 1.30.3 (bug corrections)</h4>
+<h5>"Visible" changes (users):</h5>
+<li>Fixed a rendering bug in coronal slices of volumes fusions (fusions 2D) when a
+  transformation was involved
+</li>
+<li>Fixed border color in volume slices containng no data at all (outside of the volume)
+</li>
+<li>The display of SPM coordinates (in the terminal, for SPM volumes) doesn't claim anymore
+  to be "Talairach coordinates" if the volume is not normalized. Otherwise, the values
+  were correct.
+
+<h5>Internal changes (programmers):</h5>
+
+<li>None (bugfixes only!)</li>
+
+<!-- -->
+
+<h5> <a name="version-1.30.2"></a>2004/11/18 - Version 1.30.2 (bug corrections)</h5>
+<h5>"Visible" changes (users):</h5>
+<li>Fixed wrong byteorder (so wrong colors) in 3D windows snapshots on Windows</li>
+<li>Fix in palettes path on Windows</li>
+<li>Fix in rendering of very large images that don't fit into the texture memory
+of 3D cards and need undersampling
+</li>
+<li>Fixed a possible crash in profile window on some images</li>
+
+<h5>Internal changes (programmers):</h5>
+<li>None (bugfixes only!)</li>
+
+<!-- -->
+
+<h5> <a name="version-1.30b"></a>2004/07/07 - Version 1.30b (bug corrections and minor
+  improvements)</h5>
+<h5>"Visible" changes (users):</h5>
+<li>Fix: <tt>GraphParameters</tt> command did not work correctly until the graphs
+  parameters window was open.
+</li>
+<li><tt>SelectByHierarchy</tt> command: <tt>modifiers</tt> attribute can take a new
+  value: <tt>remove</tt>, to hide selected nodes
+</li>
+<li>Better display of volume values in fusions (linked cursor click)</li>
+<li>Bug corrections in ROI graphs saving on Windows</li>
+<li>Enabled two-side lighting on meshes when backface culling is disabled. In other words, open meshes
+  can be visible from both sides.
+</li>
+<li>fixed a shift in 2D fusion display in non-interpolated mode, and display
+  of interpolation flag in preferences
+</li>
+<li>Bugfix on the approximation of slice positioning, which could be annoying for the manipulation
+  of very thin slices (&lt;0.1mm) like histological slices of mouse brain (this is a random example)
+</li>
+<li>Bugfix in the calculation of the cut plane for buckets 2D rendering when coordinates
+  transformations took place
+</li>
+<li>... (I don't remember)</li>
+
+<h5>Internal changes (programmers):</h5>
+<li>None (bugfixes only!)</li>
+
+<!-- -->
+
+<h5> <a name="version-1.30.0"></a>2004/02/18 - Version 1.30, initial releasae</h5>
+<h5>"Visible" changes (users):</h5>
+<li>Porting to Windows !</li>
+<li>Mionr GUI improvements, like accessing the objects options by a
+right-click on the control window<br>
+</li>
+<li>The ROI module has been split in two: a "basic" one and an algorithm part</li>
+<li>Improvements in the ROI panel GUI, like the eradication of the silly "refresh"
+button which I guess everybody wondered why it was here. Updating the interface is
+automatic now, as it should have been from the beginning.</li>
+<li>Finally the axial display convention option now has been enabled (after years
+and years). You can choose radiological or neurological display convention in the
+preferences</li>
+<li>Settings for unstable things in the preferences</li>
+<li>Fusions 3D: new mapping modes (point-to-point with depth offset)</li>
+<li>SPM volumes: by default, SPM volumes don't have a specific referential anymore.
+This behaviour disturbed too many people and was annoying in many cases. One can now
+recreate this referential via an "object-specific" option of volumes. The former
+behaviour (automatic creation of the referential at load time) can be activated by
+an option in the preferences.<br>
+Note: the creation of this referential is also a bit more intelligent than it used to
+be: if an identical referential already exists, it is re-used, not duplicated. This
+results to having the same referential on all volumes with the same origin.</li>
+<li>The referential color marker is now somewhere on the left columns in the control
+window (objects / windows) so it is always visible at the first sight.</li>
+<li>The controls toolbox (ROI...) can be accessed via a menu in windows (not only
+the undocumented F1 key) and is automatically displayed when entering the drawing
+mode</li>
+<li>Fixed bug (formerly called "feature") that caused cortical folds graphs not to
+save relation buckets when written by anatomist under a new name. This was due to the
+fact that relation buckets were not read at all in Anatomist since they are not
+displayed. Now graphs are complete, but a few MBytes bigger (and a bit slower to read,
+too)</li>
+<li>Windows 3D: slice / time change with keys (PgUp/PgDown)</li>
+
+<h5>Internal changes (programmers):</h5>
+<li>Commands reader (scripts / command pipes / network) can now be compiled to use
+threads. It avoids blocking the GUI thread while reading commands, and should be
+less sensitive to OS-dependent behaviour variations (Windows...).</li>
+
+
+<h4><a name="version-1.29"></a>2003/04/01 - Version 1.29</h4>
+<h5>"Visible" changes (users):</h5>
+<li>The origin of SPM images is now correctly handled (there was still
+a bug in version 1.28)</li>
+<li>A first attempt to making "cut meshes": meshes cut by a plane, it's
+a new fusion mesh + volume. It is still very sensitive to meshes with
+crossing triangles (often causing crashes) and it appears that most of
+our meshes contain such crossing triangles. So it has been made an
+"unstable feature" only enabled if anatomist has been launched in <tt>--enabled-unstable</tt>
+mode. Otherwise it would now be possible to display a volume slice
+limited to its intersection with a mesh (for instance head or brain
+mesh). But there is still this annoying bug to remove, and it's a bit
+difficult to fix...</li>
+<li>Anatomist can now read and display RGB images and volumes, like
+color Jpeg images</li>
+<li>Menu to save settings</li>
+<li>Double-clicking on a window representation (in the control window)
+makes the window raise to the front</li>
+<li>New command-line option: <tt>--enable-unstable</tt>, it is used to
+enable dangerous and buggy features that are not really finished
+(sometimes even not operational) that are normally disabled. I didn't
+make an menu option to enable/disable it at runtime. Maybe I should.</li>
+<h5>Internal changes (programmers):</h5>
+<li>Communications: Anatomist can now run in "server" mode and have a
+bilateral connection through a TCP network. Remote-control from
+BrainVisa then has become easier (the whole communication interface has
+been remade on BrainVisa side by Julien Barbot). Moreover Anatomist can
+now signel things by sending "events" when its state changes or when
+the user performs certain actions (like loading an object or clicking
+on a view).</li>
+<li>Several new commands and new parameters to existing commands have
+been added for Brainvisa remote-control (I didn't keep the whole list)</li>
+<li>Command to export textures (ExportTexture): saves to disk an OpenGL
+object texture (like a fusion 3D)</li>
+<li>Still other changes in Aims and library layers below Anatomist</li>
+<li><tt>WindowConfig</tt> command: new parameters: <tt>raise</tt> and <tt>iconify</tt></li>
+<h4><a name="version-1.28"></a>31/10/02 - Version 1.28</h4>
+Sorry, the remainder of the news is in french...<br>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> ROI: corrections de bugs, et nouvelle interface pour segmenter
+par  LevelSets (Renaud)</li>
+<li> Les transformations gauches (qui changent le sens du rep&egrave;re)
+ sont correctement prises en compte: elles inversent le sens
+(int&eacute;rieur/ext&eacute;rieur)    des maillages et la
+visualisation en tient compte</li>
+<li>L'origine des images SPM (ou qui ont &eacute;t&eacute; en format
+SPM)  est ENFIN prise en  compte: une transformation est
+automatiquement  cr&eacute;&eacute;e  entre l'image et le rep&egrave;re
+central. <b>ATTENTION,  effet de bord</b>:  les objets
+segment&eacute;s &agrave; partir de ces images  n'auront pas
+automatiquement  le m&ecirc;me rep&egrave;re, il faut le mettre
+&agrave; lma  main, &ccedil;a  peut surprendre...</li>
+<li> Encore un bon nombe d'am&eacute;liorations des commandes pour  le
+pilotage par BrainVISA</li>
+<li> Diverses corrections de bugs que je n'ai pas not&eacute;es &agrave;
+ mesure</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Encore des changements dans Aims</li>
+<li> Le syst&egrave;me de chargement de modules utilise maintenant
+celui   d'Aims (qui est une r&eacute;&eacute;criture plus propre de ce
+qu'il  y avait   avant dans la commande en ligne anatomist).&nbsp;En
+cons&eacute;quence  le   format des listes de modules a chang&eacute;:
+la liste est dans un fichier    (format python-like) au lieu de fichiers</li>
+<h4> <a name="version-1.27"></a>09/07/02 - Version 1.27</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> ROI: interface plus compl&egrave;te (Renaud)</li>
+<li> Contr&ocirc;le de transformation: permet de bouger un objet par
+rapport  aux autres</li>
+<li> ... (je n'ai pas tenu la liste &agrave; jour)</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> La plupart des changements internes sur cette version concernent
+les librairies de plus bas niveau qu'anatomist: aims en particulier,
+dont   tout le syst&egrave;me d'entr&eacute;es-sorties a
+&eacute;t&eacute; refait   pour &ecirc;tre compl&egrave;tement
+g&eacute;n&eacute;rique (formats compl&egrave;tement    transparents et
+modulaires, m&eacute;canisme pour choisir le type de donn&eacute;es).</li>
+<li> Tous les codes de toutes les librairies ont aussi remises aux
+normes   pour pouvoir &eacute;ventuellement compiler avec d'autres
+compilateurs:  gcc-2.95,  gcc-3.0, gcc-3.1. Pour l'instant l'essai
+d'autres compilateurs  (SGI, sous  windows etc) ont toujours
+&eacute;t&eacute; des &eacute;checs:  tous sont bugg&eacute;s et aucun
+n'arrive &agrave; compiler <tt>libshfj</tt> et <tt>aimsdata</tt>.</li>
+<li> Nouvelles commandes pour l'interaction avec <i>BrainVisa</i>: <tt>Camera</tt>
+(r&eacute;glage du point de vue), <tt>SaveTransformation</tt>
+(&eacute;crit une transformation, &eacute;ventuellement apr&egrave;s
+modif  par le contr&ocirc;le   correspondant), <tt>WindowConfig</tt>
+(fixe les params  de g&eacute;om&eacute;trie   des fen&ecirc;tres
+anatomist)</li>
+<li> Commandes compl&eacute;t&eacute;es: <tt>ObjectInfo</tt> donne  des
+indications plus compl&egrave;tes</li>
+<li> ... (je n'ai pas tenu la liste &agrave; jour)</li>
+<h4> <a name="version-1.26"></a>24/10/01 - Version 1.26</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Drag &amp; drop entre objets et boutons des fen&ecirc;tres: on
+peut  tirer un objet sur l'ic&ocirc;ne de la fen&ecirc;tre de
+contr&ocirc;le  du  type de fen&ecirc;tre voulu, cela permet d'ouvrir
+une fen&ecirc;tre et  d'y  mettre l'objet d'un seul coup.</li>
+<li> Affichage des buckets refait, il devrait en principe &ecirc;tre
+beaucoup  plus rapide, donc rendre le dessin de ROI plus utilisable</li>
+<li> ROI: affichages optimis&eacute;s &agrave; diff&eacute;rents
+niveaux, c'est plus rapide. Il reste encore des choses &agrave; faire de
+ce c&ocirc;t&eacute;-la.</li>
+<li> Comportement des affichages des fen&ecirc;tres 3D modifi&eacute;:
+l'affichage n'est plus diff&eacute;r&eacute; quand de multiples
+affichages    sont demand&eacute;s</li>
+<li> Mode "film": pour faire d&eacute;filer les curseurs des coupes
+des  fen&ecirc;tres 2D/3D automatiquement</li>
+<li> On peut maintenant fusionner deux textures 1D pour en faire une
+texture  2D</li>
+<li> R&eacute;f&eacute;rentiels &amp; transformations: les
+transformations    se propagent de rep&egrave;re en rep&egrave;re et se
+mettent &agrave; jour.    Un rep&egrave;re "central" est utilis&eacute;
+par d&eacute;faut sur toutes    les fen&ecirc;tres et tous les objets</li>
+<li> Anatomist lit maintenant les textures d'entiers (16 bits
+sign&eacute;s    et 32 bits non-sign&eacute;s)</li>
+<li> Corrections de petits et gros bugs: affichage des volumes selon
+les  axes avec changement de rep&egrave;re en particulier</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Nouvelle commande "<tt>ClosePipe</tt>" pour fermer la
+t&eacute;l&eacute;commande    - par ex. pour que <b><i>BrainVisa</i></b>
+puisse se fermer sans tuer Anatomist</li>
+<li> Nouvelle commande "<tt>SaveObject</tt>"</li>
+<li> Nouvelle commande "<tt>CreateGraph</tt>" (module roi)</li>
+<li> Nouvelle commande "<tt>AddNode</tt>" (module roi)</li>
+<li> Modifs des sources d'Anatomist et toutes les librairies dont il
+d&eacute;pend  (Aims, graph, ...) pour pouvoir compiler avec d'autres
+compilateurs que gcc, &ccedil;a devrait rendre nettement plus simple un
+&eacute;ventuel  portage  &agrave; windows</li>
+<li> Entr&eacute;es / sorties des graphes enti&egrave;rement refaites
+(au niveau Aims principalement), de fa&ccedil;on plus
+g&eacute;n&eacute;rique    - c'est encore un tout petit peu instable
+mais &ccedil;a devrit &ecirc;tre    bien mieux &agrave; terme: en
+particulier les graphes contenant n'importe    quel objet Aims pourront
+&ecirc;tre charg&eacute;s dans Aims, anatomist,   SiGraph, Voi, etc. de
+la m&ecirc;me mani&egrave;re.</li>
+<li> Nouvelle commande "<tt>PopupPalette</tt>"</li>
+<li> Nouvelle commande "GetInfo" - donne des informations sur ce qui
+est  dans l'application (objets, fen&ecirc;tres,
+r&eacute;f&eacute;rentiels,   ...)</li>
+<li> Nouvelle commande "ObjectInfo" - donne des informations plus
+pr&eacute;cises sur certains &eacute;l&eacute;ments donn&eacute;s par
+leur ID</li>
+<li> Nouvelle commande "<tt>SetControl</tt>"</li>
+<h4> <a name="version-1.25"></a>19/06/01 - Version 1.25</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Commandes du "simulateur de vol" corrig&eacute;es</li>
+<li> Le rechargement des objets devrait &ecirc;tre mieux fait, ert  pas
+seulement sur les volumes: on devrait pouvoir recharger aussi des
+maillages, des "buckets", des textures, etc.</li>
+<li> Correction du bug tr&egrave;s g&ecirc;nant qui montrait parfois
+la  mauvaise coupe d'un volume (probl&egrave;me d'arrondi sur le no de
+coupe)</li>
+<li> Le module de <b>r&eacute;gions d'int&eacute;r&ecirc;t</b> commence
+&agrave; fonctionner (Renaud Maroy): on peut dessiner dans un bucket.
+C'est primaire pour l'instant, mais &ccedil;a existe.</li>
+<li> Nouveau mode pour les fusions 2D: "linear on defined"</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Pas mal de modifs dans la couche AIMS (entr&eacute;es - sorties
+enti&egrave;rement  refaites, librairie coup&eacute;e en deux, ...)</li>
+<li> Entr&eacute;es - sorties: syst&egrave;me de chargement /
+rechargement    refait pour utiliser les nouveaux Finder/Reader d'Aims</li>
+<li> Nouvelle commande <tt>DeleteElement</tt>, plus
+g&eacute;n&eacute;rique    que <tt>DeleteObject</tt> ou <tt>CloseWindow</tt>.</li>
+<li> Nouvelle commande <tt>SelectByHierarchy</tt> pour faire des
+s&eacute;lections dans les graphes</li>
+<li> Le tracking des faisceaux de fibres a &eacute;t&eacute; sorti  de
+la librairie de base et "modularis&eacute;"</li>
+<h4> <a name="version-1.24"></a>09/05/01 - Version 1.24</h4>
+Une version qui a mis un peu de temps &agrave; sortir (6 mois!), mais
+avec  vraiment beaucoup de choses refaites et des foules de nouvelles
+possibilit&eacute;s...
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Corrections de bugs (et ajout de nouveaux...), entre autre
+j'esp&egrave;re    avoir tordu le cou &agrave; celui qui faisait
+parfois planter quand on d&eacute;truit  un objet et qui faisait durer
+1/2 heure la destruction d'un gros objet compos&eacute;  (graphe par
+ex.) - &agrave; v&eacute;rifier... bon en fait c'est pas encore
+compl&egrave;tement propre...</li>
+<li> Les sc&eacute;narios effectuant une fusion n&eacute;cessitant  un
+choix  (plusieurs fusions possibles) ne posent plus la question
+lorsqu'on   les rejoue (attribut "<tt>method</tt>" de la commande de
+fusion)</li>
+<li> L'historique pr&eacute;c&eacute;dent est gard&eacute; (backup)
+dans <tt>~/.anatomist/history.ana~</tt>, ce qui permet de rejouer
+le sc&eacute;nario   de l'ex&eacute;cution pr&eacute;c&eacute;dente
+d'Anatomist sans avoir &agrave;   le copier pr&eacute;alablement</li>
+<li> <b>Nouveau look</b> pour les fen&ecirc;tres 2D et 3D, qui sont
+maintenant   les m&ecirc;mes, la plupart des fonctions d'avant
+remarchent,  mais avec un comportement &eacute;ventuellement un peu
+diff&eacute;rent, en 2D il reste  encore un peu de boulot (tracking
+des fibres non refait)... On peut basculer  une vue d'un mode 2D
+&agrave; l'autre (axial, coronal, sagittal) et au mode  3D comme on
+veut, et m&eacute;langer des objets 2D et 3D.</li>
+<li> Sauvegardes d'images des vues 2D et 3D en plein de formats possibles</li>
+<li> Enregistrements de films sur les fen&ecirc;tres 2D et 3D mieux
+g&eacute;r&eacute;s   (sauvegardes lorsque l'image a r&eacute;ellement
+chang&eacute;,  pas lorsqu'elle   est masqu&eacute;e et
+r&eacute;affich&eacute;e)</li>
+<li> Landmarks: toutes les actions qui impliquaient un click sur une
+image  pour cr&eacute;er un point de rep&egrave;re (surface matching,
+landmarks de surfaces ou de graphe) ont chang&eacute; de comportement:
+on ne clique    plus sur "choisir un point" puis sur l'image, mais au
+contraire, on fait   d'abord  jouer le curseur li&eacute;, puis on
+clique sur "choisir un point":   le landmark  est cr&eacute;e &agrave;
+ce moment-l&agrave; &agrave; la position   du curseur  li&eacute; du
+groupe de fen&ecirc;tres non-group&eacute;es. C'est  un peu imparfait
+mais &ccedil;a sera am&eacute;lior&eacute; plus tard</li>
+<li> Correction du bug qui inversait l'orientation des normales des
+maillages   en format <tt>.mesh</tt> binaire sur des machines
+n&eacute;cessitant  un byte-swapping du fichier (conversion
+intel-sparc par ex.)</li>
+<li> Des <b>palettes "utilisateur"</b> peuvent &ecirc;tre
+ajout&eacute;es,    il suffit de les placer (images au format JPEG)
+dans le r&eacute;pertoire <tt>~/.anatomist/rgb</tt>
+(r&eacute;pertoire &agrave; cr&eacute;er pr&eacute;alablement    s'il
+n'existe pas): elles seront charg&eacute;es au prochain lancement
+d'Anatomist</li>
+<li> Option "recharger les palettes" dans le menu "r&eacute;glages"  de
+la fen&ecirc;tre de contr&ocirc;le</li>
+<li> <b>Drag &amp; Drop</b>: on peut maintenant "tirer" des objets
+depuis   la fen&ecirc;tre de contr&ocirc;le, directement vers les
+fen&ecirc;tres,   ou vers le panneau droit de la fen&ecirc;tre de
+contr&ocirc;le.</li>
+<li> Pour ceux qui bricolent les graphes (et les hi&eacute;rarchies  de
+noms), on peut aussi stocker des fichiers de syntaxe perso dans <tt>~/.anatomist/syntax</tt>
+et <tt>~/.anatomist/syntax/interna</tt>l pour les attributs internes
+(non    export&eacute;s dans les entr&eacute;es-sorties mais
+utilis&eacute;s en  interne dans Anatomist ou les modules
+sp&eacute;cifiques) (non test&eacute;...)</li>
+<li> La bo&icirc;te de s&eacute;lection de fichiers (pour charger des
+objets  par ex.) peut avoir un certain nombre de r&eacute;pertoires
+pr&eacute;-enregistr&eacute;s pour retrouver du premier coup vos
+donn&eacute;es pr&eacute;f&eacute;r&eacute;es.    Pour le moment
+l'ajout de directories n'est pas tr&egrave;s convivial: il  faut
+&eacute;diter le fichier <tt>~/.anatomist/config/settings.cfg</tt> et
+ajouter l'attribut <tt>path_list</tt> avec comme valeur une liste de
+repertoires  s&eacute;par&eacute;s par des '<tt>:'</tt> (comme les PATH
+Unix)</li>
+<li> Option de lancement (sur la ligne de commande) pour ne pas ouvrir
+la fen&ecirc;tre de contr&ocirc;le: option <tt>-b</tt> ("batch"). Cette
+ option  sera utile pour une "visualisation simple", par exemple depuis
+la  plateforme  de traitements <b><i>BrainVisa</i></b> de Yann
+Cointepas.</li>
+<li> Liste des modules charg&eacute;s visible depuis la fen&ecirc;tre
+de contr&ocirc;le (menu <tt>aide/modules</tt>)</li>
+<li> Rechargement de transformations sans avoir besoin de les effacer
+pr&eacute;alablement</li>
+<li> <b>Coupes obliques</b>: on peut changer l'orientation du plan  de
+coupe  des volumes en utilisant le nouveau contr&ocirc;le "vues
+obliques",   2 modes  pour cela: soit en bougeant le plan de coupe
+avec le trackball,  soit en bougeant les objets avec le trackball tout
+en laissant le plan de  coupe fixe.</li>
+<li> D&eacute;but de module de r&eacute;gions d'int&eacute;r&ecirc;t
+par  Renaud - c'est le tout d&eacute;but.</li>
+<li> Les fichiers "scripts" <tt>.ana</tt> (ou "sc&eacute;nario") peuvent
+maintenant &ecirc;tre charg&eacute;s comme les objets, depuis le
+m&ecirc;me    menu "ouvrir" et la m&ecirc;me bo&icirc;te de
+s&eacute;lection de fichiers,    et au d&eacute;marrage d'anatomist
+comme arguments sur la ligne de commande,    le flag <tt>-f </tt>n'est
+plus obligatoire pour les <tt>.ana</tt></li>
+<li> On peut mettre des belles images en fond des listes (fen&ecirc;tre
+de contr&ocirc;le, browsers), si on l'indique dans sa config:
+&eacute;diter    le fichier <tt>~/.anatomist/config/settings.cfg</tt>
+et ajouter le champ <tt>listview_background</tt> en lui donnant le
+fichier image &agrave; utiliser   (&agrave; un des formats
+support&eacute;s par Qt) - OK c'est juste un gadget,   mais moi j'aime
+bien les gadgets.</li>
+<li> Doc: j'ai un peu retouch&eacute; son look (mais pas son
+contenu........)</li>
+<li> Possibilit&eacute; de mettre des plans de clipping dans les
+nouvelles fen&ecirc;tres 2D/3D: &ccedil;a peut &ecirc;tre utile par ex.
+quand on m&eacute;lange   un volume anatomique et des objets 3D
+segment&eacute;s qu'on veut voir coup&eacute;s</li>
+<li> Les images SPM qui contiennent des valeurs infinies (NaN) sont
+filtr&eacute;es   et ne font plus planter Anatomist.</li>
+<li> Pas mal d'options d'affichage des rendus OpenGL peuvent &ecirc;tre
+choisies dans les fen&ecirc;tres 2D/3D (panneau "outils" des
+fen&ecirc;tres)</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Nouvelle commande <tt>Exit</tt> pour fermer un Anatomist
+t&eacute;l&eacute;command&eacute;</li>
+<li> Nouvelle commande <tt>LinkWindows</tt> pour grouper des
+fen&ecirc;tres</li>
+<li> Nouvelle commande <tt>Select</tt> pour la s&eacute;lection (les
+sauvegardes  / rechargements ne marchent pour l'instant pas pour les
+sous-objets   d'un graphe)</li>
+<li> Nouvelle commande <tt>Fusion2DParams</tt>, pour r&eacute;gler  les
+param&egrave;tres des fusions 2D.</li>
+<li> <b>PASSAGE A Qt: </b>plus de Motif ! Les fen&ecirc;tres (3D, 2D)
+ont &eacute;t&eacute; enti&egrave;rement refaites, l'appli
+chang&eacute;e   etc etc etc. Anatomist n'est plus link&eacute; avec:
+Motif, Colc++, MPP,  GLPP, GLw, QXt</li>
+<li> les classes li&eacute;es &agrave; Motif ont &eacute;t&eacute;
+enlev&eacute;es</li>
+<li> Syst&egrave;me de contr&ocirc;les de Renaud int&eacute;gr&eacute;
+et utilis&eacute; dans les nouvelles fen&ecirc;tres</li>
+<li> Classes de base interm&eacute;diaires pour les fen&ecirc;tres  Qt
+avec contr&ocirc;leurs: <tt>QAWindow</tt>, <tt>ControlledWindow</tt>
+(g&egrave;re la barre de boutons des contr&ocirc;leurs)</li>
+<li> Contr&ocirc;les et actions de base pour fen&ecirc;tres 3D: curseur
+li&eacute;, s&eacute;lection, zoom, translation</li>
+<li> Ajout du namespace <tt>anatomist</tt> pour diverses classes,
+presque toutes en fait</li>
+<li> le package <tt>wincontrol</tt> a &eacute;t&eacute; enlev&eacute;
+(classes <tt>AViewControl</tt>, <tt>APointCollector</tt>, <tt>APointsCollectorTrigger</tt>)</li>
+<li> Le syst&egrave;me d'affichage a &eacute;t&eacute; revu, en
+particlier    les fen&ecirc;tres 2D affichent maintenant comme en 3D en
+utilisant OpenGL.    Il y a encore pas mal de probl&egrave;mes
+&agrave; r&eacute;gler et de bugs,  mais bon... - attention, &ccedil;a
+va &ecirc;tre plus lent sur une machine  sans carte 3D
+acc&eacute;l&eacute;r&eacute;e...</li>
+<li> etc etc etc... en fait il y a eu beaucoup beaucoup de changements
+sur cette version...</li>
+<h4> <a name="version-1.23"></a>03/11/00 - Version 1.23</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Outil pour tracer des plans passant par 3 points: dans le module
+anasurfmatch.  On fait une fusion de 3 landmarks.</li>
+<li> <b>Surfaces textur&eacute;es</b>: on ne r&egrave;gle plus la
+palette depuis l'objet fusion (surface textur&eacute;e ou
+interpol&eacute;e) mais   depuis la texture elle-m&ecirc;me. Du coup
+on obtient des valeurs non-normalis&eacute;es    sur les
+r&eacute;glages de palette, ce qui permet d'utiliser une &eacute;chelle
+ quantitative.</li>
+<li> Fen&ecirc;tre de news qui appara&icirc;t la premi&egrave;re fois
+qu'on  lance une nouvelle version d'Anatomist</li>
+<li> Possibilit&eacute; d'enlever le gros logo rouge "Anatomist" de  la
+fen&ecirc;tre de contr&ocirc;le depuis les r&eacute;glages de
+pr&eacute;f&eacute;rences    (sauvable dans la config)</li>
+<li> Cylindres: faits comme les plans, &agrave; partir de 2 surfaces
+landmark</li>
+<li> Correction du bug qui faisait planter Anatomist &agrave; la lecture
+de fichiers compress&eacute;s - on peut maintenant lire des <tt>.tri.gz</tt>
+ou des .<tt>tex.Z</tt>, etc.</li>
+<li> D&eacute;but de graphes de landmarks: cr&eacute;ation d'un graphe
+&agrave; partir d'un volume (sur la m&ecirc;me
+g&eacute;om&eacute;trie),   ajout de noeuds et de buckets en cliquant
+sur des points.</li>
+<li> Chargement des graphes de ROI au format VOI, enfin d&egrave;s  que
+VOI aura un tout petit peu chang&eacute; son format.....</li>
+<li> Sauvegarde des graphes avec sous-objets (buckets, maillages) -&gt;
+sauvegarde de graphes de ROI</li>
+<li> D&eacute;but de fen&ecirc;tre de processing pour la perfusion  (pas
+encore op&eacute;rationnel), par Fabrice. On y acc&egrave;de depuis
+les op&eacute;rations  sp&eacute;cifiques sur un volume.</li>
+<li> Lecture DICOM</li>
+<li> Changements de rep&egrave;res &eacute;tendus aux multi-objets:  en
+particulier on peut mettre un <b>rep&egrave;re sur un graphe</b> et lui
+ affecter  une transformation</li>
+<li> La s&eacute;lection tient aussi compte des changements de
+rep&egrave;re</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Petites modifs de l'interface des <tt>AObjects</tt> (flags <tt>hasChanged</tt>
+ajout&eacute;s pour la texture et la g&eacute;om&eacute;trie), dans <tt>ATexSurface</tt>
+et <tt>AInterpoler</tt>.</li>
+<li> Bo&icirc;te de dialogue <tt>FusionChooser</tt> pour les cas
+o&ugrave; plusieurs fusions peuvent &ecirc;tre faites &agrave; partir
+des m&ecirc;mes    objets</li>
+<li> No de version d'Anatomist sauv&eacute; dans la config</li>
+<li> Buckets refaits pour la partie 3D, en utilisant l'interface commune<tt>AGLObject</tt></li>
+<li> Modifs et am&eacute;liorations dans plusieurs objets, les graphes
+en particulier</li>
+<li> Nouvelle interface vues / contr&ocirc;les de Renaud Maroy, &agrave;
+ utiliser pour refaire les fen&ecirc;tres 2D et 3D dans les prochaines
+versions</li>
+<h4> <a name="version-1.22"></a>03/10/00 - Version 1.22</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Sauvegarde et rechargement des param&egrave;tres et
+pr&eacute;f&eacute;rences    dans
+$HOME/.anatomist/config/settings.cfg. Pour l'instant cette sauvegarde
+est partielle, il y a encore beaucoup de choses qui pourrait &ecirc;tre
+sauv&eacute; et qui ne n'est pas.</li>
+<li> Le fichier de commandes "historique" sauv&eacute; automatiquement
+par Anatomist a &eacute;t&eacute; d&eacute;plac&eacute; de
+$HOME/.anatomist-history    &agrave; $HOME/.anatomist/history.ana,
+comme &ccedil;a tous les fichiers   de configuration locale, lus ou
+&eacute;crits par Anatomist, se trouvent  dans $HOME/.anatomist/</li>
+<li> Diverses modifs et corrections de bugs apparus avec Qt 2.2.0,
+comme   par ex. des pbs de la bo&icirc;te de s&eacute;lection de
+fichiers,  des plantages   &agrave; la modification des noms de noeuds
+de graphes, ...</li>
+<li> Fen&ecirc;tre de r&eacute;f&eacute;rentiels &amp; transformations
+refaite (Qt)</li>
+<li> Fen&ecirc;tre de fusion 2D refaite (Qt)</li>
+<li> Nouvelle fen&ecirc;tre "Profil" qui trace des courbes 1D selon
+l'axe  voulu (par Fabrice): module perfusion</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Classe de configuration globale (<tt>AGlobalConfig</tt>) relisant
+sous forme d'arbre la configuration, et classes de config "locales" qui
+ s'occupent  d'aller chercher chacune pour un morceau de programme (un
+module  par ex.)  la partie de la config qui les concerne et de
+l'appliquer.</li>
+<li> Commande "LinkedCursor"</li>
+<li> Un peu de m&eacute;nage: les fonctions, obsol&egrave;tes depuis
+des  ann&eacute;es et des ann&eacute;es, <tt>Anatomist::ReceiveEvent()</tt>
+et <tt>AObject::Action()</tt> ont enfin &eacute;t&eacute;
+&eacute;radiqu&eacute;es,    ainsi que la structure <tt>AEvent</tt> qui
+allait avec, et une foule de  fonctions  inutiles et inutilis&eacute;es
+dans les diff&eacute;rentes fen&ecirc;tres    2D.</li>
+<li> Bo&icirc;tes de s&eacute;lection de fichiers
+re-standardis&eacute;es    en Qt, support Motif enlev&eacute; (Dimitri)</li>
+<li> Headers SPM utilisant les nouvelles structures AttributedHeader
+d'Aims  (objets attribu&eacute;s, ouverts)</li>
+<li> <b>Nouveau module</b> de perfusion et fen&ecirc;tre "Profile"  par
+Fabrice Poupon... Bien jou&eacute; ! (ce module n&eacute;cessite la
+librairie   de trac&eacute; de courbes Qwt)</li>
+<li> Am&eacute;lioration de l'usine &agrave; fen&ecirc;tres <tt>AWindowFactory</tt>et
+extension en <tt>QAWindowFactory</tt>: &ccedil;a permet de garder
+des infos sur les types de fen&ecirc;tres, comme les ic&ocirc;nes et
+des   descriptifs et simplifie l'enregistrement de nouveaux types de
+fen&ecirc;tres   (voir doc de programmation, mise &agrave; jour elle
+aussi)</li>
+<li> Mise en commun des modules dans la m&ecirc;me arborescence de
+sources   qu'Anatomist, mais en librairies s&eacute;par&eacute;es. Pour
+l'instant il  y a 2 modules "officiels", anasurfmatch et perfusion: <tt>anatomist/src/anasurfmatch</tt>
+et <tt>anatomist/src/perfusion</tt>.</li>
+<h4> <a name="version-1.21"></a>24/08/00 - Version 1.21</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> D&eacute;but "d'internationalisation": fichiers de traduction,
+avec  un d&eacute;but en fran&ccedil;ais pour les textes de l'interface
+graphique    de diverses fen&ecirc;tres (toutes celles refaites
+r&eacute;cemment, en  fait, y compris dans les modules)</li>
+<li> Fen&ecirc;tre de pr&eacute;f&eacute;rences globales refaite</li>
+<li> Fen&ecirc;tre "Tools 3D" refaite</li>
+<li> Fen&ecirc;tres des divers param&egrave;tres d'&eacute;clairage  en
+3D refaites et regroup&eacute;es en une seule</li>
+<li> Am&eacute;lioration des param&egrave;tres des graphes: prise en
+compte  au d&eacute;marrage des couleurs de hi&eacute;rarchie et des
+"tooltips",   changement de la couleur de s&eacute;lection par
+d&eacute;faut qui &eacute;tait   assez moche...</li>
+<li> Raccourci clavier "s" pour synchroniser les vues 3D. En maintenant
+la touche appuy&eacute;e, on obtinent un genre de synchro temps
+r&eacute;el    (bon, c'est assez primitif mais pour le moment &ccedil;a
+ira bien)</li>
+<li> Am&eacute;liorations de la fen&ecirc;tre de palettes: boutons  pour
+revenir aux r&eacute;glages par d&eacute;faut</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Fichiers de traduction .po et .qm (Qt) dans l'arborescence:
+dependencies/po</li>
+<li> Syst&egrave;me de Makefile pour ces traductions (dans
+dependencies/po    aussi) pour reg&eacute;n&eacute;rer les fichiers et
+les m&eacute;langer  avec  ceux des modules</li>
+<li> Petites modifs de l'interface des fen&ecirc;tres 3D (pour
+l'&eacute;clairage)</li>
+<h4> <a name="version-1.20"></a>07/08/00 - Version 1.20</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Tout nouveau look pour la fen&ecirc;tre de contr&ocirc;le -- vous
+&ecirc;tes pri&eacute;s de le trouver plus joli...</li>
+<li> Disparition de la petite fen&ecirc;tre AnaQt, ses boutons sont
+maintenant   inclus dans les menus "normaux" de la f&ecirc;netre de
+contr&ocirc;le</li>
+<li> Module de "landmarks" qui permet de rep&eacute;rer des points  sur
+une surface ou de point d'une surface le plus proche d'un point
+s&eacute;lectionn&eacute;,    accessible par les options des objets 3D</li>
+<li> Correction du bug qui faisait planter sur l'affichage d'une image
+vide</li>
+<li> Nouvelles pages web sur les moulinettes et pour l'utilisation
+d'Anatomist   pour la TMS, par Jean-Fran&ccedil;ois Mangin</li>
+<li> Corrections des changements de rep&egrave;re pour les changements
+affines (pas rotation pure) -&gt; utile pour certaines images SPM et la
+ normalisation  de Talairach</li>
+<li> Quelques petites fen&ecirc;tres de param&egrave;tres refaites
+(plus   modernes, en Qt): params des fusions 3D, affectation des
+r&eacute;f&eacute;rentiels</li>
+<li> Nouveau look pour la fen&ecirc;tre de r&eacute;glage des
+mat&eacute;riaux    des objets 3D: plus joli, en principe plus facile
+&agrave; utiliser, mieux    fait, et &ccedil;a prend moins de place
+&agrave; l'&eacute;cran</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Nouveaux Makefile qui marchent presque</li>
+<li> Passage du projet &agrave; PRCS</li>
+<li> V&eacute;rifications de types dans les IDs des commandes (-&gt;
+&eacute;vite  des plantages suite &agrave; des bugs grossiers de
+scripts)</li>
+<li> Harminisation des num&eacute;ros de versions des modules avec
+celui   d'Anatomist: 1.20 pour tout le monde</li>
+<li> Refonte compl&egrave;te de l'interface graphique de la
+fen&ecirc;tre    de controle: passage de Motif/Mpp &agrave; 100% Qt -
+un grand pas en avant    vers l'&eacute;limination de Motif dans
+Anatomist...</li>
+<li> Un certain nombre de petits changements d'interface des classes
+"centrales":  application, fen&ecirc;tre de contr&ocirc;le en
+particulier</li>
+<li> Changements dans le module anasurfmatch: s&eacute;paration d'une
+petite  fabrique de surfaces simples (landmarks), et nouvelle option de
+choix  de landmarks dans tous les types connus d'ojbets 3D (surfaces
+triangul&eacute;es,   fusions 3D, surfaces textur&eacute;es,
+interpoleur). On pourrait mettre &ccedil;a  dans la base d'Anatomist,
+&agrave; terme</li>
+<li> Transformations: meileure centralisation des transformations et
+transformations  inverses</li>
+<h4> <a name="version-1.19"></a>13/07/00 - Version 1.19</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> D&eacute;but de doc de programmation, accessible depuis l'aide
+HTML.</li>
+<li> Page de doc sur les commandes (programmation script...)</li>
+<li> Corrections de bugs dans la lecture des commandes</li>
+<li> Modifications de la fen&ecirc;tre de r&eacute;glage des palettes:
+changement des bornes possibles, liaison entre objets par valeurs (et
+plus par proportion entre min et max)</li>
+<li> Support du format SPM flottant</li>
+<h5> Changements internes (programmeurs):</h5>
+Gros chantier: r&eacute;organisation de l'arborescence des sources et
+des  Makefile: <li> Fusion des librairies Anatomist, AnaQt, AnaQtMod.
+AnaSurfMatch reste en module.</li>
+<li> Elimination de la librairie FWF qui posait pas mal de
+probl&egrave;mes    (-&gt; librairie MPP 0.8)</li>
+<li> Qt est donc maintenant obligatoire</li>
+<li> Remplacement des anciens Makefile (Cyril Poupon) par un nouveau
+syst&egrave;me  utilisant Tmake (Dimitri Papadopoulos). Bon: il faut
+bien   dire que pour l'instant &ccedil;a ne marche pas encore bien...</li>
+<li> Petits changements dans les librairies et l'ordre des sources  dans
+les Makefile pour r&eacute;gler les conflits entre les librairies
+Anatomist et AnaQt fusionn&eacute;es. &Ccedil;a reste encore un peu
+fragile et sensible   &agrave; l'ordre de linkage des .o... Pas
+vraiment moyen de faire autrement   tant qu'on n'aura pas
+s&eacute;par&eacute; les librairies en plusieurs couches.</li>
+<li> Nouveau lecteur de transformations, un peu plus "objet", beaucoup
+plus simple et un peu moins bugg&eacute;</li>
+<li> Nouvelles commandes (sur les couleurs, les fusions, les
+r&eacute;f&eacute;rentiels...)</li>
+<h4> <a name="version-1.18"></a>fin 06/00 - Version 1.18</h4>
+Elle n'existe pas vraiment - c'est juste un remplacement de la version
+ 1.17 (jamais mise en service) pour pr&eacute;parer les changements de
+la  1.19. Elle comprend d&eacute;j&agrave; la fusion des librairies
+anatomist,  anaqt, anaqtmod, mais je d&eacute;taille tout dans 1.19.
+C'est encore les  anciens Makefile.
+<h4> <a name="version-1.17"></a>20/06/00 - Version 1.17</h4>
+<h5> Changements "visibles" (utilisateurs):</h5>
+<li> Nouvelles pages web (dont celle-ci et celles sur la programmation)</li>
+<li> Correction de bugs dans l'interpolation de surfaces et le matching</li>
+<li> Ajout d'objets temporaires pour mat&eacute;rialiser les points  de
+rep&egrave;re du matching de surfaces</li>
+<li> Curseur 3D</li>
+<li> Support basique pour les changements de rep&egrave;re dans les
+fenetres   3D: rotation, translation entre 2 surfaces.</li>
+<li> Changements de rep&egrave;res pris en compte dans les fusions  3D</li>
+<li> Chargement de sc&eacute;narios et t&eacute;l&eacute;commande
+possible &agrave; travers un "pipe". Reste &agrave; &eacute;toffer la
+liste des commandes   comprises par le processeur.</li>
+<li> Sauveragrde / chargement de la config. des fen&ecirc;tres
+(basique),    chargement en tant que scenarios classiques.</li>
+<li> On peut maintenant plusionner plus de 2 volumes dans les fusions
+2D, mais c'est encore tr&egrave;s mal g&eacute;r&eacute; pour le
+m&eacute;lange    des couleurs</li>
+<li> On peut aussi faire une fusion 3D avec un nombre quelconque de
+surfaces   et de volumes, mais pour le moment seule la 1&egrave;re
+surface  et le 1er   volume sont utilis&eacute;s: &agrave;
+compl&eacute;ter... en attendant, NE PAS S'EN SERVIR pour le
+moment......</li>
+<li> Enregistrement en continu des images &agrave; chaque fois qu'elles
+changent dans les fen&ecirc;tres 2D et 3D pour faire des films (option
+"record" dans le menu "window" des fen&ecirc;tres)</li>
+<li> La commande "anaqt" a disparu, suite aux changements de place  des
+librairies (c'est pas ma faute!). "ana" et "anadyn" ont aussi
+&eacute;t&eacute;    remplac&eacute;es. Il faut maintenant lancer "<b>anatomist</b>".
+Le <b>D</b>imitri    en a d&eacute;cid&eacute; ainsi, &ccedil;a ne se
+discute pas. point.</li>
+<h5> Changements internes (programmeurs):</h5>
+<li> Processeur de commandes: lecture / &eacute;criture presque
+enti&egrave;rement    refaits: ils utilisent maintenant le format
+"Tree" (la lecture n'avait d'ailleurs  jamais &eacute;t&eacute; faite,
+avant)</li>
+<li> Petits changements dans les entr&eacute;es / sorties des arbres
+dans  libgraph -&gt; nouvelle version libgraph-1.9</li>
+<li> 90% des commandes inutiles ont disparu (et ne sont plus
+sauv&eacute;es).    Par contre celles qui restent savent maintenant se
+recharger.</li>
+<li> Changements internes dans les fenetres, un peu de m&eacute;nage
+(mais  il y a encore du boulot)</li>
+<li> Travaux pr&eacute;liminaires au nettoyage n&eacute;cessaire dans
+les changements de rep&egrave;re, au moins pour les faire marcher dans
+les   fenetres 3D (le plus gros reste &agrave; faire...) et pour
+ajouter les offsets   du format SPM.</li>
+<li> Changements de rep&egrave;res chang&eacute;s dans le curseur
+li&eacute; en particulier (<b>ATTENTION</b>: nouveaux bugs potentiels...)</li>
+<h4> <a name="version-1.16"></a>d&eacute;but 05/00 - Version 1.16</h4>
+<li> Modifs internes, am&eacute;liorations, bugfixes dans tous les
+objets   3D et un peu ailleurs (et &eacute;ventuellement ajout de bugs
+nouveaux  ?...)</li>
+<li> Possibilit&eacute; de sauver des maillages en .mesh</li>
+<li> <b>[Interne]</b> Moteur de gestion de modes de curseur de souris
+(pattern  "contr&ocirc;le"), ouvert, par ex. pour pouvoir cliquer dans
+l'image   pour  choisir des points au cours d'actions
+particuli&egrave;res (choix de  points  de contr&ocirc;le pour du
+matching de surfaces, plantage d'electrodes,   dessin de ROI, ...). Bon
+&ccedil;a pourra &ecirc;tre amelior&eacute;, c'est   un peu simpliste
+pour l'instant.</li>
+<li> Nouveau module "surface matching" anasurfmatch-0.1 qui offre:</li>
+<ol>
+  <li> Nouvelle fusion surface - surface et fen&ecirc;tre de
+contr&ocirc;le    associ&eacute;e pour effectuer le matching. Le
+process cr&eacute;e une 3e   surface d&eacute;formable sur laquelle il
+travaille. Le calcul s'effectue    en "temps r&eacute;el" (threads) et
+on peut modifier les param&egrave;tres    en cours de route, ajouter /
+enlever des "points de contr&ocirc;le", ...,    c'est donc un nouveau
+jeu tr&egrave;s amusant. On peut aussi enregistrer   toute la
+d&eacute;formation dans une surface "temporelle" et la sauver: mieux
+qu'un mpeg (et plus gros en m&eacute;moire), c'est en 3D...</li>
+  <li> Nouvelle fusion surface - TexSurface (surface textur&eacute;e):
+interpoleur.  &Ccedil;a permet d'interpoler la texture associ&eacute;e
+&agrave; un maillage  sur un autre maillage (qui doit avoir
+pr&eacute;alablement &eacute;t&eacute;   recal&eacute; par le matching
+pr&eacute;c&eacute;dent). But: voir les potentiels   d'EEG sur la
+surface de la t&ecirc;te. Pour l'instant: interpolation lin&eacute;aire.</li>
+  <li> Lecture de mes formats de texture EEG/matlab et fen&ecirc;tre  de
+contr&ocirc;le  qui offre des sliders sur les dimensions
+suppl&eacute;mentaires   qui n'existent  pas de base dans anatomist
+(essai / sujet).</li>
+</ol>
+<li> Toutes les commandes ana, anaqt, anadyn pointent maintenant sur
+le  m&ecirc;me script (anadyn) de mani&egrave;re a ce que tout le monde
+ait acc&egrave;s  au(x) nouveau(x) module(s).</li>
+<br/>
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
