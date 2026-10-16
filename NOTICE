@@ -1,0 +1,90 @@
+Insula: licences by directory
+=============================
+
+Insula is a fork of the core of the BrainVISA neuroimaging suite, developed at
+CEA / NeuroSpin (formerly Institut Fédératif de Recherche 49) and by the
+BrainVISA and Populse communities. The copyright in the imported code belongs
+to its authors and to the CEA, CNRS and INRIA as stated in each file header;
+the full history, with authorship, is preserved in this repository. Nothing
+here removes or replaces any notice. SPDX identifiers follow the SPDX list.
+
+Each directory below was imported unchanged from the upstream repository named
+on its line, at the commit shown in docs/PLAN.md, plus the Fedora fix commits
+listed there. The licence texts are in LICENSES/.
+
+Directory           Licence              Upstream
+------------------  -------------------  -----------------------------------
+soma-base/          CECILL-B             github.com/populse/soma-base
+soma-io/            CECILL-B             github.com/brainvisa/soma-io
+aims-free/          CECILL-B             github.com/brainvisa/aims-free
+aims-gpl/           CECILL-2.1           github.com/brainvisa/aims-gpl
+anatomist-free/     CECILL-B             github.com/brainvisa/anatomist-free
+anatomist-gpl/      CECILL-2.0           github.com/brainvisa/anatomist-gpl
+brainvisa-cmake/    CECILL-B             github.com/brainvisa/brainvisa-cmake
+brainvisa-share/    CECILL-B             github.com/brainvisa/brainvisa-share
+
+CECILL-B is permissive (BSD-like). CECILL-2.0 and CECILL-2.1 are copyleft and
+GPL-compatible; programs that link aims-gpl or anatomist-gpl are therefore
+distributed under their terms.
+
+Code with another licence inside those directories
+--------------------------------------------------
+
+soma-base/ has no licence file of its own: python/soma/info.py and the README
+say CECILL-B and the text is LICENSES/CECILL-B.txt.
+
+aims-free/ (its LICENSE file lists these exceptions):
+  aimsdata/src/aimsnifti/io/niftilib   nifticlib             public domain
+  aimsdata/src/aimsgifti/io/gifticlib  gifticlib             public domain
+                                       (LICENSES/third-party/gifticlib-public-domain.txt)
+  aimsdata/src/aimsply/rply            RPly 1.1.1            MIT
+                                       (LICENSES/third-party/RPly-MIT.txt;
+                                        the original file is ISO-8859-1)
+  aimsgui/src/CiftiLib-1.5.1           CiftiLib, Washington University
+                                       BSD-2-Clause
+                                       (LICENSES/third-party/CiftiLib-BSD-2-Clause.txt)
+                                       and its Nifti/nifti1.h, public domain
+  aimsdata/src/aimsdata/kdtree++       libkdtree++           Artistic-2.0
+                                       (LICENSES/third-party/libkdtree++-Artistic-2.0.txt)
+  aimsalgo/src/aimsalgo/geodesicpath   Danil Kirsanov, 2008  MIT
+                                       (the headers say "MIT License"; no
+                                        licence text is shipped with them)
+  ecat/                                REMOVED. The University of Louvain ECAT
+                                       library is licensed for non-commercial
+                                       use only, with no modified
+                                       redistribution. It is not in this
+                                       repository or its history. The BrainVISA
+                                       code around it (ecat+/ and
+                                       aimsdata/src/aimsecat/) is CECILL-B and
+                                       is kept; building it needs BUILD_ECAT=OFF
+                                       until a free ECAT reader replaces the
+                                       library.
+
+soma-io/:
+  src/somanifti/nifticlib              nifticlib and znzlib  public domain
+  src/libcartobase/zoolib              ZooLib atomics, A. Green and Learning
+                                       in Motion, Inc.       MIT
+                                       (LICENSES/third-party/ZooLib-MIT.txt)
+
+anatomist-free/:
+  src/lib/gradientwidget (six files: gradient.cpp, gradient.h,
+  gradwidget.cpp, gradwidget.h, spline.cpp, spline.h)
+                                       Fraqtive, (C) 2005 Michal Mecinski.
+                                       The headers say only "licensed under the
+                                       GNU General Public License", with no
+                                       version: SPDX GPL-1.0-or-later.
+                                       anatomist-free/COPYING (GPL-2.0, copied
+                                       to LICENSES/GPL-2.0.txt) is the text the
+                                       project ships for them.
+
+brainvisa-cmake/:
+  cmake/modules/FindLibLZMA.cmake and FindPythonInterp.cmake are copies of
+  CMake modules under the CMake BSD licence (BSD-3-Clause).
+
+anatomist-gpl/:
+  pyanatomist/share/icons/atlas_viewer/Arrow_left-right.svg says "public
+  domain".
+
+Not audited: the 8,540 files of brainvisa-share (icons, documentation, data)
+beyond the repository-wide search above; brainvisa-share is CECILL-B as a
+whole. A file-by-file audit is stage 5 in docs/PLAN.md.
