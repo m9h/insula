@@ -28,8 +28,8 @@ The fix commits are authored by Morgan Hough, and upstream's are untouched.
 
 **Check against the packages.** The published `brainvisa-cmake`, `brainvisa-soma`
 and `brainvisa-anatomist` source RPMs were unpacked, their `%prep` repeated
-(tarball plus the three patch files each, then removing the bundled
-`kdtree++`), and compared with the directories here: no file differs. The only
+(the pinned tarballs plus the patch files each spec applies, then removing
+the bundled `kdtree++`), and compared with the directories here: no file differs. The only
 differences are the `ecat/` removal described below, the bundled `kdtree++`
 (which the RPM deletes and Insula still carries until stage 5), and two symlinks
 (`changelog.md`, `aimsdata/changelog.html`) that a tarball extract shows as
@@ -130,7 +130,7 @@ Alsa, Blitz, DCMTK, Dot, Epydoc, Glib, LibKDTree, MINC, Numpy, OpenJpeg,
 OpenSlide, PNG12, python, PythonInterp, QtVersion, Qwt, SIP, Sphinx.
 The other 70 are bundling helpers (Cairo, Harfbuzz, GStreamer, XCB, PCRE, ICU,
 OpenSSL, FFI and so on) that exist so a BrainVISA package can ship system
-libraries, plus a few unused science libraries. They go with `BRAINVISA_INSTALL_RUNTIME_LIBRARIES`.
+libraries, and similar. I have not checked each one. They go with `BRAINVISA_INSTALL_RUNTIME_LIBRARIES`.
 
 | Module | Replace with |
 |---|---|
@@ -174,8 +174,8 @@ libraries, plus a few unused science libraries. They go with `BRAINVISA_INSTALL_
   and is the largest single piece of stage 3.
 - **CMake hygiene.** Of the `cmake_minimum_required` calls: 2 say 2.6, 7 say
   3.10, 3 say 3.20. There are 32 `add_definitions` and 18 `file(GLOB)` calls
-  outside `brainvisa-cmake`, and `exec_program` is used twice (the latter was
-  the source of one of the Fedora fixes).
+  outside `brainvisa-cmake`, and `exec_program` is still used in 2 places (a third use in
+  `anatomist-gpl` was one of the Fedora fixes).
 
 ## 5. Measurements of the imported tree
 
@@ -205,7 +205,7 @@ libraries, plus a few unused science libraries. They go with `BRAINVISA_INSTALL_
 - **Non-free code.** ECAT is removed. Any future import must repeat the
   search for its copyright text. `brainvisa-share` (8,540 files) has not been
   audited file by file.
-- **SIP.** SIP 6 and Python 3.14/3.15 keep breaking things (two fixes so far).
+- **SIP.** SIP 6 and Python 3.14/3.15 keep breaking things (four of the 20 Fedora fix commits are SIP-related).
   Moving to `sip-build` removes the wrapper but not SIP itself.
 - **Deleting Qt 3/4/5 code.** Mechanical, but some of it is entangled with
   the SIP files; every deletion needs the bindings to rebuild.
