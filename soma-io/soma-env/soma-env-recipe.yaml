@@ -1,0 +1,56 @@
+package:
+  name: soma
+
+soma-env:
+  publication: neuro-forge
+  components:
+    - soma-io
+    - aims-free
+    - aims-gpl
+    - brainvisa-share
+
+  internal-dependencies:
+    - soma-base
+
+  type: compiled
+
+requirements:
+  build:
+    - sigcpp-2.0
+    - libblitz
+    - boost-cpp
+    - gfortran
+    - graphviz
+    - dcmtk
+    - doxygen
+    - pkgconfig
+    - numpy
+    - pyyaml
+    - libminc
+    - openjpeg
+    - soma-openslide
+    - $soma-env{{ pin_dev_compatible("qt-main", exact=True) }}
+
+  run:
+    - sigcpp-2.0
+    - libblitz
+    - boost-cpp
+    - gfortran
+    - dcmtk
+    - numpy <2
+    - pyyaml
+    - libminc
+    - openjpeg
+    - pywebp
+    - objgraph
+    - pygltflib
+    - gltf-transform
+    - dracopy
+    - soma-openslide
+    - $soma-env{{ pin_dev_compatible("qt-main", exact=True) }}
+
+tests:
+  - script: |
+      python -m soma_forge test soma
+      python -m soma_forge test aims
+      python -m soma_forge test axon

@@ -1,0 +1,141 @@
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import
+from __future__ import print_function
+import os
+import shutil
+import string
+import argparse
+from soma.dicom import aggregator
+import sys
+import traceback
+import re
+
+try:
+    import pydicom as dicom
+except ImportError as e:
+    import dicom
+
+
+def createTree(serie):
+    """
+    This function creates directories to tidy all the DICOM elements in a serie/acquisition.
+    It creates a folder for the patient, with the name of the patient, and a 
+    subfolder for the serie/acquisition, named with the modality and the description.
+
+    :param serie: list of all the path DICOM of a serie
+    :return: 
+    """
+
+    def clean_path(path):
+        return re.sub(r'[^a-zA-Z0-9.-]', '_', '{0}'.format(path))
+
+    if len(serie) == 0:
+        return
+
+    first = serie[0]
+    
+    # Get DICOM information to build file tree
+    ds = dicom.read_file(first, stop_before_pixels=True)
+
+    dsAttrs={}
+    for tag in ("PatientName","Modality","SeriesDescription","SeriesInstanceUID"):
+        dsAttrs[tag]=clean_path(ds.get(tag)) if tag in ds else ''
+
+    try:
+        # Create the patient directory
+        patientDirName = os.path.join(args.output,
+                                      dsAttrs["PatientName"])
+
+        # Inspect
+        inc = 1
+        if os.path.exists(patientDirName) and \
+           patientDirName not in sessionPatientDirNames:
+            inc = 2
+            while os.path.exists(patientDirName + "_" + str(inc)) and \
+                    patientDirName + "_" + str(inc) not in sessionPatientDirNames:
+                inc += 1
+
+        if inc > 1:
+            patientDirName += "_" + str(inc)
+
+        if patientDirName not in sessionPatientDirNames:
+            os.makedirs(patientDirName)
+        sessionPatientDirNames.append(patientDirName)
+
+    except:
+        print("Exception in user code:")
+        print('-'*60)
+        traceback.print_exc(file=sys.stdout)
+        print('-'*60)
+
+    try:
+        # Create serie/acquisition directory
+        serieDir = os.path.join(patientDirName,
+                                dsAttrs["Modality"] + "_" + dsAttrs["SeriesDescription"])
+
+        # Inspect if the serie directory exist and change its name in case
+        inc2 = 1
+        if os.path.exists(serieDir):
+            inc2 = 2
+            while os.path.exists(serieDir + "_" + str(inc2)):
+                inc2 += 1
+
+        if inc2 > 1:
+            serieDir += "_" + str(inc2)
+
+        if args.unique:
+            serieDir += "_" + dsAttrs["SeriesInstanceUID"]
+        os.makedirs(serieDir)
+
+        # Copy DICOM files into serie directory
+        for f in serie:
+            baseDestFile = os.path.join(serieDir, os.path.basename(f))
+            destFile = baseDestFile
+            num = 2
+            while os.path.exists(destFile):
+                destFile = baseDestFile + "_" + str(num)
+                num += 1
+            shutil.copyfile(f, destFile)
+        #os.chmod(serieDir, 0o444)
+    except:
+        print("Exception in user code:")
+        print('-'*60)
+        traceback.print_exc(file=sys.stdout)
+        print('-'*60)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='''
+Sort input DICOM files according to the following tree: <PatientsName>/<Modality>_<SeriesDescription>_<SeriesInstanceUID>
+''')
+
+    parser.add_argument('-i', '--input',  nargs='+',
+                        help='input DICOM files/directories')
+    parser.add_argument('-o', '--output', help='output directory')
+    parser.add_argument(
+        '-u', '--unique', help='create unique directory name', action="store_true")
+
+    args = parser.parse_args()
+
+    if args.input is None or \
+       args.output is None:
+        parser.parse_args(['-h'])
+
+    try:
+        # Create output directory
+        os.mkdir(args.output)
+    except:
+        pass
+
+    # Aggregate input files
+    aggregator = aggregator.DicomAggregator()
+    aggregator.add_dicom_sources(args.input)
+    aggregator.aggregate()
+
+    # sessionPatientDirNames avoid to creating multiple directories for a patient of a session
+    sessionPatientDirNames = []
+
+    # Browse aggregated DICOM series
+    for serie in aggregator._aggregate_sources.values():
+        createTree(serie)
