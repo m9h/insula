@@ -1,0 +1,1 @@
+attributes = {'clone_mode': 'fold_copier', 'data_generators': {'far_bad': 5, 'bad': 2, 'good': 1, 'near_bad': 2}, 'uuid': '2d3eee9b-e974-809f-7096-4d3793f762eb'}

@@ -1,0 +1,255 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax RoiArg
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name left_hemishpere
+
+*BEGIN TREE fold_name
+color 215 101 200
+name  Cuneus_left
+
+*END
+
+*BEGIN TREE fold_name
+color 204 233 51
+name  Frontal-Inferior_left
+
+*END
+
+*BEGIN TREE fold_name
+color 86 196 71
+name  Frontal-Middle_left
+
+*END
+
+*BEGIN TREE fold_name
+color 142 122 161
+name  Frontal-Superior_left
+
+*END
+
+*BEGIN TREE fold_name
+color 94 131 243
+name  Lingual_left
+
+*END
+
+*BEGIN TREE fold_name
+color 234 163 183
+name  Orbital_left
+
+*END
+
+*BEGIN TREE fold_name
+color 37 155 5
+name  Post-Central_left
+
+*END
+
+*BEGIN TREE fold_name
+color 62 35 206
+name  Pre-Central_left
+
+*END
+
+*BEGIN TREE fold_name
+color 40 103 34
+name  Temporal-Inferior_left
+
+*END
+
+*BEGIN TREE fold_name
+color 28 255 56
+name  Temporal-Middle_left
+
+*END
+
+*BEGIN TREE fold_name
+color 131 214 157
+name  Temporal-Superior_left
+
+*END
+
+*BEGIN TREE fold_name
+color 76 163 134
+name  gyrus10_left
+
+*END
+
+*BEGIN TREE fold_name
+color 126 249 75
+name  gyrus12_left
+
+*END
+
+*BEGIN TREE fold_name
+color 197 135 197
+name  gyrus14_left
+
+*END
+
+*BEGIN TREE fold_name
+color 103 228 73
+name  gyrus15_left
+
+*END
+
+*BEGIN TREE fold_name
+color 90 206 235
+name  gyrus16_left
+
+*END
+
+*BEGIN TREE fold_name
+color 18 243 135
+name  gyrus19_left
+
+*END
+
+*BEGIN TREE fold_name
+color 22 50 170
+name  gyrus20_left
+
+*END
+
+*BEGIN TREE fold_name
+color 228 89 17
+name  gyrus8_left
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name right_hemishpere
+
+*BEGIN TREE fold_name
+color 215 101 200
+name  Cuneus_right
+
+*END
+
+*BEGIN TREE fold_name
+color 204 233 51
+name  Frontal-Inferior_right
+
+*END
+
+*BEGIN TREE fold_name
+color 86 196 71
+name  Frontal-Middle_right
+
+*END
+
+*BEGIN TREE fold_name
+color 142 122 161
+name  Frontal-Superior_right
+
+*END
+
+*BEGIN TREE fold_name
+color 94 131 243
+name  Lingual_right
+
+*END
+
+*BEGIN TREE fold_name
+color 234 163 183
+name  Orbital_right
+
+*END
+
+*BEGIN TREE fold_name
+color 37 155 5
+name  Post-Central_right
+
+*END
+
+*BEGIN TREE fold_name
+color 62 35 206
+name  Pre-Central_right
+
+*END
+
+*BEGIN TREE fold_name
+color 40 103 34
+name  Temporal-Inferior_right
+
+*END
+
+*BEGIN TREE fold_name
+color 28 255 56
+name  Temporal-Middle_right
+
+*END
+
+*BEGIN TREE fold_name
+color 131 214 157
+name  Temporal-Superior_right
+
+*END
+
+*BEGIN TREE fold_name
+color 76 163 134
+name  gyrus10_right
+
+*END
+
+*BEGIN TREE fold_name
+color 126 249 75
+name  gyrus12_right
+
+*END
+
+*BEGIN TREE fold_name
+color 197 135 197
+name  gyrus14_right
+
+*END
+
+*BEGIN TREE fold_name
+color 103 228 73
+name  gyrus15_right
+
+*END
+
+*BEGIN TREE fold_name
+color 90 206 235
+name  gyrus16_right
+
+*END
+
+*BEGIN TREE fold_name
+color 18 243 135
+name  gyrus19_right
+
+*END
+
+*BEGIN TREE fold_name
+color 22 50 170
+name  gyrus20_right
+
+*END
+
+*BEGIN TREE fold_name
+color 228 89 17
+name  gyrus8_right
+
+*END
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+color 0 0 0
+name  background
+
+*END
+
+*END

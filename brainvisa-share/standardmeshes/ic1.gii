@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GIFTI SYSTEM "http://gifti.projects.nitrc.org/gifti.dtd">
+<GIFTI Version="1.0"  NumberOfDataArrays="2">
+   <MetaData>
+      <MD>
+         <Name><![CDATA[Date]]></Name>
+         <Value><![CDATA[Wed Jan 13 14:39:01 2021]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[UserName]]></Name>
+         <Value><![CDATA[dr144257]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[gifticlib-version]]></Name>
+         <Value><![CDATA[gifti library version 1.08, 8 March, 2010]]></Value>
+      </MD>
+   </MetaData>
+   <LabelTable/>
+   <DataArray Intent="NIFTI_INTENT_POINTSET"
+              DataType="NIFTI_TYPE_FLOAT32"
+              ArrayIndexingOrder="RowMajorOrder"
+              Dimensionality="2"
+              Dim0="42"
+              Dim1="3"
+              Encoding="GZipBase64Binary"
+              Endian="LittleEndian"
+              ExternalFileName=""
+              ExternalFileOffset="">
+      <MetaData>
+         <MD>
+            <Name><![CDATA[AnatomicalStructurePrimary]]></Name>
+            <Value><![CDATA[CortexRight]]></Value>
+         </MD>
+         <MD>
+            <Name><![CDATA[GeometricType]]></Name>
+            <Value><![CDATA[Sphere]]></Value>
+         </MD>
+         <MD>
+            <Name><![CDATA[Name]]></Name>
+            <Value><![CDATA[/i2bm/local/freesurfer/average/surf/rh.sphere.ico1.reg]]></Value>
+         </MD>
+      </MetaData>
+      <Data>eJxNUSEOAkEQO4VGIXgAjgSDQLDjECQEjSf7AdxhEASHQyEIL9nB8QEMKAQSf5btXCfsJZc0vbbTmasqf3YSm7UAxeYTFvtjqO8rAX5NJzo7dUqshUbJC/lEDH3KmsSclPOV+c6bvvp30O/tmWR8MQ++g0UW+bZTHIRMK/DjfEjX/tL64YUe/Hs4Am57t3opeNPSa7hb9xS46GJ4vt0o5gJnr9Kr5K07vVpo7Ea+EzXimjw3sDNyxHOIg+/A3ZVeKbzWwWfYHeMgcUfHuA/uGXhPx/bPfiv7tLM=</Data>
+   </DataArray>
+   <DataArray Intent="NIFTI_INTENT_TRIANGLE"
+              DataType="NIFTI_TYPE_INT32"
+              ArrayIndexingOrder="RowMajorOrder"
+              Dimensionality="2"
+              Dim0="80"
+              Dim1="3"
+              Encoding="GZipBase64Binary"
+              Endian="LittleEndian"
+              ExternalFileName=""
+              ExternalFileOffset="">
+      <MetaData>
+         <MD>
+            <Name><![CDATA[Name]]></Name>
+            <Value><![CDATA[/i2bm/local/freesurfer/average/surf/rh.sphere.ico1.reg]]></Value>
+         </MD>
+         <MD>
+            <Name><![CDATA[TopologicalType]]></Name>
+            <Value><![CDATA[Closed]]></Value>
+         </MD>
+      </MetaData>
+      <Data>eJxN0deOwjAUhOEsWyihhBAIoYVe3v8F10f6Lnzxy+M5I8seF0VRzBNTzBI/vBkv9Ld9wVugSvzyKt7UGZV8eEvUiS9ezVs4o5YPb4UmMeA1vKUzGvmVOwZrd13Rc3qQzWLdoE2MeC1vLd/Kh7dFlxjzOt7GGZ38VlfBThdbekaPs1msexwSE96Bt5M/yO91Gxx1t6crepLNYj2hT/zxet5Rvpc/+YvgrOsTXdN/2SzWC66JIe/KO8tf5S/+Lrjp+kI39DCb3fxFcNf1jW7pYTZ7+ovgobsn3dFlNnvoNnjp4kEf6DKbvXQVvL3tRfd0mc3e3h583PVNX+kym3285e6uI96T95GP/T8esRPt</Data>
+   </DataArray>
+</GIFTI>

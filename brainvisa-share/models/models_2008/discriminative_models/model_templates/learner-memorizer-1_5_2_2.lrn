@@ -1,0 +1,112 @@
+*BEGIN TREE 1.0 const_learner
+
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+
+*BEGIN TREE clique_memorizer
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_far_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_far_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_reduced_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_far_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_far_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_reduced_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*BEGIN TREE bad_learner
+*BEGIN TREE fold_noiser
+*BEGIN TREE fold_far_labels_changer
+*BEGIN TREE empty_avoid_learner
+*BEGIN TREE terminal_learner
+*END
+*END
+*END
+*END
+*END
+
+*END
+
+*END

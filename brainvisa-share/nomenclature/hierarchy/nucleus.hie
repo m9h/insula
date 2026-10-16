@@ -1,0 +1,124 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax NucleusArg
+
+*BEGIN TREE fold_name
+name brain
+
+*BEGIN TREE fold_name
+name hemisph_left
+
+*BEGIN TREE fold_name
+color 0 255 0
+label 01
+name  Lcaudate
+
+*END
+
+*BEGIN TREE fold_name
+color 0 255 255
+label 02
+name  Laccumbens
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 0
+label 03
+name  Lputamen
+
+*END
+
+*BEGIN TREE fold_name
+color 255 255 0
+label 04
+name  Lpallidum
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 05
+name  Lthalamus
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name hemisph_right
+
+*BEGIN TREE fold_name
+color 0 255 0
+label 06
+name  Rcaudate
+
+*END
+
+*BEGIN TREE fold_name
+color 0 255 255
+label 07
+name  Raccumbens
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 0
+label 08
+name  Rputamen
+
+*END
+
+*BEGIN TREE fold_name
+color 255 255 0
+label 09
+name  Rpallidum
+
+*END
+
+*BEGIN TREE fold_name
+color 255 0 255
+label 10
+name  Rthalamus
+
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name ventricles
+
+*BEGIN TREE fold_name
+color 0 0 255
+label 11
+name  Llat_vent
+
+*END
+
+*BEGIN TREE fold_name
+color 0 0 255
+label 12
+name  Rlat_vent
+
+*END
+
+*BEGIN TREE fold_name
+color 255 174 0
+label 13
+name  3rd_vent
+
+*END
+
+*BEGIN TREE fold_name
+color 194 178 255
+label 14
+name  4th_vent
+
+*END
+
+*END
+
+*END
+
+*END

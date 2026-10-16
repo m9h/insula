@@ -1,0 +1,49 @@
+*BEGIN SYNTAX domain_box
+xmin	float	!
+xmax	float	!
+ymin	float	!
+ymax	float	!
+zmin	float	!
+zmax	float	!
+ndata	int	!
+gravity_center_attribute        string
+*END
+
+*BEGIN SYNTAX domain_box2
+xmin	float	!
+xmax	float	!
+ymin	float	!
+ymax	float	!
+zmin	float	!
+zmax	float	!
+ndata	int	!
+gravity_center_attribute        string
+*END
+
+*BEGIN SYNTAX inertial_domain_box
+xmin			float		!
+xmax			float		!
+ymin			float		!
+ymax			float		!
+zmin			float		!
+zmax			float		!
+ndata			int		!
+point_number		int		!
+inertia			float_vector	!
+refgravity_center	float_vector	!
+rotation		float_vector
+eigenvalues		float_vector
+tolerence_margin	float
+gravity_center_attribute        string
+*END
+
+*BEGIN SYNTAX null_domain
+*END
+
+*BEGIN SYNTAX domain_rbf
+ndata			int		!
+threshold		float		!
+learn_threshold		float		!
+sigma			float		!
+gauss_centers		float_vector
+*END

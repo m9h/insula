@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d length="5">
+  <s name="axes_orientation">LPI</s>
+  <n name="direct_referential">0</n>
+  <n name="dimension_count">3</n>
+  <s name="name">Talairach-AC/PC-Anatomist</s>
+  <s name="uuid">a2a820ac-a686-461e-bcf8-856400740a6c</s>
+</d>
+</minf>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<xhtml>
+  <head>
+    <title>Recognition and morphometry Models 3.0 (2000-2001)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+<h1>Recognition and morphometry Models 3.0 (2011)</h1>
+
+<h2>Models evolution:</h2>
+
+<p>
+The 2011 ANN models are a just mode modern variant of the older 2000-2001 models, which differ on the following points:
+
+<li>They are using SVR models (regression SVM, support vector machines) instead of MLP (multi-layer perceptrons), which provide sensibly the same performance but are easier to handle in our machine learning framework.
+</li>
+<li>They have been trained on the <b>2008 learning database</b> of 62 subjects, which means that they are <b>more accurate</b>, and follow the <b>new sulci nomenclature</b>, like the SPAM-based recognition models.
+</li>
+</p>
+
+<p>In other respects, they are similar to the <a href="../../../../models_2001/discriminative_models/3.0/Lfolds_noroots/Lfolds_noroots.html">2000-2001 models</a>.
+</p>
+
+<h2>Performance</h2>
+
+<p>The current models perform about 5% better than the older ones. Here are the error rates estimated via a Leave-One-Out cross-validation:
+<table border="1">
+  <thead>
+    <tr>
+      <th>Side:</th> <th>SI error:</th> <th>Mass error:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>left</td>
+      <td>17.11 ± 4.31</td>
+      <td>19.26 ± 4.53</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>16.86 ± 4.78</td>
+      <td>19.02 ± 4.89</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+<h2>Short description of the descriptors for sulci:</h2>
+
+<p>
+The descriptors are the same as the <a href="../../../../models_2001/discriminative_models/3.0/Lfolds_noroots/Lfolds_noroots.html">older models</a>.
+</p>
+
+</xhtml>

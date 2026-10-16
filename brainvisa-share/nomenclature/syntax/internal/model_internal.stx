@@ -1,0 +1,248 @@
+*BEGIN SYNTAX model_graph
+model_finder		string
+filename_base		string
+default_model_file	string
+type.tri		string
+fold.tri		string
+Tmtktri_filename	int_vector
+model_file		string
+model			model_p
+fakeRel_model		fakerel_model_p
+nbase_graphs		int
+
+# internal
+model_finder_ptr	modelfinder_p
+default_model		model_p
+*END
+
+*BEGIN SYNTAX model_node
+model_file		string	!
+domain_file		string	!
+label			string	!
+Tmtktri_filename	string
+occurence_count		int
+noinstance_count	int
+
+# internal
+domain			domain_p
+model			model_p
+*END
+
+
+*BEGIN SYNTAX model_edge
+model_file		string
+label1			string
+label2			string
+occurence_count		int
+noinstance_count	int
+
+#internal
+model			model_p
+*END
+
+
+# sous-noeuds
+
+# Domaines
+
+*BEGIN SYNTAX domain_box
+ndata	int
+xmax	float
+xmin	float
+ymax	float
+ymin	float
+zmax	float
+zmin	float
+*END
+
+*BEGIN SYNTAX domain_box2
+ndata	int
+xmax	float
+xmin	float
+ymax	float
+ymin	float
+zmax	float
+zmin	float
+*END
+
+*BEGIN SYNTAX inertial_domain_box
+xmin		float
+xmax		float
+ymin		float
+ymax		float
+zmin		float
+zmax		float
+ndata		int
+point_number	int
+inertia		float_vector
+refgravity_center	float_vector
+rotation	float_vector
+eigenvalues	float_vector
+*END
+
+*BEGIN SYNTAX null_domain
+*END
+
+
+# Modeles adaptatifs
+
+*BEGIN SYNTAX ad_tree
+mix_method		string
+void_label		string
+significant_labels	string
+nb_learn_data		int
+*END
+
+*BEGIN SYNTAX ad_leaf
+work			string
+eval			string
+workmemo		string
+evalmemo		string
+void_label		string
+significant_labels	string
+nb_learn_data		int
+learn_state		int
+nb_learn_data_memo	int
+*END
+
+*BEGIN SYNTAX top_adaptive
+void_label		string
+significant_labels	string
+nb_learn_data		int
+weight			float
+*END
+
+*BEGIN SYNTAX null_model
+*END
+
+*BEGIN SYNTAX const_model
+value			float !
+*END
+
+*BEGIN SYNTAX fake_relation
+*END
+
+
+# Experts SubAdaptive
+
+*BEGIN SYNTAX sub_ad_mlp
+name		string
+usedinputs	int_vector
+net		string
+nstats		int
+sigma		float_vector
+mean		float_vector
+eta		float
+min_out		float
+max_out		float
+error_rate	float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+*END
+
+*BEGIN SYNTAX sub_ad_gauss
+name			string		!
+usedinputs		int_vector	!
+nstats			int		!
+sigma			float_vector	!
+mean			float_vector	!
+error_rate		float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+
+#ninputs			int		!
+#ngauss				int		!
+gauss_weights			float_vector	!
+gauss_sigma			float_vector	!
+gauss_centers			float_vector	!
+gauss_samesigma			int
+etaW				float		!
+etaC				float
+etaS				float
+default_value			float
+gauss_learn_func		string
+*END
+
+*BEGIN SYNTAX sub_ad_svm
+name		string
+usedinputs	int_vector
+net		string
+nstats		int
+sigma		float_vector
+mean		float_vector
+min_out		float
+max_out		float
+error_rate	float
+gen_error_rate			float
+global_min_gen_error		float
+global_max_gen_error		float
+local_min_gen_error		float
+local_max_gen_error		float
+gen_good_error_rate		float
+global_good_min_gen_error	float
+global_good_max_gen_error	float
+local_good_min_gen_error	float
+local_good_max_gen_error	float
+app_good_error_rate		float
+steps_since_gen_min		int
+svm_mode			string
+quality_slope			float
+quality_shifted_bad_output	int
+*END
+
+
+# CliqueDescr
+
+*BEGIN SYNTAX fold_descriptor
+nstats_normal		int
+normal			float_vector
+limit_size		float
+*END
+
+*BEGIN SYNTAX fold_descriptor2
+nstats_normal		int
+normal			float_vector
+e1e2			float_vector
+nstats_E1E2		int
+direction		float_vector
+nstats_dir		int
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor
+*END
+
+*BEGIN SYNTAX inter_fold_descriptor2
+*END
+
+*BEGIN SYNTAX brain_junction_descriptor
+*END
+
+
+
+# Mixers
+
+
+*BEGIN SYNTAX mean_mixer
+*END
+
+

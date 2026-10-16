@@ -1,0 +1,29 @@
+*BEGIN SYNTAX hierarchy
+graph_syntax	string	!
+*END
+
+*BEGIN SYNTAX fold_name
+name		string	!
+color		int_vector
+label    string
+*END
+
+*BEGIN SYNTAX bloblabel_name
+name		string	!
+color		int_vector
+label    string
+blob		string
+*END
+
+
+*BEGIN SYNTAX sTree
+name		string	!
+color		int_vector
+label    	string
+parallel_coord	float
+meridian_coord	float
+comments	string
+confidence	int
+type		string
+*END
+

@@ -1,0 +1,12 @@
+attributes = {
+	'format' : 'database_1.0',
+	'labels' : ['valid', 'extremitiesValid', 'extremity1x', 'extremity1y', 'extremity1z', 'extremity2x', 'extremity2y', 'extremity2z', 'gravityCenter_x', 'gravityCenter_y', 'gravityCenter_z', 'normalValid', 'normal_x', 'normal_y', 'normal_z', 'direction_x', 'direction_y', 'direction_z', 'volume', 'geodesicDepthMax', 'geodesicDepthMin', 'connectedComponentsAllRels', 'connectedComponents', 'pureCortical', 'distanceBetweenComponentsMax', 'plisDePassage', 'hullJunctionsSize', 'Potential', 'Class', 'cycle'],
+	'types' : ['double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'double', 'string'],
+	'X' : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
+	'Y' : [27, 28],
+	'INF' : [29],
+	'size' : 539,
+	'dims' : 30,
+	'data' : '/home/dr144257/models_db/Rmodel.data/adap/S.Pa.sup._right_svm1.data',
+	'sigraph' : {'cycles': 1, 'split': 487},
+}

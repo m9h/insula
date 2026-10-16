@@ -1,0 +1,38 @@
+
+*BEGIN SYNTAX AttributedHeader
+boundingbox_min		float_vector
+boundingbox_max		float_vector
+texture_min		float
+texture_max		float
+voxel_size		float_vector
+
+file_type		string
+data_type		string
+ascii			int
+byte_swapping		int
+#spm_normalized		bool
+origin			float_vector
+transfer_syntax		string
+manufacturer		string
+modality		string
+patient_id		string
+study_id		string
+series_number		int
+volume_dimension	int_vector
+time_resolution		float
+bits_allocated		int
+te			float
+tr			float
+slice_thickness		float
+inter_slices		float
+nb_t_pos		int
+start_time		int_vector
+duration_time		int_vector
+isotope			string
+isotope_halflife	float
+image_unit		string
+process_code		int
+process_list		string
+b_value			float
+flip_angle		float
+*END

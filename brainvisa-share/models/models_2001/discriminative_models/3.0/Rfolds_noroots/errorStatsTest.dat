@@ -1,0 +1,1917 @@
+# tree 1.0
+
+*BEGIN TREE siErrorStats
+graphs_count 5
+
+*BEGIN TREE folds
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.s.P._right
+max_added          268.066
+max_error          1
+max_rejected       304.101
+mean_added         105.943
+mean_common        285.838
+mean_error         0.349275
+mean_rejected      78.9256
+min_common         0
+occurence_count    5
+pmass_added        0.290443
+pmass_error        0.392747
+pmass_rejected     0.216375
+sigma_added        129.769
+sigma_common       200.796
+sigma_error        0.375924
+sigma_rejected     115.562
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              unknown
+max_added          5347.26
+max_error          0.568603
+max_rejected       4962.31
+mean_added         2692.27
+mean_common        6545.38
+mean_error         0.462939
+mean_rejected      3259.02
+min_common         4910.36
+occurence_count    5
+pmass_added        0.274598
+pmass_error        0.47623
+pmass_rejected     0.332404
+sigma_added        1471.09
+sigma_common       1220.08
+sigma_error        0.0793292
+sigma_rejected     989.941
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.F.inf.post._right
+max_added          328.272
+max_error          1
+max_rejected       672.363
+mean_added         65.6544
+mean_common        235.494
+mean_error         0.299457
+mean_rejected      169.857
+min_common         0
+occurence_count    5
+pmass_added        0.161969
+pmass_error        0.500019
+pmass_rejected     0.419038
+sigma_added        131.309
+sigma_common       139.627
+sigma_error        0.39973
+sigma_rejected     260.429
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.F.polaire.tr._right
+max_added          341.016
+max_error          1
+max_rejected       117.773
+mean_added         118.037
+mean_common        173.197
+mean_error         0.531129
+mean_rejected      89.6662
+min_common         0
+occurence_count    5
+pmass_added        0.449044
+pmass_error        0.545296
+pmass_rejected     0.341113
+sigma_added        121.783
+sigma_common       108.78
+sigma_error        0.262403
+sigma_rejected     21.9089
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.Call._right
+max_added          186.24
+max_error          0.562069
+max_rejected       300.498
+mean_added         57.1816
+mean_common        335.953
+mean_error         0.386154
+mean_rejected      157.43
+min_common         223.242
+occurence_count    5
+pmass_added        0.115897
+pmass_error        0.389802
+pmass_rejected     0.319082
+sigma_added        71.0951
+sigma_common       73.8171
+sigma_error        0.149866
+sigma_rejected     115.419
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.T.s._right
+max_added          160.84
+max_error          0.254027
+max_rejected       319.043
+mean_added         59.713
+mean_common        1583.21
+mean_error         0.119475
+mean_rejected      120.445
+min_common         890.332
+occurence_count    5
+pmass_added        0.0350499
+pmass_error        0.102167
+pmass_rejected     0.0706981
+sigma_added        51.5101
+sigma_common       677.203
+sigma_error        0.0797361
+sigma_rejected     119.14
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.F.inf.moy._right
+max_added          776.514
+max_error          1
+max_rejected       233.35
+mean_added         227.391
+mean_common        186.258
+mean_error         0.576498
+mean_rejected      102.885
+min_common         0
+occurence_count    5
+pmass_added        0.786431
+pmass_error        0.639408
+pmass_rejected     0.355827
+sigma_added        288.353
+sigma_common       185.076
+sigma_error        0.47266
+sigma_rejected     91.413
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              F.I.P.r.int.2_right
+max_added          367.91
+max_error          1
+max_rejected       116.895
+mean_added         87.293
+mean_common        48.498
+mean_error         0.503907
+mean_rejected      57.1994
+min_common         0
+occurence_count    5
+pmass_added        0.825877
+pmass_error        0.748703
+pmass_rejected     0.541162
+sigma_added        142.799
+sigma_common       47.5647
+sigma_error        0.447282
+sigma_rejected     49.2241
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.I.P.Po.C.sup._right
+max_added          1059.96
+max_error          1
+max_rejected       527.344
+mean_added         455.044
+mean_common        276.187
+mean_error         0.558657
+mean_rejected      200.215
+min_common         0
+occurence_count    5
+pmass_added        0.955168
+pmass_error        0.703485
+pmass_rejected     0.420264
+sigma_added        398.869
+sigma_common       284.486
+sigma_error        0.393265
+sigma_rejected     221.907
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.I.P.Horiz._right
+max_added          1237.41
+max_error          1
+max_rejected       757.53
+mean_added         543.147
+mean_common        360.369
+mean_error         0.627056
+mean_rejected      270.264
+min_common         0
+occurence_count    5
+pmass_added        0.861272
+pmass_error        0.692984
+pmass_rejected     0.42856
+sigma_added        392.29
+sigma_common       208.888
+sigma_error        0.216724
+sigma_rejected     290.374
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.I.P.r.trans._right
+max_added          43.066
+max_error          1
+max_rejected       225.44
+mean_added         27.0878
+mean_common        10.2832
+mean_error         0.8
+mean_rejected      103.816
+min_common         0
+occurence_count    4
+pmass_added        0.237405
+pmass_error        0.927166
+pmass_rejected     0.909875
+sigma_added        15.579
+sigma_common       20.5664
+sigma_error        0.4
+sigma_rejected     89.5016
+total_errors_count 4
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.Cal.ant.-Sc.Cal._right
+max_added          287.402
+max_error          0.379763
+max_rejected       338.203
+mean_added         144.545
+mean_common        920.601
+mean_error         0.23341
+mean_rejected      113.695
+min_common         457.91
+occurence_count    5
+pmass_added        0.139752
+pmass_error        0.219063
+pmass_rejected     0.109925
+sigma_added        87.7103
+sigma_common       338.654
+sigma_error        0.115122
+sigma_rejected     143.37
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.F.sup.moy._right
+max_added          279.492
+max_error          1
+max_rejected       425.391
+mean_added         70.5234
+mean_common        269.437
+mean_error         0.308549
+mean_rejected      118.459
+min_common         0
+occurence_count    5
+pmass_added        0.18181
+pmass_error        0.412248
+pmass_rejected     0.305388
+sigma_added        105.766
+sigma_common       160.103
+sigma_error        0.363337
+sigma_rejected     160.567
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.F.sup.ant._right
+max_added          151.787
+max_error          1
+max_rejected       333.985
+mean_added         76.3066
+mean_common        163.494
+mean_error         0.504264
+mean_rejected      128.725
+min_common         0
+occurence_count    5
+pmass_added        0.261128
+pmass_error        0.556356
+pmass_rejected     0.440508
+sigma_added        53.0825
+sigma_common       165.644
+sigma_error        0.406077
+sigma_rejected     143.25
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.L.r.retroC.tr._right
+max_added          125.684
+max_error          1
+max_rejected       396.475
+mean_added         43.1896
+mean_common        104.045
+mean_error         0.568326
+mean_rejected      115.067
+min_common         0
+occurence_count    5
+pmass_added        0.197112
+pmass_error        0.603338
+pmass_rejected     0.525151
+sigma_added        43.3215
+sigma_common       109.799
+sigma_error        0.441752
+sigma_rejected     146.923
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.T.s.ter.asc.post._right
+max_added          1720.46
+max_error          1
+max_rejected       367.91
+mean_added         604.301
+mean_common        125.367
+mean_error         0.816534
+mean_rejected      155.689
+min_common         0
+occurence_count    4
+pmass_added        2.1501
+pmass_error        0.858399
+pmass_rejected     0.553943
+sigma_added        583.647
+sigma_common       195.601
+sigma_error        0.238085
+sigma_rejected     169.928
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.T.s.ter.asc.ant._right
+max_added          929.004
+max_error          1
+max_rejected       307.354
+mean_added         229.236
+mean_common        251.508
+mean_error         0.50604
+mean_rejected      61.4708
+min_common         0
+occurence_count    3
+pmass_added        0.732435
+pmass_error        0.536147
+pmass_rejected     0.196406
+sigma_added        354.94
+sigma_common       212.453
+sigma_error        0.447377
+sigma_rejected     122.942
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.C._right
+max_added          88.33
+max_error          0.366787
+max_rejected       411.328
+mean_added         28.8106
+mean_common        1178.37
+mean_error         0.0953413
+mean_rejected      94.1308
+min_common         770.801
+occurence_count    5
+pmass_added        0.022641
+pmass_error        0.0944753
+pmass_rejected     0.0739733
+sigma_added        32.5911
+sigma_common       250.765
+sigma_error        0.13837
+sigma_rejected     159.179
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.I.P.ParO._right
+max_added          597.218
+max_error          1
+max_rejected       986.134
+mean_added         396.915
+mean_common        284.256
+mean_error         0.640865
+mean_rejected      264.902
+min_common         0
+occurence_count    5
+pmass_added        0.722769
+pmass_error        0.699541
+pmass_rejected     0.482379
+sigma_added        161.768
+sigma_common       266.596
+sigma_error        0.321503
+sigma_rejected     383.691
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.F.sup.post._right
+max_added          90.527
+max_error          1
+max_rejected       533.496
+mean_added         18.1054
+mean_common        279.756
+mean_error         0.233784
+mean_rejected      121.324
+min_common         0
+occurence_count    5
+pmass_added        0.0451416
+pmass_error        0.33262
+pmass_rejected     0.302494
+sigma_added        36.2108
+sigma_common       147.332
+sigma_error        0.384966
+sigma_rejected     206.739
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              F.C.L.r.diag._right
+max_added          75.147
+max_error          1
+max_rejected       214.893
+mean_added         28.5998
+mean_common        88.6464
+mean_error         0.576174
+mean_rejected      124.049
+min_common         0
+occurence_count    5
+pmass_added        0.134464
+pmass_error        0.632623
+pmass_rejected     0.583224
+sigma_added        27.8465
+sigma_common       96.6419
+sigma_error        0.472451
+sigma_rejected     101.394
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.C.L.r.temp.t._right
+max_added          131.395
+max_error          1
+max_rejected       69.609
+mean_added         65.408
+mean_common        31.166
+mean_error         0.725102
+mean_rejected      13.9218
+min_common         0
+occurence_count    3
+pmass_added        1.45068
+pmass_error        0.717944
+pmass_rejected     0.308771
+sigma_added        39.3129
+sigma_common       34.2665
+sigma_error        0.252045
+sigma_rejected     27.8436
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.M.para.AMS.r.asc._right
+max_added          1336.82
+max_error          0.905983
+max_rejected       444.463
+mean_added         279.159
+mean_common        655.33
+mean_error         0.312732
+mean_rejected      140.098
+min_common         145.02
+occurence_count    5
+pmass_added        0.350954
+pmass_error        0.390156
+pmass_rejected     0.176129
+sigma_added        528.996
+sigma_common       337.889
+sigma_error        0.341918
+sigma_rejected     168.084
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.F.inter.post._right
+max_added          414.844
+max_error          1
+max_rejected       239.941
+mean_added         178.418
+mean_common        159.416
+mean_error         0.679893
+mean_rejected      138.357
+min_common         0
+occurence_count    5
+pmass_added        0.599174
+pmass_error        0.665227
+pmass_rejected     0.46464
+sigma_added        144.472
+sigma_common       171.62
+sigma_error        0.348309
+sigma_rejected     113.282
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.Pa.t._right
+max_added          145.107
+max_error          1
+max_rejected       272.637
+mean_added         80.5428
+mean_common        101.461
+mean_error         0.831818
+mean_rejected      163.037
+min_common         0
+occurence_count    5
+pmass_added        0.304512
+pmass_error        0.705945
+pmass_rejected     0.616402
+sigma_added        53.96
+sigma_common       202.922
+sigma_error        0.336363
+sigma_rejected     84.3325
+total_errors_count 4
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.C.L.p._right
+max_added          396.475
+max_error          0.351054
+max_rejected       572.168
+mean_added         253.178
+mean_common        1433.29
+mean_error         0.206943
+mean_rejected      159.539
+min_common         1054.78
+occurence_count    5
+pmass_added        0.158949
+pmass_error        0.223573
+pmass_rejected     0.100161
+sigma_added        123.208
+sigma_common       302.629
+sigma_error        0.0772902
+sigma_rejected     212.454
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.M.sup.asc.inf._right
+max_added          535.254
+max_error          1
+max_rejected       326.953
+mean_added         253.283
+mean_common        566.244
+mean_error         0.356371
+mean_rejected      65.3906
+min_common         0
+occurence_count    5
+pmass_added        0.400996
+pmass_error        0.360117
+pmass_rejected     0.103526
+sigma_added        184.807
+sigma_common       299.513
+sigma_error        0.345782
+sigma_rejected     130.781
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.T.s.horiz._right
+max_added          229.131
+max_error          1
+max_rejected       1212.89
+mean_added         77.5372
+mean_common        34.5234
+mean_error         0.753489
+mean_rejected      259.98
+min_common         0
+occurence_count    3
+pmass_added        0.263281
+pmass_error        0.907205
+pmass_rejected     0.882774
+sigma_added        87.1335
+sigma_common       56.789
+sigma_error        0.387361
+sigma_rejected     477.645
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.Or._right
+max_added          164.355
+max_error          0.711287
+max_rejected       309.638
+mean_added         64.5116
+mean_common        333.175
+mean_error         0.321366
+mean_rejected      103.482
+min_common         125.683
+occurence_count    5
+pmass_added        0.14774
+pmass_error        0.335204
+pmass_rejected     0.236987
+sigma_added        79.0342
+sigma_common       132.979
+sigma_error        0.27948
+sigma_rejected     124.046
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       1
+graphs_count       1
+label              S.p.Olf.ant._right
+max_added          0
+max_error          1
+max_rejected       35.42
+mean_added         0
+mean_common        0
+mean_error         0.2
+mean_rejected      7.084
+min_common         0
+occurence_count    1
+pmass_added        0
+pmass_error        1
+pmass_rejected     1
+sigma_added        0
+sigma_common       0
+sigma_error        0.4
+sigma_rejected     14.168
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.O.p._right
+max_added          165.674
+max_error          1
+max_rejected       61.699
+mean_added         36.2286
+mean_common        106.646
+mean_error         0.344361
+mean_rejected      12.3398
+min_common         0
+occurence_count    4
+pmass_added        0.304477
+pmass_error        0.312911
+pmass_rejected     0.103708
+sigma_added        64.9994
+sigma_common       84.9491
+sigma_error        0.379726
+sigma_rejected     24.6796
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.Cu._right
+max_added          223.243
+max_error          1
+max_rejected       194.238
+mean_added         119.338
+mean_common        130.096
+mean_error         0.648721
+mean_rejected      85.2892
+min_common         0
+occurence_count    4
+pmass_added        0.554069
+pmass_error        0.611333
+pmass_rejected     0.395985
+sigma_added        78.831
+sigma_common       115.887
+sigma_error        0.323395
+sigma_rejected     63.9592
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.Olf._right
+max_added          153.72
+max_error          0.518207
+max_rejected       25.137
+mean_added         43.9276
+mean_common        295.418
+mean_error         0.13559
+mean_rejected      5.0274
+min_common         166.289
+occurence_count    5
+pmass_added        0.146208
+pmass_error        0.142157
+pmass_rejected     0.0167332
+sigma_added        60.5423
+sigma_common       70.6144
+sigma_error        0.201064
+sigma_rejected     10.0548
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.Li._right
+max_added          225.087
+max_error          1
+max_rejected       142.382
+mean_added         65.5838
+mean_common        140.678
+mean_error         0.473762
+mean_rejected      80.7536
+min_common         0
+occurence_count    5
+pmass_added        0.296181
+pmass_error        0.50986
+pmass_rejected     0.364689
+sigma_added        89.143
+sigma_common       74.2827
+sigma_error        0.343412
+sigma_rejected     50.3105
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.Rh._right
+max_added          245.215
+max_error          1
+max_rejected       137.109
+mean_added         127.283
+mean_common        99.0174
+mean_error         0.624786
+mean_rejected      47.7246
+min_common         0
+occurence_count    5
+pmass_added        0.867396
+pmass_error        0.638656
+pmass_rejected     0.325228
+sigma_added        94.8918
+sigma_common       121.113
+sigma_error        0.377601
+sigma_rejected     59.5244
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.C.L.a._right
+max_added          392.871
+max_error          1
+max_rejected       558.809
+mean_added         218.549
+mean_common        524.707
+mean_error         0.442138
+mean_rejected      149.801
+min_common         0
+occurence_count    5
+pmass_added        0.324012
+pmass_error        0.412459
+pmass_rejected     0.222089
+sigma_added        96.086
+sigma_common       354.265
+sigma_error        0.310653
+sigma_rejected     210.385
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.Coll.r.ter._right
+max_added          304.982
+max_error          1
+max_rejected       465.03
+mean_added         141.557
+mean_common        202.482
+mean_error         0.662357
+mean_rejected      243.246
+min_common         0
+occurence_count    5
+pmass_added        0.317585
+pmass_error        0.655223
+pmass_rejected     0.545727
+sigma_added        98.486
+sigma_common       167.513
+sigma_error        0.307052
+sigma_rejected     133.185
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              F.Coll.R.PH._right
+max_added          789.52
+max_error          1
+max_rejected       587.988
+mean_added         301.64
+mean_common        359.93
+mean_error         0.549891
+mean_rejected      235.529
+min_common         0
+occurence_count    5
+pmass_added        0.506568
+pmass_error        0.598785
+pmass_rejected     0.395542
+sigma_added        258.894
+sigma_common       285.176
+sigma_error        0.348912
+sigma_rejected     234.015
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.T.i.ant.R.ant._right
+max_added          142.383
+max_error          0.419725
+max_rejected       241.26
+mean_added         35.6308
+mean_common        304.752
+mean_error         0.173938
+mean_rejected      48.252
+min_common         243.369
+occurence_count    5
+pmass_added        0.100936
+pmass_error        0.21584
+pmass_rejected     0.13669
+sigma_added        55.1447
+sigma_common       45.7167
+sigma_error        0.175748
+sigma_rejected     96.504
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.O.T.lat.ant._right
+max_added          111.972
+max_error          0.429688
+max_rejected       76.553
+mean_added         59.0448
+mean_common        382.342
+mean_error         0.197297
+mean_rejected      28.7578
+min_common         250.224
+occurence_count    5
+pmass_added        0.143626
+pmass_error        0.186757
+pmass_rejected     0.0699533
+sigma_added        49.1782
+sigma_common       110.912
+sigma_error        0.147593
+sigma_rejected     28.3103
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.T.pol._right
+max_added          160.84
+max_error          0.843372
+max_rejected       283.447
+mean_added         53.1914
+mean_common        161.367
+mean_error         0.546972
+mean_rejected      138.533
+min_common         25.137
+occurence_count    5
+pmass_added        0.177364
+pmass_error        0.542988
+pmass_rejected     0.461931
+sigma_added        59.7246
+sigma_common       124.77
+sigma_error        0.257884
+sigma_rejected     90.1026
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.Pe.C.median._right
+max_added          115.049
+max_error          1
+max_rejected       314.209
+mean_added         35.7538
+mean_common        44.5606
+mean_error         0.794911
+mean_rejected      150.943
+min_common         0
+occurence_count    5
+pmass_added        0.18288
+pmass_error        0.807312
+pmass_rejected     0.772073
+sigma_added        43.4677
+sigma_common       54.6722
+sigma_error        0.300223
+sigma_rejected     129.565
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.F.median._right
+max_added          175.957
+max_error          0.898738
+max_rejected       103.711
+mean_added         121.922
+mean_common        119.074
+mean_error         0.616532
+mean_rejected      42.5038
+min_common         14.062
+occurence_count    5
+pmass_added        0.75457
+pmass_error        0.579985
+pmass_rejected     0.263055
+sigma_added        65.0297
+sigma_common       62.2046
+sigma_error        0.170474
+sigma_rejected     39.0991
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.Pe.C.marginal._right
+max_added          289.072
+max_error          1
+max_rejected       154.687
+mean_added         103.166
+mean_common        103.148
+mean_error         0.433696
+mean_rejected      64.9862
+min_common         0
+occurence_count    5
+pmass_added        0.613592
+pmass_error        0.6198
+pmass_rejected     0.386513
+sigma_added        127.879
+sigma_common       84.2472
+sigma_error        0.46646
+sigma_rejected     66.6995
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.Pa.int._right
+max_added          322.558
+max_error          1
+max_rejected       390.234
+mean_added         125.595
+mean_common        145.037
+mean_error         0.614399
+mean_rejected      156.779
+min_common         0
+occurence_count    5
+pmass_added        0.416132
+pmass_error        0.660662
+pmass_rejected     0.519452
+sigma_added        117.659
+sigma_common       121.395
+sigma_error        0.310233
+sigma_rejected     146.704
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.I.P.Po.C.inf._right
+max_added          231.152
+max_error          1
+max_rejected       1025.68
+mean_added         86.6074
+mean_common        314.402
+mean_error         0.552694
+mean_rejected      432.509
+min_common         0
+occurence_count    5
+pmass_added        0.115954
+pmass_error        0.622801
+pmass_rejected     0.579064
+sigma_added        81.2957
+sigma_common       307.81
+sigma_error        0.392005
+sigma_rejected     405.808
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.Pe.C.inter._right
+max_added          382.324
+max_error          0.875883
+max_rejected       762.013
+mean_added         99.1408
+mean_common        353.461
+mean_error         0.348474
+mean_rejected      198.035
+min_common         110.742
+occurence_count    5
+pmass_added        0.179767
+pmass_error        0.456746
+pmass_rejected     0.359087
+sigma_added        148.245
+sigma_common       199.596
+sigma_error        0.317866
+sigma_rejected     291.803
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.I.P.r.int.1_right
+max_added          42.188
+max_error          1
+max_rejected       139.746
+mean_added         13.8516
+mean_common        85.8164
+mean_error         0.387295
+mean_rejected      43.7872
+min_common         0
+occurence_count    5
+pmass_added        0.106877
+pmass_error        0.40179
+pmass_rejected     0.337855
+sigma_added        17.6254
+sigma_common       58.9956
+sigma_error        0.344011
+sigma_rejected     51.4409
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.F.inter.ant._right
+max_added          337.5
+max_error          0.542858
+max_rejected       16.699
+mean_added         137.813
+mean_common        319.518
+mean_error         0.229255
+mean_rejected      3.3398
+min_common         274.218
+occurence_count    5
+pmass_added        0.426853
+pmass_error        0.306407
+pmass_rejected     0.0103445
+sigma_added        155.428
+sigma_common       34.2135
+sigma_error        0.239423
+sigma_rejected     6.6796
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.P.O._right
+max_added          843.75
+max_error          1
+max_rejected       1082.37
+mean_added         291.99
+mean_common        485.279
+mean_error         0.448438
+mean_rejected      417.533
+min_common         0
+occurence_count    5
+pmass_added        0.323423
+pmass_error        0.593841
+pmass_rejected     0.46248
+sigma_added        324.328
+sigma_common       398.461
+sigma_error        0.455698
+sigma_rejected     476.7
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.L.r.sc.ant._right
+max_added          78.223
+max_error          1
+max_rejected       88.33
+mean_added         27.7208
+mean_common        23.7304
+mean_error         0.71356
+mean_rejected      46.9512
+min_common         0
+occurence_count    4
+pmass_added        0.392193
+pmass_error        0.758843
+pmass_rejected     0.664263
+sigma_added        28.7505
+sigma_common       29.4911
+sigma_error        0.394096
+sigma_rejected     39.3891
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.intraCing._right
+max_added          346.201
+max_error          1
+max_rejected       81.211
+mean_added         89.8416
+mean_common        0
+mean_error         1
+mean_rejected      16.2422
+min_common         0
+occurence_count    1
+pmass_added        5.53137
+pmass_error        1
+pmass_rejected     1
+sigma_added        128.367
+sigma_common       0
+sigma_error        0
+sigma_rejected     32.4844
+total_errors_count 5
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       4
+label              F.C.L.r.sc.post._right
+max_added          70.84
+max_error          1
+max_rejected       78.223
+mean_added         43.6288
+mean_common        16.9102
+mean_error         0.691176
+mean_rejected      15.6446
+min_common         0
+occurence_count    2
+pmass_added        1.34016
+pmass_error        0.778034
+pmass_rejected     0.480562
+sigma_added        24.8708
+sigma_common       33.8204
+sigma_error        0.404773
+sigma_rejected     31.2892
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              F.C.L.r.ter.desc._right
+max_added          16.436
+max_error          1
+max_rejected       33.398
+mean_added         3.2872
+mean_common        52.5412
+mean_error         0.2517
+mean_rejected      6.6796
+min_common         0
+occurence_count    4
+pmass_added        0.0555075
+pmass_error        0.159448
+pmass_rejected     0.112791
+sigma_added        6.5744
+sigma_common       34.6992
+sigma_error        0.387313
+sigma_rejected     13.3592
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.R.sup._right
+max_added          53.701
+max_error          1
+max_rejected       185.625
+mean_added         25.2598
+mean_common        213.399
+mean_error         0.467041
+mean_rejected      76.8866
+min_common         0
+occurence_count    5
+pmass_added        0.0870172
+pmass_error        0.323714
+pmass_rejected     0.264866
+sigma_added        22.1918
+sigma_common       247.859
+sigma_error        0.446021
+sigma_rejected     86.9748
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.L.r.ant._right
+max_added          483.838
+max_error          1
+max_rejected       190.811
+mean_added         139.289
+mean_common        39.0586
+mean_error         0.8
+mean_rejected      98.1564
+min_common         0
+occurence_count    5
+pmass_added        1.01511
+pmass_error        0.858741
+pmass_rejected     0.715347
+sigma_added        178.049
+sigma_common       78.1172
+sigma_error        0.4
+sigma_rejected     70.981
+total_errors_count 4
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.Or.l._right
+max_added          115.137
+max_error          1
+max_rejected       101.689
+mean_added         34.6816
+mean_common        34.9628
+mean_error         0.51788
+mean_rejected      20.3378
+min_common         0
+occurence_count    3
+pmass_added        0.627147
+pmass_error        0.611448
+pmass_rejected     0.367768
+sigma_added        46.1259
+sigma_common       30.9085
+sigma_error        0.448641
+sigma_rejected     40.6756
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.T.i.ant.R.moy._right
+max_added          86.836
+max_error          0.476191
+max_rejected       339.346
+mean_added         29.4786
+mean_common        322.646
+mean_error         0.121673
+mean_rejected      67.8692
+min_common         140.625
+occurence_count    5
+pmass_added        0.0754864
+pmass_error        0.231784
+pmass_rejected     0.173794
+sigma_added        37.0478
+sigma_common       158.538
+sigma_error        0.184503
+sigma_rejected     135.738
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       5
+graphs_count       5
+label              S.T.i.post._right
+max_added          485.595
+max_error          1
+max_rejected       499.219
+mean_added         294.241
+mean_common        358.489
+mean_error         0.573361
+mean_rejected      167.309
+min_common         0
+occurence_count    5
+pmass_added        0.559609
+pmass_error        0.562839
+pmass_rejected     0.3182
+sigma_added        156.914
+sigma_common       199.32
+sigma_error        0.238418
+sigma_rejected     183.304
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.F.marginal._right
+max_added          35.596
+max_error          0.536887
+max_rejected       230.274
+mean_added         7.1192
+mean_common        340.594
+mean_error         0.119936
+mean_rejected      46.0548
+min_common         172.09
+occurence_count    5
+pmass_added        0.0184126
+pmass_error        0.135039
+pmass_rejected     0.119113
+sigma_added        14.2384
+sigma_common       138.533
+sigma_error        0.209889
+sigma_rejected     92.1096
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.F.inf.r.tr._right
+max_added          143.086
+max_error          1
+max_rejected       275.536
+mean_added         57.1288
+mean_common        19.2832
+mean_error         0.6
+mean_rejected      55.1072
+min_common         0
+occurence_count    3
+pmass_added        0.767959
+pmass_error        0.853381
+pmass_rejected     0.740784
+sigma_added        56.8613
+sigma_common       30.5457
+sigma_error        0.489898
+sigma_rejected     110.214
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.C.L.r.asc._right
+max_added          270.703
+max_error          1
+max_rejected       511.523
+mean_added         147.481
+mean_common        116.701
+mean_error         0.714019
+mean_rejected      227.25
+min_common         0
+occurence_count    5
+pmass_added        0.428784
+pmass_error        0.762528
+pmass_rejected     0.660704
+sigma_added        104.795
+sigma_common       160.046
+sigma_error        0.393927
+sigma_rejected     206.853
+total_errors_count 3
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.F.inf.ant._right
+max_added          375.292
+max_error          1
+max_rejected       265.43
+mean_added         130.166
+mean_common        156.99
+mean_error         0.4
+mean_rejected      69.4336
+min_common         0
+occurence_count    5
+pmass_added        0.574876
+pmass_error        0.559745
+pmass_rejected     0.306653
+sigma_added        162.511
+sigma_common       169.524
+sigma_error        0.489898
+sigma_rejected     102.985
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.F.orbitaire._right
+max_added          85.254
+max_error          1
+max_rejected       20.215
+mean_added         33.3984
+mean_common        72.1228
+mean_error         0.28
+mean_rejected      4.043
+min_common         0
+occurence_count    5
+pmass_added        0.438496
+pmass_error        0.34173
+pmass_rejected     0.0530816
+sigma_added        40.9196
+sigma_common       41.155
+sigma_error        0.391918
+sigma_rejected     8.086
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       1
+graphs_count       5
+label              S.R.inf._right
+max_added          202.061
+max_error          1
+max_rejected       130.517
+mean_added         40.4122
+mean_common        143.631
+mean_error         0.2
+mean_rejected      26.1034
+min_common         0
+occurence_count    5
+pmass_added        0.238091
+pmass_error        0.31652
+pmass_rejected     0.15379
+sigma_added        80.8244
+sigma_common       83.08
+sigma_error        0.4
+sigma_rejected     52.2068
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              F.Coll.r.IL._right
+max_added          133.594
+max_error          1
+max_rejected       214.805
+mean_added         75.621
+mean_common        111.023
+mean_error         0.523186
+mean_rejected      64.4062
+min_common         0
+occurence_count    5
+pmass_added        0.431062
+pmass_error        0.557765
+pmass_rejected     0.367134
+sigma_added        48.875
+sigma_common       139.479
+sigma_error        0.407054
+sigma_rejected     85.9044
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       1
+graphs_count       5
+label              S.Cal.externe._right
+max_added          55.986
+max_error          1
+max_rejected       0
+mean_added         11.1972
+mean_common        82.1076
+mean_error         0.2
+mean_rejected      0
+min_common         0
+occurence_count    4
+pmass_added        0.136372
+pmass_error        0.120007
+pmass_rejected     0
+sigma_added        22.3944
+sigma_common       41.5998
+sigma_error        0.4
+sigma_rejected     0
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.O.T.lat.post._right
+max_added          516.446
+max_error          1
+max_rejected       546.152
+mean_added         207
+mean_common        281.408
+mean_error         0.456753
+mean_rejected      188.947
+min_common         0
+occurence_count    5
+pmass_added        0.440093
+pmass_error        0.584549
+pmass_rejected     0.401712
+sigma_added        243.07
+sigma_common       244.624
+sigma_error        0.455501
+sigma_rejected     200.041
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       3
+label              F.Coll.R.tr.ant._right
+max_added          28.125
+max_error          1
+max_rejected       223.242
+mean_added         5.625
+mean_common        47.7246
+mean_error         0.247408
+mean_rejected      53.086
+min_common         0
+occurence_count    3
+pmass_added        0.0557977
+pmass_error        0.551611
+pmass_rejected     0.526591
+sigma_added        11.25
+sigma_common       59.3724
+sigma_error        0.387333
+sigma_rejected     86.6328
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       5
+label              S.p.C._right
+max_added          55.107
+max_error          1
+max_rejected       143.086
+mean_added         14.537
+mean_common        88.6112
+mean_error         0.4
+mean_rejected      44.4376
+min_common         0
+occurence_count    5
+pmass_added        0.109261
+pmass_error        0.399595
+pmass_rejected     0.333995
+sigma_added        21.3969
+sigma_common       95.8427
+sigma_error        0.489898
+sigma_rejected     58.0642
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.Po.C.sup._right
+max_added          59.765
+max_error          1
+max_rejected       175.957
+mean_added         11.953
+mean_common        188.947
+mean_error         0.353622
+mean_rejected      88.6994
+min_common         0
+occurence_count    5
+pmass_added        0.0430511
+pmass_error        0.347557
+pmass_rejected     0.319468
+sigma_added        23.906
+sigma_common       101.527
+sigma_error        0.367857
+sigma_rejected     75.3153
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       3
+graphs_count       5
+label              S.Pe.C.sup._right
+max_added          230.713
+max_error          1
+max_rejected       377.05
+mean_added         86.3612
+mean_common        231.416
+mean_error         0.407512
+mean_rejected      107.982
+min_common         0
+occurence_count    5
+pmass_added        0.254454
+pmass_error        0.456463
+pmass_rejected     0.318158
+sigma_added        106.184
+sigma_common       190.46
+sigma_error        0.483959
+sigma_rejected     145.485
+total_errors_count 2
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.Pa.sup._right
+max_added          111.973
+max_error          1
+max_rejected       121.113
+mean_added         61.7168
+mean_common        11.3378
+mean_error         0.8
+mean_rejected      39.0232
+min_common         0
+occurence_count    4
+pmass_added        1.22549
+pmass_error        0.89884
+pmass_rejected     0.774869
+sigma_added        37.979
+sigma_common       22.6756
+sigma_error        0.4
+sigma_rejected     44.3137
+total_errors_count 4
+
+*END
+
+*BEGIN TREE fold
+errors_count       0
+graphs_count       4
+label              F.C.M.r.AMS.ant._right
+max_added          0
+max_error          0
+max_rejected       0
+mean_added         0
+mean_common        44.3672
+mean_error         0
+mean_rejected      0
+min_common         28.037
+occurence_count    4
+pmass_added        0
+pmass_error        0
+pmass_rejected     0
+sigma_added        0
+sigma_common       42.1926
+sigma_error        0
+sigma_rejected     0
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       4
+graphs_count       5
+label              S.Pe.C.inf._right
+max_added          27.07
+max_error          0.316092
+max_rejected       145.02
+mean_added         5.414
+mean_common        390.199
+mean_error         0.112479
+mean_rejected      45.844
+min_common         313.77
+occurence_count    5
+pmass_added        0.0124162
+pmass_error        0.116111
+pmass_rejected     0.105136
+sigma_added        10.828
+sigma_common       106.351
+sigma_error        0.106709
+sigma_rejected     53.618
+total_errors_count 0
+
+*END
+
+*BEGIN TREE fold
+errors_count       1
+graphs_count       1
+label              S.F.pol.int._right
+max_added          0
+max_error          1
+max_rejected       146.25
+mean_added         0
+mean_common        0
+mean_error         0.2
+mean_rejected      29.25
+min_common         0
+occurence_count    1
+pmass_added        0
+pmass_error        1
+pmass_rejected     1
+sigma_added        0
+sigma_common       0
+sigma_error        0.4
+sigma_rejected     58.5
+total_errors_count 1
+
+*END
+
+*BEGIN TREE fold
+errors_count       2
+graphs_count       3
+label              S.C.LPC._right
+max_added          62.842
+max_error          1
+max_rejected       0
+mean_added         17.8418
+mean_common        7.3476
+mean_error         0.4
+mean_rejected      0
+min_common         0
+occurence_count    1
+pmass_added        2.42825
+pmass_error        0.708306
+pmass_rejected     0
+sigma_added        24.7091
+sigma_common       14.6952
+sigma_error        0.489898
+sigma_rejected     0
+total_errors_count 2
+
+*END
+
+*END
+
+*BEGIN TREE graphs
+
+*BEGIN TREE graph
+folds_count         69
+mass                39232.7
+name                Rchaos
+node_errors_count   99
+nodes_count         294
+partly_recogn_folds 55
+pmass_error         0.268544
+
+*END
+
+*BEGIN TREE graph
+folds_count         69
+mass                38045.6
+name                Rhyperion
+node_errors_count   69
+nodes_count         217
+partly_recogn_folds 55
+pmass_error         0.211214
+
+*END
+
+*BEGIN TREE graph
+folds_count         69
+mass                30324.9
+name                Risis
+node_errors_count   153
+nodes_count         309
+partly_recogn_folds 41
+pmass_error         0.397965
+
+*END
+
+*BEGIN TREE graph
+folds_count         69
+mass                46151.8
+name                Ranubis
+node_errors_count   140
+nodes_count         321
+partly_recogn_folds 53
+pmass_error         0.400891
+
+*END
+
+*BEGIN TREE graph
+folds_count         69
+mass                27462.8
+name                Rmoon
+node_errors_count   92
+nodes_count         245
+partly_recogn_folds 55
+pmass_error         0.240548
+
+*END
+
+*END
+
+*END

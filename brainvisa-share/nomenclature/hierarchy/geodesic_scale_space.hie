@@ -1,0 +1,298 @@
+*BEGIN TREE 1.0 hierarchy
+graph_syntax ClusterArg
+
+*BEGIN TREE fold_name
+name blob_scales
+
+*BEGIN TREE fold_name
+name blob_scale_0
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_1
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_2
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_3
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_4
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_5
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_6
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_7
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_8
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_9
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_10
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_11
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_12
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_13
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_14
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_15
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_16
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_17
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_18
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_19
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_20
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_21
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_22
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_23
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_24
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_25
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_26
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_27
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_28
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_29
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_30
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_31
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_32
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_33
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_34
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_35
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_36
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_37
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_38
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_39
+*END
+
+*BEGIN TREE fold_name
+name blob_scale_40
+*END
+
+*END
+
+*BEGIN TREE fold_name
+name scalespace
+
+*BEGIN TREE fold_name
+name scalespace_0
+*END
+
+*BEGIN TREE fold_name
+name scalespace_1
+*END
+
+*BEGIN TREE fold_name
+name scalespace_2
+*END
+
+*BEGIN TREE fold_name
+name scalespace_3
+*END
+
+*BEGIN TREE fold_name
+name scalespace_4
+*END
+
+*BEGIN TREE fold_name
+name scalespace_5
+*END
+
+*BEGIN TREE fold_name
+name scalespace_6
+*END
+
+*BEGIN TREE fold_name
+name scalespace_7
+*END
+
+*BEGIN TREE fold_name
+name scalespace_8
+*END
+
+*BEGIN TREE fold_name
+name scalespace_9
+*END
+
+*BEGIN TREE fold_name
+name scalespace_10
+*END
+
+*BEGIN TREE fold_name
+name scalespace_11
+*END
+
+*BEGIN TREE fold_name
+name scalespace_12
+*END
+
+*BEGIN TREE fold_name
+name scalespace_13
+*END
+
+*BEGIN TREE fold_name
+name scalespace_14
+*END
+
+*BEGIN TREE fold_name
+name scalespace_15
+*END
+
+*BEGIN TREE fold_name
+name scalespace_16
+*END
+
+*BEGIN TREE fold_name
+name scalespace_17
+*END
+
+*BEGIN TREE fold_name
+name scalespace_18
+*END
+
+*BEGIN TREE fold_name
+name scalespace_19
+*END
+
+*BEGIN TREE fold_name
+name scalespace_20
+*END
+
+*BEGIN TREE fold_name
+name scalespace_21
+*END
+
+*BEGIN TREE fold_name
+name scalespace_22
+*END
+
+*BEGIN TREE fold_name
+name scalespace_23
+*END
+
+*BEGIN TREE fold_name
+name scalespace_24
+*END
+
+*BEGIN TREE fold_name
+name scalespace_25
+*END
+
+*BEGIN TREE fold_name
+name scalespace_26
+*END
+
+*BEGIN TREE fold_name
+name scalespace_27
+*END
+
+*BEGIN TREE fold_name
+name scalespace_28
+*END
+
+*BEGIN TREE fold_name
+name scalespace_29
+*END
+
+*END
+
+*END

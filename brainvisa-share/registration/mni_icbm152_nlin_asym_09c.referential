@@ -1,0 +1,7 @@
+attributes = {
+    'axes_orientation': 'LPI',
+    'direct_referential': 0,
+    'dimension_count': 3,
+    'name': 'mni_icbm152_nlin_asym_09c-aims oriented',
+    'uuid': '84b1989b-eb68-8665-0049-8feaf3c22679'
+}

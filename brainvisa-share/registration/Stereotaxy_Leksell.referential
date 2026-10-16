@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<minf expander="minf_2.0">
+<d length="3">
+  <n name="dimension_count">3</n>
+  <s name="name">Stereotaxy-Leksell</s>
+  <s name="uuid">632ba7c1-9956-40d5-b5ae-3f8f5d71009f</s>
+</d>
+</minf>

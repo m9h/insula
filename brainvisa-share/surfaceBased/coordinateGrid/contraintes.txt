@@ -1,0 +1,14 @@
+lon 0
+lon 16
+lon 43
+lon 58
+lon 100
+lon 287
+lon 303
+lon 340
+lat 1
+lat 30
+lat 79
+lat 98
+lat 125
+lat 180

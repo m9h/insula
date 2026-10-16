@@ -1,0 +1,4 @@
+attributes = {'uuid': 'ffaa15d1-a1a7-ab7d-3f3e-56f6124add0d', 
+  'source_referential' : 'a2a820ac-a686-461e-bcf8-856400740a6c', 
+  'destination_referential' : 'f3848046-b581-cae4-ecb9-d80ada0278d5', 
+}

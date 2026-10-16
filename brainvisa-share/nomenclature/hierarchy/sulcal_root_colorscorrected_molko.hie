@@ -1,0 +1,111 @@
+# tree 1.0
+
+*BEGIN TREE hierarchy
+graph_syntax CorticalFoldArg
+
+	*BEGIN TREE fold_name
+		color 256 180 180
+		name  unknown
+
+	*END
+
+	*BEGIN TREE fold_name
+		name brain
+
+		*BEGIN TREE fold_name
+			name hemisph_left
+
+			*BEGIN TREE fold_name
+				color 255 0 255
+				label 20
+				name  cerebellum_left
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 0 0
+				label 21
+				name  ventricle_left
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 255 0 0
+				label 01
+				name  S.C._left
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 0 255
+				label 02
+				name  F.C.L._left
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 255 0
+				label 08
+				name  F.I.P._left
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 255 100 100
+				label 1
+				name  S.T.s._left
+
+			*END
+
+		*END
+
+		*BEGIN TREE fold_name
+			name hemisph_right
+
+			*BEGIN TREE fold_name
+				color 255 0 255
+				label 20
+				name  cerebellum_right
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 0 0
+				label 21
+				name  ventricle_right
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 255 0 0
+				label 01
+				name  S.C._right
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 0 255
+				label 02
+				name  F.C.L._right
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 0 255 0
+				label 08
+				name  F.I.P._right
+
+			*END
+
+			*BEGIN TREE fold_name
+				color 255 100 100
+				label 1
+				name  S.T.s._right
+
+			*END
+
+		*END
+
+	*END
+
+*END
