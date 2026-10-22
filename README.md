@@ -10,6 +10,8 @@ distributions: Qt 6 only, Qt's own `AUTOMOC`/`AUTOUIC`/`AUTORCC`, and stock
 CMake (exports, `GNUInstallDirs`, presets, `ctest`) in place of the custom
 `brainvisa-cmake` build layer and `bv_maker`. See [docs/PLAN.md](docs/PLAN.md).
 
+Repository: <https://github.com/m9h/insula>.
+
 **Status: stage 1.** This repository currently holds the upstream code and its
 history, unchanged, plus the Fedora fix commits that the Fedora packages carry
 today. No build logic has been converted yet.

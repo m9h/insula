@@ -1,4 +1,5 @@
 # Insula: plan
+Hosting: <https://github.com/m9h/insula> (decided 2026-10-21).
 
 Goal: the BrainVISA core (soma, AIMS, Anatomist) as a codebase that builds
 with stock CMake and Qt 6, packages cleanly as RPMs, and has no legacy layers
